@@ -1,0 +1,28 @@
+.remove-text-deco:hover{
+    text-decoration: none;
+}
+.c-social-media{
+	font-size: 5px;
+	color: red;
+}
+.dropdown-custom {
+    position: relative;
+    display: inline-block;
+	color: red;
+}
+/* login block */
+.myTable td {
+    padding: 10px;
+}
+.login_block
+{
+	margin-top: 50px;
+}
+.well2
+{
+	background-color:rgba(110,110,110,0.2);
+}
+.jon_header{
+	font-family:"alfa-slab-one";
+	font-size: 20px;
+}

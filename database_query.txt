@@ -1,0 +1,1 @@
+create table `customers`(`cid` int(100) AUTO_INCREMENT PRIMARY KEY NOT NULL,`username` varchar(20) NOT NULL UNIQUE,`fname` varchar(15) NOT NULL,`lname` varchar(10) NOT NULL,`email` varchar(50) NOT NULL UNIQUE,`password`varchar(20) NOT NULL,`contact` varchar(10) NOT NULL,`street1` varchar(50),`street2` varchar(50),`city` varchar(20),`state` varchar(20),`coutry` varchar(20))

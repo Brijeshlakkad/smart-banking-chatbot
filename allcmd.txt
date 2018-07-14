@@ -1,0 +1,13 @@
+1.git init
+2.git remote add origin https.....
+3.git config --global user.email "sanket864@github.com"
+4.git config --global user.name "sanket864"
+5.git status
+6.git add -A      or     git add "f1.ext","f2.ext"
+7.git commit -m "changes name"
+8.git push origin master         or        git push origin branch_name -f
+9.git checkout -b branch_name    // create new branch
+10.git checkout branch_name     //swtich
+11. git merge branch_name //after switching master
+12. git pull origin branch_name
+13. git branch -d branch_name
