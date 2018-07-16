@@ -3,13 +3,14 @@ import cgi, cgitb
 import sys
 import os
 import re
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import private_data
 from smtplib import SMTP_SSL as SMTP 
 from email.mime.text import MIMEText
 
 class Mail:
 	USERNAME = private_data.admin_email
-	PASSWORD = private_data.admin_passsword
+	PASSWORD = private_data.admin_password
 	def send_mail(self,email_ad,mob,name):
 		SMTPserver = 'smtp.gmail.com'
 		sender =     private_data.admin_email
@@ -38,7 +39,7 @@ class Mail:
 
 m=Mail()
 form = cgi.FieldStorage()
-db=pymysql.connect("localhost",'root','','minor_Project')
+conn=pymysql.connect(host="localhost",user='root',passwd='',db='minor_project',port=3306)
 print("Content-type:text/html\r\n\r\n")
 
 if form.getvalue('s_email'):
@@ -54,7 +55,7 @@ if form.getvalue('s_fname'):
 if form.getvalue('s_lname'):
 	lname = form.getvalue('s_lname')
 if form.getvalue('s_middlename'):
-	middlename = form.getvalue('s_middlename')
+	middle_name = form.getvalue('s_middlename')
 if form.getvalue('s_gender'):
 	gender = form.getvalue('s_gender')
 if form.getvalue('s_dob'):
@@ -71,15 +72,15 @@ if form.getvalue('s_state'):
 	state = form.getvalue('s_state')
 if form.getvalue('s_country'):
 	country = form.getvalue('s_country')
-cursor=db.cursor();
-sql="INSERT INTO Candidates (username,fname,lname,middle_name,email,contact,password,dob,gender,postal_add,perm_add,pincode,city,state,country) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (user,fname,lname,middlename,email,phone,password,dob,gender,postal_add,perm_add,pincode,city,state,country)
+cursor=conn.cursor();
+sql="""INSERT INTO customers (username,fname,lname,middle_name,email,contact,password,dob,gender,postal_add,perm_add,pincode,city,state,country) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')""" % (user,fname,lname,middle_name,email,phone,password,dob,gender,postal_add,perm_add,pincode,city,state,country)
 try:
 	cursor.execute(sql)
-	db.commit()
+	conn.commit()
 	m.send_mail(email,phone,user)
 	print("1")
 except:
-	db.rollback()
+	conn.rollback()
 	print("0")
 	
-db.close()
+conn.close()
