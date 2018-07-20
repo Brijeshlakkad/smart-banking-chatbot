@@ -15,7 +15,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_user">Username:</label><br></td>
-			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" required  user-dir></td>
+			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required  user-dir></td>
 			<td>
 			<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty && myForm.s_user.$invalid">
 			<span ng-show="myForm.s_user.$error.required">Username is required</span>
@@ -63,7 +63,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_email">Email:</label><br></td>
-			<td><input type="email" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value)" onBlur="check_exists(this.value)" required></td>
+			<td><input type="email" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required></td>
 			<td>
 			<span style="color:red" id="s_email" ng-show="myForm.s_email.$dirty">
 			</span>
@@ -546,7 +546,7 @@ function check_pass(cpass)
 		else
 			$("#s_cpassword").html("");
 	}
-function check_exists(email)
+function check_exists(email,f)
 	{
 				var x=new XMLHttpRequest();
 				x.onreadystatechange=function()
@@ -555,14 +555,26 @@ function check_exists(email)
 						{
 							var data=this.responseText;
 							if(data!=0)
-								$("#s_email").html(data);
+								$("#"+f).html(data);
 							else
-								$("#s_email").html("");
+								$("#"+f).html("");
 						}
 				};
 				x.open("POST","check_exists.php",true);
 				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 				x.send("f=s_email&q="+email);
+	}
+	
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return [year, month, day].join('-');
 	}
 function check_details()
 	{
@@ -575,12 +587,13 @@ function check_details()
 		var middlename=myForm.s_middlename.value;
 		var postaladd=myForm.s_postaladd.value;
 		var permadd=myForm.s_permadd.value;
-		var pincode=$scope.s_pincode;
-		var gender=$scope.gender;
-		var dob=$scope.dob;
-		var country=$scope.s_country;
-		var state=$scope.s_state;
-		var city=$scope.s_city;
+		var pincode=myForm.s_pincode.value;
+		var gender=myForm.gender.value;
+		var t_dob=myForm.dob.value;
+		var country=myForm.s_country.value;
+		var state=myForm.s_state.value;
+		var city=myForm.s_city.value;
+		var dob=formatDate(t_dob);
 		var x=new XMLHttpRequest();
 				x.onreadystatechange=function()
 				{
@@ -610,7 +623,6 @@ function check_details()
 	}
 $(document).ready(function(){
 	$('[data-toggle="tooltip"]').tooltip(); 
-	
 	$("#spinner").hide();
 });
 </script>

@@ -1,9 +1,9 @@
+#!/usr/bin/python 
 import pymysql
 import cgi, cgitb 
 import sys
 import os
 import re
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import private_data
 from smtplib import SMTP_SSL as SMTP 
 from email.mime.text import MIMEText
@@ -13,7 +13,7 @@ class Mail:
 	PASSWORD = private_data.admin_password
 	def send_mail(self,email_ad,mob,name):
 		SMTPserver = 'smtp.gmail.com'
-		sender =     private_data.admin_email
+		sender =    private_data.admin_email
 		destination = email_ad
 		text_subtype = 'html'
 		content="""\
@@ -39,13 +39,13 @@ class Mail:
 
 m=Mail()
 form = cgi.FieldStorage()
-conn=pymysql.connect(host="localhost",user='root',passwd='',db='minor_project',port=3306)
+conn=pymysql.connect("localhost",'root','root','minor_project',8889)
 print("Content-type:text/html\r\n\r\n")
 
 if form.getvalue('s_email'):
 	email = form.getvalue('s_email')
 if form.getvalue('s_user'):
-	user = form.getvalue('s_user')
+	username = form.getvalue('s_user')
 if form.getvalue('s_mobile'):
 	phone = form.getvalue('s_mobile')
 if form.getvalue('s_password'):
@@ -72,15 +72,18 @@ if form.getvalue('s_state'):
 	state = form.getvalue('s_state')
 if form.getvalue('s_country'):
 	country = form.getvalue('s_country')
-cursor=conn.cursor();
-sql="""INSERT INTO customers (username,fname,lname,middle_name,email,contact,password,dob,gender,postal_add,perm_add,pincode,city,state,country) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')""" % (user,fname,lname,middle_name,email,phone,password,dob,gender,postal_add,perm_add,pincode,city,state,country)
+	
+cursor=conn.cursor()
+sql="""INSERT INTO customers (username,fname,lname,middle_name,email,contact,password,gender,dob,postal_add,perm_add,pincode,city,state,country) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')""" %(username,fname,lname,middle_name,email,phone,password,gender,dob,postal_add,perm_add,pincode,city,state,country)
 try:
 	cursor.execute(sql)
 	conn.commit()
-	m.send_mail(email,phone,user)
+	m.send_mail(email,phone,username)
 	print("1")
 except:
 	conn.rollback()
 	print("0")
-	
 conn.close()
+
+if name == "main":
+	app.run(port=8888)
