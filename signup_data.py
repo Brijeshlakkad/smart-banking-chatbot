@@ -5,6 +5,7 @@ import sys
 import os
 import re
 import private_data
+import config
 from smtplib import SMTP_SSL as SMTP 
 from email.mime.text import MIMEText
 
@@ -39,7 +40,7 @@ class Mail:
 
 m=Mail()
 form = cgi.FieldStorage()
-conn=pymysql.connect("localhost",'root','root','minor_project',8889)
+conn,cursor=config.connect_to_database()
 print("Content-type:text/html\r\n\r\n")
 
 if form.getvalue('s_email'):
@@ -73,7 +74,6 @@ if form.getvalue('s_state'):
 if form.getvalue('s_country'):
 	country = form.getvalue('s_country')
 	
-cursor=conn.cursor()
 sql="""INSERT INTO customers (username,fname,lname,middle_name,email,contact,password,gender,dob,postal_add,perm_add,pincode,city,state,country) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')""" %(username,fname,lname,middle_name,email,phone,password,gender,dob,postal_add,perm_add,pincode,city,state,country)
 try:
 	cursor.execute(sql)
@@ -84,6 +84,3 @@ except:
 	conn.rollback()
 	print("0")
 conn.close()
-
-if name == "main":
-	app.run(port=8888)
