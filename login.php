@@ -104,7 +104,7 @@ function login_status()
 							if(data!=0)
 							{
 								$("#l_status").removeClass("alert alert-danger").addClass("alert alert-success").html("Logging in....");
-								document.location="candidate_profile.php";
+								document.location="profile.php";
 							}
 							else
 							{
@@ -112,7 +112,7 @@ function login_status()
 							}
 						}
 				};
-				x.open("POST","candidate_login_data.php",true);
+				x.open("POST","login_data.php",true);
 				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 				x.send("l_email="+email+"&l_password="+pass);
 			}

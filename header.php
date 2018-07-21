@@ -16,7 +16,7 @@
 </head>
 <body>
 	<nav class="pages-nav">
-		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="#page-home">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php">Home</a></div>
 		<div class="pages-nav__item">
 		<div class="dropdown">
 		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Social links
