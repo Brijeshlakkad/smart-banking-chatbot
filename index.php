@@ -32,9 +32,6 @@
 		</div>
 		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="login.php">Login/Signup</a></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="#page-contact">Contact</a></div>
-		
 	</nav>
-	
 </body>
-
 </html>
