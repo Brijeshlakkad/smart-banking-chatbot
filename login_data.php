@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once("functions.php");
 include_once("config.php");
 $email=protect_anything($_POST['l_email']);
@@ -9,7 +10,7 @@ $r=mysqli_num_rows($result);
 $row=mysqli_fetch_assoc($result);
 if($r==1)
 {
-	$_SESSION['Userid']=$row['Email'];
+	$_SESSION['Userid']=$row['email'];
 	echo "1";
 	return;
 }

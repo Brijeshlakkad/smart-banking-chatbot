@@ -13,4 +13,15 @@ function check_session()
 		header("Location:index.php");
 	}
 }
+function is_logged_in()
+{
+	if(isset($_SESSION['Userid']))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 ?>
