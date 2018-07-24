@@ -15,11 +15,9 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_user">Username:</label><br></td>
-			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required  user-dir></td>
+			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required></td>
 			<td>
-			<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty && myForm.s_user.$invalid">
-			<span ng-show="myForm.s_user.$error.required">Username is required</span>
-			<span ng-show="!myForm.s_user.$error.required && myForm.s_user.$error.uservalid">Enter more than 3 characters</span>
+			<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty">
 			</span>
 			</td>
 			</tr>
@@ -316,9 +314,24 @@
                 };
                 $scope.analyze4 = function(value) {
                     if(patt_user.test(value) && value.length>3) {
-                        $scope.userStyle["border-color"] = "green";
+						var flag=1;
+							$http({
+								method : "POST",
+								url : "check_exists.php",
+								data: "f=s_user&q="+value,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								flag = response.data;
+								// we should be using flag in only this block so logic in following
+								if(flag==0)
+									$scope.userStyle["border-color"] = "green";
+								else
+									$scope.userStyle["border-color"] = "red";
+							}, function myError(response) {
+								
+							});
 						
-                    } 
+                    }
 					else {
                         $scope.userStyle["border-color"] = "red";
                     }
@@ -427,23 +440,6 @@
 		};
 
 });
-myApp.directive('userDir', function() {
-				return {
-					require: 'ngModel',
-					link: function(scope, element, attr, mCtrl) {
-						function myValidation(value) {
-							var patt_user = new RegExp("^[0-9a-zA-Z_.]+$");
-							if (patt_user.test(value) && value.length>3) {
-								mCtrl.$setValidity('uservalid', true);
-							} else {
-								mCtrl.$setValidity('uservalid', false);
-							}
-							return value;
-						}
-						mCtrl.$parsers.push(myValidation);
-					}
-				};
-});
 myApp.directive('namesDir', function() {
 				return {
 					require: 'ngModel',
@@ -546,7 +542,7 @@ function check_pass(cpass)
 		else
 			$("#s_cpassword").html("");
 	}
-function check_exists(email,f)
+function check_exists(val_f,f)
 	{
 				var x=new XMLHttpRequest();
 				x.onreadystatechange=function()
@@ -562,7 +558,7 @@ function check_exists(email,f)
 				};
 				x.open("POST","check_exists.php",true);
 				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-				x.send("f=s_email&q="+email);
+				x.send("f="+f+"&q="+val_f);
 	}
 	
 function formatDate(date) {

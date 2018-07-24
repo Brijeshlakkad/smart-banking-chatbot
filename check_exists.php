@@ -19,7 +19,7 @@ if(isset($_POST['f']) && isset($_POST['q']))
 		}
 		else
 		{
-					$sql="select * from customers where Email='$email'";
+					$sql="select * from customers where email='$email'";
 					$result=mysqli_query($con,$sql);
 					if(!$result)
 						die("Error");
@@ -36,7 +36,7 @@ if(isset($_POST['f']) && isset($_POST['q']))
 					}
 		}
 	}
-	if($f=="s_user")
+	else if($f=="s_user")
 	{
 		$user=$q;
 		if($user=="")
@@ -44,21 +44,20 @@ if(isset($_POST['f']) && isset($_POST['q']))
 				echo "Username is required";
 				return;
 		}
-		else if(!filter_var($email,FILTER_VALIDATE_EMAIL))
+		else if(strlen($user)<=3)
 		{
-				echo "Invalid email";
-				return;
+			echo "Username should contain more than 3 characters";
 		}
 		else
 		{
-					$sql="select * from customers where Email='$email'";
+					$sql="select * from customers where username='$user'";
 					$result=mysqli_query($con,$sql);
 					if(!$result)
 						die("Error");
 					$ro=mysqli_num_rows($result);
 					if($ro>0)
 					{
-						echo "Email already Exists";
+						echo "Username already Exists";
 						return;
 					}
 					else
