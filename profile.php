@@ -7,7 +7,7 @@
 			<div class="row" style="margin: 50px;">
 				Want Help?
 			</div>
-			<button class="btn btn-primary" >Ask questions to me >></button>
+			<a class="btn btn-primary" id="ask_question" href="jon_snow.php">Ask questions to me >></a>
 		</div>
 	</div>
 </div>
@@ -17,6 +17,9 @@ $body = $("body");
 $(document).on({
     ajaxStart: function() { $body.addClass("loading");    },
      ajaxStop: function() { $body.removeClass("loading"); }    
+});
+$(document).ready(function(){
+	
 });
 </script>
 <?php include("footer.php"); ?>
