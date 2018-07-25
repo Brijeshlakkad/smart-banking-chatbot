@@ -46,7 +46,7 @@ print("Content-type:text/html\r\n\r\n")
 if form.getvalue('s_email'):
 	email = form.getvalue('s_email')
 if form.getvalue('s_user'):
-	username = form.getvalue('s_user')
+	username = strtolower(form.getvalue('s_user'))
 if form.getvalue('s_mobile'):
 	phone = form.getvalue('s_mobile')
 if form.getvalue('s_password'):

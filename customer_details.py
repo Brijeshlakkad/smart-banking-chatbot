@@ -5,7 +5,7 @@ import sys
 import os
 import config
 class customer:
-	global cid,username,fname,lname,middle_name,email,contact,postal_add,perm_add,city,state,country,pincode,dob,gender
+	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender
 	def customer_details(self,user):
 		sql="select * from customers where email='%s'"%user
 		conn,cursor=config.connect_to_database()
@@ -18,6 +18,7 @@ class customer:
 				self.fname=row[2]
 				self.lname=row[3]
 				self.email=row[4]
+				self.password=row[5]
 				self.contact=row[6]
 				self.postal_add=row[7]
 				self.perm_add=row[8]
@@ -47,6 +48,8 @@ def get_any_value(user,f):
 		return c.middle_name
 	elif f=="email":
 		return c.email
+	elif f=="password":
+		return c.password
 	elif f=="contact":
 		return c.contact
 	elif f=="postal_add":
