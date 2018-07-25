@@ -19,17 +19,16 @@
 						<div class="form-group">
 						<tr>
 						<td><label for="s_user">Username:</label><br></td>
-						<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required></td>
+						<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required user-dir></td>
 						<td>
 						<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty">
-						</span>
 						</td>
 						</tr>
 						</div>
 						<div class="form-group">
 						<tr>
 						<td><label for="s_email">Email:</label><br></td>
-						<td><input type="text" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required email-dir></td>
+						<td><input type="text" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required disabled></td>
 						<td>
 						<span style="color:red" id="s_email" ng-show="myForm.s_email.$dirty">
 						
@@ -396,16 +395,16 @@ myApp.directive('namesDir', function() {
 					}
 				};
 });
-myApp.directive('emailDir', function() {
+myApp.directive('userDir', function() {
 				return {
 					require: 'ngModel',
 					link: function(scope, element, attr, mCtrl) {
 						function myValidation(value) {
-							var patt2=new RegExp("^[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$");
-							if (patt2.test(value)) {
-								mCtrl.$setValidity('emailvalid', true);
+							var patt_user = new RegExp("^[0-9a-zA-Z_.]+$");
+							if (patt_user.test(value)) {
+								mCtrl.$setValidity('uservalid', true);
 							} else {
-								mCtrl.$setValidity('emailvalid', false);
+								mCtrl.$setValidity('uservalid', false);
 							}
 							return value;
 						}

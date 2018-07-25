@@ -15,7 +15,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_user">Username:</label><br></td>
-			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required></td>
+			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required user-dir></td>
 			<td>
 			<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty">
 			</span>
@@ -450,6 +450,24 @@ myApp.directive('namesDir', function() {
 								mCtrl.$setValidity('namesvalid', true);
 							} else {
 								mCtrl.$setValidity('namesvalid', false);
+							}
+							return value;
+						}
+						mCtrl.$parsers.push(myValidation);
+					}
+				};
+});
+	
+myApp.directive('userDir', function() {
+				return {
+					require: 'ngModel',
+					link: function(scope, element, attr, mCtrl) {
+						function myValidation(value) {
+							var patt_user = new RegExp("^[0-9a-zA-Z_.]+$");
+							if (patt_user.test(value)) {
+								mCtrl.$setValidity('uservalid', true);
+							} else {
+								mCtrl.$setValidity('uservalid', false);
 							}
 							return value;
 						}
