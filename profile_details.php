@@ -29,9 +29,10 @@
 						<div class="form-group">
 						<tr>
 						<td><label for="s_email">Email:</label><br></td>
-						<td><input type="email" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required disabled></td>
+						<td><input type="text" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required email-dir></td>
 						<td>
 						<span style="color:red" id="s_email" ng-show="myForm.s_email.$dirty">
+						
 						</span>
 						</td>
 						</tr>
@@ -388,6 +389,23 @@ myApp.directive('namesDir', function() {
 								mCtrl.$setValidity('namesvalid', true);
 							} else {
 								mCtrl.$setValidity('namesvalid', false);
+							}
+							return value;
+						}
+						mCtrl.$parsers.push(myValidation);
+					}
+				};
+});
+myApp.directive('emailDir', function() {
+				return {
+					require: 'ngModel',
+					link: function(scope, element, attr, mCtrl) {
+						function myValidation(value) {
+							var patt2=new RegExp("^[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$");
+							if (patt2.test(value)) {
+								mCtrl.$setValidity('emailvalid', true);
+							} else {
+								mCtrl.$setValidity('emailvalid', false);
 							}
 							return value;
 						}
