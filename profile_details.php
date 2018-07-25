@@ -123,6 +123,30 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="success_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div class="alert alert-success">Information updated successfully</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="error_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div class="alert alert-success">Please, try again after few minutes</div>
+        </div>
+      </div>
+    </div>
+</div>
 <div class="please_wait_modal"></div>
 <script>
 $body = $("body");
@@ -528,24 +552,14 @@ function formatDate(date) {
 
     return [year, month, day].join('-');
 	}
-function check_details()
+function check_part1()
 	{
-		var password=myForm.s_password.value;
 		var mobile=myForm.s_mobile.value;
 		var user=myForm.s_user.value;
 		var email=myForm.s_email.value;
 		var fname=myForm.s_fname.value;
 		var lname=myForm.s_lname.value;
 		var middlename=myForm.s_middlename.value;
-		var postaladd=myForm.s_postaladd.value;
-		var permadd=myForm.s_permadd.value;
-		var pincode=myForm.s_pincode.value;
-		var gender=myForm.gender.value;
-		var t_dob=myForm.dob.value;
-		var country=myForm.s_country.value;
-		var state=myForm.s_state.value;
-		var city=myForm.s_city.value;
-		var dob=formatDate(t_dob);
 		var x=new XMLHttpRequest();
 				x.onreadystatechange=function()
 				{
@@ -556,21 +570,27 @@ function check_details()
 					if(x.readyState==4 && x.status==200)
 						{
 							var data=this.responseText;
-							if(data==1)
+							if(data==11)
 							{
 								$("#spinner").hide();
-								$("#status").html("<span style='color:green;'>You have registered successfully.</span>");
+								$("#success_modal").modal("show");
+								setTimeout(function(){
+									$("#success_modal").modal("hide");
+								},1000);
 							}
 							else
 							{
 								$("#spinner").hide();
-								$("#status").html("<span style='color:red;'>Error! Try agian..</span>");
+								$("#error_modal").modal("show");
+								setTimeout(function(){
+									$("#error_modal").modal("hide");
+								},1000);
 							}
 						}
 				};
-				x.open("POST","signup_data.py",true);
+				x.open("POST","customer_interface.py",true);
 				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-				x.send("s_user="+user+"&s_email="+email+"&s_password="+password+"&s_mobile="+mobile+"&s_gender="+gender+"&s_dob="+dob+"&s_postaladd="+postaladd+"&s_permadd="+permadd+"&s_country="+country+"&s_state="+state+"&s_city="+city+"&s_fname="+fname+"&s_lname="+lname+"&s_middlename="+middlename+"&s_pincode="+pincode);
+				x.send("update_account_details="+user+"&s_email="+email+"&s_mobile="+mobile+"&s_fname="+fname+"&s_lname="+lname+"&s_middlename="+middlename);
 		
 	}
 $(document).ready(function(){
