@@ -9,7 +9,7 @@
 			<div class="tab">
 			  <button class="tablinks" onclick="openCity(event, 'acc_details')" id="defaultOpen">Account Details</button>
 			  <button class="tablinks" onclick="openCity(event, 'change_password')">Change Password</button>
-			  <button class="tablinks" onclick="openCity(event, 'xyz')">xyz</button>
+			  <button class="tablinks" onclick="openCity(event, 'billing_details')">Billing Details</button>
 			</div>
 			<form ng-app="myapp" ng-controller="BrijController" name="myForm"  novalidate>
 			<div id="acc_details" class="tabcontent">
@@ -65,7 +65,7 @@
 						<div class="form-group">
 						<tr>
 						<td><label for="s_email">Email:</label><br></td>
-						<td><input type="email" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required></td>
+						<td><input type="email" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required disabled></td>
 						<td>
 						<span style="color:red" id="s_email" ng-show="myForm.s_email.$dirty">
 						</span>
@@ -81,8 +81,8 @@
 			  <p>Paris is the capital of France.</p> 
 			</div>
 
-			<div id="xyz" class="tabcontent">
-			  <h3>Tokyo</h3>
+			<div id="billing_details" class="tabcontent">
+			  <h3>Billing Details</h3>
 			  <p>Tokyo is the capital of Japan.</p>
 			</div>
 			
@@ -96,16 +96,47 @@ $(document).on({
     ajaxStart: function() { $body.addClass("loading");    },
      ajaxStop: function() { $body.removeClass("loading"); }    
 });
-$(document).ready(function(){
-	
-});
-</script>
-<script>
+
 	var myApp = angular.module("myapp", []);
+	
 	myApp.controller("BrijController", function($scope,$http) {
 		$scope.genderOptions = [
 				"Male","Female","Other"
 			];
+		var userid="<?php echo $_SESSION['Userid']; ?>";
+		$scope.get_any_value=function(f,user,callback)
+		{
+			$http({
+				method : "POST",
+				url : "customer_interface.py",
+				data: "get_data="+f+"&user="+user,
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			}).then(function mySuccess(response) {
+				callback(response.data);
+			}, function myError(response) {
+			});
+			
+		};
+		var set_val_user=function(val){
+			$scope.s_user= val;
+		};
+		$scope.get_any_value("username",userid,set_val_user);
+		var set_val_fname=function(val){
+			$scope.s_fname= val;
+		};
+		$scope.get_any_value("fname",userid,set_val_fname);
+		var set_val_lname=function(val){
+			$scope.s_lname= val;
+		};
+		$scope.get_any_value("lname",userid,set_val_lname);
+		var set_val_middle_name=function(val){
+			$scope.s_middlename= val;
+		};
+		$scope.get_any_value("middle_name",userid,set_val_middle_name);
+		var set_val_email=function(val){
+			$scope.s_email= val;
+		};
+		$scope.get_any_value("email",userid,set_val_email);
 		
 		$scope.maxd = new Date() ;
                 var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");

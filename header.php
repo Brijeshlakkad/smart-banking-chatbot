@@ -10,7 +10,7 @@
 	<link href="css/custom2.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<link rel="stylesheet" type="text/css" href="css/please_wait.css" />
+	<link rel="stylesheet" type="text/css" href="css/please_wait2.css" />
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/angular.js"></script>

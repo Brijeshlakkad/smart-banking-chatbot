@@ -1,9 +1,6 @@
 #!/usr/bin/python 
-import pymysql
 import cgi, cgitb 
 import sys
-import os
-import config
 import security
 import customer_details
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
