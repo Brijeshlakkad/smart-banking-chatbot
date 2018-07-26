@@ -174,7 +174,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-        <div class="alert alert-success">Please, try again after few minutes</div>
+        <div class="alert alert-danger">Please, try again after few minutes</div>
         </div>
       </div>
     </div>
@@ -465,17 +465,27 @@ $(document).on({
 							$http({
 								method : "POST",
 								url : "customer_interface.py",
-								data : "change_password="+old_password+"&new_password="+new_password+"&cnew_password="+cnew_password,
+								data : "change_password="+old_password+"&new_password="+new_password+"&user="+userid,
 								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 							}).then(function mySuccess(response) {
 								flag = response.data;
 								if(flag==11)
-									$("#status_part2").html("<span style='color:green;'>Details added</span>");
+									{
+										$("#success_modal").modal("show");
+										$("#status_part2").empty();
+									}
+								else if(flag==-99)
+									$("#status_part2").html("<span style='color:red;'>Old password is incorrect</span>");
+								else if(flag==-1)
+									$("#status_part2").html("<span style='color:red;'>Enter password which is different from previous password</span>");
 								else
-									$("#status_part2").html("<span style='color:red;'>Please, try again!</span>");
-								
+									{
+										$("#error_modal").modal("show");
+										$("#status_part2").empty();
+									}
 							}, function myError(response) {
-								$("#status_part2").html("<span style='color:red;'>Please, try again!</span>");
+								$("#error_modal").modal("show");
+								$("#status_part2").empty();
 							});
                };
 

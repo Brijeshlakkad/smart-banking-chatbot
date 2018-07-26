@@ -70,5 +70,3 @@ def get_any_value(user,f):
 		return c.gender
 	else: 
 		return 0;
-
-			

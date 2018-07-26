@@ -21,4 +21,16 @@ if form.getvalue('update_account_details'):
 	middle_name = security.protect_data(form.getvalue('s_middlename'))
 	flag_bit=update_customer_details.update_account_details(username,email,contact,fname,lname,middle_name)
 	print("%s"%flag_bit)
+if form.getvalue('change_password'):
+	user=security.protect_data(form.getvalue('user'))
+	old_password=str(security.protect_data(form.getvalue('change_password')))
+	new_password = str(security.protect_data(form.getvalue('new_password')))
+	got_old_password=str(customer_details.get_any_value(user,"password"))
+	if old_password==new_password:
+		flag_bit=-1
+	elif got_old_password==old_password:
+		flag_bit=update_customer_details.update_password(user,new_password)
+	else:
+		flag_bit=-99
+	print("%s"%flag_bit)
 	
