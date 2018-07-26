@@ -87,7 +87,7 @@
 						<div class="form-group">
 							<tr>
 								<td><input type="submit" onClick="check_part1()" id="submit_btn" value="Submit" class="btn btn-primary" ng-disabled="myForm.s_user.$invalid || myForm.s_email.$invalid || myForm.s_mobile.$invalid || myForm.s_fname.$invalid || myForm.s_lname.$invalid || myForm.s_middlename.$invalid" /></td>
-								<td id="status"><img src="images/small_loader.gif" id="spinner" style="height:30px;width:30px;" alt="Loading" /></td>
+								<td id="status"><img src="images/small_loader.gif" id="spinner_part1" style="height:30px;width:30px;" alt="Loading" /></td>
 								<td></td>
 							</tr>
 						</div>
@@ -103,7 +103,7 @@
 			  			<div class="form-group">
 						<tr>
 						<td><label for="old_password">Old Password:</label><br></td>
-						<td><input type="text" class="form-control" name="old_password" placeholder="Enter first name" ng-model="old_password"  ng-style="passwordStrength" ng-change="analyze(old_password)" required  password-dir></td>
+						<td><input type="password" class="form-control" name="old_password" placeholder="Enter first name" ng-model="old_password"  ng-style="old_passwordStrength" ng-change="analyze_old(old_password)" required  password-dir></td>
 						<td>
 						<span style="color:red" id="old_password" ng-show="myForm2.old_password.$dirty && myForm2.old_password.$invalid">
 						<span ng-show="myForm2.old_password.$error.required">Old Password is required</span>
@@ -111,6 +111,38 @@
 						</span>
 						</td>
 						</tr>
+						</div>
+						<div class="form-group">
+						<tr>
+						<td><label for="new_password">New Password:</label><br></td>
+						<td><input type="password" class="form-control" name="new_password" placeholder="Enter first name" ng-model="new_password"  ng-style="new_passwordStrength" ng-change="analyze_new(new_password)" required  password-dir></td>
+						<td><a class="badge my_badge" data-toggle="tooltip" data-placement="top" title="Password should contain at least one number and at least one character">?</a>
+						<span style="color:red" id="new_password" ng-show="myForm2.new_password.$dirty && myForm2.new_password.$invalid">
+						<span ng-show="myForm2.new_password.$error.required">New Password is required</span>
+						<span ng-show="!myForm2.new_password.$error.required && myForm2.new_password.$error.passvalid">read instructions</span>
+						</span>
+						</td>
+						</tr>
+						</div>
+						<div class="form-group">
+						<tr>
+						<td><label for="confirm_new_password">Confirm New Password:</label><br></td>
+						<td><input type="password" class="form-control" name="confirm_new_password" placeholder="Enter first name" ng-model="confirm_new_password" ng-disabled="!myForm2.new_password.$valid" ng-style="cnew_passwordStrength" ng-change="analyze_cnew(new_password,confirm_new_password)" required  password-dir cpass-dir></td>
+						<td>
+						<span style="color:red" id="confirm_new_password" ng-show="myForm2.confirm_new_password.$dirty && myForm2.confirm_new_password.$invalid">
+						<span ng-show="myForm2.confirm_new_password.$error.required">Password is required</span>
+						<span ng-show="!myForm2.confirm_new_password.$error.required && myForm2.confirm_new_password.$error.passvalid">read instructions</span>
+						<span ng-show="!myForm2.confirm_new_password.$error.required && myForm2.confirm_new_password.$error.cpassvalid">Passwords do not match</span>
+						</span>
+						</td>
+						</tr>
+						</div>
+						<div class="form-group">
+							<tr>
+								<td><input type="submit" ng-click="check_part2()" id="submit_btn" value="Submit" class="btn btn-primary" ng-disabled="myForm2.old_password.$invalid || myForm2.new_password.$invalid || myForm2.confirm_new_password.$invalid" /></td>
+								<td id="status_part2"><img src="images/small_loader.gif" ng-if="spinner_part2" id="spinner_part2" style="height:30px;width:30px;" alt="Loading" /></td>
+								<td></td>
+							</tr>
 						</div>
 					</table>
 			  </div>
@@ -161,6 +193,7 @@ $(document).on({
 		$scope.genderOptions = [
 				"Male","Female","Other"
 			];
+		$scope.spinner_part2=false;
 		var userid="<?php echo $_SESSION['Userid']; ?>";
 		$scope.get_any_value=function(f,user,callback)
 		{
@@ -202,16 +235,40 @@ $(document).on({
 		$scope.maxd = new Date() ;
                 var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
                 var mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
-                $scope.passwordStrength = {
+                $scope.old_passwordStrength = {
 					"border-width":"1.45px"
                 };
-                $scope.analyze = function(value) {
+                $scope.analyze_old = function(value) {
                     if(strongRegex.test(value)) {
-                        $scope.passwordStrength["border-color"] = "green";
+                        $scope.old_passwordStrength["border-color"] = "green";
                     } else if(mediumRegex.test(value)) {
-                        $scope.passwordStrength["border-color"] = "orange";
+                        $scope.old_passwordStrength["border-color"] = "orange";
                     } else {
-                        $scope.passwordStrength["border-color"] = "red";
+                        $scope.old_passwordStrength["border-color"] = "red";
+                    }
+                };
+		$scope.new_passwordStrength = {
+					"border-width":"1.45px"
+                };
+                $scope.analyze_new = function(value) {
+                    if(strongRegex.test(value)) {
+                        $scope.new_passwordStrength["border-color"] = "green";
+                    } else if(mediumRegex.test(value)) {
+                        $scope.new_passwordStrength["border-color"] = "orange";
+                    } else {
+                        $scope.new_passwordStrength["border-color"] = "red";
+                    }
+                };
+		$scope.cnew_passwordStrength = {
+					"border-width":"1.45px"
+                };
+                $scope.analyze_cnew = function(value) {
+                    if(strongRegex.test(value)) {
+                        $scope.cnew_passwordStrength["border-color"] = "green";
+                    } else if(mediumRegex.test(value)) {
+                        $scope.cnew_passwordStrength["border-color"] = "orange";
+                    } else {
+                        $scope.cnew_passwordStrength["border-color"] = "red";
                     }
                 };
 		
@@ -400,6 +457,27 @@ $(document).on({
 			else
 				$scope.s_permadd="";
 		};
+		$scope.check_part2 = function() {
+			
+							var old_password=$scope.old_password;
+							var new_password=$scope.new_password;
+							var cnew_password=$scope.confirm_new_password;
+							$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "change_password="+old_password+"&new_password="+new_password+"&cnew_password="+cnew_password,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								flag = response.data;
+								if(flag==11)
+									$("#status_part2").html("<span style='color:green;'>Details added</span>");
+								else
+									$("#status_part2").html("<span style='color:red;'>Please, try again!</span>");
+								
+							}, function myError(response) {
+								$("#status_part2").html("<span style='color:red;'>Please, try again!</span>");
+							});
+               };
 
 });
 myApp.directive('namesDir', function() {
@@ -463,6 +541,23 @@ myApp.directive('passwordDir', function() {
 								mCtrl.$setValidity('passvalid', true);
 							} else {
 								mCtrl.$setValidity('passvalid', false);
+							}
+							return value;
+						}
+						mCtrl.$parsers.push(myValidation);
+					}
+				};
+});
+myApp.directive('cpassDir', function() {
+				return {
+					require: 'ngModel',
+					link: function(scope, element, attr, mCtrl) {
+						function myValidation(value) {
+							var new_password=document.myForm2.new_password.value;
+							if (value==new_password) {
+								mCtrl.$setValidity('cpassvalid', true);
+							} else {
+								mCtrl.$setValidity('cpassvalid', false);
 							}
 							return value;
 						}
@@ -595,7 +690,7 @@ function check_part1()
 	}
 $(document).ready(function(){
 	$('[data-toggle="tooltip"]').tooltip(); 
-	$("#spinner").hide();
+	$("#spinner_part1").hide();
 });
 </script>
 <script src="js/vertical_tab.js"></script>
