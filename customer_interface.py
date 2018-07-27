@@ -4,6 +4,7 @@ import sys
 import security
 import customer_details
 import update_customer_details
+import feedback_modules
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
 cgitb.enable(display=0, logdir="/path/to/logdir")
 form = cgi.FieldStorage()	
@@ -33,4 +34,11 @@ if form.getvalue('change_password'):
 	else:
 		flag_bit=-99
 	print("%s"%flag_bit)
-	
+if form.getvalue('feedback') and form.getvalue('email'):
+	f_text=security.protect_data(form.getvalue('feedback'))
+	email=security.protect_data(form.getvalue('email'))
+	if str(feedback_modules.check_same_feedback(email,f_text))=="11":
+		flag_bit=feedback_modules.add_feedback(email,f_text)
+	else:
+		flag_bit="111"
+	print("%s"%flag_bit)
