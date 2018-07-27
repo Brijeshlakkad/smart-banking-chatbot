@@ -9,7 +9,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="css/custom2.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/component2.css" />
 	<link rel="stylesheet" type="text/css" href="css/please_wait2.css" />
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -36,6 +36,8 @@
 		</div>
 		</div>
 		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="login.php">Login/Signup</a></div>
+	</nav>
+	<nav class="pages-nav">
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
 	</nav>
 	<?php 
@@ -67,6 +69,8 @@
 		</ul>
 		</div>
 		</div>
+	</nav>
+	<nav class="pages-nav">
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
 	</nav>
 		<?php
