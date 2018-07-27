@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 27, 2018 at 11:26 AM
+-- Generation Time: Jul 27, 2018 at 12:01 PM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -47,7 +47,7 @@ CREATE TABLE `bank_atm` (
   `city` varchar(10) NOT NULL,
   `state` varchar(10) NOT NULL,
   `country` varchar(10) NOT NULL,
-  `bankatm` varchar(5) NOT NULL,
+  `branch_atm` varchar(30) NOT NULL,
   `time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -76,7 +76,8 @@ CREATE TABLE `cards` (
 
 CREATE TABLE `chats` (
   `chat_id` int(10) NOT NULL,
-  `c_id` int(10) NOT NULL,
+  `from_id` int(10) NOT NULL,
+  `to_id` int(10) NOT NULL,
   `text` varchar(100) NOT NULL,
   `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -207,13 +208,6 @@ ALTER TABLE `cards`
   ADD KEY `acc_id` (`acc_id`);
 
 --
--- Indexes for table `chats`
---
-ALTER TABLE `chats`
-  ADD PRIMARY KEY (`chat_id`),
-  ADD KEY `c_id` (`c_id`);
-
---
 -- Indexes for table `customers`
 --
 ALTER TABLE `customers`
@@ -273,12 +267,6 @@ ALTER TABLE `cards`
   MODIFY `card_id` int(30) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `chats`
---
-ALTER TABLE `chats`
-  MODIFY `chat_id` int(10) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
@@ -324,12 +312,6 @@ ALTER TABLE `accounts`
 ALTER TABLE `cards`
   ADD CONSTRAINT `cards_ibfk_1` FOREIGN KEY (`c_id`) REFERENCES `customers` (`cid`),
   ADD CONSTRAINT `cards_ibfk_2` FOREIGN KEY (`acc_id`) REFERENCES `accounts` (`acc_id`);
-
---
--- Constraints for table `chats`
---
-ALTER TABLE `chats`
-  ADD CONSTRAINT `chats_ibfk_1` FOREIGN KEY (`c_id`) REFERENCES `customers` (`cid`);
 
 --
 -- Constraints for table `loans`
