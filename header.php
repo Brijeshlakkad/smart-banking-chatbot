@@ -17,12 +17,20 @@
 	<script type="text/javascript" src="js/bootstrap-show-password.min.js"></script>
 </head>
 <body>
+<div class="please_wait_modal"></div>
+<script>
+$body = $("body");
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
+</script>
 <?php 
 	if(!is_logged_in())
 	{
 	?>
 	<nav class="pages-nav">
-		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php" >Home</a></div>
 		<div class="pages-nav__item">
 		<div class="dropdown">
 		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Social links
@@ -42,11 +50,11 @@
 	</nav>
 	<?php 
 	}
-	else
+	else if(is_logged_in())
 	{
 		?>
 	<nav class="pages-nav">
-		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="profile.php">Home</a></div>
+		<div class="pages-nav__item userid" id="<?php echo $_SESSION['Userid']; ?>"><a class="link link--page remove-text-deco" href="profile.php">Home</a></div>
 		<div class="pages-nav__item">
 		<div class="dropdown">
 		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Social links
