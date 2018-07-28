@@ -1,0 +1,86 @@
+.chat_header_div{
+	font-family:artifika;
+    margin: 0px auto;
+	font-size: 40px;
+	background-color: #191919;
+	color: white;
+}
+.chat_header_text{
+	margin: 30px;
+}
+.chat_container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.chat_container::after {
+    content: "";
+    clear: both;
+    display: table;
+	height: 400px;
+}
+.mess{
+	margin-top: 20px;
+}
+.chat_container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.chat_container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+	margin: 5px;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+	margin: 5px;
+}
+.text-right{
+	float: right;
+	margin: 5px;
+}
+.text-left{
+	float: left;
+	margin: 5px;
+}
+.you{
+	display: block;
+	background-color: #032655;
+	color:white;
+}
+.jon{
+	display: block;
+	background-color:#1F1F1F;
+	color:white;
+}
+input {
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+    background: #fafafa;
+    border: none;
+    outline: none;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #666;
+    font-weight: 400;
+}

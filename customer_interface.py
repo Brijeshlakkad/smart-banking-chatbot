@@ -5,6 +5,7 @@ import security
 import customer_details
 import update_customer_details
 import feedback_modules
+import jon_snow_brain
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
 cgitb.enable(display=0, logdir="/path/to/logdir")
 form = cgi.FieldStorage()	
@@ -52,3 +53,15 @@ if form.getvalue("start_service"):
 	flag_bit=update_customer_details.start_service(jon,check)
 	print("%s"%flag_bit)
 	
+if form.getvalue("message") and form.getvalue("user"):
+	text=security.protect_data(form.getvalue("message"))
+	user=security.protect_data(form.getvalue("user"))
+	get_id=customer_details.get_any_value(user,"cid")
+	jon=0
+	flag_bit=jon_snow_brain.add_chat(get_id,jon,text)
+	print("%s"%flag_bit)
+if form.getvalue("reload_messages"):
+	user=security.protect_data(form.getvalue("reload_messages"))
+	get_id=customer_details.get_any_value(user,"cid")
+	flag_bit=jon_snow_brain.reload_chats(get_id,user)
+	print("%s"%flag_bit)

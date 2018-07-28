@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://localhost:8888/Minor%20Project/jon_snow.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jon Assistant</title>
+	<link href="./Jon Assistant_files/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="./Jon Assistant_files/custom3.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="./Jon Assistant_files/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./Jon Assistant_files/component.css">
+	<link rel="stylesheet" type="text/css" href="./Jon Assistant_files/please_wait.css">
+	<script src="./Jon Assistant_files/jquery.min.js"></script>
+	<script src="./Jon Assistant_files/bootstrap.min.js"></script>
+	<script src="./Jon Assistant_files/messages_functions.js"></script>
+	<script src="./Jon Assistant_files/angular.js"></script>
+	<script type="text/javascript" src="./Jon Assistant_files/bootstrap-show-password.min.js"></script>
+</head>
+<body class="">
+<div class="please_wait_modal"></div>
+<script>
+$body = $("body");
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
+</script>
+<style>
+	.custom_nav{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		width: 100%;
+	}
+</style>
+	<nav class="pages-nav">
+		<div class="pages-nav__item userid" id="brij79lakkad@gmail.com"><a class="link link--page remove-text-deco" href="http://localhost:8888/Minor%20Project/profile.php">Home</a></div>
+		<div class="pages-nav__item">
+		<div class="dropdown">
+		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="http://localhost:8888/Minor%20Project/jon_snow.php#">Social links
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+			<li><a class="link" href="http://localhost:8888/Minor%20Project/jon_snow.php#"><span class="c-social-media">Twitter</span></a></li>
+			<li><a class="link" href="http://localhost:8888/Minor%20Project/jon_snow.php#"><span class="c-social-media">LinkedIn</span></a></li>
+			<li><a class="link" href="http://localhost:8888/Minor%20Project/jon_snow.php#"><span class="c-social-media">Facebook</span></a></li>
+			<li><a class="link" href="http://localhost:8888/Minor%20Project/jon_snow.php#"><span class="c-social-media">YouTube</span></a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="pages-nav__item">
+		<div class="dropdown">
+		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="http://localhost:8888/Minor%20Project/jon_snow.php#">Settings
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+			<li><a class="link" href="http://localhost:8888/Minor%20Project/profile_details.php"><span class="c-social-media">Profile</span></a></li>
+			<li><a class="link" href="http://localhost:8888/Minor%20Project/logout.php"><span class="c-social-media">Logout</span></a></li>
+		</ul>
+		</div>
+		</div>
+	</nav>
+	<nav class="pages-nav">
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="http://localhost:8888/Minor%20Project/contact.php">Contact</a></div>
+	</nav>
+			
+
+<link rel="stylesheet" type="text/css" href="./Jon Assistant_files/chat.css">
+<div class="container">
+	<div class="row well">
+		<div class="chat_header_div row"><div class="col-lg-4"><span class="chat_header_text">Jon Snow <small style="font-size: 15px;">(The Bank Assistant)</small></span></div><div class="col-lg-1 pull-right"><button class="btn btn-primary" id="chatRefresh"><span class="glyphicon glyphicon-refresh"></span></button></div></div>
+
+		<div class="chat_container row">
+			<ul id="chatOutput">
+<li id="chat_1"><div class="mess"><img src="./Jon Assistant_files/jon-cart.jpg" alt="You" style="width:100%;"><p>hey</p><span class="time-right">21 : 11</span></div></li><br><li id="chat_2"><div class="mess"><img src="./Jon Assistant_files/jon-cart.jpg" alt="You" style="width:100%;"><p>hey2</p><span class="time-right">21 : 13</span></div></li><br><li id="chat_3"><div class="mess"><img src="./Jon Assistant_files/jon-cart.jpg" alt="You" style="width:100%;"><p>hey3</p><span class="time-right">21 : 14</span></div></li><br><li class="darker" id="chat_4"><div class="mess"><img src="./Jon Assistant_files/jon-cart.jpg" alt="Jon" class="right" style="width:100%;"><p>Hello, i m Jon</p><span class="time-left">21 : 39</span></div></li><br><li class="darker" id="chat_5"><div class="mess"><img src="./Jon Assistant_files/jon-cart.jpg" alt="Jon" class="right" style="width:100%;"><p>Hello, i m Jon</p><span class="time-left">21 : 39</span></div></li><br><li id="chat_6"><div class="mess"><img src="./Jon Assistant_files/jon-cart.jpg" alt="You" style="width:100%;"><p>g</p><span class="time-right">21 : 45</span></div></li><br>
+</ul>
+		</div>
+		<div class="row ng-scope" ng-app="myapp" ng-controller="BrijController">
+		<form name="chat_form" novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+		<div class="col-lg-11">
+			<input type="text" name="message" id="message" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" ng-model="message" placeholder="type here" required=""></div>
+		<div class="col-lg-1 pull-right">
+			<button type="submit" id="send_message" class="btn" ng-disabled="chat_form.message.$invalid" disabled="disabled"><img src="./Jon Assistant_files/send2.png" height="25" alt="send"></button>
+		</div>
+		</form>
+		</div>
+	</div>
+</div>
+
+<script>
+var myApp = angular.module("myapp", []);
+myApp.controller("BrijController", function($scope,$http) {
+	
+	});
+$(document).ready(function(){
+	$("#chatRefresh").click();
+	$("#send_message").click(function(){
+		var message=$("#message").val();
+		var userid=$("div.userid").attr("id");
+		$.ajax({
+				type: 'POST', 
+				url: 'customer_interface.py',
+				data: 'message='+message+"&user="+userid,
+				success  : function (data)
+				{
+					$(document).ajaxStop(function(){
+						if(data==11)
+						{
+							
+						}
+					});
+				}
+			});
+	});
+	
+});
+</script>
+
+
+
+
+</body></html>
