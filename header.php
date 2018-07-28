@@ -25,11 +25,21 @@ $(document).on({
      ajaxStop: function() { $body.removeClass("loading"); }    
 });
 </script>
+<style>
+	.custom_nav{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		width: 100%;
+	}
+</style>
 <?php 
 	if(!is_logged_in())
 	{
 	?>
-	<nav class="pages-nav">
+	<nav class="pages-nav custom_nav">
+	<div class="pages-nav__item"></div>
 		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php" >Home</a></div>
 		<div class="pages-nav__item">
 		<div class="dropdown">
@@ -44,10 +54,12 @@ $(document).on({
 		</div>
 		</div>
 		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="login.php">Login/Signup</a></div>
-	</nav>
-	<nav class="pages-nav">
+		<div class="pages-nav__item pages-nav__item--small"></div>
+		<div class="pages-nav__item pages-nav__item--small"></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
+		<div class="pages-nav__item pages-nav__item--small"></div>
 	</nav>
+	
 	<?php 
 	}
 	else if(is_logged_in())
