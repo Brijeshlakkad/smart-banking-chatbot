@@ -42,3 +42,13 @@ if form.getvalue('feedback') and form.getvalue('email'):
 	else:
 		flag_bit="111"
 	print("%s"%flag_bit)
+if form.getvalue("check_service"):
+	check=security.protect_data(form.getvalue("check_service"))
+	flag_bit=update_customer_details.check_service(check)
+	print("%s"%flag_bit)
+if form.getvalue("start_service"):
+	check=security.protect_data(form.getvalue("start_service"))
+	jon=1
+	flag_bit=update_customer_details.start_service(jon,check)
+	print("%s"%flag_bit)
+	

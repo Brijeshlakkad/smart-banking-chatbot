@@ -25,5 +25,22 @@ def update_password(user,new_password):
 	except:
 		conn.rollback()
 		return "0"
-	
-	
+def check_service(user):
+	conn,cursor=config.connect_to_database()
+	sql="select jon from customers where email='%s'"%(user)
+	try:
+		cursor.execute(sql)
+		row=cursor.fetchone()
+		return int(row[0])
+	except:
+		return "-99"
+def start_service(jon,user):
+	conn,cursor=config.connect_to_database()
+	sql="update customers SET jon='%s' where email='%s'"%(jon,user)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return "11"
+	except:
+		conn.rollback()
+		return "0"
