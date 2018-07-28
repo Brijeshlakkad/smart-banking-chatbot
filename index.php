@@ -3,6 +3,37 @@
 <div class="container-fluid blurclass"  style="padding:0px;height:700px;width:100%;">
 	
 </div>
+	<section class="showcase showcase--video landscape background--active" data-background-target="#f3f3f3" data-scroll-animation-offset="500">
+    <div class="showcase__container">
+        
+        <article class="showcase__article showcase__article--landscape showcase__right" data-scroll-animation-offset="100">
+            <div class="showcase__media landscape shuffle shuffled">
+                <div class="showcase__overlay">
+    <div class="showcase__overlay-container">
+        <div class="showcase__content content">
+                            <p class="showcase__legal"></p>
+                        <p class="showcase__copy">When it comes to the possibilities and possible perils of artificial intelligence (AI), learning and reasoning by machines without the intervention of humans, there are lots of opinions out there. Only time will tell which one of these quotes will be the closest to our future reality</p>
+                            <ul class="showcase__tags">
+                                            <li class="showcase__tag">Web App</li>
+                                            <li class="showcase__tag">Experimental R&amp;D</li>
+                                    </ul>                     </div>     </div> </div>                 
+              <div class="showcase__video showcase__video--landscape">
+            <div class="showcase__image-fallback" style="background-image: url('https://2017-media.weareenvoy.net/_470x470_crop_center_90/mobile-django.jpg');"></div>
+            <video autoplay="" loop="" muted="">
+              <source src="https://youtu.be/wL7-PoiBiKM" type="video/webm">
+                                                <source src="https://youtu.be/wL7-PoiBiKM" type="video/mp4">
+                                          </video>
+          </div>
+                </div>
+
+              <div class="showcase__text landscape right shuffle shuffled">
+    <span class="showcase__eyebrow">Jon Assistant</span>
+    <h3 class="showcase__header">Unleashing web application for <br> AI Chatbot</h3>
+
+	</div>
+        </article>
+    </div> 
+    </section>
 <footer class="footer">
     <nav class="footer__nav shuffle shuffled">
         <section class="footer__col footer__col--intro">
