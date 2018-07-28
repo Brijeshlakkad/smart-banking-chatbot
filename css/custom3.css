@@ -15,7 +15,7 @@
 }
 .login_block
 {
-	margin-top: 50px;
+	margin-top: 150px;
 }
 .well2
 {
@@ -32,16 +32,9 @@
 }
 .blurclass
 {
-	background: url(../images/ai3.jpg) no-repeat center center scroll;
-	z-index: -10;
-	position:absolute;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
+	background: url(../images/ai1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
