@@ -25,3 +25,16 @@
 	font-family:"alfa-slab-one";
 	font-size: 50px;
 }
+.my_well
+{
+	margin-top: 50px;
+	margin: 20px;
+}
+.blurclass
+{
+	background: url(../images/ai1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
