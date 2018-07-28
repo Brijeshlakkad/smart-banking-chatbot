@@ -70,7 +70,7 @@
         </section>
 
         <section class="footer__col footer__col--next">
-            <a href="/about" class="footer__btn" data-footer-link="2">
+            <a href="about.php" class="footer__btn" data-footer-link="2">
                 <span>Next: About</span>
 
                 <div class="footer__btn-line">
