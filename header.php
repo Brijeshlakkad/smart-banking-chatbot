@@ -18,7 +18,6 @@
 	<script type="text/javascript" src="js/bootstrap-show-password.min.js"></script>
 </head>
 <body>
-<div class="please_wait_modal"></div>
 <script>
 $body = $("body");
 $(document).on({
@@ -26,6 +25,8 @@ $(document).on({
      ajaxStop: function() { $body.removeClass("loading"); }    
 });
 </script>
+<div class="please_wait_modal"></div>
+
 <style>
 	.custom_nav{
 		position: fixed;
@@ -36,32 +37,37 @@ $(document).on({
 	}
 </style>
 <?php 
-	if(!is_logged_in())
+	if(is_admin_logged_in())
 	{
-	?>
-	<nav class="pages-nav custom_nav">
-	<div class="pages-nav__item"></div>
-		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php" >Home</a></div>
+		?>
+	<nav class="pages-nav">
+		<div class="pages-nav__item adminid" id="<?php echo $_SESSION['Adminid']; ?>"><a class="link link--page remove-text-deco" href="admin_panel.php">Home</a></div>
 		<div class="pages-nav__item">
 		<div class="dropdown">
-		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Social links
+		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">View
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-			<li><a class="link" href="#"><span class="c-social-media">Twitter</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">LinkedIn</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">Facebook</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">YouTube</span></a></li>
+			<li><a class="link" href="#"><span class="c-social-media">New customers</span></a></li>
+			<li><a class="link" href="#"><span class="c-social-media">Approved customers</span></a></li>
+			<li><a class="link" href="#"><span class="c-social-media">Rejected Customers</span></a></li>
 		</ul>
 		</div>
 		</div>
-		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="login.php">Login/Signup</a></div>
-		<div class="pages-nav__item pages-nav__item--small"></div>
-		<div class="pages-nav__item pages-nav__item--small"></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
-		<div class="pages-nav__item pages-nav__item--small"></div>
+		<div class="pages-nav__item">
+		<div class="dropdown">
+		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Settings
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+			<li><a class="link" href="#"><span class="c-social-media">Profile</span></a></li>
+			<li><a class="link" href="logout.php"><span class="c-social-media">Logout</span></a></li>
+		</ul>
+		</div>
+		</div>
 	</nav>
-	
-	<?php 
+	<nav class="pages-nav">
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="#">Contact</a></div>
+	</nav>
+		<?php
 	}
 	else if(is_logged_in())
 	{
@@ -93,6 +99,32 @@ $(document).on({
 	</nav>
 	<nav class="pages-nav">
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
+	</nav>
+		<?php
+	}
+	else
+	{
+		?>
+	<nav class="pages-nav custom_nav">
+	<div class="pages-nav__item"></div>
+		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php" >Home</a></div>
+		<div class="pages-nav__item">
+		<div class="dropdown">
+		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Social links
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+			<li><a class="link" href="#"><span class="c-social-media">Twitter</span></a></li>
+			<li><a class="link" href="#"><span class="c-social-media">LinkedIn</span></a></li>
+			<li><a class="link" href="#"><span class="c-social-media">Facebook</span></a></li>
+			<li><a class="link" href="#"><span class="c-social-media">YouTube</span></a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="login.php">Login/Signup</a></div>
+		<div class="pages-nav__item pages-nav__item--small"></div>
+		<div class="pages-nav__item pages-nav__item--small"></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
+		<div class="pages-nav__item pages-nav__item--small"></div>
 	</nav>
 		<?php
 	}
