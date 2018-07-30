@@ -15,7 +15,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_user">Username:</label><br></td>
-			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required></td>
+			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required user-dir></td>
 			<td>
 			<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty">
 			</span>
@@ -25,7 +25,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_fname">First name:</label><br></td>
-			<td><input type="text" class="form-control" name="s_fname" placeholder="Enter first name" ng-model="s_fname"  ng-style="fnameStyle" ng-change="analyze6(s_fname)" required  names-dir></td>
+			<td><input type="text" class="form-control" name="s_fname" placeholder="Enter first name" ng-model="s_fname"  ng-style="fnameStyle" ng-change="analyze6(s_fname)" required  names-dir nameslen-dir></td>
 			<td>
 			<span style="color:red" id="s_fname" ng-show="myForm.s_fname.$dirty && myForm.s_fname.$invalid">
 			<span ng-show="myForm.s_fname.$error.required">First name is required</span>
@@ -37,7 +37,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_lname">Last name:</label><br></td>
-			<td><input type="text" class="form-control" name="s_lname" placeholder="Enter first name" ng-model="s_lname"  ng-style="lnameStyle" ng-change="analyze7(s_lname)" required  names-dir></td>
+			<td><input type="text" class="form-control" name="s_lname" placeholder="Enter first name" ng-model="s_lname"  ng-style="lnameStyle" ng-change="analyze7(s_lname)" required  names-dir nameslen-dir></td>
 			<td>
 			<span style="color:red" id="s_lname" ng-show="myForm.s_lname.$dirty && myForm.s_lname.$invalid">
 			<span ng-show="myForm.s_lname.$error.required">Last name is required</span>
@@ -49,7 +49,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_middlename">Middle name:</label><br></td>
-			<td><input type="text" class="form-control" name="s_middlename" placeholder="Enter first name" ng-model="s_middlename"  ng-style="middleStyle" ng-change="analyze8(s_middlename)" required  names-dir></td>
+			<td><input type="text" class="form-control" name="s_middlename" placeholder="Enter first name" ng-model="s_middlename"  ng-style="middleStyle" ng-change="analyze8(s_middlename)" required  names-dir nameslen-dir></td>
 			<td>
 			<span style="color:red" id="s_middlename" ng-show="myForm.s_middlename.$dirty && myForm.s_middlename.$invalid">
 			<span ng-show="myForm.s_middlename.$error.required">Middle name is required</span>
@@ -449,6 +449,39 @@ myApp.directive('namesDir', function() {
 								mCtrl.$setValidity('namesvalid', true);
 							} else {
 								mCtrl.$setValidity('namesvalid', false);
+							}
+							return value;
+						}
+						mCtrl.$parsers.push(myValidation);
+					}
+				};
+});
+myApp.directive('nameslenDir', function() {
+				return {
+					require: 'ngModel',
+					link: function(scope, element, attr, mCtrl) {
+						function myValidation(value) {
+							if (value.length>1) {
+								mCtrl.$setValidity('nameslenvalid', true);
+							} else {
+								mCtrl.$setValidity('nameslenvalid', false);
+							}
+							return value;
+						}
+						mCtrl.$parsers.push(myValidation);
+					}
+				};
+});
+myApp.directive('userDir', function() {
+				return {
+					require: 'ngModel',
+					link: function(scope, element, attr, mCtrl) {
+						function myValidation(value) {
+							var patt_user = new RegExp("^[0-9a-zA-Z_.]+$");
+							if (patt_user.test(value) && value.length>3) {
+								mCtrl.$setValidity('uservalid', true);
+							} else {
+								mCtrl.$setValidity('uservalid', false);
 							}
 							return value;
 						}
