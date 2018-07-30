@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jon Assistant</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="css/custom3.css" rel="stylesheet" media="screen">
+	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/please_wait.css" />
@@ -40,6 +40,7 @@ $(document).on({
 	if(is_admin_logged_in())
 	{
 		?>
+		<script type="text/javascript" src="js/admin_show_customers.js"></script>
 	<nav class="pages-nav">
 		<div class="pages-nav__item adminid" id="<?php echo $_SESSION['Adminid']; ?>"><a class="link link--page remove-text-deco" href="admin_panel.php">Home</a></div>
 		<div class="pages-nav__item">
@@ -47,9 +48,9 @@ $(document).on({
 		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">View
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-			<li><a class="link" href="#"><span class="c-social-media">New customers</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">Approved customers</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">Rejected Customers</span></a></li>
+			<li><a class="link" href="#" id="new_customers"><span class="c-social-media">New customers</span></a></li>
+			<li><a class="link" href="#" id="approved_customers"><span class="c-social-media">Approved customers</span></a></li>
+			<li><a class="link" href="#" id="rejected_customers"><span class="c-social-media">Rejected Customers</span></a></li>
 		</ul>
 		</div>
 		</div>

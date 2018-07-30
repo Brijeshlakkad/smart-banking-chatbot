@@ -6,6 +6,10 @@ function protect_anything($str)
 	$str = stripslashes($str);
 	return $str;
 }
+function check_signup_part2()
+{
+	
+}
 function check_session()
 {
 	if(!isset($_SESSION['Userid']))

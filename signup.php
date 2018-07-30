@@ -6,6 +6,7 @@
 	</div>
 	<div class="row">
 		<form ng-app="myapp" ng-controller="BrijController" name="myForm"  novalidate>
+		<div id="signup_stage">
 		<br/>
 			<div class="row">
 			<span class="jon_header">Account details</span>
@@ -226,6 +227,7 @@
 				<td></td>
 			</tr>
 			</table>
+			</div>
 			</form>
 	</div>
 </div>
@@ -617,11 +619,13 @@ function check_details()
 						}
 					if(x.readyState==4 && x.status==200)
 						{
+							
 							var data=this.responseText;
+							alert(data);
 							if(data==1)
 							{
 								$("#spinner").hide();
-								$("#status").html("<span style='color:green;'>You have registered successfully.</span>");
+								$("#status").html("<span style='color:green;'>You have registered successfully</span>");
 							}
 							else
 							{

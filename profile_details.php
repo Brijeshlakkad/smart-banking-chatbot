@@ -7,13 +7,14 @@
 		<div class="row"  ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
 
 			<div class="tab">
-			  <button class="tablinks" onclick="openCity(event, 'acc_details')" id="defaultOpen">Account Details</button>
+		  	  <button class="tablinks" onclick="openCity(event, 'per_acc_details')" id="defaultOpen">Personal Account Details</button>
+			  <button class="tablinks" onclick="openCity(event, 'bank_acc_details')" id="defaultOpen">Bank Account Details</button>
 			  <button class="tablinks" onclick="openCity(event, 'change_password')">Change Password</button>
 			  <button class="tablinks" onclick="openCity(event, 'billing_details')">Billing Details</button>
 			</div>
 			<form name="myForm"  novalidate>
-			<div id="acc_details" class="tabcontent">
-			  <h3>Account Details</h3>
+			<div id="per_acc_details" class="tabcontent">
+			  <h3>Personal Account Details</h3>
 			  <div class="row">
 			  	<table class="myTable">
 						<div class="form-group">

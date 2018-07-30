@@ -1,6 +1,6 @@
 <?php include_once("header.php"); ?>
 
-<link rel="stylesheet" type="text/css" href="css/chat.css" />
+<link rel="stylesheet" type="text/css" href="css/chat2.css" />
 <div class="container">
 	<div class="row well">
 		<div class="chat_header_div row"><div class="col-lg-4"><span class="chat_header_text">Jon Snow <small style="font-size: 15px;">(The Bank Assistant)</small></span></div><div class="col-lg-1 pull-right"><button class="btn btn-primary"  id="chatRefresh"><span class="glyphicon glyphicon-refresh"></span></button></div></div>
