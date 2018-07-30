@@ -2,6 +2,7 @@
 <?php check_session(); ?>
 <div class="container-fluid my_well">
 	<div class="row" align="center">
+	<div class="row"><h2>Give us feedback</h2><br/><h3>We'd like to hear from you.</h3></div><br/>
 		<form ng-app="myapp" ng-controller="BrijController" name="feedback"  novalidate>
 		<table class="myTable">
 			<div class="form-group">
