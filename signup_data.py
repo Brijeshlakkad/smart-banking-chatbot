@@ -6,6 +6,7 @@ import os
 import re
 import private_data
 import config
+import customer_details
 from smtplib import SMTP_SSL as SMTP 
 from email.mime.text import MIMEText
 
@@ -78,8 +79,9 @@ sql="""INSERT INTO customers (username,fname,lname,middle_name,email,contact,pas
 try:
 	cursor.execute(sql)
 	conn.commit()
+	cid=customer_details.get_any_value(email,"cid")
 	m.send_mail(email,phone,username)
-	print("1")
+	print("%d"%cid)
 except:
 	conn.rollback()
 	print("0")

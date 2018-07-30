@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jon Assistant</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<link href="css/custom2.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/please_wait.css" />

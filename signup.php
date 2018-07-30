@@ -1,10 +1,9 @@
 <?php include("header.php"); ?>
-<body>
 <div class="container well login_block" align="center">
 	<div class="row center-block ">
 		<div><caption><a href="index.php"><img src="images/jonsnow.png" class="img-responsive" style="margin-top:10px;width:250px;height:60px;float:center;filter:drop-shadow(0px 0px 3px #ffffff);"/></a></caption></div>
 	</div>
-	<div class="row">
+	<div class="row" id="brij">
 		<form ng-app="myapp" ng-controller="BrijController" name="myForm"  novalidate>
 		<br/>
 			<div class="row">
@@ -629,11 +628,13 @@ function check_details()
 						}
 					if(x.readyState==4 && x.status==200)
 						{
+							
 							var data=this.responseText;
-							if(data==1)
+							if(data!=0 && data!="-99")
 							{
 								$("#spinner").hide();
-								$("#status").html("<span style='color:green;'>You have registered successfully.</span>");
+								$("#brij").append("<form id='signup_2' action='signup_part2.php' method='post'><input type='text' name='c_id' value='"+data+"'></form>");
+								$("#signup_2").submit();
 							}
 							else
 							{
