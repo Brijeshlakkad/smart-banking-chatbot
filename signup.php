@@ -6,7 +6,6 @@
 	</div>
 	<div class="row">
 		<form ng-app="myapp" ng-controller="BrijController" name="myForm"  novalidate>
-		<div id="signup_stage">
 		<br/>
 			<div class="row">
 			<span class="jon_header">Account details</span>
@@ -16,7 +15,7 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_user">Username:</label><br></td>
-			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required user-dir></td>
+			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required></td>
 			<td>
 			<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty">
 			</span>
@@ -227,7 +226,6 @@
 				<td></td>
 			</tr>
 			</table>
-			</div>
 			</form>
 	</div>
 </div>
@@ -440,7 +438,6 @@
 			else
 				$scope.s_permadd="";
 		};
-
 });
 myApp.directive('namesDir', function() {
 				return {
@@ -452,24 +449,6 @@ myApp.directive('namesDir', function() {
 								mCtrl.$setValidity('namesvalid', true);
 							} else {
 								mCtrl.$setValidity('namesvalid', false);
-							}
-							return value;
-						}
-						mCtrl.$parsers.push(myValidation);
-					}
-				};
-});
-	
-myApp.directive('userDir', function() {
-				return {
-					require: 'ngModel',
-					link: function(scope, element, attr, mCtrl) {
-						function myValidation(value) {
-							var patt_user = new RegExp("^[0-9a-zA-Z_.]+$");
-							if (patt_user.test(value)) {
-								mCtrl.$setValidity('uservalid', true);
-							} else {
-								mCtrl.$setValidity('uservalid', false);
 							}
 							return value;
 						}
@@ -586,10 +565,8 @@ function formatDate(date) {
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),
         year = d.getFullYear();
-
     if (month.length < 2) month = '0' + month;
     if (day.length < 2) day = '0' + day;
-
     return [year, month, day].join('-');
 	}
 function check_details()
@@ -619,13 +596,11 @@ function check_details()
 						}
 					if(x.readyState==4 && x.status==200)
 						{
-							
 							var data=this.responseText;
-							alert(data);
 							if(data==1)
 							{
 								$("#spinner").hide();
-								$("#status").html("<span style='color:green;'>You have registered successfully</span>");
+								$("#status").html("<span style='color:green;'>You have registered successfully.</span>");
 							}
 							else
 							{
