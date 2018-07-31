@@ -33,7 +33,7 @@ class customer:
 			print("Error")
 		conn.close()
 class customer_by_id:
-	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender
+	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender,created_time,jon,hasAcc
 	def customer_details(self,userid):
 		sql="select * from customers where cid='%s'"%userid
 		conn,cursor=config.connect_to_database()
@@ -57,6 +57,9 @@ class customer_by_id:
 				self.pincode=row[13]
 				self.dob=row[14]
 				self.gender=row[15]
+				self.created_time=row[17]
+				self.jon=row[18]
+				self.hasAcc=row[19]
 		except:
 			print("Error")
 		conn.close()
@@ -95,6 +98,12 @@ def get_any_value(user,f):
 		return c.dob
 	elif f=="gender":
 		return c.gender
+	elif f=="jon":
+		return c.jon
+	elif f=="hasAcc":
+		return c.hasAcc
+	elif f=="created_time":
+		return c.created_time
 	else: 
 		return 0
 def get_any_value_by_id(userid,f):
@@ -132,5 +141,11 @@ def get_any_value_by_id(userid,f):
 		return c.dob
 	elif f=="gender":
 		return c.gender
+	elif f=="jon":
+		return c.jon
+	elif f=="hasAcc":
+		return c.hasAcc
+	elif f=="created_time":
+		return c.created_time
 	else: 
 		return 0
