@@ -3,7 +3,7 @@
 	
 </div>
 <div align="center" style="margin:100px;padding: 30px;">
-		<h1><center>Unreachable Page <span class="glyphicon glyphicon-alert"></span></center></h1>
+		<h1><center>Your profile has set! <span class="glyphicon glyphicon-ok"></span></center></h1>
 		<br/>
 </div>
 <div class="" style="margin: 20px;position: fixed;bottom: 0;"><div class=""><small>Go back to home page <a href="index.php" class="btn btn-link">Click here</a></small></div></div>
