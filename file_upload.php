@@ -1,39 +1,39 @@
 <?php
-	$check = getimagesize($_FILES["file_tobe"]["tmp_name"]);
-    if($check !== false){
-        $image = $_FILES['file_tobe']['tmp_name'];
-        $imgContent = addslashes(file_get_contents($image));
-		
-		$s="";
-        $id=$_SESSION['Userid'];
-		date_default_timezone_get("Asia/Kolkata");
-        $dataTime = date("Y-m-d H:i:s");
-		$q1=set_progress('img');
-		$q2=set_bits('img');
-        $insert = mysqli_query($con,"Update Candidates SET Progress='$q1',Status_bits='$q2',Image='$imgContent',Created='$dataTime' where Email='$id'");
-		$sql="Select * from Candidates Where Email='$id'";
-        if($insert)
-		{
-			$result=mysqli_query($con,$sql);
-			if($result)
-			{
-				$row=mysqli_fetch_array($result);
-				$im='<img class="img-responsive img-circle" style="height:150px;" src="data:image/jpeg;base64,'.base64_encode($row['Image']).'"/>'; 
-				$s="<span style='color:green;'>Profile Picture Set.</span><br/><br/>
-				<a class='btn btn-primary' href='candidate_profile.php'>Next</a>";
-			}
-			else
-			{
-				$s= "<span style='color:red;'>Profile Picture upload failed.</span>
-				 please <a class='btn btn-primary' href='candidate_upload_img.php'>try again</a>";
-			}
-        }else{
-			
-           	$s= "<span style='color:red;'>Profile Picture upload failed.</span>
-			 please <a class='btn btn-primary' href='candidate_upload_img.php'>try again</a>";
-        }
-    }else{
-        $s= "<span style='color:red;'>Profile Picture upload failed.</span>
-			 please <a class='btn btn-primary' href='candidate_upload_img.php'>try again</a>";
+if(!isset($_COOKIE["User_cid"])) {
+    header("Location:unreachable.php");
+} else {
+$var_temp=$_COOKIE['User_cid'];
+$var=trim($var_temp);
+$allowedExts = array("jpeg", "jpg", "pdf");
+$temp = explode(".", $_FILES["file_tobe"]["name"]);
+$extension = end($temp);
+if ((($_FILES["file_tobe"]["type"] == "application/pdf") || ($_FILES["file_tobe"]["type"] == "image/jpg") || ($_FILES["file_tobe"]["type"] == "image/jpeg"))
+&& ($_FILES["file_tobe"]["size"] < 512000)
+&& in_array($extension, $allowedExts))
+  {
+  if ($_FILES["file_tobe"]["error"] > 0)
+    {
+    echo "Return Code: " . $_FILES["file_tobe"]["error"] . "<br>";
     }
+  else
+    {
+   if (!file_exists('Files/'.$var)) {
+    mkdir('Files/'.$var, 0777, true);
+   }
+    if (file_exists("Files/".$var."/" . $_FILES["file_tobe"]["name"]))
+      {
+      echo $_FILES["file_tobe"]["name"] . " already exists. ";
+      }
+    else
+      {
+      move_uploaded_file($_FILES["file_tobe"]["tmp_name"],"Files/$var"."/" . $_FILES["file_tobe"]["name"]);
+      header("Location:signup_part3.php");
+      }
+    }
+  }
+else
+  {
+  die("Invalid file or Bigger size");
+  }
+}
 ?>

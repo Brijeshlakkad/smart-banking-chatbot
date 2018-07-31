@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+<body>
 <div class="container well login_block" align="center">
 	<div class="row center-block ">
 		<div><caption><a href="index.php"><img src="images/jonsnow.png" class="img-responsive" style="margin-top:10px;width:250px;height:60px;float:center;filter:drop-shadow(0px 0px 3px #ffffff);"/></a></caption></div>
@@ -11,7 +12,7 @@
 			<hr style='background-color:#878787;width: 100px;height: 3px;'/>
 			</div>
 			<table class="myTable">
-			<div class="form-group">
+			<div class="form-group username">
 			<tr>
 			<td><label for="s_user">Username:</label><br></td>
 			<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required user-dir></td>
@@ -232,6 +233,7 @@
 <script>
 	
 	var myApp = angular.module("myapp", []);
+	var username="-99";
 	myApp.controller("BrijController", function($scope,$http) {
 		$scope.genderOptions = [
 				"Male","Female","Other"
@@ -601,6 +603,24 @@ function formatDate(date) {
     if (day.length < 2) day = '0' + day;
     return [year, month, day].join('-');
 	}
+function get_username(userid)
+	{
+				var x=new XMLHttpRequest();
+				x.onreadystatechange=function()
+				{
+					
+					if(x.readyState==4 && x.status==200)
+						{
+							var data=this.responseText;
+							$("#brij").append("<form id='part2' action='signup_part2.php' method='post'><input type='hidden' name='User_cid' value='"+data+"' /></form>");
+							$("#part2").submit();
+							
+						}
+				};
+				x.open("POST","customer_interface.py",true);
+				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+				x.send("get_data_id=username"+"&userid="+userid);
+	}
 function check_details()
 	{
 		var password=myForm.s_password.value;
@@ -628,13 +648,11 @@ function check_details()
 						}
 					if(x.readyState==4 && x.status==200)
 						{
-							
 							var data=this.responseText;
-							if(data!=0 && data!="-99")
+							if(data!=0)
 							{
 								$("#spinner").hide();
-								$("#brij").append("<form id='signup_2' action='signup_part2.php' method='post'><input type='text' name='c_id' value='"+data+"'></form>");
-								$("#signup_2").submit();
+								get_username(data);
 							}
 							else
 							{

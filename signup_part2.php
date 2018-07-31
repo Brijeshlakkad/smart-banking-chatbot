@@ -1,10 +1,17 @@
 <?php include("header.php"); ?>
+<?php 
+if(isset($_POST['User_cid']))
+{
+$cookie_name = "User_cid";
+$cookie_value = $_POST['User_cid'];
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
+	?>
 <div class="container well login_block" align="center">
 	<div class="row center-block ">
 		<div><caption><a href="index.php"><img src="images/jonsnow.png" class="img-responsive" style="margin-top:10px;width:250px;height:60px;float:center;filter:drop-shadow(0px 0px 3px #ffffff);"/></a></caption></div>
 	</div>
 	<div class="row" id="brij">
-		<form ng-app="myapp" ng-controller="BrijController" name="signup2" method="post" enctype="multipart/form-data" action="file_upload.py"  novalidate>
+		<form ng-app="myapp" ng-controller="BrijController" name="signup2" method="post" enctype="multipart/form-data" action="file_upload.php"  novalidate>
 		<div class="row">
 			<span class="jon_header">Upload Documents</span>
 			<hr style='background-color:#878787;width: 100px;height: 3px;'/>
@@ -17,7 +24,7 @@
 			<td>
 			<span style="color:red" id="file_tobe" ng-show="signup2.file_tobe.$dirty && signup2.file_tobe.$invalid">
 			<span ng-show="signup2.file_tobe.$error.required">File is required</span>
-			</span><
+			</span>
 			</td>
 			</tr>
 			</div>
@@ -42,4 +49,12 @@ $(document).ready(function(){
 	$("#spinner").hide();
 });
 </script>
+	<?php
+}
+else
+{
+	
+}
+?>
+
 <?php include("footer.php"); ?>
