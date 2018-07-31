@@ -612,7 +612,7 @@ function get_username(userid)
 					if(x.readyState==4 && x.status==200)
 						{
 							var data=this.responseText;
-							$("#brij").append("<form id='part2' action='signup_part2.php' method='post'><input type='hidden' name='User_cid' value='"+data+"' /></form>");
+							$("#brij").append("<form id='part2' action='signup_part2.php' method='post'><input type='hidden' name='Username' value='"+data+"' /></form>");
 							$("#part2").submit();
 							
 						}

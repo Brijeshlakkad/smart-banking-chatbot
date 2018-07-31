@@ -1,9 +1,9 @@
 <?php include("header.php"); ?>
 <?php 
-if(isset($_POST['User_cid']))
+if(isset($_POST['Username']))
 {
-$cookie_name = "User_cid";
-$cookie_value = $_POST['User_cid'];
+$cookie_name = "Username";
+$cookie_value = $_POST['Username'];
 setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
 	?>
 <div class="container well login_block" align="center">
@@ -53,7 +53,7 @@ $(document).ready(function(){
 }
 else
 {
-	
+	header("location:unreachable.php");
 }
 ?>
 
