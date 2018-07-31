@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 28, 2018 at 04:44 PM
+-- Generation Time: Jul 31, 2018 at 05:34 PM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -88,11 +88,12 @@ CREATE TABLE `chats` (
 
 INSERT INTO `chats` (`chat_id`, `from_id`, `to_id`, `text`, `created_time`) VALUES
 (1, 14, 0, 'hey', '2018-07-28 21:11:04'),
-(2, 14, 0, 'hey2', '2018-07-28 21:13:31'),
-(3, 14, 0, 'hey3', '2018-07-28 21:14:12'),
-(4, 0, 14, 'Hello, i m Jon', '2018-07-28 21:39:33'),
-(5, 0, 14, 'Hello, i m Jon', '2018-07-28 21:39:52'),
-(6, 14, 0, 'g', '2018-07-28 21:45:47');
+(4, 0, 19, 'Hello, i m Jon', '2018-07-28 21:39:33'),
+(8, 14, 0, 'Hey again', '2018-07-29 00:03:52'),
+(11, 14, 0, 'final', '2018-07-29 00:05:53'),
+(12, 19, 0, 'Hey', '2018-07-30 09:19:55'),
+(13, 19, 0, 'I want help', '2018-07-30 09:20:37'),
+(14, 0, 19, 'I m listening', '2018-07-30 09:21:02');
 
 -- --------------------------------------------------------
 
@@ -119,16 +120,17 @@ CREATE TABLE `customers` (
   `gender` varchar(7) DEFAULT NULL,
   `time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `jon` int(1) DEFAULT '0'
+  `jon` int(1) DEFAULT '0',
+  `hasAcc` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`cid`, `username`, `fname`, `lname`, `email`, `password`, `contact`, `postal_add`, `perm_add`, `city`, `state`, `country`, `middle_name`, `pincode`, `dob`, `gender`, `time`, `created_time`, `jon`) VALUES
-(1, 'brijeshlakkad22222', 'Brijesh', 'Lakkad', 'lakkadbrijesh@gmail.com', '12345b', '7046167267', 'xyz', 'xyz', 'surat', 'gujarat', 'india', 'Rameshbhai', '395006', NULL, 'Male', '2018-07-27 08:56:55', '2018-07-27 16:33:37', 0),
-(14, 'Brijesh', 'Brijesh', 'Lakkad', 'brij79lakkad@gmail.com', '123456bB', '7046167267', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'Rameshbhai', '395006', '2018-07-09', 'string:', '2018-07-27 08:56:55', '2018-07-27 16:33:37', 1);
+INSERT INTO `customers` (`cid`, `username`, `fname`, `lname`, `email`, `password`, `contact`, `postal_add`, `perm_add`, `city`, `state`, `country`, `middle_name`, `pincode`, `dob`, `gender`, `time`, `created_time`, `jon`, `hasAcc`) VALUES
+(1, 'brijeshlakkad22222', 'Brijesh', 'Lakkad', 'lakkadbrijesh@gmail.com', '12345b', '7046167267', 'xyz', 'xyz', 'surat', 'gujarat', 'india', 'Rameshbhai', '395006', NULL, 'Male', '2018-07-27 08:56:55', '2018-07-27 16:33:37', 0, 0),
+(70, 'Brijesh', 'Brijesh', 'Lakkad', 'brij79lakkad@gmail.com', '123456bB', '7046167267', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'Rameshbhai', '395006', '2018-07-03', 'string:', '2018-07-31 13:44:07', '2018-07-31 13:44:07', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -289,13 +291,13 @@ ALTER TABLE `cards`
 -- AUTO_INCREMENT for table `chats`
 --
 ALTER TABLE `chats`
-  MODIFY `chat_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `chat_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `cid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `cid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `feedbacks`
