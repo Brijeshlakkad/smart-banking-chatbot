@@ -23,7 +23,7 @@
 }
 .jon_header{
 	font-family:"alfa-slab-one";
-	font-size: 35px;
+	font-size: 30px;
 }
 .my_well
 {
@@ -37,4 +37,21 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.back-pic
+{
+	background: url(../images/ai1.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+.customerTable td{
+	margin: 30px;
+	padding: 30px;
 }
