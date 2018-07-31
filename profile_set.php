@@ -1,4 +1,10 @@
-<?php include_once("header.php"); ?>
+<?php include_once("header.php"); 
+if(!isset($_COOKIE['To_access']))
+{
+	header("Location:unreachable.php");
+}
+else{
+?>
 <div class="jumbotron well back-pic" style="padding:0px;height:600px;width:100%;position: absolute;z-index: -100;">
 	
 </div>
@@ -7,4 +13,6 @@
 		<br/>
 </div>
 <div class="" style="margin: 20px;position: fixed;bottom: 0;"><div class=""><small>Go back to home page <a href="index.php" class="btn btn-link">Click here</a></small></div></div>
-<?php include("footer.php"); ?>
+<?php 
+	}
+include("footer.php"); ?>

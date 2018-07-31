@@ -49,7 +49,10 @@ if ((($_FILES["image"]["type"] == "image/jpg") || ($_FILES["image"]["type"] == "
 				unlink($path_to_file."".$var.".png");
 		}
 		move_uploaded_file($_FILES["image"]["tmp_name"],$path_to_file."".$cfilename);
-     	setcookie('Username', null, -1, '/');
+		$cookie_name = "To_access";
+		$cookie_value = $_COOKIE['Username'];
+		setcookie('Username', null, -1, '/');
+		setcookie($cookie_name, $cookie_value, time() + (10), "/"); 
 		header("Location:profile_set.php");
     }
   }

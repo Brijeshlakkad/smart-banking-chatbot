@@ -1,4 +1,5 @@
 <?php include_once("header.php"); ?>
+<?php check_session(); ?>
 <div class="jumbotron well back-pic" style="padding:0px;height:600px;width:100%;position: absolute;z-index: -100;">
 	
 </div>
