@@ -13,7 +13,7 @@ def find_customer_files(username):
 def find_customer_files(username):
 	root="customer_images"
 	listOfFiles = os.listdir(os.path.join(root,username))
-	patterns = ["pngs","jpeg","jpg"]  
+	patterns = ["png","jpeg","jpg"]  
 	for entry in listOfFiles:  
 		for p in patterns:
 			if entry.endswith(p):
