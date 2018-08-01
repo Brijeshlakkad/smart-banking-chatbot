@@ -30,11 +30,12 @@ def reload_chats(user_id,email_id):
 			text=row[3]
 			datetime=row[4]
 			time=datetime.strftime('%H : %M')
-			if int(to_id)!=0:
-				name=customer_details.get_any_value(email_id,"username")
+			name=customer_details.get_any_value(email_id,"username")
+			profile_pic=customer_details.get_any_document(name,"profile_pic")
+			if int(to_id)!=0 or from_id==0:
 				reload_mess+="""<li id='%s' class="mess"><div><img src="images/jon-cart.jpg" alt="You" style="width:100%%;"><p class="text-left">%s</p><br/><span class="time-right">%s</span></div></li><br/>"""%(chat_id,text,time)
 			else:
-				reload_mess+="""<li id='%s' class='mess'><div><img src="images/jon-cart.jpg" alt="Jon" class="right" style="width:100%%;"><p class="text-right">%s</p><br/><span class="time-left">%s</span></div></li><br/>"""%(chat_id,text,time)
+				reload_mess+="""<li id='%s' class='mess'><div><img src="%s" alt="Jon" class="right" style="height:50px;"><p class="text-right">%s</p><br/><span class="time-left">%s</span></div></li><br/>"""%(chat_id,profile_pic,text,time)
 		return reload_mess
 	except:
 		return "error"
