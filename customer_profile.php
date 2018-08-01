@@ -11,11 +11,11 @@ else{
 <div class="container" id="show_here" align="center">
 	<div class="row"  ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
 	{{username}}
+	<img src="" />
 	</div>
 </div>
 <script>
 var myApp = angular.module("myapp", []);
-	
 	myApp.controller("BrijController", function($scope,$http) {
 		$scope.genderOptions = [
 				"Male","Female","Other"
@@ -102,6 +102,27 @@ var myApp = angular.module("myapp", []);
 			$scope.created_time= val;
 		};
 		$scope.get_any_value("created_time",userid,set_val_created_time);
+		$scope.get_any_doc=function(f,user,callback)
+		{
+			$http({
+				method : "POST",
+				url : "customer_interface.py",
+				data: "get_document="+f+"&userid="+user,
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			}).then(function mySuccess(response) {
+				callback(response.data);
+			}, function myError(response) {
+			});
+			
+		};
+		var set_val_file=function(val){
+			$scope.file_path= val;
+		};
+		$scope.get_any_doc("file",userid,set_val_file);
+		var set_val_profile_pic=function(val){
+			$scope.profile_pic_path= val;
+		};
+		$scope.get_any_doc("profile_pic",userid,set_val_profile_pic);
 	});
 </script>
 <?php

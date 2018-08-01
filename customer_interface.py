@@ -19,6 +19,12 @@ if form.getvalue('get_data_id') and form.getvalue('userid'):
 	get_data_id=security.protect_data(form.getvalue('get_data_id'))
 	got_it=customer_details.get_any_value_by_id(userid,get_data_id)
 	print("%s"%got_it)
+if form.getvalue('get_document') and form.getvalue('userid'):
+	userid = security.protect_data(form.getvalue('userid'))
+	username=customer_details.get_any_value_by_id(userid,"username")
+	get_document=security.protect_data(form.getvalue('get_document'))
+	got_it=customer_details.get_any_document(username,get_document)
+	print("%s"%got_it)
 if form.getvalue('update_account_details'):
 	username=security.protect_data(form.getvalue('update_account_details'))
 	email = security.protect_data(form.getvalue('s_email'))

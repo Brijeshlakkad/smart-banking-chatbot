@@ -4,6 +4,7 @@ import cgi, cgitb
 import sys
 import os
 import config
+import find_file
 class customer:
 	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender
 	def customer_details(self,user):
@@ -149,3 +150,6 @@ def get_any_value_by_id(userid,f):
 		return c.created_time
 	else: 
 		return 0
+
+def get_any_document(username,doc):
+	return find_file.find_customer_get_file(username,doc)
