@@ -11,7 +11,7 @@ else{
 <div class="container" id="show_here" align="center">
 	<div class="row"  ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
 	{{username}}
-	<img src="" />
+	<img src="{{profile_pic_path}}" />
 	</div>
 </div>
 <script>
@@ -25,7 +25,7 @@ var myApp = angular.module("myapp", []);
 		{
 			$http({
 				method : "POST",
-				url : "customer_interface.py",
+				url : "admin_interface.py",
 				data: "get_data_id="+f+"&userid="+user,
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 			}).then(function mySuccess(response) {
@@ -106,7 +106,7 @@ var myApp = angular.module("myapp", []);
 		{
 			$http({
 				method : "POST",
-				url : "customer_interface.py",
+				url : "admin_interface.py",
 				data: "get_document="+f+"&userid="+user,
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 			}).then(function mySuccess(response) {
