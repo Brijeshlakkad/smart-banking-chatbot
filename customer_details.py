@@ -7,6 +7,7 @@ import config
 import find_file
 class customer:
 	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender
+	global created_time,jon,hasAcc
 	def customer_details(self,user):
 		sql="select * from customers where email='%s'"%user
 		conn,cursor=config.connect_to_database()
@@ -30,11 +31,15 @@ class customer:
 				self.pincode=row[13]
 				self.dob=row[14]
 				self.gender=row[15]
+				self.created_time=row[17]
+				self.jon=row[18]
+				self.hasAcc=row[19]
 		except:
 			print("Error")
 		conn.close()
 class customer_by_id:
-	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender,created_time,jon,hasAcc
+	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender
+	global created_time,jon,hasAcc
 	def customer_details(self,userid):
 		sql="select * from customers where cid='%s'"%userid
 		conn,cursor=config.connect_to_database()

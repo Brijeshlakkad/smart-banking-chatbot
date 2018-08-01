@@ -8,7 +8,7 @@
 
 			<div class="tab">
 		  	  <button class="tablinks" onclick="openCity(event, 'per_acc_details')" id="defaultOpen">Personal Account Details</button>
-			  <button class="tablinks" onclick="openCity(event, 'bank_acc_details')" id="defaultOpen">Bank Account Details</button>
+			  <button class="tablinks" onclick="openCity(event, 'bank_acc_details')">Bank Account Details</button>
 			  <button class="tablinks" onclick="openCity(event, 'change_password')">Change Password</button>
 			  <button class="tablinks" onclick="openCity(event, 'billing_details')">Billing Details</button>
 			</div>
@@ -72,6 +72,7 @@
 						</span>
 						</td>
 						</tr>
+						</div>
 						<div class="form-group">
 						<tr>
 						<td><label for="s_mobile">Contact number:</label><br></td>
@@ -84,6 +85,12 @@
 						</td>
 						</tr>
 						</div>
+						<div class="form-group">
+						<tr>
+							<td><label for="dob">DOB</label></td>
+							<td>{{dob}}</td>
+							<td></td>
+						</tr>
 						</div>
 						<div class="form-group">
 							<tr>
@@ -96,8 +103,35 @@
 			  </div>
 			</div>
 			</form>
+			<div id="bank_acc_details" class="tabcontent">
+			  <h3>Bank Account Details</h3>
+			  <div class="row" ng-if="hasAcc==1">
+			  	<table class="myTable table-striped">
+			  		<tr>
+			  			<td>Account Number:</td>
+			  			<td></td>
+			  		</tr>
+			  		<tr>
+			  			<td>Account Type:</td>
+			  			<td></td>
+			  		</tr>
+			  		<tr>
+			  			<td>Balance:</td>
+			  			<td></td>
+			  		</tr>
+			  	</table>
+			  </div>
+			  <div class="row" ng-if="hasAcc==0">
+			  	<div class="alert alert-warning" style="margin: 10px;">Pending</div>
+			  	<div class="row" style="margin: 10px;">(Your account is not verified yet.)</div>
+			  </div>
+			  <div class="row" ng-if="hasAcc==-1">
+			  	<div class="alert alert-danger" style="margin: 10px;">Rejected</div>
+			  	<div class="row" style="margin: 10px;">(Your account is rejected at verification process.)</div>
+			  </div>
+			</div>
+			<form name="myForm2">
 			<div id="change_password" class="tabcontent">
-		  	<form name="myForm2">
 			  <h3>Change Password</h3>
 			  <div class="row">
 		  			<table class="myTable">
@@ -149,8 +183,84 @@
 			  </div>
 			</div>
 			<div id="billing_details" class="tabcontent">
-			  <h3>Billing Details</h3>
-			  <p>Tokyo is the capital of Japan.</p>
+			  <form name="bill_form" novalidate>
+			  	<table class="myTable">
+					<div class="form-group">
+					<tr>
+					<td><label for="postal_add">Postal Address</label><br></td>
+					<td><input type="text" class="form-control" name="postal_add" placeholder="Enter postaladd" ng-model="postal_add"  ng-style="postaladdStyle" ng-change="analyze9(postal_add)" required address-dir></td>
+					<td>
+					<span style="color:red" id="postal_add" ng-show="bill_form.postal_add.$dirty && bill_form.postal_add.$invalid">
+					<span ng-show="bill_form.postal_add.$error.required">Postal address is required</span>
+					<span ng-show="!bill_form.postal_add.$error.required && bill_form.postal_add.$error.addressvalid">Do not use unused character.</span>
+					<span ng-show="!bill_form.postal_add.$error.required && bill_form.postal_add.$error.addresslengthvalid">Enter more details so we can understand</span>
+					</span>
+					</td>
+					</tr>
+					</div>
+					<div class="form-group">
+					<tr>
+					<td><label for="perm_add">Permanent Address</label><br></td>
+					<td><input type="text" class="form-control" name="perm_add" placeholder="Enter permadd" ng-model="perm_add"  ng-style="permaddStyle" ng-change="analyze10(perm_add)" required address-dir></td>
+					<td><input type="checkbox" name="same_as" id="same_as" ng-model="same_as" ng-change="address_fun()" /> Same as above
+					<span style="color:red" id="perm_add" ng-show="bill_form.perm_add.$dirty && bill_form.perm_add.$invalid">
+					<span ng-show="bill_form.perm_add.$error.required">Permanent address is required</span>
+					<span ng-show="!bill_form.perm_add.$error.required && bill_form.perm_add.$error.addressvalid">Do not use unused character.</span>
+					<span ng-show="!bill_form.perm_add.$error.required && bill_form.perm_add.$error.addresslengthvalid">Enter more details so we can understand</span>
+					</span>
+					</td>
+					</tr>
+					</div>
+					<div class="form-group">
+					<tr>
+					<td><label for="pincode">Pincode:</label><br></td>
+					<td><input type="text" class="form-control" name="pincode" placeholder="Enter pincode name" ng-model="pincode"  ng-style="pincodeStyle" ng-change="analyze14(pincode)" required  pincode-dir></td>
+					<td>
+					<span style="color:red" id="pincode" ng-show="bill_form.pincode.$dirty && bill_form.pincode.$invalid">
+							<span ng-show="bill_form.pincode.$error.required">Pincode is required</span>
+							<span ng-show="!bill_form.pincode.$error.required && bill_form.pincode.$error.pincodevalid">Invalid pincode</span>
+					</span>
+					</td>
+					</tr>
+					</div>
+					<div class="form-group">
+					<tr>
+					<td><label for="city">City:</label><br></td>
+					<td><input type="text" class="form-control" name="city" placeholder="Enter city name" ng-model="city"  ng-style="cityStyle" ng-change="analyze11(city)" required  names-dir></td>
+					<td>
+					<span style="color:red" id="city" ng-show="bill_form.city.$dirty && bill_form.city.$invalid">
+					<span ng-show="bill_form.city.$error.required">City is required</span>
+					<span ng-show="!bill_form.city.$error.required && bill_form.city.$error.namesvalid">Enter only characters</span>
+					</span>
+					</td>
+					</tr>
+					</div>
+					<div class="form-group">
+					<tr>
+					<td><label for="state">State:</label><br></td>
+					<td><input type="text" class="form-control" name="state" placeholder="Enter state name" ng-model="state"  ng-style="stateStyle" ng-change="analyze12(state)" required  names-dir></td>
+					<td>
+					<span style="color:red" id="state" ng-show="bill_form.state.$dirty && bill_form.state.$invalid">
+					<span ng-show="bill_form.state.$error.required">State is required</span>
+					<span ng-show="!bill_form.state.$error.required && bill_form.state.$error.namesvalid">Enter only characters</span>
+					</span>
+					</td>
+					</tr>
+					</div>
+					<div class="form-group">
+					<tr>
+					<td><label for="country">Country:</label><br></td>
+					<td><input type="text" class="form-control" name="country" placeholder="Enter country name" ng-model="country"  ng-style="countryStyle" ng-change="analyze13(country)" required  names-dir></td>
+					<td>
+					<span style="color:red" id="country" ng-show="bill_form.country.$dirty && bill_form.country.$invalid">
+					<span ng-show="bill_form.country.$error.required">Country is required</span>
+					<span ng-show="!bill_form.country.$error.required && bill_form.country.$error.namesvalid">Enter only characters</span>
+					</span>
+					</td>
+					</tr>
+					</div>
+				</table>
+			  </form>
 			</div>
 			</form>
 		</div>
@@ -233,6 +343,50 @@ $(document).on({
 			$scope.s_mobile= val;
 		};
 		$scope.get_any_value("contact",userid,set_val_contact);
+		var set_val_postal_add=function(val){
+			$scope.postal_add= val;
+		};
+		$scope.get_any_value("postal_add",userid,set_val_postal_add);
+		var set_val_perm_add=function(val){
+			$scope.perm_add= val;
+		};
+		$scope.get_any_value("perm_add",userid,set_val_perm_add);
+		var set_val_city=function(val){
+			$scope.city= val;
+		};
+		$scope.get_any_value("city",userid,set_val_city);
+		var set_val_state=function(val){
+			$scope.state= val;
+		};
+		$scope.get_any_value("state",userid,set_val_state);
+		var set_val_country=function(val){
+			$scope.country= val;
+		};
+		$scope.get_any_value("country",userid,set_val_country);
+		var set_val_pincode=function(val){
+			$scope.pincode= val;
+		};
+		$scope.get_any_value("pincode",userid,set_val_pincode);
+		var set_val_gender=function(val){
+			$scope.gender= val;
+		};
+		$scope.get_any_value("gender",userid,set_val_gender);
+		var set_val_dob=function(val){
+			$scope.dob= val;
+		};
+		$scope.get_any_value("dob",userid,set_val_dob);
+		var set_val_hasAcc=function(val){
+			$scope.hasAcc= val;
+		};
+		$scope.get_any_value("hasAcc",userid,set_val_hasAcc);
+		var set_val_jon=function(val){
+			$scope.jon= val;
+		};
+		$scope.get_any_value("jon",userid,set_val_jon);
+		var set_val_created_time=function(val){
+			$scope.created_time= val;
+		};
+		$scope.get_any_value("created_time",userid,set_val_created_time);
 		$scope.maxd = new Date() ;
                 var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
                 var mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
@@ -454,9 +608,9 @@ $(document).on({
                 };
 		$scope.address_fun = function() {
 			if($scope.same_as)
-				$scope.s_permadd=$scope.s_postaladd;
+				$scope.perm_add=$scope.postal_add;
 			else
-				$scope.s_permadd="";
+				$scope.perm_add="";
 		};
 		$scope.check_part2 = function() {
 			
