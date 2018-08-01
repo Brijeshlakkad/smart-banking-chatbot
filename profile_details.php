@@ -108,16 +108,26 @@
 			  <div class="row" ng-if="hasAcc==1">
 			  	<table class="myTable table-striped">
 			  		<tr>
+			  			<td>Account Name:</td>
+			  			<td>{{acc_name}}</td>
+			  		</tr>
+			  		<tr>
 			  			<td>Account Number:</td>
-			  			<td></td>
+			  			<td>{{acc_no}}</td>
 			  		</tr>
 			  		<tr>
 			  			<td>Account Type:</td>
-			  			<td></td>
+			  			<td>{{acc_type}}</td>
 			  		</tr>
 			  		<tr>
 			  			<td>Balance:</td>
-			  			<td></td>
+			  			<td ng-if="passcode==-99 || passcode.length==0">You have not geneated your passcode <small>(Click below button)</small></td>
+			  			<td ng-if="passcode!=-99 && passcode.length!=0"><button class="btn btn-primary btn-sm" id="change_pass" ng-click="change_passcode">View Balance</button></td>
+			  		</tr>
+			  		<tr>
+			  			<td>Passcode:</td>
+			  			<td ng-if="passcode==-99 || passcode.length==0"><button class="btn btn-default btn-sm" id="get_pass" ng-click="get_passcode()">Get Passcode</button></td>
+			  			<td ng-if="passcode!=-99 && passcode.length!=0"><button class="btn btn-primary btn-sm" id="change_pass" ng-click="change_passcode">Change Passcode</button></td>
 			  		</tr>
 			  	</table>
 			  </div>
@@ -290,6 +300,18 @@
       </div>
     </div>
 </div>
+<div class="modal fade" id="get_passcode_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div class="alert alert-success">You'll get your first passcode through email. (check your email)</div>
+        </div>
+      </div>
+    </div>
+</div>
 <div class="please_wait_modal"></div>
 <script>
 $body = $("body");
@@ -387,6 +409,39 @@ $(document).on({
 			$scope.created_time= val;
 		};
 		$scope.get_any_value("created_time",userid,set_val_created_time);
+		$scope.get_acc_details=function(f,user,callback)
+		{
+			$http({
+				method : "POST",
+				url : "customer_interface.py",
+				data: "get_acc_details="+f+"&user="+user,
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			}).then(function mySuccess(response) {
+				callback(response.data);
+			}, function myError(response) {
+			});
+			
+		};
+		var set_val_acc_no=function(val){
+			$scope.acc_no= val;
+		};
+		$scope.get_acc_details("acc_no",userid,set_val_acc_no);
+		var set_val_acc_name=function(val){
+			$scope.acc_name= val;
+		};
+		$scope.get_acc_details("acc_name",userid,set_val_acc_name);
+		var set_val_acc_type=function(val){
+			$scope.acc_type= val+" account";
+		};
+		$scope.get_acc_details("acc_type",userid,set_val_acc_type);
+		var set_val_balance=function(val){
+			$scope.balance= val+" $";
+		};
+		$scope.get_acc_details("balance",userid,set_val_balance);
+		var set_val_passcode=function(val){
+			$scope.passcode= val;
+		};
+		$scope.get_acc_details("passcode",userid,set_val_passcode);
 		$scope.maxd = new Date() ;
                 var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
                 var mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
@@ -638,6 +693,30 @@ $(document).on({
 										$("#error_modal").modal("show");
 										$("#status_part2").empty();
 									}
+							}, function myError(response) {
+								$("#error_modal").modal("show");
+								$("#status_part2").empty();
+							});
+               };
+		$scope.get_passcode = function() {
+							$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "get_passcode="+userid,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag==11)
+									{
+										$("#get_passcode_modal").modal("show");
+										setTimeout(function(){
+											$("#get_passcode_modal").modal("hidden");
+										},200);
+									}
+								else{
+									$("#error_modal").modal("show");
+									$("#status_part2").empty();
+								}
 							}, function myError(response) {
 								$("#error_modal").modal("show");
 								$("#status_part2").empty();

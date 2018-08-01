@@ -25,6 +25,15 @@ if form.getvalue('get_document') and form.getvalue('userid'):
 	get_document=security.protect_data(form.getvalue('get_document'))
 	got_it=customer_details.get_any_document(username,get_document)
 	print("%s"%got_it)
+if form.getvalue('get_acc_details') and form.getvalue('user'):
+	user = security.protect_data(form.getvalue('user'))
+	get_acc_details=security.protect_data(form.getvalue('get_acc_details'))
+	got_it=customer_details.get_account_details_by_user(user,get_acc_details)
+	print("%s"%got_it)
+if form.getvalue('get_passcode'):
+	user = security.protect_data(form.getvalue('get_passcode'))
+	flag_bit=customer_details.generate_customer_passcode(user)
+	print("%s"%flag_bit)
 if form.getvalue('update_account_details'):
 	username=security.protect_data(form.getvalue('update_account_details'))
 	email = security.protect_data(form.getvalue('s_email'))
