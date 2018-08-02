@@ -3,18 +3,19 @@
 <link rel="stylesheet" type="text/css" href="css/vertical_tab.css" />
 <div ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
 <div class="container-fluid my_well">
-	<div class="row" align="center">
-		<h2 class="c_profile_header">Personal Settings</h2>
+	<div class="row">
+		<h2 class="c_profile_header" align="center">Personal Settings</h2>
 		<div class="row">
 
 			<div class="tab">
 		  	  <button class="tablinks" onclick="openCity(event, 'per_acc_details')" id="defaultOpen">Personal Account Details</button>
 			  <button class="tablinks" onclick="openCity(event, 'bank_acc_details')">Bank Account Details</button>
+			  <button class="tablinks" onclick="openCity(event, 'acc_services')">Account Services</button>
 			  <button class="tablinks" onclick="openCity(event, 'change_password')">Change Password</button>
 			  <button class="tablinks" onclick="openCity(event, 'billing_details')">Billing Details</button>
 			</div>
-			<form name="myForm"  novalidate>
-			<div id="per_acc_details" class="tabcontent">
+			<div id="per_acc_details" class="tabcontent" align="center">
+		  	<form name="myForm"  novalidate>
 			  <h3>Personal Account Details</h3>
 			  <div class="row">
 			  	<table class="myTable">
@@ -102,9 +103,9 @@
 						</div>
 				  </table>
 			  </div>
+			  </form>
 			</div>
-			</form>
-			<div id="bank_acc_details" class="tabcontent">
+			<div id="bank_acc_details" class="tabcontent" align="center">
 			  <h3>Bank Account Details</h3>
 			  <div class="row" ng-if="hasAcc==1">
 			  	<table class="myTable table-striped">
@@ -141,8 +142,16 @@
 			  	<div class="row" style="margin: 10px;">(Your account is rejected at verification process.)</div>
 			  </div>
 			</div>
-			<form name="myForm2">
-			<div id="change_password" class="tabcontent">
+			<div id="acc_services" class="tabcontent">
+				<div class="row" style="margin: 40px;font-size: 17px;">
+				<table class="myTable table-striped">
+				<tr><td>Jon Service: </td><td><span ng-if="jon==0" style="color: orange;">Not started yet</span><span ng-if="jon==1" style="color: green;">activated</span><span ng-if="jon==-1" style="color: red;">Deactivated</span></td></tr>
+				<tr><td></td><td ng-if="jon==1"><button class="btn" id="jon_deactive" ng-click="jon_service(-1)" style="border-style: double;border-width: 5px;border-color:#C72F32;">Deactive Service</button></td><td ng-if="jon==0 || jon==-1"><button class="btn" id="jon_active" ng-click="jon_service(1)" style="border-style: double;border-width: 5px;border-color:#22520A;">Active Service</button></td></tr>
+				</table>
+				</div>
+			</div>
+			<div id="change_password" class="tabcontent" align="center">
+		 	<form name="myForm2">
 			  <h3>Change Password</h3>
 			  <div class="row">
 		  			<table class="myTable">
@@ -192,8 +201,9 @@
 						</div>
 					</table>
 			  </div>
+			</form>
 			</div>
-			<div id="billing_details" class="tabcontent">
+			<div id="billing_details" class="tabcontent" align="center">
 			  <form name="bill_form" novalidate>
 			  	<table class="myTable">
 					<div class="form-group">
@@ -273,7 +283,6 @@
 				</table>
 			  </form>
 			</div>
-			</form>
 		</div>
 	</div>
 </div>
@@ -364,7 +373,7 @@
 </div>
 </div>
 
-<div class="please_wait_modal"></div>
+<div class="please_wait_modal" style="border-style: "></div>
 
 <script>
 $body = $("body");
@@ -372,7 +381,6 @@ $(document).on({
     ajaxStart: function() { $body.addClass("loading");    },
      ajaxStop: function() { $body.removeClass("loading"); }    
 });
-
 	var myApp = angular.module("myapp", []);
 	
 	myApp.controller("BrijController", function($scope,$http) {
@@ -839,6 +847,29 @@ $(document).on({
 					$("#passcode_matching_error").html('Passcodes do not match.').removeClass("hide").show();
 				}
 		};
+		$scope.jon_service=function(bit)
+		{
+					$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "jon_service="+bit+"&user="+userid,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag==11)
+									{
+										$("#success_service_modal").modal("show");
+										setTimeout(function(){
+											$("#success_service_modal").modal("hidden");
+										},200);
+									}
+								else{
+									$("#error_modal").modal("show")
+								}
+							}, function myError(response) {
+								$("#error_modal").modal("show");
+							});
+		}
 		
 });
 myApp.directive('passcodeDir', function() {

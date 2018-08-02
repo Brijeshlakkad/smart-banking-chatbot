@@ -3,7 +3,7 @@ import cgi, cgitb
 import sys
 import security
 import customer_details
-import update_customer_details
+import customer_details
 import feedback_modules
 import jon_snow_brain
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
@@ -46,7 +46,7 @@ if form.getvalue('update_account_details'):
 	fname = security.protect_data(form.getvalue('s_fname'))
 	lname = security.protect_data(form.getvalue('s_lname'))
 	middle_name = security.protect_data(form.getvalue('s_middlename'))
-	flag_bit=update_customer_details.update_account_details(username,email,contact,fname,lname,middle_name)
+	flag_bit=customer_details.update_account_details(username,email,contact,fname,lname,middle_name)
 	print("%s"%flag_bit)
 if form.getvalue('change_password'):
 	user=security.protect_data(form.getvalue('user'))
@@ -56,7 +56,7 @@ if form.getvalue('change_password'):
 	if old_password==new_password:
 		flag_bit=-1
 	elif got_old_password==old_password:
-		flag_bit=update_customer_details.update_password(user,new_password)
+		flag_bit=customer_details.update_password(user,new_password)
 	else:
 		flag_bit=-99
 	print("%s"%flag_bit)
@@ -70,14 +70,18 @@ if form.getvalue('feedback') and form.getvalue('email'):
 	print("%s"%flag_bit)
 if form.getvalue("check_service"):
 	check=security.protect_data(form.getvalue("check_service"))
-	flag_bit=update_customer_details.check_service(check)
+	flag_bit=customer_details.check_service(check)
 	print("%s"%flag_bit)
 if form.getvalue("start_service"):
 	check=security.protect_data(form.getvalue("start_service"))
 	jon=1
-	flag_bit=update_customer_details.start_service(jon,check)
+	flag_bit=customer_details.start_service(jon,check)
 	print("%s"%flag_bit)
-	
+if form.getvalue("jon_service") and form.getvalue("user"):
+	bit=security.protect_data(form.getvalue("jon_service"))
+	user=security.protect_data(form.getvalue("user"))
+	flag_bit=customer_details.jon_service(bit,user)
+	print("%s"%flag_bit)
 if form.getvalue("message") and form.getvalue("user"):
 	text=security.protect_data(form.getvalue("message"))
 	user=security.protect_data(form.getvalue("user"))
