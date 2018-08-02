@@ -34,6 +34,11 @@ if form.getvalue('get_passcode'):
 	user = security.protect_data(form.getvalue('get_passcode'))
 	flag_bit=customer_details.generate_customer_passcode(user)
 	print("%s"%flag_bit)
+if form.getvalue('change_passcode') and form.getvalue('user'):
+	change_passcode = security.protect_data(form.getvalue('change_passcode'))
+	user = security.protect_data(form.getvalue('user'))
+	flag_bit=customer_details.change_customer_passcode(change_passcode,user)
+	print("%s"%flag_bit)
 if form.getvalue('update_account_details'):
 	username=security.protect_data(form.getvalue('update_account_details'))
 	email = security.protect_data(form.getvalue('s_email'))

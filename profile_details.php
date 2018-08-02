@@ -313,6 +313,18 @@
       </div>
     </div>
 </div>
+<div class="modal fade" id="success_passcode_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div class="alert alert-success">Passcode changed successfully.</div>
+        </div>
+      </div>
+    </div>
+</div>
 <div class="modal fade" id="view_balance_modal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -331,7 +343,27 @@
       </div>
     </div>
 </div>
+<div class="modal fade" id="open_change_passcode_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3>Enter passcode to see balance:</h3>
+        </div>
+        <div class="modal-body">
+        <div class="row">
+        <form name="change_passcode_form" novalidate><div id="passcode_matching_error" class="alert alert-danger hide" align="center"></div>
+        <div class="form-group col-lg-offset-4 col-lg-4 col-lg-offset-4">
+        	<input class="form-control" type="password" name="reset_passcode" id="reset_passcode" autocomplete="off" placeholder="Enter passcode" ng-model="reset_passcode" required passcode-dir/><br/>
+        	<input class="form-control" type="password" name="reset_cpasscode" id="reset_cpasscode" autocomplete="off" placeholder="Confirm passcode" ng-model="reset_cpasscode" required passcode-dir/><br/>
+        	<button type="submit" class="btn btn-primary" id="got_reset_pass" ng-click="got_reset_passcode(reset_passcode)" ng-disabled="change_passcode_form.reset_passcode.$invalid || change_passcode_form.reset_cpasscode.$invalid" >Change Passcode</button>
+        </div>
+        </form>
+        </div>
+        </div>
+      </div>
+    </div>
 </div>
+</div>
+
 <div class="please_wait_modal"></div>
 
 <script>
@@ -767,6 +799,45 @@ $(document).on({
 				$scope.got_permission=false;
 			}
 			$scope.view_bal_pass="";
+		};
+		$scope.change_passcode=function()
+		{
+			$scope.view_bal_pass="";
+			$scope.reset_passcode="";
+			$scope.reset_cpasscode="";
+			$("#open_change_passcode_modal").modal("show");
+		};
+		$scope.got_reset_passcode=function(value)
+		{
+			$scope.view_bal_pass="";
+			if($scope.reset_passcode==$scope.reset_cpasscode)
+				{
+			
+			value=value.trim();
+			$("#open_change_passcode_modal").modal("hide");
+						$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "change_passcode="+value+"&user="+userid,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag==11)
+									{
+										$("#success_passcode_modal").modal("show");
+										setTimeout(function(){
+											$("#success_passcode_modal").modal("hidden");
+										},200);
+									}
+								else{
+									$("#error_modal").modal("show")
+								}
+							}, function myError(response) {
+								$("#error_modal").modal("show");
+							});
+				}else{
+					$("#passcode_matching_error").html('Passcodes do not match.').removeClass("hide").show();
+				}
 		};
 		
 });

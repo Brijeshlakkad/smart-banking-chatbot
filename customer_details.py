@@ -99,7 +99,7 @@ class customer_account:
 class Mail:
 	USERNAME = private_data.admin_email
 	PASSWORD = private_data.admin_password
-	def send_passcode(self,user,contact,passcode):
+	def send_passcode(self,user,contact,passcode,sub):
 		SMTPserver = 'smtp.gmail.com'
 		sender =    private_data.admin_email
 		destination = user
@@ -110,7 +110,7 @@ class Mail:
 		<p>Your passcode for registered contact number %s account is <h2>%s</h2> </p>
 			 <br> \
 		""" % (contact,passcode)
-		subject="First Time Generated Passcode"
+		subject=sub
 		try:
 			msg = MIMEText(content, text_subtype)
 			msg['Subject']= subject
@@ -265,16 +265,31 @@ def generate_customer_passcode(user):
 	contact=get_any_value(user,"contact")
 	m=Mail()
 	ran_passcode = ''.join([random.choice(string.digits) for n in xrange(6)])
+	sub="First Time Generated Passcode"
 	sql="update accounts SET passcode='%s' where c_id='%s'"%(ran_passcode,userid)
 	conn,cursor=config.connect_to_database()
 	try:
 		cursor.execute(sql)
-		if str(m.send_passcode(user,contact,ran_passcode))=="11":
+		if str(m.send_passcode(user,contact,ran_passcode,sub))=="11":
 			conn.commit()
 			return "11"
 		else:
 			conn.rollback()
-			return "0n"
+			return "0"
+	except:
+		conn.rollback()
+		return "0"
+	finally:
+		conn.close()
+def change_customer_passcode(change_passcode,user):
+	conn,cursor=config.connect_to_database()
+	userid=get_any_value(user,"cid")
+	sql="update accounts SET passcode='%s' where c_id='%s'"%(change_passcode,userid)
+	conn,cursor=config.connect_to_database()
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return "11"
 	except:
 		conn.rollback()
 		return "0"
