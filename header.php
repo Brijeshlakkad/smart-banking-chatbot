@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jon Assistant</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="css/custom3.css" rel="stylesheet" media="screen">
+	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/please_wait.css" />
@@ -28,13 +28,7 @@ $(document).on({
 <div class="please_wait_modal"></div>
 
 <style>
-	.custom_nav{
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		width: 100%;
-	}
+	
 </style>
 <?php 
 	if(is_admin_logged_in())

@@ -1,0 +1,76 @@
+.remove-text-deco:hover{
+    text-decoration: none;
+}
+.c-social-media{
+	font-size: 10px;
+}
+.dropdown-custom {
+    position: relative;
+    display: inline-block;
+	color: red;
+}
+/* login block */
+.myTable td {
+    padding: 10px;
+}
+.login_block
+{
+	margin-top: 50px;
+}
+.well2
+{
+	background-color:rgba(110,110,110,0.2);
+}
+.jon_header{
+	font-family:"alfa-slab-one";
+	font-size: 30px;
+}
+.my_well
+{
+	margin-top: 50px;
+	margin: 20px;
+}
+.blurclass
+{
+	background: url(../images/ai1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.back-pic
+{
+	background: url(../images/ai1.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+.customerTable td{
+	margin: 30px;
+	padding: 30px;
+}
+.div_link{
+	color:rgba(40,40,40,1.00);
+	text-decoration: none;
+}
+.div_link:hover{
+	color:rgba(40,40,40,1.00);
+	text-decoration: none;
+}
+.div_link:visited{
+	color:rgba(40,40,40,1.00);
+	text-decoration: none;
+}
+.div_link:active{
+	color:rgba(40,40,40,1.00);
+	text-decoration: none;
+}
+.div_link:link{
+	color:rgba(40,40,40,1.00);
+}
