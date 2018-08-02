@@ -123,7 +123,7 @@
 			  		<tr>
 			  			<td>Balance:</td>
 			  			<td ng-if="passcode==-99 || passcode.length==0">You have not geneated your passcode <small>(Click below button)</small></td>
-						<td ng-if="passcode!=-99 && passcode.length!=0" ><span ng-if="wrong_passcode">Try again! after 10 seconds.<small>(wrong passcode)</small></span><span ng-if="got_permission" id="view_bal"></span><span ng-if="view_bal_permission"><button class="btn btn-primary btn-sm"  ng-click="view_balance()">View Balance</button></span></td>
+						<td ng-if="passcode!=-99 && passcode.length!=0" ><span ng-if="wrong_passcode">Try again! <small>(wrong passcode)  </small></span><span ng-if="got_permission" id="view_bal">{{show_balance}}</span><span ng-if="view_bal_permission"><button class="btn btn-primary btn-sm"  ng-click="view_balance()">View Balance</button></span></td>
 			  		</tr>
 			  		<tr>
 			  			<td>Passcode:</td>
@@ -753,20 +753,22 @@ $(document).on({
 		$scope.got_bal_passcode=function(value){
 			$("#view_balance_modal").modal("hide");
 			var btn_view_bal='<button class="btn btn-primary btn-sm"  ng-click="view_balance()">View Balance</button>';
-			if($scope.passcode==value)
+			var cust_passcode=$scope.passcode;
+			if(cust_passcode.trim()===value.trim())
 				{
-					var balance=$scope.balance;
 					$scope.wrong_passcode=false;
 					$scope.view_bal_permission=false;
 					$scope.got_permission=true;
-					$("#view_bal").html(balance);
+					$scope.show_balance=$scope.balance;
 				}
 			else{
 				$scope.wrong_passcode=true;
-				$scope.view_bal_permission=false;
+				$scope.view_bal_permission=true;
 				$scope.got_permission=false;
 			}
+			$scope.view_bal_pass="";
 		};
+		
 });
 myApp.directive('passcodeDir', function() {
 				return {
