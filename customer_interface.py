@@ -94,3 +94,8 @@ if form.getvalue("reload_messages"):
 	get_id=customer_details.get_any_value(user,"cid")
 	flag_bit=jon_snow_brain.reload_chats(get_id,user)
 	print("%s"%flag_bit)
+if form.getvalue("how_many_cards"):
+	user=security.protect_data(form.getvalue("how_many_cards"))
+	userid=customer_details.get_any_value(user,"cid")
+	flag_bit=customer_details.how_many_cards(userid)
+	print("%s"%flag_bit)

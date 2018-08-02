@@ -147,6 +147,10 @@
 				<table class="myTable table-striped">
 				<tr><td>Jon Service: </td><td><span ng-if="jon==0" style="color: orange;">Not started yet</span><span ng-if="jon==1" style="color: green;">activated</span><span ng-if="jon==-1" style="color: red;">Deactivated</span></td></tr>
 				<tr><td></td><td ng-if="jon==1"><button class="btn" id="jon_deactive" ng-click="jon_service(-1)" style="border-style: double;border-width: 5px;border-color:#C72F32;">Deactive Service</button></td><td ng-if="jon==0 || jon==-1"><button class="btn" id="jon_active" ng-click="jon_service(1)" style="border-style: double;border-width: 5px;border-color:#22520A;">Active Service</button></td></tr>
+				<tr>
+					<td>Cards:</td>
+					<td><span ng-if="num_cards==0" class="alert alert-danger">You have not requested any cards yet.</span></td>
+				</tr>
 				</table>
 				</div>
 			</div>
@@ -777,6 +781,7 @@ $(document).on({
 								$("#status_part2").empty();
 							});
                };
+		
 		$scope.got_permission=false;
 		$scope.wrong_passcode=false;
 		$scope.view_bal_permission=true;
@@ -837,6 +842,7 @@ $(document).on({
 				}else{
 					$("#passcode_matching_error").html('Passcodes do not match.').removeClass("hide").show();
 				}
+			
 		};
 		$scope.jon_service=function(bit)
 		{
@@ -872,7 +878,28 @@ $(document).on({
 							}, function myError(response) {
 								$("#error_modal").modal("show");
 							});
-		}
+		};
+		$scope.how_many_cards = function() {
+							$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "how_many_cards="+userid,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag!="-99")
+									{
+										$scope.num_cards=response.data;
+									}
+								else{
+									$("#error_modal").modal("show");
+									$("#status_part2").empty();
+								}
+							}, function myError(response) {
+								$("#error_modal").modal("show");
+								$("#status_part2").empty();
+							});
+               };
 		
 });
 myApp.directive('passcodeDir', function() {

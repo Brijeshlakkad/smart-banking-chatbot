@@ -95,6 +95,28 @@ class customer_account:
 		except:
 			print("Error")
 		conn.close()
+class customer_card:
+	global card_id,c_id,acc_id,holder_name,till_month,till_year,cvv,card_type,card_no
+	def card_details(self,acc_id):
+		sql="select * from cards where acc_id='%s'"%acc_id
+		conn,cursor=config.connect_to_database()
+		try:
+			cursor.execute(sql)
+			results=cursor.fetchall()
+			for row in results:
+				self.card_id=row[0]
+				self.c_id=row[1]
+				self.acc_id=row[2]
+				self.holder_name=row[2]
+				self.acc_type=row[3]
+				self.till_month=row[4]
+				self.till_year=row[5]
+				self.cvv=row[6]
+				self.card_type=row[7]
+				self.card_no=row[8]
+		except:
+			print("Error")
+		conn.close()
 
 class Mail:
 	USERNAME = private_data.admin_email
@@ -125,6 +147,7 @@ class Mail:
 				conn.quit()
 		except Exception:
 			return "0"
+
 def get_any_value(user,f):
 	c=customer()
 	c.customer_details(user)
@@ -259,6 +282,31 @@ def get_account_details_by_user(user,f):
 		return acc.created_time
 	else:
 		return 0
+	
+def get_card_details_by_user(user,f):
+	acc_id=get_account_details_by_user(user,"acc_id")
+	c=customer_card()
+	c.card_details(acc_id)
+	if f=="card_id":
+		return c.card_id
+	elif f=="c_id":
+		return c.c_id
+	elif f=="card_no":
+		return c.card_no
+	elif f=="acc_id":
+		return c.acc_id
+	elif f=="holder_name":
+		return c.holder_name
+	elif f=="till_month":
+		return c.till_month
+	elif f=="till_year":
+		return c.till_year
+	elif f=="csv":
+		return c.csv
+	elif f=="card_type":
+		return c.card_type
+	else:
+		return 0
 
 def generate_customer_passcode(user):
 	userid=get_any_value(user,"cid")
@@ -281,6 +329,7 @@ def generate_customer_passcode(user):
 		return "0"
 	finally:
 		conn.close()
+		
 def change_customer_passcode(change_passcode,user):
 	conn,cursor=config.connect_to_database()
 	userid=get_any_value(user,"cid")
@@ -345,3 +394,12 @@ def jon_service(bit,user):
 	except:
 		conn.rollback()
 		return "0"
+def how_many_cards(userid):
+	conn,cursor=config.connect_to_database()
+	sql="select card_id from cards where c_id='%s'"%userid
+	try:
+		cursor.execute(sql)
+		num=cursor.rowcount
+		return num
+	except:
+		return "-99"
