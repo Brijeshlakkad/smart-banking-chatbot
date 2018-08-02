@@ -1,10 +1,11 @@
 <?php include_once("header.php"); ?>
 <?php check_session(); ?>
 <link rel="stylesheet" type="text/css" href="css/vertical_tab.css" />
+<div ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
 <div class="container-fluid my_well">
 	<div class="row" align="center">
 		<h2 class="c_profile_header">Personal Settings</h2>
-		<div class="row"  ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
+		<div class="row">
 
 			<div class="tab">
 		  	  <button class="tablinks" onclick="openCity(event, 'per_acc_details')" id="defaultOpen">Personal Account Details</button>
@@ -122,12 +123,12 @@
 			  		<tr>
 			  			<td>Balance:</td>
 			  			<td ng-if="passcode==-99 || passcode.length==0">You have not geneated your passcode <small>(Click below button)</small></td>
-			  			<td ng-if="passcode!=-99 && passcode.length!=0"><button class="btn btn-primary btn-sm" id="change_pass" ng-click="change_passcode">View Balance</button></td>
+						<td ng-if="passcode!=-99 && passcode.length!=0" ><span ng-if="wrong_passcode">Try again! after 10 seconds.<small>(wrong passcode)</small></span><span ng-if="got_permission" id="view_bal"></span><span ng-if="view_bal_permission"><button class="btn btn-primary btn-sm"  ng-click="view_balance()">View Balance</button></span></td>
 			  		</tr>
 			  		<tr>
 			  			<td>Passcode:</td>
 			  			<td ng-if="passcode==-99 || passcode.length==0"><button class="btn btn-default btn-sm" id="get_pass" ng-click="get_passcode()">Get Passcode</button></td>
-			  			<td ng-if="passcode!=-99 && passcode.length!=0"><button class="btn btn-primary btn-sm" id="change_pass" ng-click="change_passcode">Change Passcode</button></td>
+			  			<td ng-if="passcode!=-99 && passcode.length!=0"><button class="btn btn-primary btn-sm" id="change_pass" ng-click="change_passcode()">Change Passcode</button></td>
 			  		</tr>
 			  	</table>
 			  </div>
@@ -312,7 +313,27 @@
       </div>
     </div>
 </div>
+<div class="modal fade" id="view_balance_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3>Enter passcode to see balance:</h3>
+        </div>
+        <div class="modal-body">
+        <div class="row">
+        <form name="bal_pass_form" novalidate>
+        <div class="form-group col-lg-offset-4 col-lg-4 col-lg-offset-4">
+        	<input class="form-control" type="text" name="view_bal_pass" id="view_bal_pass" autocomplete="off" placeholder="Enter passcode" ng-model="view_bal_pass" required passcode-dir/><br/>
+        	<button type="submit" class="btn btn-primary" id="got_bal_pass" ng-click="got_bal_passcode(view_bal_pass)" ng-disabled="bal_pass_form.view_bal_pass.$invalid" >View Balance</button>
+        </div>
+        </form>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
 <div class="please_wait_modal"></div>
+
 <script>
 $body = $("body");
 $(document).on({
@@ -442,6 +463,10 @@ $(document).on({
 			$scope.passcode= val;
 		};
 		$scope.get_acc_details("passcode",userid,set_val_passcode);
+		$scope.view_balance=function()
+		{
+			$("#view_balance_modal").modal("show");	
+		};
 		$scope.maxd = new Date() ;
                 var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
                 var mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
@@ -722,7 +747,43 @@ $(document).on({
 								$("#status_part2").empty();
 							});
                };
-
+		$scope.got_permission=false;
+		$scope.wrong_passcode=false;
+		$scope.view_bal_permission=true;
+		$scope.got_bal_passcode=function(value){
+			$("#view_balance_modal").modal("hide");
+			var btn_view_bal='<button class="btn btn-primary btn-sm"  ng-click="view_balance()">View Balance</button>';
+			if($scope.passcode==value)
+				{
+					var balance=$scope.balance;
+					$scope.wrong_passcode=false;
+					$scope.view_bal_permission=false;
+					$scope.got_permission=true;
+					$("#view_bal").html(balance);
+				}
+			else{
+				$scope.wrong_passcode=true;
+				$scope.view_bal_permission=false;
+				$scope.got_permission=false;
+			}
+		};
+});
+myApp.directive('passcodeDir', function() {
+				return {
+					require: 'ngModel',
+					link: function(scope, element, attr, mCtrl) {
+						function myValidation(value) {
+							var patt = new RegExp("^[0-9]{6}$");
+							if (patt.test(value)) {
+								mCtrl.$setValidity('passcodevalid', true);
+							} else {
+								mCtrl.$setValidity('passcodevalid', false);
+							}
+							return value;
+						}
+						mCtrl.$parsers.push(myValidation);
+					}
+				};
 });
 myApp.directive('namesDir', function() {
 				return {
