@@ -293,7 +293,19 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-        <div class="alert alert-success">Information updated successfully</div>
+        <div class="alert alert-success">{{success_modal_val}}</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="success_form_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div class="alert alert-success">Information updated, successfully.</div>
         </div>
       </div>
     </div>
@@ -306,30 +318,6 @@
         </div>
         <div class="modal-body">
         <div class="alert alert-danger">Please, try again after few minutes</div>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="modal fade" id="get_passcode_modal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-        <div class="alert alert-success">You'll get your first passcode through email. (check your email)</div>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="modal fade" id="success_passcode_modal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-        <div class="alert alert-success">Passcode changed successfully.</div>
         </div>
       </div>
     </div>
@@ -746,6 +734,7 @@ $(document).on({
 								flag = response.data;
 								if(flag==11)
 									{
+										$scope.success_modal_val="Password changed, successfully";
 										$("#success_modal").modal("show");
 										$("#status_part2").empty();
 									}
@@ -773,9 +762,10 @@ $(document).on({
 								var flag=response.data;
 								if(flag==11)
 									{
-										$("#get_passcode_modal").modal("show");
+										$scope.success_modal_val="You'll get your first passcode through email. (check your email)";
+										$("#success_modal").modal("show");
 										setTimeout(function(){
-											$("#get_passcode_modal").modal("hidden");
+											$("#success_modal").modal("hidden");
 										},200);
 									}
 								else{
@@ -832,9 +822,10 @@ $(document).on({
 								var flag=response.data;
 								if(flag==11)
 									{
-										$("#success_passcode_modal").modal("show");
+										$scope.success_modal_val="Passcode changed successfully";
+										$("#success_modal").modal("show");
 										setTimeout(function(){
-											$("#success_passcode_modal").modal("hidden");
+											$("#success_modal").modal("hidden");
 										},200);
 									}
 								else{
@@ -858,10 +849,22 @@ $(document).on({
 								var flag=response.data;
 								if(flag==11)
 									{
-										$("#success_service_modal").modal("show");
+										if(bit==1)
+											{
+												$scope.success_modal_val="Jon Service activated, successfully";
+											}
+										else
+											{
+												$scope.success_modal_val="Jon Service de-activated, successfully";
+											}
+										
+										$("#success_modal").modal("show");
+										$(document).ajaxStop(function(){
 										setTimeout(function(){
-											$("#success_service_modal").modal("hidden");
+											$("#success_modal").modal("hidden");
+											
 										},200);
+										});
 									}
 								else{
 									$("#error_modal").modal("show")
@@ -1077,9 +1080,9 @@ function check_part1()
 							if(data==11)
 							{
 								$("#spinner").hide();
-								$("#success_modal").modal("show");
+								$("#success_form_modal").modal("show");
 								setTimeout(function(){
-									$("#success_modal").modal("hide");
+									$("#success_form_modal").modal("hide");
 								},1000);
 							}
 							else
