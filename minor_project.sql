@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 01, 2018 at 02:57 PM
+-- Generation Time: Aug 03, 2018 at 03:20 AM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -42,7 +42,7 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`acc_id`, `c_id`, `acc_name`, `acc_type`, `balance`, `created_time`, `passcode`, `acc_no`) VALUES
-(4, 70, 'Brijesh Rameshbhai L', 'saving', '0', '2018-08-01 20:24:57', '', '007046167267');
+(4, 70, 'Brijesh Rameshbhai Lakkad', 'saving', '0', '2018-08-01 20:24:57', '123456', '007046167267');
 
 -- --------------------------------------------------------
 
@@ -74,8 +74,16 @@ CREATE TABLE `cards` (
   `till_month` varchar(10) NOT NULL,
   `till_year` varchar(10) NOT NULL,
   `csv` varchar(4) NOT NULL,
-  `card_type` varchar(10) NOT NULL
+  `card_type` varchar(10) NOT NULL,
+  `card_no` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `cards`
+--
+
+INSERT INTO `cards` (`card_id`, `c_id`, `acc_id`, `holder_name`, `till_month`, `till_year`, `csv`, `card_type`, `card_no`) VALUES
+(1, 70, 4, 'Brijesh Rameshbhai Lakkad', '06', '09', '456', 'visa', '1234567890123456');
 
 -- --------------------------------------------------------
 
@@ -103,7 +111,8 @@ INSERT INTO `chats` (`chat_id`, `from_id`, `to_id`, `text`, `created_time`) VALU
 (12, 19, 0, 'Hey', '2018-07-30 09:19:55'),
 (13, 19, 0, 'I want help', '2018-07-30 09:20:37'),
 (14, 0, 19, 'I m listening', '2018-07-30 09:21:02'),
-(15, 70, 0, 'hey', '2018-08-01 20:04:28');
+(15, 70, 0, 'hey', '2018-08-01 20:04:28'),
+(16, 70, 0, 'Hello', '2018-08-02 20:27:14');
 
 -- --------------------------------------------------------
 
@@ -195,6 +204,19 @@ CREATE TABLE `loan_details` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `requests`
+--
+
+CREATE TABLE `requests` (
+  `r_id` int(10) NOT NULL,
+  `acc_id` int(10) NOT NULL,
+  `card_loan` varchar(4) NOT NULL,
+  `status_bit` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `transactions`
 --
 
@@ -269,6 +291,13 @@ ALTER TABLE `loan_details`
   ADD PRIMARY KEY (`loan_id`);
 
 --
+-- Indexes for table `requests`
+--
+ALTER TABLE `requests`
+  ADD PRIMARY KEY (`r_id`),
+  ADD KEY `acc_id` (`acc_id`);
+
+--
 -- Indexes for table `transactions`
 --
 ALTER TABLE `transactions`
@@ -296,13 +325,13 @@ ALTER TABLE `bank_atm`
 -- AUTO_INCREMENT for table `cards`
 --
 ALTER TABLE `cards`
-  MODIFY `card_id` int(30) NOT NULL AUTO_INCREMENT;
+  MODIFY `card_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `chats`
 --
 ALTER TABLE `chats`
-  MODIFY `chat_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `chat_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `customers`
@@ -327,6 +356,12 @@ ALTER TABLE `loans`
 --
 ALTER TABLE `loan_details`
   MODIFY `loan_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `requests`
+--
+ALTER TABLE `requests`
+  MODIFY `r_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `transactions`
@@ -358,6 +393,12 @@ ALTER TABLE `loans`
   ADD CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`c_id`) REFERENCES `customers` (`cid`),
   ADD CONSTRAINT `loans_ibfk_2` FOREIGN KEY (`acc_id`) REFERENCES `accounts` (`acc_id`),
   ADD CONSTRAINT `loans_ibfk_3` FOREIGN KEY (`loan_id`) REFERENCES `loan_details` (`loan_id`);
+
+--
+-- Constraints for table `requests`
+--
+ALTER TABLE `requests`
+  ADD CONSTRAINT `requests_ibfk_1` FOREIGN KEY (`acc_id`) REFERENCES `accounts` (`acc_id`);
 
 --
 -- Constraints for table `transactions`
