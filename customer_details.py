@@ -307,7 +307,6 @@ def get_card_details_by_user(user,f):
 		return c.card_type
 	else:
 		return 0
-
 def generate_customer_passcode(user):
 	userid=get_any_value(user,"cid")
 	contact=get_any_value(user,"contact")
@@ -394,12 +393,38 @@ def jon_service(bit,user):
 	except:
 		conn.rollback()
 		return "0"
-def how_many_cards(userid):
+def how_many_services(userid,services):
 	conn,cursor=config.connect_to_database()
-	sql="select card_id from cards where c_id='%s'"%userid
+	if services:
+		sql="select card_id from cards where c_id='%s'"%userid
+	else:
+		sql="select loan_id from cards where c_id='%s'"%userid
 	try:
 		cursor.execute(sql)
 		num=cursor.rowcount
 		return num
+	except:
+		return "-99"
+	
+def request_services(acc_id,request):
+	conn,cursor=config.connect_to_database()
+	status=0
+	sql="insert into requests(acc_id,card_loan,status_bit) values('%s','%s','%s')"%(acc_id,request,status)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return "11"
+	except:
+		conn.rollback()
+		return "-99"
+def status_request(acc_id,status_request):
+	conn,cursor=config.connect_to_database()
+	sql="select status_bit from requests where acc_id='%s' AND card_loan='%s'"%(acc_id,status_request)
+	try:
+		cursor.execute(sql)
+		row=cursor.fetchone()
+		if row==None:
+			return "-1"
+		return row[0]
 	except:
 		return "-99"

@@ -30,6 +30,11 @@ if form.getvalue('get_acc_details') and form.getvalue('user'):
 	get_acc_details=security.protect_data(form.getvalue('get_acc_details'))
 	got_it=customer_details.get_account_details_by_user(user,get_acc_details)
 	print("%s"%got_it)
+if form.getvalue('get_card_details') and form.getvalue('user'):
+	user = security.protect_data(form.getvalue('user'))
+	get_card_details=security.protect_data(form.getvalue('get_card_details'))
+	got_it=customer_details.get_card_details_by_user(user,get_card_details)
+	print("%s"%got_it)
 if form.getvalue('get_passcode'):
 	user = security.protect_data(form.getvalue('get_passcode'))
 	flag_bit=customer_details.generate_customer_passcode(user)
@@ -94,8 +99,21 @@ if form.getvalue("reload_messages"):
 	get_id=customer_details.get_any_value(user,"cid")
 	flag_bit=jon_snow_brain.reload_chats(get_id,user)
 	print("%s"%flag_bit)
-if form.getvalue("how_many_cards"):
-	user=security.protect_data(form.getvalue("how_many_cards"))
+if form.getvalue("how_many_services") and form.getvalue("user"):
+	user=security.protect_data(form.getvalue("user"))
+	services=security.protect_data(form.getvalue("how_many_services"))
 	userid=customer_details.get_any_value(user,"cid")
-	flag_bit=customer_details.how_many_cards(userid)
+	flag_bit=customer_details.how_many_services(userid,services)
+	print("%s"%flag_bit)
+if form.getvalue("request_services") and form.getvalue("user"):
+	request_services=security.protect_data(form.getvalue("request_services"))
+	user=security.protect_data(form.getvalue("user"))
+	acc_id=customer_details.get_account_details_by_user(user,"acc_id")
+	flag_bit=customer_details.request_services(acc_id,request_services)
+	print("%s"%flag_bit)
+if form.getvalue("status_request") and form.getvalue("user"):
+	status_request=security.protect_data(form.getvalue("status_request"))
+	user=security.protect_data(form.getvalue("user"))
+	acc_id=customer_details.get_account_details_by_user(user,"acc_id")
+	flag_bit=customer_details.status_request(acc_id,status_request)
 	print("%s"%flag_bit)

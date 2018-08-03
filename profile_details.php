@@ -148,8 +148,19 @@
 				<tr><td>Jon Service: </td><td><span ng-if="jon==0" style="color: orange;">Not started yet</span><span ng-if="jon==1" style="color: green;">activated</span><span ng-if="jon==-1" style="color: red;">Deactivated</span></td></tr>
 				<tr><td></td><td ng-if="jon==1"><button class="btn" id="jon_deactive" ng-click="jon_service(-1)" style="border-style: double;border-width: 5px;border-color:#C72F32;">Deactive Service</button></td><td ng-if="jon==0 || jon==-1"><button class="btn" id="jon_active" ng-click="jon_service(1)" style="border-style: double;border-width: 5px;border-color:#22520A;">Active Service</button></td></tr>
 				<tr>
-					<td>Cards:</td>
-					<td><span ng-if="num_cards==0" class="alert alert-danger">You have not requested any cards yet.</span></td>
+					<td>Card Service:</td>
+					<td><div class="alert alert-danger" ng-if="num_cards==0 && status_request_card==-1"><span>You have not requested any cards yet.</span></div><div class="alert alert-warning" ng-if="num_cards==0 && status_request_card==0"><span>Pending...</span></div><div ng-if="num_cards==1"><button class="btn btn-primary" ng-click="card_details()">Card details</button></div></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td ng-if="num_cards==0"><button class="btn btn-primary" ng-click="request_services('card')">Request for card</button></td>
+					<td ng-if="show_card_details"><table class="myTable table-striped">
+					<tr><td>card number:</td><td>{{card_no}}</td></tr>
+					<tr><td>card type:</td><td>{{card_type}}</td></tr>
+					<tr><td>till month:</td><td>{{till_year}}</td></tr>
+					<tr><td>till year:</td><td>{{till_month}}</td></tr>
+					<tr><td>cvv:</td><td>{{cvv}}</td></tr>
+					</table></td>
 				</tr>
 				</table>
 				</div>
@@ -495,6 +506,43 @@ $(document).on({
 			$scope.passcode= val;
 		};
 		$scope.get_acc_details("passcode",userid,set_val_passcode);
+		$scope.get_card_details=function(f,user,callback)
+		{
+			$http({
+				method : "POST",
+				url : "customer_interface.py",
+				data: "get_card_details="+f+"&user="+user,
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			}).then(function mySuccess(response) {
+				callback(response.data);
+			}, function myError(response) {
+			});
+			
+		};
+		var set_val_card_no=function(val){
+			$scope.card_no= val;
+		};
+		$scope.get_card_details("card_no",userid,set_val_card_no);
+		var set_val_holder_name=function(val){
+			$scope.holder_name= val;
+		};
+		$scope.get_card_details("holder_name",userid,set_val_holder_name);
+		var set_val_till_month=function(val){
+			$scope.till_month= val;
+		};
+		$scope.get_card_details("till_month",userid,set_val_till_month);
+		var set_val_till_year=function(val){
+			$scope.till_year= val;
+		};
+		$scope.get_card_details("till_year",userid,set_val_till_year);
+		var set_val_cvv=function(val){
+			$scope.cvv= val;
+		};
+		$scope.get_card_details("cvv",userid,set_val_cvv);
+		var set_val_card_type=function(val){
+			$scope.card_type= val;
+		};
+		$scope.get_card_details("card_type",userid,set_val_card_type);
 		$scope.view_balance=function()
 		{
 			$("#view_balance_modal").modal("show");	
@@ -879,17 +927,56 @@ $(document).on({
 								$("#error_modal").modal("show");
 							});
 		};
-		$scope.how_many_cards = function() {
+		$scope.how_many_services = function(value) {
 							$http({
 								method : "POST",
 								url : "customer_interface.py",
-								data : "how_many_cards="+userid,
+								data : "how_many_services="+value+"&user="+userid,
 								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 							}).then(function mySuccess(response) {
 								var flag=response.data;
 								if(flag!="-99")
 									{
-										$scope.num_cards=response.data;
+										if(value=="card")
+											$scope.num_cards=response.data;
+										else
+											$scope.num_loans=response.data;
+									}
+								else{
+									$scope.num_cards=0;
+									$("#error_modal").modal("show");
+									$("#status_part2").empty();
+								}
+							}, function myError(response) {
+								$scope.num_cards=0;
+								$("#error_modal").modal("show");
+								$("#status_part2").empty();
+							});
+               };
+		$scope.how_many_services("card");
+		$scope.request_services=function(value)
+		{
+			value=value.trim();
+				$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "request_services="+value+"&user="+userid,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag!="-99")
+									{
+										if(value=="card")
+											$scope.success_modal_val="Request has made, successfully (You will receive card in one or two working days)";
+										else
+											$scope.success_modal_val="Request has made, successfully (You will receive information in one or two working days)";
+										$("#success_modal").modal("show");
+										$(document).ajaxStop(function(){
+										setTimeout(function(){
+											$("#success_modal").modal("hidden");
+											
+										},200);
+										});
 									}
 								else{
 									$("#error_modal").modal("show");
@@ -899,8 +986,40 @@ $(document).on({
 								$("#error_modal").modal("show");
 								$("#status_part2").empty();
 							});
-               };
-		
+		};
+		$scope.know_status_request=function(value){
+				$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "status_request="+value+"&user="+userid,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag!="-99")
+									{
+										if(value=="card")
+											$scope.status_request_card=flag.trim();
+										else
+											$scope.status_request_loan=flag.trim();
+									}
+								else{
+									$("#error_modal").modal("show");
+									$("#status_part2").empty();
+								}
+							}, function myError(response) {
+								$("#error_modal").modal("show");
+								$("#status_part2").empty();
+							});
+		};
+		$scope.know_status_request("card");
+		$scope.know_status_request("loan");
+		$scope.show_card_details=false;
+		$scope.card_details=function(){
+			if(!($scope.show_card_details))
+				$scope.show_card_details=true;
+			else
+				$scope.show_card_details=false;
+		};
 });
 myApp.directive('passcodeDir', function() {
 				return {
