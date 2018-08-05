@@ -1064,7 +1064,7 @@ $(document).on({
 			var username=$scope.s_user;
 			var email=$scope.s_email;
 			var fname=$scope.s_fname;
-			var lname=$scope.lname;
+			var lname=$scope.s_lname;
 			var middlename=$scope.s_middlename;
 			var mobile=$scope.s_mobile;
 				$http({

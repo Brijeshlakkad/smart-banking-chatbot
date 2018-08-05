@@ -3,6 +3,51 @@ import config
 import send_mail
 import no_found
 import customer_details
+import random
+import string
+from datetime import datetime
+def create_acc_name(userid):
+	fname=customer_details.get_any_value_by_id(userid,"fname")
+	lname=customer_details.get_any_value_by_id(userid,"lname")
+	middlename=customer_details.get_any_value_by_id(userid,"middle_name")
+	return fname+" "+middlename+" "+lname
+def create_acc_no(userid):
+	contact=customer_details.get_any_value_by_id(userid,"contact")
+	return "00"+str(contact)
+def create_bank_account_details(userid):
+	conn,cursor=config.connect_to_database()
+	acc_name=create_acc_name(userid)
+	acc_no=create_acc_no(userid)
+	acc_type="saving"
+	sql="insert into accounts(c_id,acc_name,acc_type,acc_no) values('%s','%s','%s','%s')"%(userid,acc_name,acc_type,acc_no)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return "11"
+	except:
+		conn.rollback()
+		return "-99"
+def create_cvv():
+	return ''.join([random.choice(string.digits) for n in xrange(3)])
+def create_card_no():
+	return random.randint(1111111111111111,9999999999999999)
+def create_card(acc_id):
+	conn,cursor=config.connect_to_database()
+	c_id=customer_details.get_account_by_acc_id(acc_id,"c_id")
+	holder_name=customer_details.get_account_by_acc_id(acc_id,"acc_name")
+	card_type="Mastercard"
+	till_month=datetime.now().strftime('%m')
+	till_year=str((int(datetime.now().year+1))%100).zfill(2)
+	cvv=create_cvv()
+	card_no=create_card_no()
+	sql="insert into cards(c_id,acc_id,holder_name,till_month,till_year,csv,card_type,card_no) values('%s','%s','%s','%s','%s','%s','%s','%s')"%(c_id,acc_id,holder_name,till_month,till_year,cvv,card_type,card_no)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return "11"
+	except:
+		conn.rollback()
+		return "-99"
 def verify_customer(userid,user,status):
 	conn,cursor=config.connect_to_database()
 	sql="update customers SET hasAcc='%s' where cid='%s'"%(status,userid)
@@ -10,6 +55,10 @@ def verify_customer(userid,user,status):
 		status=int(status)
 	sub="Verification of your Jon account"
 	if status==1:
+		bit=create_bank_account_details(userid)
+		bit=str(bit)
+		if bit=="-99":
+			return "-99"
 		cont="""<h1>Jon Snow</h1>,<br/><p>Your account is approved for banking and using of our services.</p>""";
 	else:
 		cont="""<h1>Jon Snow</h1>,<br/><p>We are sorry to hear that</p><br/></p><p>Your account is rejected.</p>""";
