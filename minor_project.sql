@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 03, 2018 at 03:20 AM
+-- Generation Time: Aug 05, 2018 at 08:59 AM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -83,7 +83,7 @@ CREATE TABLE `cards` (
 --
 
 INSERT INTO `cards` (`card_id`, `c_id`, `acc_id`, `holder_name`, `till_month`, `till_year`, `csv`, `card_type`, `card_no`) VALUES
-(1, 70, 4, 'Brijesh Rameshbhai Lakkad', '06', '09', '456', 'visa', '1234567890123456');
+(1, 70, 4, 'Brijesh Rameshbhai Lakkad', '06', '09', '456', 'Visa', '1234567890123456');
 
 -- --------------------------------------------------------
 
@@ -149,7 +149,7 @@ CREATE TABLE `customers` (
 
 INSERT INTO `customers` (`cid`, `username`, `fname`, `lname`, `email`, `password`, `contact`, `postal_add`, `perm_add`, `city`, `state`, `country`, `middle_name`, `pincode`, `dob`, `gender`, `time`, `created_time`, `jon`, `hasAcc`) VALUES
 (1, 'brijeshlakkad22222', 'Brijesh', 'Lakkad', 'lakkadbrijesh@gmail.com', '12345b', '7046167268', 'xyz', 'xyz', 'surat', 'gujarat', 'india', 'Rameshbhai', '395006', NULL, 'Male', '2018-07-27 08:56:55', '2018-07-27 16:33:37', 0, 0),
-(70, 'Brijesh', 'Brijesh', 'Lakkad', 'brij79lakkad@gmail.com', '123456bB', '7046167267', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'Rameshbhai', '395006', '2018-07-03', 'string:', '2018-07-31 13:44:07', '2018-07-31 13:44:07', 1, 1);
+(70, 'Brijesh', 'Brijesh', 'Lakkad', 'brij79lakkad@gmail.com', '123456bB', '7046167267', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'Rameshbhai', '395008', '2018-07-03', 'Male', '2018-07-31 13:44:07', '2018-07-31 13:44:07', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -211,8 +211,16 @@ CREATE TABLE `requests` (
   `r_id` int(10) NOT NULL,
   `acc_id` int(10) NOT NULL,
   `card_loan` varchar(4) NOT NULL,
-  `status_bit` varchar(5) NOT NULL
+  `status_bit` varchar(5) NOT NULL,
+  `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `requests`
+--
+
+INSERT INTO `requests` (`r_id`, `acc_id`, `card_loan`, `status_bit`, `created_time`) VALUES
+(1, 4, 'card', '0', '2018-08-05 12:27:35');
 
 -- --------------------------------------------------------
 
@@ -313,7 +321,7 @@ ALTER TABLE `transactions`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `acc_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `acc_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `bank_atm`
@@ -325,7 +333,7 @@ ALTER TABLE `bank_atm`
 -- AUTO_INCREMENT for table `cards`
 --
 ALTER TABLE `cards`
-  MODIFY `card_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `card_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `chats`
@@ -361,7 +369,7 @@ ALTER TABLE `loan_details`
 -- AUTO_INCREMENT for table `requests`
 --
 ALTER TABLE `requests`
-  MODIFY `r_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `r_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `transactions`
