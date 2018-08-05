@@ -352,7 +352,18 @@ def update_account_details(username,email,contact,fname,lname,middle_name):
 		return "11"
 	except:
 		conn.rollback()
-		return "0"
+		return "-99"
+
+def update_bill_details(user,postal_add,perm_add,pincode,city,state,country):
+	conn,cursor=config.connect_to_database()
+	sql="Update customers SET postal_add='%s',perm_add='%s',pincode='%s',city='%s',state='%s',country='%s' where email='%s'"%(postal_add,perm_add,pincode,city,state,country,user)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return "11"
+	except:
+		conn.rollback()
+		return "-99"
 
 def update_password(user,new_password):
 	conn,cursor=config.connect_to_database()

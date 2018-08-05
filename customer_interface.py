@@ -117,3 +117,13 @@ if form.getvalue("status_request") and form.getvalue("user"):
 	acc_id=customer_details.get_account_details_by_user(user,"acc_id")
 	flag_bit=customer_details.status_request(acc_id,status_request)
 	print("%s"%flag_bit)
+if form.getvalue("update_bill_details") and form.getvalue("postal_add") and form.getvalue("perm_add") and form.getvalue("pincode") and form.getvalue("city") and form.getvalue("state") and form.getvalue("country"):
+	user=security.protect_data(form.getvalue("update_bill_details"))
+	postal_add=security.protect_data(form.getvalue("postal_add"))
+	perm_add=security.protect_data(form.getvalue("perm_add"))
+	city=security.protect_data(form.getvalue("city"))
+	pincode=security.protect_data(form.getvalue("pincode"))
+	state=security.protect_data(form.getvalue("state"))
+	country=security.protect_data(form.getvalue("country"))
+	flag_bit=customer_details.update_bill_details(user,postal_add,perm_add,pincode,city,state,country)
+	print("%s"%flag_bit)

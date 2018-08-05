@@ -96,8 +96,8 @@
 						</div>
 						<div class="form-group">
 							<tr>
-								<td><input type="submit" onClick="check_part1()" id="submit_btn" value="Submit" class="btn btn-primary" ng-disabled="myForm.s_user.$invalid || myForm.s_email.$invalid || myForm.s_mobile.$invalid || myForm.s_fname.$invalid || myForm.s_lname.$invalid || myForm.s_middlename.$invalid" /></td>
-								<td id="status"><img src="images/small_loader.gif" id="spinner_part1" style="height:30px;width:30px;" alt="Loading" /></td>
+								<td><input type="submit" ng-click="update_account_details()" id="submit_btn" value="Submit" class="btn btn-primary" ng-disabled="myForm.s_user.$invalid || myForm.s_email.$invalid || myForm.s_mobile.$invalid || myForm.s_fname.$invalid || myForm.s_lname.$invalid || myForm.s_middlename.$invalid" /></td>
+								<td id="status"><img src="images/small_loader.gif" id="spinner_part1" ng-if="spinner_part1" style="height:30px;width:30px;" alt="Loading" /></td>
 								<td></td>
 							</tr>
 						</div>
@@ -295,6 +295,13 @@
 					</td>
 					</tr>
 					</div>
+					<div class="form-group">
+							<tr>
+								<td><input type="submit" ng-click="update_bill_details()" id="submit_btn" value="Submit" class="btn btn-primary" ng-disabled="bill_form.postal_add.$invalid || bill_form.perm_add.$invalid || bill_form.pincode.$invalid || bill_form.city.$invalid || bill_form.state.$invalid || bill_form.country.$invalid" /></td>
+								<td id="status"><img src="images/small_loader.gif" id="spinner_part3" ng-if="spinner_part3" style="height:30px;width:30px;" alt="Loading" /></td>
+								<td></td>
+							</tr>
+						</div>
 				</table>
 			  </form>
 			</div>
@@ -390,7 +397,9 @@ $(document).on({
 		$scope.genderOptions = [
 				"Male","Female","Other"
 			];
+		$scope.spinner_part1=false;
 		$scope.spinner_part2=false;
+		$scope.spinner_part3=false;
 		var userid="<?php echo $_SESSION['Userid']; ?>";
 		$scope.get_any_value=function(f,user,callback)
 		{
@@ -1020,6 +1029,68 @@ $(document).on({
 			else
 				$scope.show_card_details=false;
 		};
+		$scope.update_bill_details=function(){
+			var postal_add=$scope.postal_add;
+			var perm_add=$scope.perm_add;
+			var pincode=$scope.pincode;
+			var city=$scope.city;
+			var state=$scope.state;
+			var country=$scope.country;
+				$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "update_bill_details="+userid+"&postal_add="+postal_add+"&perm_add="+perm_add+"&pincode="+pincode+"&city="+city+"&state="+state+"&country="+country,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag!="-99")
+									{
+										$scope.success_modal_val="Billing details updated..";
+										$("#success_form_modal").modal("show");
+										setTimeout(function(){
+											$("#success_form_modal").modal("hide");
+										},1000);
+									}
+								else{
+									$("#error_modal").modal("show");
+									$("#status_part2").empty();
+								}
+							}, function myError(response) {
+								$("#error_modal").modal("show");
+								$("#status_part2").empty();
+							});
+		};
+		$scope.update_account_details=function(){
+			var username=$scope.s_user;
+			var email=$scope.s_email;
+			var fname=$scope.s_fname;
+			var lname=$scope.lname;
+			var middlename=$scope.s_middlename;
+			var mobile=$scope.s_mobile;
+				$http({
+								method : "POST",
+								url : "customer_interface.py",
+								data : "update_account_details="+username+"&s_email="+userid+"&s_mobile="+mobile+"&s_fname="+fname+"&s_lname="+lname+"&s_middlename="+middlename,
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							}).then(function mySuccess(response) {
+								var flag=response.data;
+								if(flag!="-99")
+									{
+										$scope.success_modal_val="Personal account details updated";
+										$("#success_form_modal").modal("show");
+										setTimeout(function(){
+											$("#success_form_modal").modal("hide");
+										},1000);
+									}
+								else{
+									$("#error_modal").modal("show");
+									$("#status_part2").empty();
+								}
+							}, function myError(response) {
+								$("#error_modal").modal("show");
+								$("#status_part2").empty();
+							});
+		};
 });
 myApp.directive('passcodeDir', function() {
 				return {
@@ -1205,50 +1276,9 @@ function formatDate(date) {
 
     return [year, month, day].join('-');
 	}
-function check_part1()
-	{
-		var mobile=myForm.s_mobile.value;
-		var user=myForm.s_user.value;
-		var email=myForm.s_email.value;
-		var fname=myForm.s_fname.value;
-		var lname=myForm.s_lname.value;
-		var middlename=myForm.s_middlename.value;
-		var x=new XMLHttpRequest();
-				x.onreadystatechange=function()
-				{
-					if(x.readyState<4)
-						{
-							$("#spinner").show();
-						}
-					if(x.readyState==4 && x.status==200)
-						{
-							var data=this.responseText;
-							if(data==11)
-							{
-								$("#spinner").hide();
-								$("#success_form_modal").modal("show");
-								setTimeout(function(){
-									$("#success_form_modal").modal("hide");
-								},1000);
-							}
-							else
-							{
-								$("#spinner").hide();
-								$("#error_modal").modal("show");
-								setTimeout(function(){
-									$("#error_modal").modal("hide");
-								},1000);
-							}
-						}
-				};
-				x.open("POST","customer_interface.py",true);
-				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-				x.send("update_account_details="+user+"&s_email="+email+"&s_mobile="+mobile+"&s_fname="+fname+"&s_lname="+lname+"&s_middlename="+middlename);
-		
-	}
+
 $(document).ready(function(){
-	$('[data-toggle="tooltip"]').tooltip(); 
-	$("#spinner_part1").hide();
+	$('[data-toggle="tooltip"]').tooltip();
 });
 </script>
 <script src="js/vertical_tab.js"></script>
