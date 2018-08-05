@@ -5,16 +5,7 @@
 </div>
 <script>
 $(document).ready(function(){
-	$("#new_customers").click(function(){
-		get_table_of_customer("new_customer");
-	});
-	$("#approved_customers").click(function(){
-		get_table_of_customer("approved_customers");
-	});
-	$("#rejected_customers").click(function(){
-		get_table_of_customer("rejected_customers");
-	});
-	var get_table_of_customer=function(flag)
+	var get_table_of_details=function(flag)
 	{
 		$.ajax({
      		type: 'POST', 
@@ -27,6 +18,21 @@ $(document).ready(function(){
          	}
 			});
 	};
+	$("#new_customers").click(function(){
+		get_table_of_details("new_customers");
+	});
+	$("#approved_customers").click(function(){
+		get_table_of_details("approved_customers");
+	});
+	$("#rejected_customers").click(function(){
+		get_table_of_details("rejected_customers");
+	});
+	$("#new_requests").click(function(){
+		get_table_of_details("new_requests");
+	});
+	$("#new_feedbacks").click(function(){
+		get_table_of_details("new_feedbacks");
+	});
 });
 </script>
 <?php include("footer.php"); ?>

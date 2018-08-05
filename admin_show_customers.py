@@ -37,7 +37,6 @@ def show_customers(bit):
 			cust+="</table></div>"
 			cust+="""<script>$(".clickable-row").click(function() {
 			var c_id=$(this).attr("id");
-			alert(c_id);
 			$(this).append("<form action='customer_profile.php' id='show_customer' method='post'><input type='text' name='customer_id' value='"+c_id+"' /></form>");$("#show_customer").submit();
 			}); 
 			</script>"""

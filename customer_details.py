@@ -95,6 +95,49 @@ class customer_account:
 		except:
 			print("Error")
 		conn.close()
+class customer_account_by_acc_id:
+	global acc_id,c_id,acc_no,acc_type,acc_name,balance,passcode
+	def account_details(self,acc_id):
+		sql="select * from accounts where acc_id='%s'"%acc_id
+		conn,cursor=config.connect_to_database()
+		try:
+			cursor.execute(sql)
+			results=cursor.fetchall()
+			for row in results:
+				self.acc_id=row[0]
+				self.c_id=row[1]
+				self.acc_name=row[2]
+				self.acc_type=row[3]
+				self.balance=row[4]
+				self.created_time=row[5]
+				self.passcode=row[6]
+				self.acc_no=row[7]
+		except:
+			print("Error")
+		conn.close()
+		
+def get_account_by_acc_id(acc_id,f):
+	acc=customer_account_by_acc_id()
+	acc.account_details(acc_id)
+	if f=="acc_id":
+		return acc.acc_id
+	elif f=="c_id":
+		return acc.c_id
+	elif f=="acc_no":
+		return acc.acc_no
+	elif f=="acc_type":
+		return acc.acc_type
+	elif f=="acc_name":
+		return acc.acc_name
+	elif f=="balance":
+		return acc.balance
+	elif f=="passcode":
+		return acc.passcode
+	elif f=="created_time":
+		return acc.created_time
+	else:
+		return 0
+	
 class customer_card:
 	global card_id,c_id,acc_id,holder_name,till_month,till_year,cvv,card_type,card_no
 	def card_details(self,acc_id):

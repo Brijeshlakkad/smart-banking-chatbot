@@ -16,8 +16,12 @@ if form.getvalue('flag'):
 		info=admin_show_customers.show_customers(1)
 	elif flag=="rejected_customers":
 		info=admin_show_customers.show_customers(-1)
-	else:
+	elif flag=="new_customers":
 		info=admin_show_customers.show_customers(0)
+	elif flag=="new_requests":
+		info=admin_control.provides_requests()
+	elif flag=="new_feedbacks":
+		info=admin_control.provides_feedbacks()
 	print("%s"%info)
 if form.getvalue('get_data'):
 	user=security.protect_data(form.getvalue('user'))

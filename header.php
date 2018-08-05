@@ -48,6 +48,8 @@ $(document).on({
 		</ul>
 		</div>
 		</div>
+		<div class="pages-nav__item"><a class="link link--page remove-text-deco" id="new_requests" href="#">New requests</a></div>
+		<div class="pages-nav__item"><a class="link link--page remove-text-deco" id="new_feedbacks" href="#">New feedbacks</a></div>
 		<div class="pages-nav__item">
 		<div class="dropdown">
 		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Settings
