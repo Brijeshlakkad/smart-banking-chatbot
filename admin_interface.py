@@ -5,6 +5,7 @@ import security
 import admin_show_customers
 import no_found
 import customer_details
+import admin_control
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
 cgitb.enable(display=0, logdir="/path/to/logdir")
 form = cgi.FieldStorage()	
@@ -34,3 +35,9 @@ if form.getvalue('get_document') and form.getvalue('userid'):
 	get_document=security.protect_data(form.getvalue('get_document'))
 	got_it=customer_details.get_any_document(username,get_document)
 	print("%s"%got_it)
+if form.getvalue("verify_customer") and form.getvalue("status"):
+	userid = security.protect_data(form.getvalue('verify_customer'))
+	status = security.protect_data(form.getvalue('status'))
+	user=customer_details.get_any_value_by_id(userid,"email")
+	flag_bit=admin_control.verify_customer(userid,user,status)
+	print("%s"%flag_bit)
