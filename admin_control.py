@@ -6,6 +6,18 @@ import customer_details
 import random
 import string
 from datetime import datetime
+def check_account_exists(userid):
+	conn,cursor=config.connect_to_database()
+	sql="select * from accounts where c_id='%s'"%userid
+	try:
+		cursor.execute(sql)
+		num_row=cursor.rowcount
+		if num_row==0:
+			return "11"
+		else:
+			return "-22"
+	except:
+		return "-99"
 def create_acc_name(userid):
 	fname=customer_details.get_any_value_by_id(userid,"fname")
 	lname=customer_details.get_any_value_by_id(userid,"lname")
@@ -16,6 +28,11 @@ def create_acc_no(userid):
 	return "00"+str(contact)
 def create_bank_account_details(userid):
 	conn,cursor=config.connect_to_database()
+	check=check_account_exists(userid)
+	if check=="-22":
+		return "-22"
+	elif check=="-99":
+		return "-99"
 	acc_name=create_acc_name(userid)
 	acc_no=create_acc_no(userid)
 	acc_type="saving"
@@ -49,7 +66,6 @@ def create_card(acc_id):
 		conn.rollback()
 		return "-99"
 def verify_customer(userid,user,status):
-	conn,cursor=config.connect_to_database()
 	sql="update customers SET hasAcc='%s' where cid='%s'"%(status,userid)
 	if type(status)!=int:
 		status=int(status)
@@ -59,9 +75,12 @@ def verify_customer(userid,user,status):
 		bit=str(bit)
 		if bit=="-99":
 			return "-99"
+		elif bit=="-22":
+			return "-22"
 		cont="""<h1>Jon Snow</h1>,<br/><p>Your account is approved for banking and using of our services.</p>""";
 	else:
 		cont="""<h1>Jon Snow</h1>,<br/><p>We are sorry to hear that</p><br/></p><p>Your account is rejected.</p>""";
+	conn,cursor=config.connect_to_database()
 	try:
 		cursor.execute(sql)
 		m=send_mail.Mail()

@@ -30,9 +30,9 @@ else{
 			 	<div class="text-block">
    					<p style="font-size:50px;font-family: Arial Black, Gadget, sans-serif;color: black;">{{fname}} {{lname}}</p>
    					<div class="buttons">
-   						<button class="button"><span>Approved</span></button>
-						<button class="button"><span>Not Approved</span></button>
-   					 </div>   					 
+   						<button class="button" ng-click="take_action('1')" ng-if="hasAcc==0 || hasAcc==1" ng-disabled="hasAcc==1"><span>Approved</span></button>
+						<button class="button" ng-click="take_action('-1')" ng-if="hasAcc==0 || hasAcc==-1" ng-disabled="hasAcc==-1"><span>Not Approved</span></button>
+   					 </div> 			 
   				</div>
   			</div>
   			<div style="width: 100%;margin-top: 50px;margin-right: 300px;height: 500px;">
@@ -42,7 +42,7 @@ else{
 				 
 				  <ul class="nav nav-tabs">
 				    <li class="active"><a data-toggle="tab" href="#home">Pesonal Details</a></li>
-				   	 <li><a data-toggle="tab" href="#menu1">Bank Account Deails</a></li>
+				   	 <li ng-if="hasAcc==1"><a data-toggle="tab" href="#menu1">Bank Account Deails</a></li>
 				    <li><a data-toggle="tab" href="#menu2">Billing Details</a></li>
 				    <li><a data-toggle="tab" href="#menu3">Documents</a></li>
 				  </ul>
@@ -80,7 +80,7 @@ else{
 				  				</table>
 				  			</div>
 				    </div>
-				    <div id="menu1" class="tab-pane fade">
+				    <div id="menu1" class="tab-pane fade" ng-if="hasAcc==1">
 				    	<div class="backOfDetails">
 				      		<table>
 				      			<tr>
@@ -97,7 +97,7 @@ else{
 				     	</div>
 				    </div>
 				    <div id="menu2" class="tab-pane fade">
-				    	<div class="backOfDetails" >
+				    	<div class="backOfDetails">
 				    		<table>
 				      			<tr>
 				  					<td>Postal Address</td><td></td><td class="td3">{{postal_add}}</td>
@@ -122,7 +122,13 @@ else{
 				    </div>
 				    <div id="menu3" class="tab-pane fade">
 				      <h3>Document Uploaded by <small>{{fname}} {{lname}}</small></h3>
+				      <div ng-if="file_path!=-1">
 				      <a href="{{file_path}}" download>Adhar card/Driving Licence/Pan Card</a>
+					  </div>
+					  <div ng-if="file_path==-1">
+			     	  <br/>
+				      <h2>No documents found.</h2>
+					  </div>
 				    </div>
 				  </div>
 				</div>				
@@ -130,9 +136,31 @@ else{
 		</div>
 	</center>
 	</div>
+<div class="modal fade" id="success_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div class="alert alert-success">{{success_modal_val}}</div>
+        </div>
+      </div>
+    </div>
 </div>
-
-
+<div class="modal fade" id="error_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div class="alert alert-danger">{{error_modal_val}}</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
 <script>
 var myApp = angular.module("myapp", []);
 	myApp.controller("BrijController", function($scope,$http) {
@@ -267,6 +295,75 @@ var myApp = angular.module("myapp", []);
 			$scope.acc_type= val+" account";
 		};
 		$scope.get_acc_details("acc_type",userid,set_val_acc_type);
+		$scope.take_action=function(value){
+			if(value=="1"){
+				var status=1;
+				var con=prompt("Enter 'approve' to approve this customer a account.");
+				if(con=='approve')
+					{
+						$http({
+							method : "POST",
+							url : "admin_interface.py",
+							data: "verify_customer="+userid+"&status="+status,
+							headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+						}).then(function mySuccess(response) {
+							var flag=response.data;
+							if(flag==11)
+							{
+								$scope.success_modal_val="Customer approved a bank account, successfully.";
+								$("#success_modal").modal("show");
+								setTimeout(function(){
+									$("#success_modal").modal("hidden");
+								},200);
+							}else if(flag==-22){
+								$scope.error_modal_val="Account already exists.";
+								$("#error_modal").modal("show");
+								setTimeout(function(){
+									$("#error_modal").modal("hidden");
+								},200);
+							}else{
+								$scope.error_modal_val="Try again! after a few minutes.";
+								$("#error_modal").modal("show");
+								setTimeout(function(){
+									$("#error_modal").modal("hidden");
+								},200);
+							}
+						}, function myError(response) {
+						});
+					}
+			}
+			else{
+				var status=-1;
+				var con=prompt("Enter 'reject' to approve this customer a account.");
+				if(con=='reject')
+					{
+						$http({
+							method : "POST",
+							url : "admin_interface.py",
+							data: "verify_customer="+userid+"&status="+status,
+							headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+						}).then(function mySuccess(response) {
+							var flag=response.data;
+							if(flag==11)
+							{
+								$scope.success_modal_val="Customer rejected.";
+								$("#success_modal").modal("show");
+								setTimeout(function(){
+									$("#success_modal").modal("hidden");
+								},200);
+							}else{
+								$scope.error_modal_val="Try again! after a few minutes.";
+								$("#error_modal").modal("show");
+								setTimeout(function(){
+									$("#error_modal").modal("hidden");
+								},200);
+							}
+						}, function myError(response) {
+						});
+					}
+			}
+			
+		};
 	});
 </script>
 <?php
