@@ -345,7 +345,7 @@ def get_card_details_by_user(user,f):
 	elif f=="till_year":
 		return c.till_year
 	elif f=="csv":
-		return c.csv
+		return c.cvv
 	elif f=="card_type":
 		return c.card_type
 	else:

@@ -157,8 +157,8 @@
 					<td ng-if="show_card_details"><table class="myTable table-striped">
 					<tr><td>card number:</td><td>{{card_no}}</td></tr>
 					<tr><td>card type:</td><td>{{card_type}}</td></tr>
-					<tr><td>till month:</td><td>{{till_year}}</td></tr>
-					<tr><td>till year:</td><td>{{till_month}}</td></tr>
+					<tr><td>till month:</td><td>{{till_month}}</td></tr>
+					<tr><td>till year:</td><td>{{till_year}}</td></tr>
 					<tr><td>cvv:</td><td>{{cvv}}</td></tr>
 					</table></td>
 				</tr>
@@ -548,7 +548,7 @@ $(document).on({
 		var set_val_cvv=function(val){
 			$scope.cvv= val;
 		};
-		$scope.get_card_details("cvv",userid,set_val_cvv);
+		$scope.get_card_details("csv",userid,set_val_cvv);
 		var set_val_card_type=function(val){
 			$scope.card_type= val;
 		};
@@ -873,7 +873,6 @@ $(document).on({
 			$scope.view_bal_pass="";
 			var o_passcode=$scope.passcode;
 			var old_passcode=$scope.old_passcode;
-			alert(old_passcode+" & "+o_passcode);
 			if($scope.reset_passcode==$scope.reset_cpasscode && old_passcode.trim()==o_passcode.trim())
 				{
 			value=value.trim();
