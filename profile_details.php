@@ -371,9 +371,10 @@
         <div class="row">
         <form name="change_passcode_form" novalidate><div id="passcode_matching_error" class="alert alert-danger hide" align="center"></div>
         <div class="form-group col-lg-offset-4 col-lg-4 col-lg-offset-4">
-        	<input class="form-control" type="password" name="reset_passcode" id="reset_passcode" autocomplete="off" placeholder="Enter passcode" ng-model="reset_passcode" required passcode-dir/><br/>
-        	<input class="form-control" type="password" name="reset_cpasscode" id="reset_cpasscode" autocomplete="off" placeholder="Confirm passcode" ng-model="reset_cpasscode" required passcode-dir/><br/>
-        	<button type="submit" class="btn btn-primary" id="got_reset_pass" ng-click="got_reset_passcode(reset_passcode)" ng-disabled="change_passcode_form.reset_passcode.$invalid || change_passcode_form.reset_cpasscode.$invalid" >Change Passcode</button>
+      		<input class="form-control" type="password" name="old_passcode" id="old_passcode" autocomplete="off" placeholder="Enter Old Passcode" ng-model="old_passcode" required passcode-dir/><br/>
+        	<input class="form-control" type="password" name="reset_passcode" id="reset_passcode" autocomplete="off" placeholder="Enter New Passcode" ng-model="reset_passcode" required passcode-dir/><br/>
+        	<input class="form-control" type="password" name="reset_cpasscode" id="reset_cpasscode" autocomplete="off" placeholder="Confirm New Passcode" ng-model="reset_cpasscode" required passcode-dir/><br/>
+        	<button type="submit" class="btn btn-primary" id="got_reset_pass" ng-click="got_reset_passcode(reset_passcode)" ng-disabled="change_passcode_form.reset_passcode.$invalid || change_passcode_form.reset_cpasscode.$invalid || change_passcode_form.old_passcode.$invalid" >Change Passcode</button>
         </div>
         </form>
         </div>
@@ -870,9 +871,11 @@ $(document).on({
 		$scope.got_reset_passcode=function(value)
 		{
 			$scope.view_bal_pass="";
-			if($scope.reset_passcode==$scope.reset_cpasscode)
+			var o_passcode=$scope.passcode;
+			var old_passcode=$scope.old_passcode;
+			alert(old_passcode+" & "+o_passcode);
+			if($scope.reset_passcode==$scope.reset_cpasscode && old_passcode.trim()==o_passcode.trim())
 				{
-			
 			value=value.trim();
 			$("#open_change_passcode_modal").modal("hide");
 						$http({
@@ -896,7 +899,10 @@ $(document).on({
 							}, function myError(response) {
 								$("#error_modal").modal("show");
 							});
-				}else{
+				}else if(old_passcode.trim()!=o_passcode.trim()){
+					$("#passcode_matching_error").html('Old Passcode does not match.').removeClass("hide").show();
+				}
+			else{
 					$("#passcode_matching_error").html('Passcodes do not match.').removeClass("hide").show();
 				}
 			
