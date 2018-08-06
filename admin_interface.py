@@ -45,3 +45,8 @@ if form.getvalue("verify_customer") and form.getvalue("status"):
 	user=customer_details.get_any_value_by_id(userid,"email")
 	flag_bit=admin_control.verify_customer(userid,user,status)
 	print("%s"%flag_bit)
+if form.getvalue('get_acc_details') and form.getvalue('userid'):
+	userid = security.protect_data(form.getvalue('userid'))
+	get_acc_details=security.protect_data(form.getvalue('get_acc_details'))
+	got_it=customer_details.get_account_details_by_id(userid,get_acc_details)
+	print("%s"%got_it)

@@ -845,7 +845,7 @@ $(document).on({
 		$scope.view_bal_permission=true;
 		$scope.got_bal_passcode=function(value){
 			$("#view_balance_modal").modal("hide");
-			var btn_view_bal='<button class="btn btn-primary btn-sm"  ng-click="view_balance()">View Balance</button>';
+			var btn_view_bal='<button class="btn btn-primary btn-sm" ng-click="view_balance()">View Balance</button>';
 			var cust_passcode=$scope.passcode;
 			if(cust_passcode.trim()===value.trim())
 				{
