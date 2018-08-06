@@ -6,22 +6,11 @@ function protect_anything($str)
 	$str = stripslashes($str);
 	return $str;
 }
-function check_signup_part2()
-{
-	
-}
 function check_session()
 {
-	if(!isset($_SESSION['Userid']))
+	if((!isset($_SESSION['Userid'])) && (!isset($_SESSION['Adminid'])))
 	{
 		header("Location:index.php");
-	}
-}
-function check_session_for_admin()
-{
-	if(!isset($_SESSION['Adminid']))
-	{
-		header("location:admin.php");
 	}
 }
 function is_logged_in()

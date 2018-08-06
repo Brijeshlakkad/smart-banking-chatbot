@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-<?php check_session_for_admin(); ?>
+<?php check_session(); ?>
 <?php 
 if(!isset($_POST['customer_id']))
 {
