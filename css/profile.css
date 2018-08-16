@@ -1,0 +1,140 @@
+body
+{
+	background: black;
+}
+.main{
+	background: #f2f2f2;
+	width: 100%;
+	height: 1000px;
+}
+.insidemain{
+
+	background:white ;
+	width:  75%;
+	height: 900px;
+	border-radius: 20px;
+	box-shadow: 10px;
+	box-shadow: 5px 15px 15px lightgray;
+
+}
+.insidemain1{
+	background: url(Android-Lollipop-wallpapers-5.jpg);
+	width:  100%;
+	height: 250px;
+	border-top-left-radius: 20px;
+	border-top-right-radius:20px; 
+
+}
+table{
+	/*background:url(10125.jpg);	*/
+
+	color: white;
+	background: gray;
+
+}
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    float: left;border-radius: 150px; height: 275px;width: 275px;margin:40px 0px 0px 30px; 
+    z-index: 1;
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+
+.text-block {
+    position: absolute;
+    bottom: 40px;
+    right: 20%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cont {
+    position: relative;
+    font-family: Arial;
+}
+.td3{
+	
+	padding-left: 40px;
+	font-family: Verdana, Geneva, sans-serif
+}
+.buttons{
+	float: right;
+	margin-right: -200px;
+	margin-bottom: -30px;
+}
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 0px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  height: 35px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.backOfDetails{
+	height: 100%;
+	width: 50%;
+	background: gray;
+	margin: 100px 0px 0px -200px;
+	box-shadow: 10px;
+	box-shadow: 5px 5px 5px lightgray;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
