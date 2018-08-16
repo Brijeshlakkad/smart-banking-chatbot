@@ -77,7 +77,38 @@ def verify_customer(userid,user,status):
 			return "-99"
 		elif bit=="-22":
 			return "-22"
-		cont="""<h1>Jon Snow</h1>,<br/><p>Your account is approved for banking and using of our services.</p>""";
+		cont="""<h1>Jon Snow</h1>,<br/><p>Your account has approved for banking and using of our services.</p>""";
+	else:
+		cont="""<h1>Jon Snow</h1>,<br/><p>We are sorry to hear that</p><br/></p><p>Your account is rejected.</p>""";
+	conn,cursor=config.connect_to_database()
+	try:
+		cursor.execute(sql)
+		m=send_mail.Mail()
+		st=m.send_mail(user,sub,cont)
+		st=str(st)
+		if st=="11":
+			conn.commit()
+			return "11"
+		else:
+			conn.rollback()
+			return "-99"
+	except:
+		conn.rollback()
+		return "-99"
+def verify_card_request(r_id,acc_id,status):
+	sql="update requests SET status_bit='%s' where r_id='%s'"%(status,r_id)
+	user=customer_details.get_account_by_acc_id(acc_id,"email")
+	if type(status)!=int:
+		status=int(status)
+	sub="Verification of your card request"
+	if status==1:
+		bit=create_card(acc_id)
+		bit=str(bit)
+		if bit=="-99":
+			return "-99"
+		elif bit=="-22":
+			return "-22"
+		cont="""<h1>Jon Snow</h1>,<br/><p>Your card request has approved for banking and using of our services.</p>""";
 	else:
 		cont="""<h1>Jon Snow</h1>,<br/><p>We are sorry to hear that</p><br/></p><p>Your account is rejected.</p>""";
 	conn,cursor=config.connect_to_database()
@@ -127,22 +158,26 @@ def provides_requests():
 		num_row=int(cursor.rowcount)
 		if num_row!=0:
 			i=0
-			requests="""<div class="row" style="margin:20px;"><caption><h2>Requests</h2></caption><table class='customerTable table-striped'><tr><td><b>Index no.</b></td><td><b>Account Number</b></td><td><b>Requesting</b></td><td><b>Time</b></td></tr>"""
+			requests="""<div class="row" style="margin:20px;"><caption><h2>Requests</h2></caption><table class='customerTable table-striped'><tr><td><b>Index no.</b></td><td><b>Account Number</b></td><td><b>Account Name</b></td><td><b>Requesting</b></td><td><b>Time</b></td></tr>"""
 			for row in results:
 				r_id=row[0]
 				acc_id=row[1]
 				acc_no=customer_details.get_account_by_acc_id(acc_id,"acc_no")
+				acc_name=customer_details.get_account_by_acc_id(acc_id,"acc_name")
+				c_id=customer_details.get_account_by_acc_id(acc_id,"c_id")
 				req=row[2]
 				status=row[3]
 				time=row[4]
 				i+=1
-				requests+="""<tr class='clickable-row' id='%s' style="cursor:pointer;"><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>"""%(r_id,i,acc_no,req,time)
+				profile_link="""<a class='btn btn-link' id='profile_link'>%s</a>"""%acc_name
+				requests+="""<tr class='clickable-row' id='%s' style="cursor:pointer;"><td>%s</td><td id='%s' class='c_id'>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>"""%(r_id,i,c_id,acc_no,profile_link,req,time)
 			requests+="</table></div>"
 			requests+="""<script>$(".clickable-row").click(function() {
 			var r_id=$(this).attr("id");
-			alert(r_id);
-			$(this).append("<form action='customer_profile.php' id='show_customer' method='post'><input type='text' name='request_id' value='"+r_id+"' /></form>");$("#show_customer").submit();
-			}); 
+			var c_id=$(this).children("td.c_id").attr("id");
+			$(this).append("<form action='customer_profile.php' id='show_customer' method='post'><input type='hidden' name='request_id' value='"+r_id+"' /><input type='hidden' name='customer_id' value='"+c_id+"' /></form>");
+			$("#show_customer").submit();
+			});
 			</script>"""
 		else:
 			requests=no_found.no_found("We have not got any feedbacks, yet.")

@@ -1,5 +1,5 @@
-#!/usr/bin/python 
-import cgi, cgitb 
+#!/usr/bin/python
+import cgi, cgitb
 import sys
 import security
 import admin_show_customers
@@ -8,7 +8,7 @@ import customer_details
 import admin_control
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
 cgitb.enable(display=0, logdir="/path/to/logdir")
-form = cgi.FieldStorage()	
+form = cgi.FieldStorage()
 if form.getvalue('flag'):
 	flag=form.getvalue("flag")
 	info=no_found.no_found("No new requests")
@@ -49,4 +49,20 @@ if form.getvalue('get_acc_details') and form.getvalue('userid'):
 	userid = security.protect_data(form.getvalue('userid'))
 	get_acc_details=security.protect_data(form.getvalue('get_acc_details'))
 	got_it=customer_details.get_account_details_by_id(userid,get_acc_details)
+	print("%s"%got_it)
+if form.getvalue('get_request_details') and form.getvalue('r_id'):
+	r_id = security.protect_data(form.getvalue('r_id'))
+	get_request_details=security.protect_data(form.getvalue('get_request_details'))
+	got_it=customer_details.get_request_details(r_id,get_request_details)
+	print("%s"%got_it)
+if form.getvalue("verify_card_request") and form.getvalue("status"):
+	r_id = security.protect_data(form.getvalue('verify_card_request'))
+	status = security.protect_data(form.getvalue('status'))
+	acc_id=customer_details.get_request_details(r_id,"acc_id")
+	flag_bit=admin_control.verify_card_request(r_id,acc_id,status)
+	print("%s"%flag_bit)
+if form.getvalue('get_card_details') and form.getvalue('userid'):
+	userid = security.protect_data(form.getvalue('userid'))
+	get_card_details=security.protect_data(form.getvalue('get_card_details'))
+	got_it=customer_details.get_card_details_by_id(userid,get_card_details)
 	print("%s"%got_it)

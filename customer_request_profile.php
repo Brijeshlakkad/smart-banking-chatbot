@@ -1,18 +1,12 @@
 <?php include("header.php"); ?>
 <?php check_session(); ?>
 <?php
-if((!isset($_POST['customer_id'])) || (!isset($_POST['request_id'])))
+if(!isset($_POST['request_id']))
 {
 	header("Location:unreachable.php");
 }
 else{
-	$is_req=0;
-	$customer_id=$_POST['customer_id'];
-	if(isset($_POST['request_id']))
-	{
-		$request_id=$_POST['request_id'];
-		$is_req=1;
-	}
+	$request_id=$_POST['request_id'];
 ?>
 <link rel="stylesheet" type="text/css" href="css/profile.css">
 <style type="text/css">
@@ -35,14 +29,10 @@ else{
 			<div class="cont">
 			 	<div class="text-block">
    					<p style="font-size:50px;font-family: Arial Black, Gadget, sans-serif;color: black;">{{fname}} {{lname}}</p>
-   					<div class="buttons" ng-if="request_id=='-99'">
-   						<button class="button" ng-click="take_action('1')" ng-if="hasAcc==0 || hasAcc==1" ng-disabled="hasAcc==1"><span>Approve</span></button>
-						<button class="button" ng-click="take_action('-1')" ng-if="hasAcc==0 || hasAcc==-1" ng-disabled="hasAcc==-1"><span>Reject</span></button>
+   					<div class="buttons">
+   						<button class="button" ng-click="take_action('1')" ng-if="hasAcc==0 || hasAcc==1" ng-disabled="hasAcc==1"><span>Approved</span></button>
+						<button class="button" ng-click="take_action('-1')" ng-if="hasAcc==0 || hasAcc==-1" ng-disabled="hasAcc==-1"><span>Not Approved</span></button>
    					 </div>
-						 <div class="buttons" ng-if="request_id!='-99'">
-    						<button class="button" style="height:80px" ng-click="take_card_action('1')" ng-if="card_status==0 || card_status==1" ng-disabled="card_status==1"><span>Approve card request</span></button>
- 						<button class="button" style="height:80px" ng-click="take_card_action('-1')" ng-if="card_status==0 || card_status==-1" ng-disabled="card_status==-1"><span>Reject Card request</span></button>
-    					 </div>
   				</div>
   			</div>
   			<div style="width: 100%;margin-top: 50px;margin-right: 300px;height: 500px;">
@@ -53,7 +43,6 @@ else{
 				  <ul class="nav nav-tabs">
 				    <li class="active"><a data-toggle="tab" href="#home">Pesonal Details</a></li>
 				   	 <li ng-if="hasAcc==1"><a data-toggle="tab" href="#menu1">Bank Account Deails</a></li>
-						 <li ng-if="card_status==1"><a data-toggle="tab" href="#menu4">Card Deails</a></li>
 				    <li><a data-toggle="tab" href="#menu2">Billing Details</a></li>
 				    <li><a data-toggle="tab" href="#menu3">Documents</a></li>
 				  </ul>
@@ -102,22 +91,6 @@ else{
 				  					</tr>
 				  					<tr>
 				  						<td>Account Type</td><td></td><td class="td3">{{acc_type}}</td>
-				  					</tr>
-
-				      		</table>
-				     	</div>
-				    </div>
-						<div id="menu4" class="tab-pane fade" ng-if="card_status==1">
-				    	<div class="backOfDetails">
-				      		<table>
-				      			<tr>
-				  					<td>Holder Name</td><td></td><td class="td3">{{holder_name}}</td>
-				  					</tr>
-				  					<tr>
-				  						<td>Card Number</td><td></td><td class="td3">{{card_no}}</td>
-				  					</tr>
-				  					<tr>
-				  						<td>Card Type</td><td></td><td class="td3">{{card_type}}</td>
 				  					</tr>
 
 				      		</table>
@@ -191,13 +164,7 @@ else{
 <script>
 var myApp = angular.module("myapp", []);
 myApp.controller("BrijController", function($scope,$http) {
-		var req_available="<?php echo $is_req; ?>";
-		$scope.request_id="-99";
-		if(req_available==1)
-		{
-			$scope.request_id="<?php echo $request_id; ?>";
-		}
-		var userid="<?php echo $customer_id; ?>";
+		var request_id="<?php echo $request_id; ?>";
 		$scope.get_any_value=function(f,user,callback)
 		{
 			$http({
@@ -392,115 +359,7 @@ myApp.controller("BrijController", function($scope,$http) {
 						});
 					}
 			}
-		};
-		$scope.get_request_details=function(f,r_id,callback)
-		{
-			if(r_id!="-99")
-			{
-			$http({
-				method : "POST",
-				url : "admin_interface.py",
-				data: "get_request_details="+f+"&r_id="+r_id,
-				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-			}).then(function mySuccess(response) {
-				callback(response.data);
-			}, function myError(response) {
-			});
-		}
-		else {
-			return "-99";
-		}
-		};
-		var set_val_card_status=function(val){
-			$scope.card_status= val;
-		};
-		$scope.get_request_details("status",$scope.request_id,set_val_card_status);
-		$scope.get_card_details=function(f,userid,callback)
-		{
-			$http({
-				method : "POST",
-				url : "admin_interface.py",
-				data: "get_card_details="+f+"&userid="+userid,
-				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-			}).then(function mySuccess(response) {
-				callback(response.data);
-			}, function myError(response) {
-			});
-		};
-		var set_val_card_no=function(val){
-			$scope.card_no= val;
-		};
-		$scope.get_card_details("card_no",userid,set_val_card_no);
-		var set_val_holder_name=function(val){
-			$scope.holder_name= val;
-		};
-		$scope.get_card_details("holder_name",userid,set_val_holder_name);
-		var set_val_card_type=function(val){
-		  $scope.card_type= val;
-		};
-		$scope.get_card_details("card_type",userid,set_val_card_type);
-		$scope.take_card_action=function(value){
-			var r_id=$scope.request_id;
-			if(value=="1"){
-				var status=1;
-				var con=prompt("Enter 'approve' to approve this customer a account.");
-				if(con=='approve')
-					{
-						$http({
-							method : "POST",
-							url : "admin_interface.py",
-							data: "verify_card_request="+r_id+"&status="+status,
-							headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-						}).then(function mySuccess(response) {
-							var flag=response.data;
-							if(flag==11)
-							{
-								$scope.success_modal_val="Customer card request approved, successfully.";
-								$("#success_modal").modal("show");
-								setTimeout(function(){
-									$("#success_modal").modal("hidden");
-								},200);
-							}else{
-								$scope.error_modal_val="Try again! after a few minutes.";
-								$("#error_modal").modal("show");
-								setTimeout(function(){
-									$("#error_modal").modal("hidden");
-								},200);
-							}
-						}, function myError(response) {
-						});
-					}
-			}
-			else{
-				var status=-1;
-				var con=prompt("Enter 'reject' to approve this customer a account.");
-				if(con=='reject')
-					{
-						$http({
-							method : "POST",
-							url : "admin_interface.py",
-							data: "verify_card_request="+r_id+"&status="+status,
-							headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-						}).then(function mySuccess(response) {
-							var flag=response.data;
-							if(flag==11)
-							{
-								$scope.success_modal_val="Customer card request rejected.";
-								$("#success_modal").modal("show");
-								setTimeout(function(){
-									$("#success_modal").modal("hidden");
-								},200);
-							}else{
-								$scope.error_modal_val="Try again! after a few minutes.";
-								$("#error_modal").modal("show");
-								setTimeout(function(){
-									$("#error_modal").modal("hidden");
-								},200);
-							}
-						}, function myError(response) {
-						});
-					}
-			}
+
 		};
 	});
 </script>

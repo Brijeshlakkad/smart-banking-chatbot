@@ -1,6 +1,6 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 import pymysql
-import cgi, cgitb 
+import cgi, cgitb
 import sys
 import os
 import random
@@ -8,7 +8,7 @@ import config
 import find_file
 import string
 import private_data
-from smtplib import SMTP_SSL as SMTP 
+from smtplib import SMTP_SSL as SMTP
 from email.mime.text import MIMEText
 class customer:
 	global cid,username,fname,lname,middle_name,email,password,contact,postal_add,perm_add,city,state,country,pincode,dob,gender
@@ -74,7 +74,7 @@ class customer_by_id:
 		except:
 			print("Error")
 		conn.close()
-	
+
 class customer_account:
 	global acc_id,c_id,acc_no,acc_type,acc_name,balance,passcode
 	def account_details(self,c_id):
@@ -115,29 +115,8 @@ class customer_account_by_acc_id:
 		except:
 			print("Error")
 		conn.close()
-		
-def get_account_by_acc_id(acc_id,f):
-	acc=customer_account_by_acc_id()
-	acc.account_details(acc_id)
-	if f=="acc_id":
-		return acc.acc_id
-	elif f=="c_id":
-		return acc.c_id
-	elif f=="acc_no":
-		return acc.acc_no
-	elif f=="acc_type":
-		return acc.acc_type
-	elif f=="acc_name":
-		return acc.acc_name
-	elif f=="balance":
-		return acc.balance
-	elif f=="passcode":
-		return acc.passcode
-	elif f=="created_time":
-		return acc.created_time
-	else:
-		return 0
-	
+
+
 class customer_card:
 	global card_id,c_id,acc_id,holder_name,till_month,till_year,cvv,card_type,card_no
 	def card_details(self,acc_id):
@@ -150,8 +129,7 @@ class customer_card:
 				self.card_id=row[0]
 				self.c_id=row[1]
 				self.acc_id=row[2]
-				self.holder_name=row[2]
-				self.acc_type=row[3]
+				self.holder_name=row[3]
 				self.till_month=row[4]
 				self.till_year=row[5]
 				self.cvv=row[6]
@@ -179,7 +157,7 @@ class Mail:
 		try:
 			msg = MIMEText(content, text_subtype)
 			msg['Subject']= subject
-			msg['From']   = sender 
+			msg['From']   = sender
 			conn = SMTP(SMTPserver)
 			conn.set_debuglevel(False)
 			conn.login(self.USERNAME, self.PASSWORD)
@@ -232,7 +210,7 @@ def get_any_value(user,f):
 		return c.hasAcc
 	elif f=="created_time":
 		return c.created_time
-	else: 
+	else:
 		return 0
 def get_any_value_by_id(userid,f):
 	c=customer_by_id()
@@ -275,7 +253,7 @@ def get_any_value_by_id(userid,f):
 		return c.hasAcc
 	elif f=="created_time":
 		return c.created_time
-	else: 
+	else:
 		return 0
 
 def get_any_document(username,doc):
@@ -302,7 +280,7 @@ def get_account_details_by_id(userid,f):
 		return acc.created_time
 	else:
 		return 0
-	
+
 def get_account_details_by_user(user,f):
 	userid=get_any_value(user,"cid")
 	acc=customer_account()
@@ -325,9 +303,54 @@ def get_account_details_by_user(user,f):
 		return acc.created_time
 	else:
 		return 0
-	
+def get_account_by_acc_id(acc_id,f):
+	acc=customer_account_by_acc_id()
+	acc.account_details(acc_id)
+	if f=="acc_id":
+		return acc.acc_id
+	elif f=="c_id":
+		return acc.c_id
+	elif f=="acc_no":
+		return acc.acc_no
+	elif f=="acc_type":
+		return acc.acc_type
+	elif f=="acc_name":
+		return acc.acc_name
+	elif f=="balance":
+		return acc.balance
+	elif f=="passcode":
+		return acc.passcode
+	elif f=="created_time":
+		return acc.created_time
+	else:
+		return get_any_value_by_id(acc.c_id,f)
+
 def get_card_details_by_user(user,f):
 	acc_id=get_account_details_by_user(user,"acc_id")
+	c=customer_card()
+	c.card_details(acc_id)
+	if f=="card_id":
+		return c.card_id
+	elif f=="c_id":
+		return c.c_id
+	elif f=="card_no":
+		return c.card_no
+	elif f=="acc_id":
+		return c.acc_id
+	elif f=="holder_name":
+		return c.holder_name
+	elif f=="till_month":
+		return c.till_month
+	elif f=="till_year":
+		return c.till_year
+	elif f=="csv":
+		return c.cvv
+	elif f=="card_type":
+		return c.card_type
+	else:
+		return 0
+def get_card_details_by_id(userid,f):
+	acc_id=get_account_details_by_id(userid,"acc_id")
 	c=customer_card()
 	c.card_details(acc_id)
 	if f=="card_id":
@@ -371,7 +394,7 @@ def generate_customer_passcode(user):
 		return "0"
 	finally:
 		conn.close()
-		
+
 def change_customer_passcode(change_passcode,user):
 	conn,cursor=config.connect_to_database()
 	userid=get_any_value(user,"cid")
@@ -459,7 +482,7 @@ def how_many_services(userid,services):
 		return num
 	except:
 		return "-99"
-	
+
 def request_services(acc_id,request):
 	conn,cursor=config.connect_to_database()
 	status=0
@@ -482,3 +505,37 @@ def status_request(acc_id,status_request):
 		return row[0]
 	except:
 		return "-99"
+
+class request:
+	global acc_id,status
+	def request_details(self,r_id):
+		conn,cursor=config.connect_to_database()
+		sql="select * from requests where r_id='%s'"%r_id
+		try:
+			cursor.execute(sql)
+			row=cursor.fetchone()
+			self.r_id=row[0]
+			self.acc_id=row[1]
+			self.req=row[2]
+			self.status=row[3]
+			self.time=row[4]
+		except:
+			return "-99"
+		finally:
+			conn.close()
+
+def get_request_details(r_id,f):
+	c=request()
+	c.request_details(r_id)
+	if f=="r_id":
+		return c.r_id
+	elif f=="acc_id":
+		return c.acc_id
+	elif f=="req":
+		return c.req
+	elif f=="status":
+		return c.status
+	elif f=="time":
+		return c.time
+	else:
+		return get_account_by_acc_id(c.acc_id,f)
