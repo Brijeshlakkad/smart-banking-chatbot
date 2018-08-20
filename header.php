@@ -22,19 +22,16 @@
 $body = $("body");
 $(document).on({
     ajaxStart: function() { $body.addClass("loading");    },
-     ajaxStop: function() { $body.removeClass("loading"); }    
+     ajaxStop: function() { $body.removeClass("loading"); }
 });
 </script>
 <div class="please_wait_modal"></div>
 
-<style>
-	
-</style>
-<?php 
+<?php
 	if(is_admin_logged_in())
 	{
 		?>
-		
+
 	<nav class="pages-nav">
 		<div class="pages-nav__item adminid" id="<?php echo $_SESSION['Adminid']; ?>"><a class="link link--page remove-text-deco" href="admin_panel.php">Home</a></div>
 		<div class="pages-nav__item">
@@ -126,4 +123,3 @@ $(document).on({
 		<?php
 	}
 	?>
-	
