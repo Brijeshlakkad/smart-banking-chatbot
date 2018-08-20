@@ -659,12 +659,14 @@ function check_details()
 				{
 					if(x.readyState<4)
 						{
+							$("#status").empty();
 							$("#spinner").show();
 						}
 					if(x.readyState==4 && x.status==200)
 						{
 							var data=this.responseText;
-							if(data!="-99")
+							alert(data);
+							if(data!=-99)
 							{
 								$("#spinner").hide();
 								get_username(data);

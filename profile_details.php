@@ -34,7 +34,7 @@
 						<td><input type="text" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze5(s_email)" onKeyUp="check_exists(this.value,'s_email')" onBlur="check_exists(this.value,'s_email')" required disabled></td>
 						<td>
 						<span style="color:red" id="s_email" ng-show="myForm.s_email.$dirty">
-						
+
 						</span>
 						</td>
 						</tr>
@@ -390,10 +390,10 @@
 $body = $("body");
 $(document).on({
     ajaxStart: function() { $body.addClass("loading");    },
-     ajaxStop: function() { $body.removeClass("loading"); }    
+     ajaxStop: function() { $body.removeClass("loading"); }
 });
 	var myApp = angular.module("myapp", []);
-	
+
 	myApp.controller("BrijController", function($scope,$http) {
 		$scope.genderOptions = [
 				"Male","Female","Other"
@@ -413,7 +413,7 @@ $(document).on({
 				callback(response.data);
 			}, function myError(response) {
 			});
-			
+
 		};
 		var set_val_user=function(val){
 			$scope.s_user= val;
@@ -494,7 +494,7 @@ $(document).on({
 				callback(response.data);
 			}, function myError(response) {
 			});
-			
+
 		};
 		var set_val_acc_no=function(val){
 			$scope.acc_no= val;
@@ -527,7 +527,7 @@ $(document).on({
 				callback(response.data);
 			}, function myError(response) {
 			});
-			
+
 		};
 		var set_val_card_no=function(val){
 			$scope.card_no= val;
@@ -555,7 +555,7 @@ $(document).on({
 		$scope.get_card_details("card_type",userid,set_val_card_type);
 		$scope.view_balance=function()
 		{
-			$("#view_balance_modal").modal("show");	
+			$("#view_balance_modal").modal("show");
 		};
 		$scope.maxd = new Date() ;
                 var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
@@ -596,7 +596,7 @@ $(document).on({
                         $scope.cnew_passwordStrength["border-color"] = "red";
                     }
                 };
-		
+
 				var patt = new RegExp("^[0-9]{10}$");
 				$scope.mobStyle = {
 					"border-width":"1.45px"
@@ -608,7 +608,7 @@ $(document).on({
                         $scope.mobStyle["border-color"] = "red";
                     }
                 };
-		
+
 				var patt_for_names = /^[a-zA-Z]+$/
 				$scope.fnameStyle = {
 					"border-width":"1.45px"
@@ -651,7 +651,7 @@ $(document).on({
                         $scope.cpassStyle["border-color"] = "red";
                     }
                 };
-		
+
 				var patt_user = new RegExp("^[0-9a-zA-Z_.]+$");
 				$scope.userStyle = {
 					"border-width":"1.45px"
@@ -672,22 +672,22 @@ $(document).on({
 								else
 									$scope.userStyle["border-color"] = "red";
 							}, function myError(response) {
-								
+
 							});
-						
+
                     }
 					else {
                         $scope.userStyle["border-color"] = "red";
                     }
                 };
-				
+
 				$scope.emailStyle = {
 					"border-width":"1.45px"
                 };
                 $scope.analyze5 = function(value) {
 					var patt2=new RegExp("^[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$");
                     if(patt2.test(value)) {
-                        
+
 						var flag=1;
 							$http({
 								method : "POST",
@@ -702,10 +702,10 @@ $(document).on({
 								else
 									$scope.emailStyle["border-color"] = "red";
 							}, function myError(response) {
-								
+
 							});
-						
-                    } 
+
+                    }
 					else {
                         $scope.emailStyle["border-color"] = "red";
                     }
@@ -731,7 +731,7 @@ $(document).on({
                         $scope.permaddStyle["border-color"] = "red";
                     }
                 };
-				
+
 				var patt_pincode = new RegExp("^[0-9]{6}$");
 				$scope.pincodeStyle = {
 					"border-width":"1.45px"
@@ -783,7 +783,7 @@ $(document).on({
 				$scope.perm_add="";
 		};
 		$scope.check_part2 = function() {
-			
+
 							var old_password=$scope.old_password;
 							var new_password=$scope.new_password;
 							var cnew_password=$scope.confirm_new_password;
@@ -793,6 +793,10 @@ $(document).on({
 								data : "change_password="+old_password+"&new_password="+new_password+"&user="+userid,
 								headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 							}).then(function mySuccess(response) {
+								$scope.myForm2.$setPristine();
+								$scope.old_password="";
+								$scope.new_password="";
+								$scope.confirm_new_password="";
 								flag = response.data;
 								if(flag==11)
 									{
@@ -839,7 +843,7 @@ $(document).on({
 								$("#status_part2").empty();
 							});
                };
-		
+
 		$scope.got_permission=false;
 		$scope.wrong_passcode=false;
 		$scope.view_bal_permission=true;
@@ -904,7 +908,7 @@ $(document).on({
 			else{
 					$("#passcode_matching_error").html('Passcodes do not match.').removeClass("hide").show();
 				}
-			
+
 		};
 		$scope.jon_service=function(bit)
 		{
@@ -925,12 +929,12 @@ $(document).on({
 											{
 												$scope.success_modal_val="Jon Service de-activated, successfully";
 											}
-										
+
 										$("#success_modal").modal("show");
 										$(document).ajaxStop(function(){
 										setTimeout(function(){
 											$("#success_modal").modal("hidden");
-											
+
 										},200);
 										});
 									}
@@ -988,7 +992,7 @@ $(document).on({
 										$(document).ajaxStop(function(){
 										setTimeout(function(){
 											$("#success_modal").modal("hidden");
-											
+
 										},200);
 										});
 									}
@@ -1211,7 +1215,7 @@ myApp.directive('addressDir', function() {
 								mCtrl.$setValidity('addressvalid', false);
 							}
 							if(value.length>=10)
-							{	
+							{
 								mCtrl.$setValidity('addresslengthvalid', true);
 							} else {
 								mCtrl.$setValidity('addresslengthvalid', false);
@@ -1242,7 +1246,7 @@ myApp.directive('pincodeDir', function() {
 function check_pass(cpass)
 	{
 		var pass=myForm.s_password.value;
-		
+
 		if(pass!=cpass && cpass!="")
 			$("#s_cpassword").html("Passwords do not match");
 		else if(cpass=="")
@@ -1269,7 +1273,7 @@ function check_exists(val_f,f)
 				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 				x.send("f="+f+"&q="+val_f+"&u="+userid);
 	}
-	
+
 function formatDate(date) {
     var d = new Date(date),
         month = '' + (d.getMonth() + 1),
