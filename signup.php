@@ -94,21 +94,19 @@
 			<div class="form-group">
 			<tr>
 			<td><label for="s_mobile">Contact number:</label><br></td>
-			<td><input  type="text" class="form-control" name="s_mobile" placeholder="Enter Phone number" ng-style="mobStyle" ng-model="s_mobile" ng-change="analyze3(s_mobile)" required mobile-dir></td>
+			<td><input  type="text" class="form-control" name="s_mobile" placeholder="Enter Phone number" ng-style="mobStyle" ng-model="s_mobile" ng-change="analyze3(s_mobile)" onKeyUp="check_exists(this.value,'s_mobile')" onBlur="check_exists(this.value,'s_mobile')" required mobile-dir></td>
 			<td>
-			<span style="color:red" id="s_mobile" ng-show="myForm.s_mobile.$dirty && myForm.s_mobile.$invalid">
-			<span ng-show="myForm.s_mobile.$error.required">Contact number is required.</span>
-			<span ng-show="!myForm.s_mobile.$error.required && myForm.s_mobile.$error.mobvalid">Invalid contact number</span>
+			<span style="color:red" id="s_mobile" ng-show="myForm.s_mobile.$dirty">
 			</span>
 			</td>
 			</tr>
 			</div>
-			<div class="form-group"> 
+			<div class="form-group">
 			<tr>
 				<td><label for="gender">Gender</label></td>
 				<td><select class="form-control" name="gender" ng-dropdown id="gender" ng-model="gender" ng-style="genderStyle"  ng-change="analyze4(gender)" required>
 			 	<option
-					ng-repeat="x in genderOptions" 
+					ng-repeat="x in genderOptions"
 					ng-value="x">{{x}}</option>
 				</select></td>
 				<td>
@@ -231,7 +229,7 @@
 </div>
 
 <script>
-	
+
 	var myApp = angular.module("myapp", []);
 	var username="-99";
 	myApp.controller("BrijController", function($scope,$http) {
@@ -253,19 +251,36 @@
                         $scope.passwordStrength["border-color"] = "red";
                     }
                 };
-		
+
 				var patt = new RegExp("^[0-9]{10}$");
 				$scope.mobStyle = {
 					"border-width":"1.45px"
                 };
                 $scope.analyze3 = function(value) {
-                    if(patt.test(value)) {
-                        $scope.mobStyle["border-color"] = "green";
-                    }else {
-                        $scope.mobStyle["border-color"] = "red";
-                    }
+									if(patt.test(value) && value.length>3) {
+					var flag=1;
+						$http({
+							method : "POST",
+							url : "check_exists.php",
+							data: "f=s_mobile&q="+value,
+							headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+						}).then(function mySuccess(response) {
+							flag = response.data;
+							// we should be using flag in only this block so logic in following
+							if(flag==0)
+								$scope.mobStyle["border-color"] = "green";
+							else
+								$scope.mobStyle["border-color"] = "red";
+						}, function myError(response) {
+
+						});
+
+									}
+				else {
+											$scope.mobStyle["border-color"] = "red";
+									}
                 };
-		
+
 				var patt_for_names = /^[a-zA-Z]+$/
 				$scope.fnameStyle = {
 					"border-width":"1.45px"
@@ -308,12 +323,12 @@
                         $scope.cpassStyle["border-color"] = "red";
                     }
                 };
-		
+
 				var patt_user = new RegExp("^[0-9a-zA-Z_.]+$");
 				$scope.userStyle = {
 					"border-width":"1.45px"
                 };
-                $scope.analyze4 = function(value) {
+        $scope.analyze4 = function(value) {
                     if(patt_user.test(value) && value.length>3) {
 						var flag=1;
 							$http({
@@ -329,22 +344,22 @@
 								else
 									$scope.userStyle["border-color"] = "red";
 							}, function myError(response) {
-								
+
 							});
-						
+
                     }
 					else {
                         $scope.userStyle["border-color"] = "red";
                     }
                 };
-				
+
 				$scope.emailStyle = {
 					"border-width":"1.45px"
                 };
                 $scope.analyze5 = function(value) {
 					var patt2=new RegExp("^[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$");
                     if(patt2.test(value)) {
-                        
+
 						var flag=1;
 							$http({
 								method : "POST",
@@ -359,10 +374,10 @@
 								else
 									$scope.emailStyle["border-color"] = "red";
 							}, function myError(response) {
-								
+
 							});
-						
-                    } 
+
+                    }
 					else {
                         $scope.emailStyle["border-color"] = "red";
                     }
@@ -388,7 +403,7 @@
                         $scope.permaddStyle["border-color"] = "red";
                     }
                 };
-				
+
 				var patt_pincode = new RegExp("^[0-9]{6}$");
 				$scope.pincodeStyle = {
 					"border-width":"1.45px"
@@ -536,7 +551,7 @@ myApp.directive('addressDir', function() {
 								mCtrl.$setValidity('addressvalid', false);
 							}
 							if(value.length>=10)
-							{	
+							{
 								mCtrl.$setValidity('addresslengthvalid', true);
 							} else {
 								mCtrl.$setValidity('addresslengthvalid', false);
@@ -567,7 +582,7 @@ myApp.directive('pincodeDir', function() {
 function check_pass(cpass)
 	{
 		var pass=myForm.s_password.value;
-		
+
 		if(pass!=cpass && cpass!="")
 			$("#s_cpassword").html("Passwords do not match");
 		else if(cpass=="")
@@ -593,7 +608,7 @@ function check_exists(val_f,f)
 				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 				x.send("f="+f+"&q="+val_f);
 	}
-	
+
 function formatDate(date) {
     var d = new Date(date),
         month = '' + (d.getMonth() + 1),
@@ -608,13 +623,13 @@ function get_username(userid)
 				var x=new XMLHttpRequest();
 				x.onreadystatechange=function()
 				{
-					
+
 					if(x.readyState==4 && x.status==200)
 						{
 							var data=this.responseText;
 							$("#brij").append("<form id='part2' action='signup_part2.php' method='post'><input type='hidden' name='Username' value='"+data+"' /></form>");
 							$("#part2").submit();
-							
+
 						}
 				};
 				x.open("POST","customer_interface.py",true);
@@ -649,7 +664,7 @@ function check_details()
 					if(x.readyState==4 && x.status==200)
 						{
 							var data=this.responseText;
-							if(data!=0)
+							if(data!="-99")
 							{
 								$("#spinner").hide();
 								get_username(data);
@@ -664,10 +679,10 @@ function check_details()
 				x.open("POST","signup_data.py",true);
 				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 				x.send("s_user="+user+"&s_email="+email+"&s_password="+password+"&s_mobile="+mobile+"&s_gender="+gender+"&s_dob="+dob+"&s_postaladd="+postaladd+"&s_permadd="+permadd+"&s_country="+country+"&s_state="+state+"&s_city="+city+"&s_fname="+fname+"&s_lname="+lname+"&s_middlename="+middlename+"&s_pincode="+pincode);
-		
+
 	}
 $(document).ready(function(){
-	$('[data-toggle="tooltip"]').tooltip(); 
+	$('[data-toggle="tooltip"]').tooltip();
 	$("#spinner").hide();
 });
 </script>

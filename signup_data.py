@@ -1,13 +1,13 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 import pymysql
-import cgi, cgitb 
+import cgi, cgitb
 import sys
 import os
 import re
 import private_data
 import config
 import customer_details
-from smtplib import SMTP_SSL as SMTP 
+from smtplib import SMTP_SSL as SMTP
 from email.mime.text import MIMEText
 
 class Mail:
@@ -28,7 +28,7 @@ class Mail:
 		try:
 			msg = MIMEText(content, text_subtype)
 			msg['Subject']= subject
-			msg['From']   = sender 
+			msg['From']   = sender
 			conn = SMTP(SMTPserver)
 			conn.set_debuglevel(False)
 			conn.login(self.USERNAME, self.PASSWORD)
@@ -74,7 +74,7 @@ if form.getvalue('s_state'):
 	state = form.getvalue('s_state')
 if form.getvalue('s_country'):
 	country = form.getvalue('s_country')
-	
+
 sql="""INSERT INTO customers (username,fname,lname,middle_name,email,contact,password,gender,dob,postal_add,perm_add,pincode,city,state,country) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')""" %(username,fname,lname,middle_name,email,phone,password,gender,dob,postal_add,perm_add,pincode,city,state,country)
 try:
 	cursor.execute(sql)
@@ -84,5 +84,5 @@ try:
 	print("%d"%cid)
 except:
 	conn.rollback()
-	print("0")
+	print("-99")
 conn.close()

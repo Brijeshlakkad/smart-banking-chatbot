@@ -36,6 +36,38 @@ if(isset($_POST['f']) && isset($_POST['q']))
 					}
 		}
 	}
+	else if($f=="s_mobile")
+	{
+		$contact=$q;
+		if($contact=="")
+		{
+				echo "Contact number is required";
+				return;
+		}
+		else if(!preg_match("/^[0-9]{10}$/",$contact))
+		{
+				echo "Invalid contact number";
+				return;
+		}
+		else
+		{
+					$sql="select * from customers where contact='$contact'";
+					$result=mysqli_query($con,$sql);
+					if(!$result)
+						die("Error");
+					$ro=mysqli_num_rows($result);
+					if($ro>0)
+					{
+						echo "Contact already has registered";
+						return;
+					}
+					else
+					{
+						echo "0";
+						return;
+					}
+		}
+	}
 	else if($f=="s_user")
 	{
 		$user=$q;
@@ -83,7 +115,7 @@ if(isset($_POST['f']) && isset($_POST['q']))
 							return;
 						}
 					}
-					
+
 		}
 	}
 }
