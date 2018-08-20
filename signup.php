@@ -654,6 +654,7 @@ function check_details()
 		var state=myForm.s_state.value;
 		var city=myForm.s_city.value;
 		var dob=formatDate(t_dob);
+		gender=gender.substr(gender.indexOf(":")+1,gender.length);
 		var x=new XMLHttpRequest();
 				x.onreadystatechange=function()
 				{
@@ -665,7 +666,6 @@ function check_details()
 					if(x.readyState==4 && x.status==200)
 						{
 							var data=this.responseText;
-							alert(data);
 							if(data!=-99)
 							{
 								$("#spinner").hide();
