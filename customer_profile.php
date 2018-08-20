@@ -1,7 +1,7 @@
 <?php include("header.php"); ?>
 <?php check_session(); ?>
 <?php
-if((!isset($_POST['customer_id'])) || (!isset($_POST['request_id'])))
+if((!isset($_POST['customer_id'])) && (!isset($_POST['request_id'])))
 {
 	header("Location:unreachable.php");
 }
