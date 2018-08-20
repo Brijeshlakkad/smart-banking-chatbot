@@ -1,10 +1,10 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-if(!isset($_COOKIE["User_cid"])) {
+if(!isset($_COOKIE["Username"])) {
     header("Location:unreachable.php");
 } else {
-$var_temp=$_COOKIE['User_cid'];
+$var_temp=$_COOKIE['Username'];
 $var=trim($var_temp);
 $allowedExts = array("jpeg", "jpg", "pdf");
 $temp = explode(".", $_FILES["file_tobe"]["name"]);
