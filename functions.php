@@ -35,4 +35,24 @@ function is_admin_logged_in()
 		return false;
 	}
 }
+function check_pages()
+{
+	$filename=basename($_SERVER['PHP_SELF']);
+	if($filename=="index.php" || $filename=="login.php" || $filename=="signup.php")
+	{
+		if(isset($_SESSION['Userid']) || isset($_SESSION['Adminid']))
+		{
+			session_destroy();
+			header("location:$filename");
+		}
+	}
+	if(isset($_SESSION['Userid']))
+	{
+		if($filename=="admin.php")
+		{
+			session_destroy();
+			header("location:$filename");
+		}
+	}
+}
 ?>

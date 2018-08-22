@@ -1,4 +1,5 @@
 <?php include("functions.php"); ?>
+<?php check_pages(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,9 +59,6 @@ $(document).on({
 		</div>
 		</div>
 	</nav>
-	<nav class="pages-nav">
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="#">Contact</a></div>
-	</nav>
 		<?php
 	}
 	else if(is_logged_in())
@@ -92,34 +90,32 @@ $(document).on({
 		</div>
 	</nav>
 	<nav class="pages-nav">
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
+		<div class="pages-nav__item"><a class="link link--page remove-text-deco" style="font-size:10px;" href="contact.php">Contact</a></div>
 	</nav>
 		<?php
 	}
 	else
 	{
 		?>
-	<nav class="pages-nav custom_nav">
-	<div class="pages-nav__item"></div>
-		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php" >Home</a></div>
-		<div class="pages-nav__item">
-		<div class="dropdown">
-		<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Social links
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-			<li><a class="link" href="#"><span class="c-social-media">Twitter</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">LinkedIn</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">Facebook</span></a></li>
-			<li><a class="link" href="#"><span class="c-social-media">YouTube</span></a></li>
-		</ul>
-		</div>
-		</div>
-		<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="login.php">Login/Signup</a></div>
-		<div class="pages-nav__item pages-nav__item--small"></div>
-		<div class="pages-nav__item pages-nav__item--small"></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded remove-text-deco" href="contact.php">Contact</a></div>
-		<div class="pages-nav__item pages-nav__item--small"></div>
-	</nav>
+		<nav class="pages-nav">
+			<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="index.php">Home</a></div>
+			<div class="pages-nav__item">
+			<div class="dropdown">
+			<a class="dropdown-toggle link link--page remove-text-deco" data-toggle="dropdown" href="#">Social links
+	        <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+				<li><a class="link" href="#"><span class="c-social-media">Twitter</span></a></li>
+				<li><a class="link" href="#"><span class="c-social-media">LinkedIn</span></a></li>
+				<li><a class="link" href="#"><span class="c-social-media">Facebook</span></a></li>
+				<li><a class="link" href="#"><span class="c-social-media">YouTube</span></a></li>
+			</ul>
+			</div>
+			</div>
+			<div class="pages-nav__item"><a class="link link--page remove-text-deco" href="login.php">Login/Signup</a></div>
+		</nav>
+		<nav class="pages-nav">
+			<div class="pages-nav__item"><a class="link link--page remove-text-deco" style="font-size:10px;" href="contact.php">Contact</a></div>
+		</nav>
 		<?php
 	}
 	?>
