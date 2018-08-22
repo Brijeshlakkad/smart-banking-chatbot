@@ -52,7 +52,7 @@ if ((($_FILES["image"]["type"] == "image/jpg") || ($_FILES["image"]["type"] == "
 		$cookie_name = "To_access";
 		$cookie_value = $_COOKIE['Username'];
 		setcookie('Username', null, -1, '/');
-		setcookie($cookie_name, $cookie_value, time() + (10), "/"); 
+		setcookie($cookie_name, $cookie_value, time() + (10), "/");
 		header("Location:profile_set.php");
     }
   }

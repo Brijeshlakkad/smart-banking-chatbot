@@ -1,4 +1,4 @@
-<?php include("header.php"); 
+<?php include("header.php");
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 if(!isset($_COOKIE["Username"])) {
@@ -27,13 +27,13 @@ $username=trim($_COOKIE["Username"]);
 	</tr>
 	<tr>
 		<td></td>
-		<td><a class="btn btn-default form-control" type="button" href="candidate_default_pic.php">Skip</a>
-			
+		<td><a class="btn btn-default form-control" type="button" href="customer_default_pic.php">Skip</a>
+
 				</td>
 	</tr>
 </table>
 </form>
-	
+
 <div id="image_preview">
 	<img id="previewing" src="Images/noimage.png" alt="no image" />
 </div>
@@ -46,9 +46,9 @@ $username=trim($_COOKIE["Username"]);
 	var myApp = angular.module("myapp", []);
 	myApp.controller("BrijController", function($scope,$http) {
 	});
-	
+
 $(document).ready(function(){
-	$('[data-toggle="tooltip"]').tooltip(); 
+	$('[data-toggle="tooltip"]').tooltip();
 	$("#spinner").hide();
 });
 </script>

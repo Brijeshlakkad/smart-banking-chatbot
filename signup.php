@@ -674,7 +674,7 @@ function check_details()
 							else
 							{
 								$("#spinner").hide();
-								$("#status").html("<span style='color:red;'>Error! Try agian..</span>");
+								$("#status").html("<span style='color:red;'>Please enter only valid details</span>");
 							}
 						}
 				};
