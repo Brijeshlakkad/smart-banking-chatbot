@@ -1,7 +1,8 @@
 <?php
+check_pages();
 ini_set('error_reporting', -1);
 ini_set('display_errors', 1);
-ini_set('html_errors', 1); 
+ini_set('html_errors', 1);
 include_once("config.php");
 function get_customer_details($user)
 {

@@ -1,7 +1,6 @@
 <?php include_once("header.php"); ?>
-<?php check_session(); ?>
 <div class="jumbotron well back-pic" style="padding:0px;height:600px;width:100%;position: absolute;z-index: -100;">
-	
+
 </div>
 <div align="center" style="margin:100px;padding: 30px;">
 		<h1><center>Unreachable Page <span class="glyphicon glyphicon-alert"></span></center></h1>

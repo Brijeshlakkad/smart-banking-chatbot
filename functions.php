@@ -48,10 +48,24 @@ function check_pages()
 	}
 	if(isset($_SESSION['Userid']))
 	{
-		if($filename=="admin.php")
+		if($filename=="profile.php" || $filename=="contact.php" || $filename=="profile_details.php" || $filename=="jon_snow.php")
 		{
+
+		}
+		else{
 			session_destroy();
-			header("location:$filename");
+			header("location:unreachable.php");
+		}
+	}
+	if(isset($_SESSION['Adminid']))
+	{
+		if($filename=="admin.php" || $filename=="admin_panel.php" || $filename=="logout.php")
+		{
+
+		}
+		else {
+			session_destroy();
+			header("location:unreachable.php");
 		}
 	}
 }
