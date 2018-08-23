@@ -59,7 +59,7 @@ function check_pages()
 	}
 	if(isset($_SESSION['Adminid']))
 	{
-		if($filename=="admin.php" || $filename=="admin_panel.php" || $filename=="logout.php")
+		if($filename=="admin.php" || $filename=="admin_panel.php" || $filename=="logout.php" || $filename=="customer_profile.php")
 		{
 
 		}
