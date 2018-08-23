@@ -1,12 +1,11 @@
 <?php include_once("header.php"); ?>
-<?php check_session(); ?>
 <div class="container-fluid my_well">
 	<div class="row" align="center">
 	<div class="row"><h2>Give us feedback</h2><br/><h3>We'd like to hear from you.</h3></div><br/>
 		<form ng-app="myapp" ng-controller="BrijController" name="feedback"  novalidate>
 		<table class="myTable">
 			<div class="form-group">
-			<tr> 
+			<tr>
 			<td><label for="s_email">Email:</label><br></td>
 			<td><input type="email" class="form-control" name="s_email" placeholder="Enter Email" ng-model="s_email" ng-style="emailStyle" ng-change="analyze(s_email)" required></td>
 			<td>
@@ -18,7 +17,7 @@
 			</tr>
 			</div>
 			<div class="form-group">
-			<tr> 
+			<tr>
 			<td><label for="f_text">Feedback:</label><br></td>
 			<td><textarea class="form-control" name="f_text" placeholder="Enter feedback here...." ng-model="f_text" cols="40" rows="10" required></textarea></td>
 			<td>
@@ -82,7 +81,7 @@ var myApp = angular.module("myapp", []);
 					var patt_email=new RegExp("^[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$");
                     if(patt_email.test(value)) {
                    		$scope.emailStyle["border-color"] = "green";
-                    } 
+                    }
 					else {
                         $scope.emailStyle["border-color"] = "red";
                     }
@@ -120,8 +119,8 @@ var myApp = angular.module("myapp", []);
 								}
 
 							}, function myError(response) {
-								
-							});	
+
+							});
 		};
 	});
 </script>

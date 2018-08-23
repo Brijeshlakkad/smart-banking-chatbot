@@ -1,5 +1,6 @@
 <?php include_once("header.php"); ?>
-<?php check_session(); ?>
+<?php check_session();
+check_pages(); ?>
 <link rel="stylesheet" type="text/css" href="css/vertical_tab.css" />
 <div ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
 <div class="container-fluid my_well">
@@ -353,7 +354,7 @@
         <div class="row">
         <form name="bal_pass_form" novalidate>
         <div class="form-group col-lg-offset-4 col-lg-4 col-lg-offset-4">
-        	<input class="form-control" type="text" name="view_bal_pass" id="view_bal_pass" autocomplete="off" placeholder="Enter passcode" ng-model="view_bal_pass" required passcode-dir/><br/>
+        	<input class="form-control" type="password" name="view_bal_pass" id="view_bal_pass" autocomplete="off" placeholder="Enter passcode" ng-model="view_bal_pass" required passcode-dir/><br/>
         	<button type="submit" class="btn btn-primary" id="got_bal_pass" ng-click="got_bal_passcode(view_bal_pass)" ng-disabled="bal_pass_form.view_bal_pass.$invalid" >View Balance</button>
         </div>
         </form>
