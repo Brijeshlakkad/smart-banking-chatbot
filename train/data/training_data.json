@@ -1,0 +1,2482 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [
+      {
+          "value": "pincode",
+          "synonyms": [
+              "pin",
+              "pin number",
+              "passcode",
+              "pass number",
+              "pass num",
+              "atm password",
+              "atm Passcode",
+              "pin num",
+              "activation keys",
+              "active keys"
+          ]
+      },
+      {
+          "value": "atm",
+          "synonyms": [
+              "ATM",
+              "a.t.m",
+              "automated teller machine"
+          ]
+      },
+      {
+          "value": "process",
+          "synonyms": [
+              "processes",
+              "steps",
+              "ways",
+              "procedures",
+              "procedure"
+          ]
+      },
+      {
+        "value": "help",
+        "synonyms":[
+          "assist me",
+          "help me",
+          "assist",
+          "get me help",
+          "please help me",
+          "please assist me"
+        ]
+      },
+      {
+        "value": "code",
+        "synonyms":[
+          "number",
+          "num",
+          "keys"
+        ]
+      },
+      {
+        "value": "active",
+        "synonyms":[
+          "opening",
+          "turn on",
+          "activating",
+          "active",
+          "activate",
+          "activation",
+          "on",
+          "initiate",
+          "initiating",
+          "begin",
+          "begining",
+          "turning on",
+          "1",
+          "setup",
+          "re-enabling",
+          "re-enable",
+          "enable"
+        ]
+      },
+      {
+        "value": "card",
+        "synonyms":[
+          "visa card",
+          "master card",
+          "atm card",
+          "bank card",
+          "credit card",
+          "debit card"
+        ]
+      },
+      {
+        "value": "cancel",
+        "synonyms":[
+          "cancelled",
+          "disabled",
+          "foreclosing",
+          "closing",
+          "close",
+          "no longer need",
+          "no longer want",
+          "revoke",
+          "revoking",
+          "turn off",
+          "off",
+          "close",
+          "cancel",
+          "turning off",
+          "0",
+          "setoff",
+          "disable"
+        ]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "I want to turn on my new visa card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "visa",
+            "entity": "card_type",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "value": "new",
+            "entity": "active_new_card"
+          }
+        ]
+      },
+      {
+        "text": "turn on my new visa card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "visa",
+            "entity": "card_type",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "value": "new",
+            "entity": "active_new_card",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "I want to turn on my visa card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "visa",
+            "entity": "card_type",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "want to turn on my visa card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "visa",
+            "entity": "card_type",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "turn on my visa card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "visa",
+            "entity": "card_type",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "I want to turn on my new mastercard card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 25,
+            "end": 35,
+            "value": "mastercard",
+            "entity": "card_type",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "value": "new",
+            "entity": "active_new_card",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "I want to turn on my mastercard card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 21,
+            "end": 31,
+            "value": "mastercard",
+            "entity": "card_type",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "I want to reactive my cancelled card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 22,
+            "end": 36,
+            "value": "cancelled card",
+            "entity": "active_cancelled_card",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "want to reactive my cancelled card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 20,
+            "end": 34,
+            "value": "cancelled card",
+            "entity": "active_cancelled_card",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "reactive my cancelled card",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 12,
+            "end": 26,
+            "value": "cancelled card",
+            "entity": "active_cancelled_card",
+            "extractor": "ner_crf",
+            "confidence": 0.854,
+            "processors": [
+              "ner_synonyms"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "I want to activate my credit card by internet banking",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 37,
+            "end": 53,
+            "value": "internet banking",
+            "entity": "using_what"
+          },
+          {
+            "start": 22,
+            "end": 33,
+            "value": "credit card",
+            "entity": "card_type"
+          }
+        ]
+      },
+      {
+        "text": "Is pin necessary to activate a card?",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "pin",
+            "entity": "necessary_item"
+          },
+          {
+            "start": 3,
+            "end": 6,
+            "value": "pin",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "I want credit card activation keys",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "activation keys",
+            "entity": "user_wants"
+          },
+          {
+            "start": 7,
+            "end": 18,
+            "value": "credit card",
+            "entity": "card_type"
+          }
+        ]
+      },
+      {
+        "text": "I want to activate master card by text",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 34,
+            "end": 38,
+            "value": "text",
+            "entity": "using_what"
+          },
+          {
+            "start": 19,
+            "end": 30,
+            "value": "master card",
+            "entity": "card_type"
+          }
+        ]
+      },
+      {
+        "text": "Can I initiate credit card with atm?",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 32,
+            "end": 35,
+            "value": "atm",
+            "entity": "using_what"
+          },
+          {
+            "start": 15,
+            "end": 26,
+            "value": "credit card",
+            "entity": "card_type"
+          }
+        ]
+      },
+      {
+        "text": "Can you assist me in re-enabling a card via automated teller machine?",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 44,
+            "end": 68,
+            "value": "automated teller machine",
+            "entity": "using_what"
+          },
+          {
+            "start": 44,
+            "end": 68,
+            "value": "automated teller machine",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "How do I reactivate a credit card account?",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 22,
+            "end": 33,
+            "value": "credit card",
+            "entity": "card_type"
+          }
+        ]
+      },
+      {
+        "text": "How long does the credit card activation takes?",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "credit card",
+            "entity": "card_type"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "long",
+            "entity": "help_asking_time"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "How long",
+            "entity": "help_asking_time"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "How long takes",
+            "entity": "help_asking_time"
+          }
+        ]
+      },
+      {
+        "text": "How to initiate a credit card?",
+        "intent": "Banking_Activate_Card",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "credit card",
+            "entity": "card_type"
+          }
+        ]
+      },
+      {
+        "text": "I want to activate my card.",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "I got a new card",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "I need to activate it my card",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "I need your help for mastercard credit card activation",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "When will my credit card begin working?",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "What should I do to setup my credit card for online payments?",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the process to activate credit card after cancellation?",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "What are the steps for turning on a new card?",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "How to deactivate credit?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the procedure for credit card deactivation?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "I want to raise request for deactivating my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Please assist me to revoke my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Please revoke my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Tell me the ways through which I can close my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Annual charges are high hence want to cancel my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Cancel a card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I cancel a credit card I just applied for?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I cancel my credit card if I have some pending dues?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "Details on how to apply for cancellation of credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "How to cancel a credit card without hurting its score?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "How to close credit card online?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "I am not able to curb my spendings on credit card and so I want to close it",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "I am not using credit card tell me how can I deactivate it",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "I no longer need this credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "I want to know about credit deactivation process",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "What are the ways for closing credit card?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the way to deactivate my credit card?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the process for closing credit card?",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "What are the charges for new credit card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Where is the credit card fee information?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Where can I see the cost for buying the credit card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "What is the charge for card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "What are the fees?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me about how much fee the bank charged for last month on my credit card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Charges included in credit card",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Could you provide additional information regarding card fees?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Does it cost me anything to apply with your company for a credit card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Fee on my card",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Give me more option about credit card charges",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "How can I pay the fee of credit card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "How much do you charge to my credit card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "How much we pay for the maintenance fee?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "I need assistance finding my credit card fee",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Is there some charge for credit card?",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "I want to know about credit card costs.",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "I want to see the costs associated with this card",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "I would like to find out the cost of my credit card",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "Need some help with my credit card charges/fees",
+        "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "How do I get a card reissued?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Please take this old credit card and give me new one",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Please substitute a new card for the worn-out one",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I would like to know how to replace my credit card.",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I want to opt for the replacement of my card as it has worn out",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I want card replacement same day",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I need to get a new card",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I need some information on how to replace credit card",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "How do I go about requesting a new card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Do I need to validate my new home address in order to get a card replacement?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Credit credit card replacement methods",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Card need to be replaced as it does not work",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me how to re-issue a credit card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I request a replacement for my card online?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I have helpline number to ask credit card replacement?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I get info on replacing my credit card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Where from can I issue another card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the cost for credit card replacement?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "What are the methods using which I can get a new card by replacing it with old one?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Replacement for banking credit card",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "What steps should be taken in the event of a missing credit card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "My credit card is lost how should I cancel it",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "Someone took my card!",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "What are the options with the card loss?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "I would like to know what to do if I lose my credit card",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I lock my credit card until I find it?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "Help! I left my credit card with my purse in the taxi and I'm afraid someone's gonna use it",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "How can I cancel my credit card which was stolen?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "How do I file for a missing card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "How do I go about reporting a card theft?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "How do I report the theft of my credit card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "How much is the charge for a lost card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "I have lost my credit card and I want to deactivate it",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "I have no idea where I placed my debit card",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "I need assistance as I've lost my credit card",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "Is there any charge for registering a complaint for credit card loss?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "What if I lose the card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the procedure to report stolen card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the way to report a lost card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "What steps can I take when I lose my credit card?",
+        "intent": "Banking_Report_Missing_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I see the agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Will there be a new card member agreement for my renewed card?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Will it cost me to receive a copy of the card holder agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Who do I contact for card member agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "When I will receive credit member agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "What are arbitration clauses in cardmember agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Looking for my credit card account agreement",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Looking for credit card member agreement",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "I want pdf of cardmember agreement",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "It would be great if you help me with cardholder member agreement",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "I never got the cardmember agreement. can you post/email me?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "I need information about cardholder member agreement. please help with the same",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "I need a copy of my card agreement",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "How will I get card member agreement on email?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "How soon will you tell me about modifications made to the bank card agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "How can I request card holder agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Do I need to sign card member agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Do I have to fill out a new member agreement for a replaced card?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Does my card member agreement give all information about charges on credit card?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me how can I request card holder agreement?",
+        "intent": "Banking_Request_Card_Member_Agreement",
+        "entities": []
+      },
+      {
+        "text": "Can I check the status of my check book request?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Can I order checkbook thru this chat window?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "What is the option for check book renewal?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "What is helpline number for requesting checkbook?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "What are charges for a new checkbook?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Please give me the information on how to request the check-book",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "I want to know my check book request status",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "I want to apply for a checkbook",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Is it possible for me to receive a checkbook?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "I need assistance on getting check book",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "I'm calling for help in ordering a new checkbook please.",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "I'm all outta checks",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "How to get another check book?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "How do I receive a new copy of my check book?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Help with check requisition",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Do you issue check books?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Do you have check book request details?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Could you help me get a checkbook?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me some options about check book issue?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Can you please send me some checks?",
+        "intent": "Banking_Request_Checkbook",
+        "entities": []
+      },
+      {
+        "text": "Who approves the credit limit extension?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "How can I add limit to credit card?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "Does my credit card usage have impact on increasing the credit line?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "Credit bump",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "Can you extend my current card limitation?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "How do I raise credit card limit?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "How often does bank increase credit limit?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "How to apply for increase in credit limit?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "I am not getting on how to increase credit limit",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "I'd like a higher credit ceiling please",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "I need to change my credit card limit",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "I want to know about credit limitation",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "I want to submit my latest salary slip to enhance my credit card limit",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "I would like to have a bigger credit line",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "Requesting you to remove credit restrictions",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "There is a hospital emergency. can you increase my credit limit",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "Upgrade credit limit",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "What are the methods with which I can improve my credit line?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "What are the steps involved in increasing credit line?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "Where do I request a credit increase?",
+        "intent": "Banking_Request_Increase_In_Credit_Line",
+        "entities": []
+      },
+      {
+        "text": "What all details I need to fill direct deposit form?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "What are ways for setting up direct deposit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "When setting up direct deposit what does deposit type mean?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "What is the way to do direct deposit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "What is process to setup direct deposit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "What are steps for setting up direct deposit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Where is option of direct deposit in net banking?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Can I set up a direct deposit without a checkbook?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Can you deposit my salary right into my account?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Can you mail me the direct deposit form to my residential address?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Does the mobile app offer direct deposit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "From where should I sign up for direct deposit",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "How do I setup direct deposit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "How to sign up for direct deposit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "How to use on-line banking for direct credit?",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "I have query regarding process of direct deposit",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "I want to ask about direct deposit",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Please guide me with direct deposit process",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Set up direct deposit",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "Show me process to setup direct deposit",
+        "intent": "Banking_Set_Up_Direct_Deposit",
+        "entities": []
+      },
+      {
+        "text": "What is the daily limit to transfer money to some other bank?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Can I send my sister some money?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Can you please help me with wire transaction?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Could you please assist me with transferring funds?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Could you please tell me how to transfer money?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "How can I transfer funds electronically?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "How do I add payee to my external account lists?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "How do I set up recurring external transfers?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "How much overseas wires fund charge?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "I need support for international bank transfer",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "I wand to send a wire is it secure and convenient",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "I want to transfer some amount to another account within the same bank",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Please walk me through the process of wire transfer",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Transfer to checking",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Transfer to outside account on app",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "What are the options to move money to outside bank account?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "When will the beneficiary receive the wire transferred money?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Where are the internal money transfer option in mobile application?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Where can I do a wire exchange?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Which is the external money transfer maximum limit?",
+        "intent": "Banking_Transfer_Money",
+        "entities": []
+      },
+      {
+        "text": "Do you know about account activities of my checking account?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Can I get statement for account activities in past 10 days?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Transaction history",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "View activities",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "What is the amount of interest that got credited to my a/c?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "When was the levy order processed for my checking account?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Where to view my account transaction history for my checking account?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Show activities",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "See transactions",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Please tell me account activities detail",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Places where account activity history can be found",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "I would like to see any recent activity on my account before the interest got added",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "I want someone to help me see account activity and summary for every activity of my account",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "I wanna check my account summary",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "How much interest amount deposited last month in my account?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "How do I access checking account activity information?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "How can one get account activities details of his a/c?",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Help with viewing activity that take place in an a/c",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "Help me get all the information about all activities of all my checking accounts",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "From where did I get the latest credit in my account",
+        "intent": "Banking_View_Activity",
+        "entities": []
+      },
+      {
+        "text": "What are the charges for my credit card which are yet to be approved?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Any outstanding charges",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Can I get some info related to pending charges for my credit card using mobile application?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Can you give me information about the outstanding charges on my credit card?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Can you show me where I can find my charges that have not yet gone through?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Can you show me where I can see any upcoming charges levied on my credit card account?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "How can I access credit card pending payments?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "How do I review my credit charges awaiting confirmation?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "How to get credit card's pending charges on-line?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "How to view unsettled charges with my credit card?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "I'd like to learn more about the pending charges of my credit card",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "I need pending charges for card",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Is there any information for credit card with pending charges?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "I want to know about credit card pending charge",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "I would like to know about my pending charges",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Pending items",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Please tell me about the pending charges against me",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Show pending",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "What should I know about pending charges on my credit card?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Where can I go over my recent charges pending approval?",
+        "intent": "Banking_View_Pending_Charges",
+        "entities": []
+      },
+      {
+        "text": "Where is the routing transit number located?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Can you tell my routing number in this chat window?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Find a routing number without checks",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "How do I know the routing number?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "How to locate bank routing number?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "How to search bank routing numbers?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "How to view international bank transfer routing number?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "I need to find my routing number of my bank account online.",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Is the bank account number same as the routing number?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "I want to make international transaction so I need routing number for that",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "May I know the routing number?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "What is an aba routing number and how do I find it?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "What is the aba routing number for your bank?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "What swift code and aba routing number I should use to wire transfer fund from foreign country?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Where can I find my bank routing numbers for money transfer?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Where can I find my routing id?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Where can I see my routing id?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Where do I locate my routing number on site please?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Where do I see the routing no?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "Where is routing number need to find on check?",
+        "intent": "Banking_View_Routing_Number",
+        "entities": []
+      },
+      {
+        "text": "I agree",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Affirmative. That's what I'm looking for.",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "All right",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Correct",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "For sure!",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Got it",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Great",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "I like that",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Indeed!",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Sure thing!",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Sweet",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "That is precisely what I was looking for",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "That is right",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "That is the proper response.",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "That is what I need",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "That's exactly what I want",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "This is alright",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Very well. Let's do it.",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Yeah, that's it!",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Yes",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "You read my mind",
+        "intent": "Bot_Control_Approve_Response",
+        "entities": []
+      },
+      {
+        "text": "Change topic",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Discuss something else",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Help me with this other question",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Here is another issue",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "I have one more question",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Let us change the topic",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Let us talk about something else",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Talk about something else",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "A different matter",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Another thing",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Can we talk about something else?",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "Chat about something else",
+        "intent": "Bot_Control_Change_Subject",
+        "entities": []
+      },
+      {
+        "text": "I need more information",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "Let's try to say that again more clearly, shall we?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "What are you referring to?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "What are you saying?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "What are you talking about?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "What do you mean?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "What do you mean by that?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "I don't get it",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "Come again?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "Can you say that again please?",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "Explains",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "I did not quite understand what you gave me",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "I didn't catch that",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "I didn't quite understand what you said",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "I didn't understand that properly",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "I don't understand",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "I don't understand what you're saying",
+        "intent": "Bot_Control_Clarification",
+        "entities": []
+      },
+      {
+        "text": "Anyone there?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Are you leaving me?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Are you on?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Are you still around?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Are you still here with me?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Are you there?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Did you go somewhere?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Did you hear what I said?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Have I lost you?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "I am still holding",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Is anybody here?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Is anybody home?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Speak to me if you are there.",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Where'd you go?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "You around?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Am I talking to someone?",
+        "intent": "Bot_Control_Confirm_Presence",
+        "entities": []
+      },
+      {
+        "text": "Actually, I take that back",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Hold on! I think I want to do it differently.",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "I change my mind.",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "I did not mean that?",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "I didn't mean to do that actually, let's go back",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "It's not what I mean",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Let us redo that again!",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Never",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Never mind",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Nothing",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Not yet",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Wait! Let's back up few steps and do that again",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Ignore this",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "Cancel",
+        "intent": "Bot_Control_Ignore_Undo",
+        "entities": []
+      },
+      {
+        "text": "I don't want that",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "It is not what I want",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "It is not what I was looking for",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "I wasn't looking for that",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "No I'm fine thanks",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "Not the right response",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "That answer is incorrect",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "That sounds like the wrong response",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "That was not my intent",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "That was wrong, try again",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "Wrong response",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "You did not understand what I asked",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "I do not think it is the answer?",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "You did not understand what I said",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "That is not true",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "I disagree",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "You're misunderstanding me",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "No",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "Bad response",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "You didn't understand me",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "I don't need that",
+        "intent": "Bot_Control_Reject_Response",
+        "entities": []
+      },
+      {
+        "text": "Just hold on",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Just a sec",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "I would like to put you on hold",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "I will be back",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "I want stop a moment",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "In a moment",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Hold on",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Give me a second",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Give me a moment",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Give me a few minutes to get together",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Out for a break",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Need a minute here",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Let me see",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Keep holding",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Can you wait for me?",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Can you give me a moment?",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Be patient with me",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Be back later",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Back again soon",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "Wait",
+        "intent": "Bot_Control_Standby",
+        "entities": []
+      },
+      {
+        "text": "We will need to begin again",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Back to the beginning",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "We need a do-over",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Start over",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Restart",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Please start a new chat",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Please reset",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Please initiate from the beginning",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "One more time from the beginning",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Let us reopen this again.",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Let's pick this up from the top again.",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Let's go back to square one",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "I would like to start all over",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "I want start from the beginning",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "I need to reset.",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "How can I start over?",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Can we please start over?",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Begin over!",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Back to the top",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "Actually, let's start over",
+        "intent": "Bot_Control_Start_Over",
+        "entities": []
+      },
+      {
+        "text": "You got me",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "To be honest, I m really not sure",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "No idea",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "No clue",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I m not yet convinced",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I m not sure what will make you happy",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I m not certain I get what you re saying",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I haven't got a clue",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I don t know what you need",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I don t know what you want",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I have no idea, actually",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {
+        "text": "I have no idea what you are looking for",
+        "intent": "Bot_Control_Unsure",
+        "entities": []
+      },
+      {"text":"helllo i m brijesh","intent":"greet","entities":[]},{"text":"hi Sanket","intent":"greet","entities":[{"end":9,"entity":"name","start":3,"value":"Sanket"}]},{"text":"hey Brijesh","intent":"greet","entities":[{"end":11,"entity":"name","start":4,"value":"Brijesh"}]},{"text":"hi","intent":"greet","entities":[]},{"text":"hi brijesh lakkad","intent":"greet","entities":[{"end":17,"entity":"name","start":3,"value":"brijesh lakkad"}]},{"text":"hi sanket patel","intent":"greet","entities":[{"end":15,"entity":"name","start":3,"value":"sanket patel"}]},{"text":"hi brijesh lakkad how is it going","intent":"greet","entities":[{"end":17,"entity":"name","start":3,"value":"brijesh lakkad"}]},{"text":"hi Brijesh whats up","intent":"greet","entities":[{"end":10,"entity":"name","start":3,"value":"Brijesh"}]},{"text":"hey sanket patel whats up","intent":"greet","entities":[{"end":16,"entity":"name","start":4,"value":"sanket patel"}]},{"text":"hey Sanket","intent":"greet","entities":[{"end":10,"entity":"name","start":4,"value":"Sanket"}]},{"text":"hey Sanket how is it going","intent":"greet","entities":[{"end":10,"entity":"name","start":4,"value":"Sanket"}]},{"text":"hi Sanket whats up","intent":"greet","entities":[{"end":9,"entity":"name","start":3,"value":"Sanket"}]},{"text":"hi how is it going","intent":"greet","entities":[]},{"text":"hey brijesh lakkad","intent":"greet","entities":[{"end":18,"entity":"name","start":4,"value":"brijesh lakkad"}]},{"text":"hey whats up","intent":"greet","entities":[]},{"text":"hey Brijesh how is it going","intent":"greet","entities":[{"end":11,"entity":"name","start":4,"value":"Brijesh"}]},{"text":"hey","intent":"greet","entities":[]},{"text":"hey brijesh lakkad how is it going","intent":"greet","entities":[{"end":18,"entity":"name","start":4,"value":"brijesh lakkad"}]},{"text":"hi Brijesh","intent":"greet","entities":[{"end":10,"entity":"name","start":3,"value":"Brijesh"}]},{"text":"hey sanket patel how is it going","intent":"greet","entities":[{"end":16,"entity":"name","start":4,"value":"sanket patel"}]},{"text":"hey Brijesh whats up","intent":"greet","entities":[{"end":11,"entity":"name","start":4,"value":"Brijesh"}]}
+    ]
+  }
+}

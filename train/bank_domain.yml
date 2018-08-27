@@ -1,0 +1,25 @@
+slots:
+  using_what:
+    type: text
+intents:
+  - Bank_Active_Card
+  - Bank_Cancel_Card
+  - Bank_Fees_Inquiry
+entities:
+  - using_what
+templates:
+  utter_greet:
+    - "Hello!"
+    - "Hello1 How can i help"
+  utter_active_card:
+    - "You got it! Boss"
+    - "How can you want to do it?"
+    - "Okay! Boss"
+    - "Done!"
+  utter_cancel_card:
+    - "Done :("
+    - "Which one? Can you please provide more information of card?"
+actions:
+  - utter_active_card
+  - utter_cancel_card
+  - actions.BankActiveCard
