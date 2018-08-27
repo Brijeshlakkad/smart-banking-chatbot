@@ -1,0 +1,35 @@
+action_factory: null
+action_names:
+- utter_greet
+- action_get_name
+- utter_active_card
+- action_active_card
+actions:
+- utter_greet
+- actions.GetName
+- utter_active_card
+- actions.BankActiveCard
+config:
+  store_entities_as_slots: true
+entities:
+- using_what
+intents:
+- greet
+- Bank_Active_Card
+slots:
+  name:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  using_what:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_active_card:
+  - text: You got it! Boss
+  - text: How can you want to do it?
+  - text: Okay! Boss
+  - text: Done!
+  utter_greet:
+  - text: Hello!
+  - text: Hello1 How can i help
+topics: []

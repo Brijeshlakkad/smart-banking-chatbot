@@ -12,7 +12,7 @@
     "spacy_model_name": "en", 
     "language": "en", 
     "intent_classifier_sklearn": "intent_classifier.pkl", 
-    "trained_at": "20180827-124913", 
+    "trained_at": "20180827-144339", 
     "training_data": "training_data.json", 
     "entity_extractor_crf": {
         "BILOU_flag": true, 
@@ -47,6 +47,6 @@
             ]
         ]
     }, 
-    "rasa_nlu_version": "0.11.5", 
+    "rasa_nlu_version": "0.11.4", 
     "regex_featurizer": null
 }

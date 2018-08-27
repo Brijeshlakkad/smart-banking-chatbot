@@ -1,0 +1,15 @@
+{
+  "features": [
+    "intent_greet", 
+    "intent_Bank_Active_Card", 
+    "entity_using_what", 
+    "slot_name_0", 
+    "slot_using_what_0", 
+    "prev_action_listen", 
+    "prev_action_restart", 
+    "prev_utter_greet", 
+    "prev_action_get_name", 
+    "prev_utter_active_card", 
+    "prev_action_active_card"
+  ]
+}

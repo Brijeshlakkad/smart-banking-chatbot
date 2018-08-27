@@ -1,10 +1,11 @@
 slots:
+  name:
+    type: text
   using_what:
     type: text
 intents:
+  - greet
   - Bank_Active_Card
-  - Bank_Cancel_Card
-  - Bank_Fees_Inquiry
 entities:
   - using_what
 templates:
@@ -16,10 +17,8 @@ templates:
     - "How can you want to do it?"
     - "Okay! Boss"
     - "Done!"
-  utter_cancel_card:
-    - "Done :("
-    - "Which one? Can you please provide more information of card?"
 actions:
+  - utter_greet
+  - actions.GetName
   - utter_active_card
-  - utter_cancel_card
   - actions.BankActiveCard

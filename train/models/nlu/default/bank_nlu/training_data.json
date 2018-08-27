@@ -2587,9 +2587,9 @@
     "entity_synonyms": [
       {
         "synonyms": [
-          "number", 
           "num", 
-          "keys"
+          "keys", 
+          "number"
         ], 
         "value": "code"
       }, 
@@ -2617,25 +2617,33 @@
       {
         "synonyms": [
           "ATM", 
-          "a.t.m", 
-          "automated teller machine"
+          "automated teller machine", 
+          "a.t.m"
         ], 
         "value": "atm"
       }, 
       {
         "synonyms": [
           "pin", 
+          "active keys", 
           "atm Passcode", 
           "activation keys", 
           "pin num", 
           "pin number", 
           "pass num", 
-          "active keys", 
           "pass number", 
           "atm password", 
           "passcode"
         ], 
         "value": "pincode"
+      }, 
+      {
+        "synonyms": [
+          "Hey", 
+          "Holaa", 
+          "hello"
+        ], 
+        "value": "hey"
       }, 
       {
         "synonyms": [
@@ -2647,9 +2655,9 @@
           "re-enabling", 
           "begining", 
           "1", 
+          "activation", 
           "enable", 
           "opening", 
-          "activation", 
           "begin", 
           "turn on", 
           "on", 

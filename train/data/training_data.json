@@ -3,41 +3,49 @@
     "regex_features": [],
     "entity_synonyms": [
       {
-          "value": "pincode",
-          "synonyms": [
-              "pin",
-              "pin number",
-              "passcode",
-              "pass number",
-              "pass num",
-              "atm password",
-              "atm Passcode",
-              "pin num",
-              "activation keys",
-              "active keys"
-          ]
+        "value": "hey",
+        "synonyms": [
+          "hello",
+          "Hey",
+          "Holaa"
+        ]
       },
       {
-          "value": "atm",
-          "synonyms": [
-              "ATM",
-              "a.t.m",
-              "automated teller machine"
-          ]
+        "value": "pincode",
+        "synonyms": [
+          "pin",
+          "pin number",
+          "passcode",
+          "pass number",
+          "pass num",
+          "atm password",
+          "atm Passcode",
+          "pin num",
+          "activation keys",
+          "active keys"
+        ]
       },
       {
-          "value": "process",
-          "synonyms": [
-              "processes",
-              "steps",
-              "ways",
-              "procedures",
-              "procedure"
-          ]
+        "value": "atm",
+        "synonyms": [
+          "ATM",
+          "a.t.m",
+          "automated teller machine"
+        ]
+      },
+      {
+        "value": "process",
+        "synonyms": [
+          "processes",
+          "steps",
+          "ways",
+          "procedures",
+          "procedure"
+        ]
       },
       {
         "value": "help",
-        "synonyms":[
+        "synonyms": [
           "assist me",
           "help me",
           "assist",
@@ -48,7 +56,7 @@
       },
       {
         "value": "code",
-        "synonyms":[
+        "synonyms": [
           "number",
           "num",
           "keys"
@@ -56,7 +64,7 @@
       },
       {
         "value": "active",
-        "synonyms":[
+        "synonyms": [
           "opening",
           "turn on",
           "activating",
@@ -78,7 +86,7 @@
       },
       {
         "value": "card",
-        "synonyms":[
+        "synonyms": [
           "visa card",
           "master card",
           "atm card",
@@ -89,7 +97,7 @@
       },
       {
         "value": "cancel",
-        "synonyms":[
+        "synonyms": [
           "cancelled",
           "disabled",
           "foreclosing",
@@ -2476,7 +2484,230 @@
         "intent": "Bot_Control_Unsure",
         "entities": []
       },
-      {"text":"helllo i m brijesh","intent":"greet","entities":[]},{"text":"hi Sanket","intent":"greet","entities":[{"end":9,"entity":"name","start":3,"value":"Sanket"}]},{"text":"hey Brijesh","intent":"greet","entities":[{"end":11,"entity":"name","start":4,"value":"Brijesh"}]},{"text":"hi","intent":"greet","entities":[]},{"text":"hi brijesh lakkad","intent":"greet","entities":[{"end":17,"entity":"name","start":3,"value":"brijesh lakkad"}]},{"text":"hi sanket patel","intent":"greet","entities":[{"end":15,"entity":"name","start":3,"value":"sanket patel"}]},{"text":"hi brijesh lakkad how is it going","intent":"greet","entities":[{"end":17,"entity":"name","start":3,"value":"brijesh lakkad"}]},{"text":"hi Brijesh whats up","intent":"greet","entities":[{"end":10,"entity":"name","start":3,"value":"Brijesh"}]},{"text":"hey sanket patel whats up","intent":"greet","entities":[{"end":16,"entity":"name","start":4,"value":"sanket patel"}]},{"text":"hey Sanket","intent":"greet","entities":[{"end":10,"entity":"name","start":4,"value":"Sanket"}]},{"text":"hey Sanket how is it going","intent":"greet","entities":[{"end":10,"entity":"name","start":4,"value":"Sanket"}]},{"text":"hi Sanket whats up","intent":"greet","entities":[{"end":9,"entity":"name","start":3,"value":"Sanket"}]},{"text":"hi how is it going","intent":"greet","entities":[]},{"text":"hey brijesh lakkad","intent":"greet","entities":[{"end":18,"entity":"name","start":4,"value":"brijesh lakkad"}]},{"text":"hey whats up","intent":"greet","entities":[]},{"text":"hey Brijesh how is it going","intent":"greet","entities":[{"end":11,"entity":"name","start":4,"value":"Brijesh"}]},{"text":"hey","intent":"greet","entities":[]},{"text":"hey brijesh lakkad how is it going","intent":"greet","entities":[{"end":18,"entity":"name","start":4,"value":"brijesh lakkad"}]},{"text":"hi Brijesh","intent":"greet","entities":[{"end":10,"entity":"name","start":3,"value":"Brijesh"}]},{"text":"hey sanket patel how is it going","intent":"greet","entities":[{"end":16,"entity":"name","start":4,"value":"sanket patel"}]},{"text":"hey Brijesh whats up","intent":"greet","entities":[{"end":11,"entity":"name","start":4,"value":"Brijesh"}]}
+      {
+        "text": "helllo i m Brijesh",
+        "intent": "greet",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": " Brijesh",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "hi Sanket",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 9,
+            "entity": "name",
+            "start": 3,
+            "value": "Sanket"
+          }
+        ]
+      },
+      {
+        "text": "hey Brijesh",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 11,
+            "entity": "name",
+            "start": 4,
+            "value": "Brijesh"
+          }
+        ]
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi brijesh lakkad",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "name",
+            "start": 3,
+            "value": "brijesh lakkad"
+          }
+        ]
+      },
+      {
+        "text": "hi sanket patel",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 15,
+            "entity": "name",
+            "start": 3,
+            "value": "sanket patel"
+          }
+        ]
+      },
+      {
+        "text": "hi brijesh lakkad how is it going",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "name",
+            "start": 3,
+            "value": "brijesh lakkad"
+          }
+        ]
+      },
+      {
+        "text": "hi Brijesh whats up",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 10,
+            "entity": "name",
+            "start": 3,
+            "value": "Brijesh"
+          }
+        ]
+      },
+      {
+        "text": "hey sanket patel whats up",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "name",
+            "start": 4,
+            "value": "sanket patel"
+          }
+        ]
+      },
+      {
+        "text": "hey Sanket",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 10,
+            "entity": "name",
+            "start": 4,
+            "value": "Sanket"
+          }
+        ]
+      },
+      {
+        "text": "hey Sanket how is it going",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 10,
+            "entity": "name",
+            "start": 4,
+            "value": "Sanket"
+          }
+        ]
+      },
+      {
+        "text": "hi Sanket whats up",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 9,
+            "entity": "name",
+            "start": 3,
+            "value": "Sanket"
+          }
+        ]
+      },
+      {
+        "text": "hi how is it going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey brijesh lakkad",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 18,
+            "entity": "name",
+            "start": 4,
+            "value": "brijesh lakkad"
+          }
+        ]
+      },
+      {
+        "text": "hey whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey Brijesh how is it going",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 11,
+            "entity": "name",
+            "start": 4,
+            "value": "Brijesh"
+          }
+        ]
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey brijesh lakkad how is it going",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 18,
+            "entity": "name",
+            "start": 4,
+            "value": "brijesh lakkad"
+          }
+        ]
+      },
+      {
+        "text": "hi Brijesh",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 10,
+            "entity": "name",
+            "start": 3,
+            "value": "Brijesh"
+          }
+        ]
+      },
+      {
+        "text": "hey sanket patel how is it going",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "name",
+            "start": 4,
+            "value": "sanket patel"
+          }
+        ]
+      },
+      {
+        "text": "hey Brijesh whats up",
+        "intent": "greet",
+        "entities": [
+          {
+            "end": 11,
+            "entity": "name",
+            "start": 4,
+            "value": "Brijesh"
+          }
+        ]
+      }
     ]
   }
 }

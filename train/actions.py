@@ -16,11 +16,19 @@ class BankActiveCard(Action):
         return "action_active_card"
     def run(self, dispatcher, tracker, domain):
         loc=tracker.get_slot('using_what')
-        if loc=="text":
+        if "text" in loc:
             response = "Please enter OTP"
         elif "pin" in loc or "pass" in loc:
             response="Please enter your passcode"
         else:
             response="You can do so at Personal Settings or can i do it for you?"
         dispatcher.utter_message(response)
-        return [SlotSet['using_what'],loc]
+        return [SlotSet('using_what',loc)]
+class GetName(Action):
+    def name(self):
+        return "action_get_name"
+    def run(self, dispatcher, tracker, domain):
+        n=tracker.get_slot('name')
+        response = "Hello, %s"%n
+        dispatcher.utter_message(response)
+        return [SlotSet('name',n)]
