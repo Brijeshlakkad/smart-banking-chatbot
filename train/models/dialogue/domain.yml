@@ -17,9 +17,12 @@ entities:
 - using_what
 - name
 intents:
-- greet
-- Banking_Activate_Card
-- passcode
+- passcode:
+    use_entities: true
+- Banking_Activate_Card:
+    use_entities: true
+- greet:
+    use_entities: true
 slots:
   get_password:
     initial_value: null
@@ -48,4 +51,3 @@ templates:
   utter_greet:
   - text: Hello!
   - text: Hello1 How can i help
-topics: []

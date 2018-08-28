@@ -9,11 +9,14 @@
       "slots": []
     }
   }, 
-  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
-  "max_history": 3, 
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy", 
     "rasa_core.policies.keras_policy.KerasPolicy"
   ], 
-  "rasa_core": "0.8.5"
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "max_histories": [
+    3, 
+    5
+  ], 
+  "rasa_core": "0.10.4"
 }

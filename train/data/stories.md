@@ -9,3 +9,12 @@
     - slot{"status_access": "123"}
 * greet
     - export
+
+## Generated Story 272767675725668549
+* greet
+    - utter_greet
+* Banking_Activate_Card
+    - action_active_card
+    - slot{"status_access": "123"}
+* greet
+    - export

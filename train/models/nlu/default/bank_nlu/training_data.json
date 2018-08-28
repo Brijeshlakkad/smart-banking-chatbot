@@ -362,9 +362,8 @@
         "text": "How to initiate a credit card?"
       }, 
       {
-        "entities": [], 
-        "intent": "Banking_Activate_Card", 
-        "text": "I want to activate my card."
+        "text": "I want to activate my card.", 
+        "intent": "Banking_Activate_Card"
       }, 
       {
         "entities": [
@@ -379,9 +378,8 @@
         "text": "I got a new card"
       }, 
       {
-        "entities": [], 
-        "intent": "Banking_Activate_Card", 
-        "text": "I need to activate it my card"
+        "text": "I need to activate it my card", 
+        "intent": "Banking_Activate_Card"
       }, 
       {
         "entities": [
@@ -426,9 +424,8 @@
         "text": "What should I do to setup my credit card for online payments?"
       }, 
       {
-        "entities": [], 
-        "intent": "Banking_Activate_Card", 
-        "text": "What is the process to activate credit card after cancellation?"
+        "text": "What is the process to activate credit card after cancellation?", 
+        "intent": "Banking_Activate_Card"
       }, 
       {
         "entities": [
@@ -467,9 +464,8 @@
         "text": "hey Brijesh"
       }, 
       {
-        "entities": [], 
-        "intent": "greet", 
-        "text": "hi"
+        "text": "hi", 
+        "intent": "greet"
       }, 
       {
         "entities": [
@@ -568,9 +564,8 @@
         "text": "hi Sanket whats up"
       }, 
       {
-        "entities": [], 
-        "intent": "greet", 
-        "text": "hi how is it going"
+        "text": "hi how is it going", 
+        "intent": "greet"
       }, 
       {
         "entities": [
@@ -585,9 +580,8 @@
         "text": "hey brijesh lakkad"
       }, 
       {
-        "entities": [], 
-        "intent": "greet", 
-        "text": "hey whats up"
+        "text": "hey whats up", 
+        "intent": "greet"
       }, 
       {
         "entities": [
@@ -602,9 +596,8 @@
         "text": "hey Brijesh how is it going"
       }, 
       {
-        "entities": [], 
-        "intent": "greet", 
-        "text": "hey"
+        "text": "hey", 
+        "intent": "greet"
       }, 
       {
         "entities": [
