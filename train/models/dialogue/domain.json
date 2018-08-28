@@ -1,15 +1,21 @@
 {
   "features": [
     "intent_greet", 
-    "intent_Bank_Active_Card", 
+    "intent_Banking_Activate_Card", 
+    "intent_passcode", 
     "entity_using_what", 
+    "entity_name", 
+    "slot_get_password_0", 
     "slot_name_0", 
+    "slot_status_access_0", 
+    "slot_status_access_1", 
     "slot_using_what_0", 
     "prev_action_listen", 
     "prev_action_restart", 
     "prev_utter_greet", 
     "prev_action_get_name", 
     "prev_utter_active_card", 
-    "prev_action_active_card"
+    "prev_action_active_card", 
+    "prev_utter_anything"
   ]
 }

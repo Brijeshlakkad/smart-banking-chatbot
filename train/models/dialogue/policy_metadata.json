@@ -1,5 +1,10 @@
 {
   "action_fingerprints": {
+    "action_active_card": {
+      "slots": [
+        "status_access"
+      ]
+    }, 
     "action_listen": {
       "slots": []
     }

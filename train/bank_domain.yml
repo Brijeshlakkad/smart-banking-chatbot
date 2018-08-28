@@ -3,11 +3,20 @@ slots:
     type: text
   using_what:
     type: text
+  get_password:
+    type: text
+  status_access:
+    type: categorical
+    values:
+      - 0
+      - 1
 intents:
   - greet
-  - Bank_Active_Card
+  - Banking_Activate_Card
+  - passcode
 entities:
   - using_what
+  - name
 templates:
   utter_greet:
     - "Hello!"
@@ -17,8 +26,12 @@ templates:
     - "How can you want to do it?"
     - "Okay! Boss"
     - "Done!"
+  utter_anything:
+    - "Okay! Boss"
+    - "Okay :("
 actions:
   - utter_greet
   - actions.GetName
   - utter_active_card
   - actions.BankActiveCard
+  - utter_anything

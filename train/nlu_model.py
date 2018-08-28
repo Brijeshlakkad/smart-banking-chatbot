@@ -29,5 +29,5 @@ def run_nlu():
             break
         print(interpreter.parse(u"'"+inp+"'"))
 if __name__ == '__main__':
-    #train_nlu("data/training_data.json","config_spacy.json","models/nlu")
-    run_nlu()
+    train_nlu("data/training_data.json","config_spacy.json","models/nlu")
+    #run_nlu()

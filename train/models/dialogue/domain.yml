@@ -4,22 +4,35 @@ action_names:
 - action_get_name
 - utter_active_card
 - action_active_card
+- utter_anything
 actions:
 - utter_greet
 - actions.GetName
 - utter_active_card
 - actions.BankActiveCard
+- utter_anything
 config:
   store_entities_as_slots: true
 entities:
 - using_what
+- name
 intents:
 - greet
-- Bank_Active_Card
+- Banking_Activate_Card
+- passcode
 slots:
+  get_password:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   name:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  status_access:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - '0'
+    - '1'
   using_what:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -29,6 +42,9 @@ templates:
   - text: How can you want to do it?
   - text: Okay! Boss
   - text: Done!
+  utter_anything:
+  - text: Okay! Boss
+  - text: Okay :(
   utter_greet:
   - text: Hello!
   - text: Hello1 How can i help
