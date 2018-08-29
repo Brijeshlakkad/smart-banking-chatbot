@@ -7,48 +7,18 @@ from __future__ import unicode_literals
 import warnings
 warnings.filterwarnings('always')
 from rasa_core.actions.action import Action,ActionListen
-from rasa_core.actions.forms import FormAction
+from rasa_core.actions.forms import FormAction,EntityFormField,FreeTextFormField
 from rasa_core.events import *
-import os,sys,inspect
-current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parent_dir = os.path.dirname(current_dir)
-sys.path.insert(0, parent_dir)
-import config
-class ActionReportCoI(FormAction):
-
-    RANDOMIZE = False
-
-    @staticmethod
-    def required_fields():
-        return [
-            EntityFormField("coi_gi_receivername", "coi_gi_receivername"),
-            EntityFormField("coi_gi_give_or_take", "coi_gi_give_or_take"),
-            EntityFormField("coi_gi_is_publicofficial", "coi_gi_is_publicofficial"),
-            EntityFormField("coi_amount", "coi_amount")
-        ]
-
+import jon_working_with_db as jon
+class GetPasscode(Action):
     def name(self):
-        return 'action_report_coi'
-
-    def submit(self, dispatcher, tracker, domain):
-        results = RestaurantAPI().search(
-            tracker.get_slot("coi_gi_receivername"),
-            tracker.get_slot("coi_gi_give_or_take"),
-            tracker.get_slot("coi_gi_is_publicofficial"),
-            tracker.get_slot("coi_amount"))
-        return [SlotSet("search_results", results)]
-class BankActiveCard(Action):
-    def name(self):
-        return "action_active_card"
+        return 'action_get_passcode'
     def run(self, dispatcher, tracker, domain):
-        print("Ddddddddddddddddddd")
-        loc=tracker.get_slot('using_what')
-        response= "Please enter passcode: "
-        dispatcher.utter_message(response)
-        inp="Nothing"
-        inp = raw_input()
-        print(inp)
-        return [SlotSet("status_access",inp)]
+        got_passcode=tracker.get_slot("get_passcode")
+        r=0
+        if got_passcode!=None:
+            r=1
+        return [SlotSet("status_access", r)]
 class GetName(Action):
     def name(self):
         return "action_get_name"

@@ -1,9 +1,9 @@
 {
-    "trained_at": "20180828-201942", 
+    "trained_at": "20180829-003042", 
     "pipeline": [
         {
             "class": "rasa_nlu.utils.spacy_utils.SpacyNLP", 
-            "model": "en_core_web_md", 
+            "model": "en", 
             "name": "nlp_spacy", 
             "case_sensitive": false
         }, 

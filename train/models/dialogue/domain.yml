@@ -1,16 +1,14 @@
 action_factory: null
 action_names:
 - utter_greet
-- action_get_name
-- utter_active_card
-- action_active_card
-- utter_anything
+- utter_ask_passcode
+- action_get_passcode
+- utter_activated_card
 actions:
 - utter_greet
-- actions.GetName
-- utter_active_card
-- actions.BankActiveCard
-- utter_anything
+- utter_ask_passcode
+- actions.GetPasscode
+- utter_activated_card
 config:
   store_entities_as_slots: true
 entities:
@@ -24,7 +22,7 @@ intents:
 - greet:
     use_entities: true
 slots:
-  get_password:
+  get_passcode:
     initial_value: null
     type: rasa_core.slots.TextSlot
   name:
@@ -36,11 +34,8 @@ slots:
     values:
     - '0'
     - '1'
-  using_what:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
 templates:
-  utter_active_card:
+  utter_activated_card:
   - text: You got it! Boss
   - text: How can you want to do it?
   - text: Okay! Boss
@@ -48,6 +43,8 @@ templates:
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
+  utter_ask_passcode:
+  - text: 'Please enter your passcode: '
   utter_greet:
   - text: Hello!
-  - text: Hello1 How can i help
+  - text: Hello! How can i help

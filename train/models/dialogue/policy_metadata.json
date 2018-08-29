@@ -1,12 +1,14 @@
 {
   "action_fingerprints": {
-    "action_active_card": {
+    "action_listen": {
+      "slots": [
+        "get_passcode"
+      ]
+    }, 
+    "action_get_passcode": {
       "slots": [
         "status_access"
       ]
-    }, 
-    "action_listen": {
-      "slots": []
     }
   }, 
   "policy_names": [

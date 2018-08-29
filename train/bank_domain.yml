@@ -1,9 +1,7 @@
 slots:
   name:
     type: text
-  using_what:
-    type: text
-  get_password:
+  get_passcode:
     type: text
   status_access:
     type: categorical
@@ -20,18 +18,19 @@ entities:
 templates:
   utter_greet:
     - "Hello!"
-    - "Hello1 How can i help"
-  utter_active_card:
+    - "Hello! How can i help"
+  utter_activated_card:
     - "You got it! Boss"
     - "How can you want to do it?"
     - "Okay! Boss"
     - "Done!"
+  utter_ask_passcode:
+    - "Please enter your passcode: "
   utter_anything:
     - "Okay! Boss"
     - "Okay :("
 actions:
-  - utter_greet
-  - actions.GetName
-  - utter_active_card
-  - actions.BankActiveCard
-  - utter_anything
+    - utter_greet
+    - utter_ask_passcode
+    - actions.GetPasscode
+    - utter_activated_card

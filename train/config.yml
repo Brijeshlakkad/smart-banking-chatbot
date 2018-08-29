@@ -1,7 +1,7 @@
 langauge: "en"
 pipeline:
   - name: "nlp_spacy"
-    model: "en_core_web_md"
+    model: "en"
   - name: "tokenizer_spacy"
   - name: "intent_featurizer_spacy"
   - name: "intent_classifier_sklearn"
