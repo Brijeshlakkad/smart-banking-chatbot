@@ -34,6 +34,7 @@
     "prev_utter_ask_password", 
     "prev_utter_greet", 
     "prev_utter_ask_passcode", 
-    "prev_utter_ending"
+    "prev_utter_ending", 
+    "prev_utter_access"
   ]
 }

@@ -20,7 +20,14 @@ class GetPasscode(FormAction):
     def name(self):
         return 'action_get_passcode'
     def submit(self, dispatcher, tracker, domain):
+        access=tracker.get_slot("access")
+        if access!=1:
+            dispatcher.utter_message("Please log in our service to use it!")
+            return [ActionReverted(),AllSlotsReset()]
         results = BrijAPI().search(tracker.get_slot("passcode"))
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
         return [SlotSet("status_access", results)]
 class GetAccess(FormAction):
     RANDOMIZE = False
@@ -33,6 +40,8 @@ class GetAccess(FormAction):
     def name(self):
         return 'action_get_access'
     def submit(self, dispatcher, tracker, domain):
-        results = BrijAPI().search(
-            tracker.get_slot("user"),tracker.get_slot("password"))
+        results = BrijAPI().search(tracker.get_slot("user"),tracker.get_slot("password"))
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
         return [SlotSet("access", results)]

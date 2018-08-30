@@ -58,6 +58,10 @@ templates:
     - "Nice to help you! Boss"
     - "Okiey Dokiey!"
     - "Ba Bye!"
+  utter_access:
+    - "Whooo! You are logged in. Ask Anything!"
+    - "Looks like you are logged in, Boss!"
+    - "Go ahead, Ask me anything!"
 actions:
     - actions.GetAccess
     - actions.GetPasscode
@@ -67,3 +71,4 @@ actions:
     - utter_greet
     - utter_ask_passcode
     - utter_ending
+    - utter_access

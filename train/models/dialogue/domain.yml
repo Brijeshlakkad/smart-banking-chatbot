@@ -8,6 +8,7 @@ action_names:
 - utter_greet
 - utter_ask_passcode
 - utter_ending
+- utter_access
 actions:
 - actions.GetAccess
 - actions.GetPasscode
@@ -17,6 +18,7 @@ actions:
 - utter_greet
 - utter_ask_passcode
 - utter_ending
+- utter_access
 config:
   store_entities_as_slots: true
 entities:
@@ -72,6 +74,10 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
+  utter_access:
+  - text: Whooo! You are logged in. Ask Anything!
+  - text: Looks like you are logged in, Boss!
+  - text: Go ahead, Ask me anything!
   utter_activated_card:
   - text: You got it! Boss
   - text: Okay! Boss

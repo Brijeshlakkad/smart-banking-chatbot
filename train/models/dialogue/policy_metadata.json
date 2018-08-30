@@ -1,12 +1,14 @@
 {
   "action_fingerprints": {
+    "utter_access": {
+      "slots": []
+    }, 
     "utter_ending": {
       "slots": []
     }, 
     "action_get_access": {
       "slots": [
         "access", 
-        "status_access", 
         "password", 
         "user", 
         "requested_slot"
