@@ -1,20 +1,27 @@
 {
   "action_fingerprints": {
-    "action_get_user": {
-      "slots": [
-        "user"
-      ]
+    "utter_ending": {
+      "slots": []
     }, 
-    "action_listen": {
+    "action_get_access": {
       "slots": [
-        "get_passcode", 
+        "access", 
+        "status_access", 
+        "password", 
         "user", 
         "requested_slot"
       ]
     }, 
     "action_get_passcode": {
       "slots": [
-        "status_access"
+        "passcode", 
+        "status_access", 
+        "requested_slot"
+      ]
+    }, 
+    "action_listen": {
+      "slots": [
+        "passcode"
       ]
     }
   }, 

@@ -10,9 +10,9 @@ slots:
     type: text
   password:
     type: text
-  name:
+  passcode:
     type: text
-  get_passcode:
+  name:
     type: text
   status_access:
     type: categorical
@@ -21,11 +21,11 @@ slots:
       - 1
 intents:
   - Banking_Access
-  - General_Greetings
-  - Banking_Activate_Card
   - Banking_Passcode
+  - Banking_Activate_Card
   - Banking_Cancel_Card
   - Banking_Fee_Inquiry
+  - General_Greetings
 entities:
   - using_what
   - name
@@ -44,22 +44,26 @@ templates:
     - "Please Enter Password:"
   utter_greet:
     - "Hello!"
-    - "Hello! How can i help"
+    - "Hello! How can i help?"
   utter_activated_card:
     - "You got it! Boss"
-    - "How can you want to do it?"
     - "Okay! Boss"
-    - "Done!"
+    - "Done! Anything else?"
   utter_ask_passcode:
     - "Please enter your passcode: "
   utter_anything:
     - "Okay! Boss"
     - "Okay :("
+  utter_ending:
+    - "Nice to help you! Boss"
+    - "Okiey Dokiey!"
+    - "Ba Bye!"
 actions:
-    - utter_ask_user
-    - utter_ask_password
     - actions.GetAccess
-    - utter_greet
-    - utter_ask_passcode
     - actions.GetPasscode
     - utter_activated_card
+    - utter_ask_user
+    - utter_ask_password
+    - utter_greet
+    - utter_ask_passcode
+    - utter_ending

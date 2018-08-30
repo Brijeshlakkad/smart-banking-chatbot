@@ -4,30 +4,6 @@
       {
         "entities": [
           {
-            "start": 0, 
-            "end": 6, 
-            "value": "348034", 
-            "entity": "get_passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "348034"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "123456", 
-            "entity": "get_passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "123456"
-      }, 
-      {
-        "entities": [
-          {
             "start": 3, 
             "end": 9, 
             "value": "Sanket", 

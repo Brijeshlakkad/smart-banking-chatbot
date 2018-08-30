@@ -1,22 +1,22 @@
 action_factory: null
 action_names:
-- utter_entry_point_user
-- action_get_user
-- utter_entry_point_password
-- action_get_password
-- utter_greet
-- utter_ask_passcode
+- action_get_access
 - action_get_passcode
 - utter_activated_card
-actions:
-- utter_entry_point_user
-- actions.GetUser
-- utter_entry_point_password
-- actions.GetPassword
+- utter_ask_user
+- utter_ask_password
 - utter_greet
 - utter_ask_passcode
+- utter_ending
+actions:
+- actions.GetAccess
 - actions.GetPasscode
 - utter_activated_card
+- utter_ask_user
+- utter_ask_password
+- utter_greet
+- utter_ask_passcode
+- utter_ending
 config:
   store_entities_as_slots: true
 entities:
@@ -31,21 +31,29 @@ entities:
 - get_passcode
 - question_yes_no
 intents:
-- Banking_Fee_Inquiry:
-    use_entities: true
 - Banking_Cancel_Card:
     use_entities: true
 - General_Greetings:
+    use_entities: true
+- Banking_Access:
+    use_entities: true
+- Banking_Fee_Inquiry:
     use_entities: true
 - Banking_Passcode:
     use_entities: true
 - Banking_Activate_Card:
     use_entities: true
 slots:
-  get_passcode:
+  access:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - '0'
+    - '1'
+  name:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  name:
+  passcode:
     initial_value: null
     type: rasa_core.slots.TextSlot
   password:
@@ -66,18 +74,21 @@ slots:
 templates:
   utter_activated_card:
   - text: You got it! Boss
-  - text: How can you want to do it?
   - text: Okay! Boss
-  - text: Done!
+  - text: Done! Anything else?
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
   utter_ask_passcode:
   - text: 'Please enter your passcode: '
-  utter_entry_point_password:
+  utter_ask_password:
   - text: 'Please Enter Password:'
-  utter_entry_point_user:
+  utter_ask_user:
   - text: 'Please Enter Email(or Username):'
+  utter_ending:
+  - text: Nice to help you! Boss
+  - text: Okiey Dokiey!
+  - text: Ba Bye!
   utter_greet:
   - text: Hello!
-  - text: Hello! How can i help
+  - text: Hello! How can i help?

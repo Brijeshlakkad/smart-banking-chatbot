@@ -120,30 +120,6 @@
     ],
     "common_examples": [
       {
-        "text": "348034",
-        "intent": "Banking_Passcode",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "348034",
-            "entity": "get_passcode"
-          }
-        ]
-      },
-      {
-        "text": "123456",
-        "intent": "Banking_Passcode",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "123456",
-            "entity": "get_passcode"
-          }
-        ]
-      },
-      {
         "text": "hi Sanket",
         "intent": "General_Greetings",
         "entities": [
