@@ -1,10 +1,18 @@
 action_factory: null
 action_names:
+- utter_entry_point_user
+- action_get_user
+- utter_entry_point_password
+- action_get_password
 - utter_greet
 - utter_ask_passcode
 - action_get_passcode
 - utter_activated_card
 actions:
+- utter_entry_point_user
+- actions.GetUser
+- utter_entry_point_password
+- actions.GetPassword
 - utter_greet
 - utter_ask_passcode
 - actions.GetPasscode
@@ -14,12 +22,24 @@ config:
 entities:
 - using_what
 - name
+- card_type
+- active_new_card
+- active_cancelled_card
+- necessary_item
+- user_wants
+- help_asking_time
+- get_passcode
+- question_yes_no
 intents:
-- passcode:
+- Banking_Fee_Inquiry:
+    use_entities: true
+- Banking_Cancel_Card:
+    use_entities: true
+- General_Greetings:
+    use_entities: true
+- Banking_Passcode:
     use_entities: true
 - Banking_Activate_Card:
-    use_entities: true
-- greet:
     use_entities: true
 slots:
   get_passcode:
@@ -28,12 +48,21 @@ slots:
   name:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  password:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  requested_slot:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   status_access:
     initial_value: null
     type: rasa_core.slots.CategoricalSlot
     values:
     - '0'
     - '1'
+  user:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_activated_card:
   - text: You got it! Boss
@@ -45,6 +74,10 @@ templates:
   - text: Okay :(
   utter_ask_passcode:
   - text: 'Please enter your passcode: '
+  utter_entry_point_password:
+  - text: 'Please Enter Password:'
+  utter_entry_point_user:
+  - text: 'Please Enter Email(or Username):'
   utter_greet:
   - text: Hello!
   - text: Hello! How can i help

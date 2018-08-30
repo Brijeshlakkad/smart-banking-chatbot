@@ -1,8 +1,15 @@
 {
   "action_fingerprints": {
+    "action_get_user": {
+      "slots": [
+        "user"
+      ]
+    }, 
     "action_listen": {
       "slots": [
-        "get_passcode"
+        "get_passcode", 
+        "user", 
+        "requested_slot"
       ]
     }, 
     "action_get_passcode": {

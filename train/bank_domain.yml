@@ -1,4 +1,15 @@
 slots:
+  requested_slot:
+    type: unfeaturized
+  access:
+    type: categorical
+    values:
+      - 0
+      - 1
+  user:
+    type: text
+  password:
+    type: text
   name:
     type: text
   get_passcode:
@@ -9,13 +20,28 @@ slots:
       - 0
       - 1
 intents:
-  - greet
+  - Banking_Access
+  - General_Greetings
   - Banking_Activate_Card
-  - passcode
+  - Banking_Passcode
+  - Banking_Cancel_Card
+  - Banking_Fee_Inquiry
 entities:
   - using_what
   - name
+  - card_type
+  - active_new_card
+  - active_cancelled_card
+  - necessary_item
+  - user_wants
+  - help_asking_time
+  - get_passcode
+  - question_yes_no
 templates:
+  utter_ask_user:
+    - "Please Enter Email(or Username):"
+  utter_ask_password:
+    - "Please Enter Password:"
   utter_greet:
     - "Hello!"
     - "Hello! How can i help"
@@ -30,6 +56,9 @@ templates:
     - "Okay! Boss"
     - "Okay :("
 actions:
+    - utter_ask_user
+    - utter_ask_password
+    - actions.GetAccess
     - utter_greet
     - utter_ask_passcode
     - actions.GetPasscode

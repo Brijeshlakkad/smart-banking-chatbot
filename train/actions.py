@@ -9,7 +9,7 @@ warnings.filterwarnings('always')
 from rasa_core.actions.action import Action,ActionListen
 from rasa_core.actions.forms import FormAction,EntityFormField,FreeTextFormField
 from rasa_core.events import *
-import jon_working_with_db as jon
+from jon_working_with_db import *
 class GetPasscode(Action):
     def name(self):
         return 'action_get_passcode'
@@ -19,6 +19,20 @@ class GetPasscode(Action):
         if got_passcode!=None:
             r=1
         return [SlotSet("status_access", r)]
+class GetAccess(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+        FreeTextFormField("user"),
+        FreeTextFormField("password")
+        ]
+    def name(self):
+        return 'action_get_access'
+    def submit(self, dispatcher, tracker, domain):
+        results = BrijAPI().search(
+            tracker.get_slot("user"),tracker.get_slot("password"))
+        return [SlotSet("status_access", results)]
 class GetName(Action):
     def name(self):
         return "action_get_name"

@@ -4,6 +4,882 @@
       {
         "entities": [
           {
+            "start": 0, 
+            "end": 6, 
+            "value": "348034", 
+            "entity": "get_passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "348034"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "123456", 
+            "entity": "get_passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "123456"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 9, 
+            "value": "Sanket", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hi Sanket"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 11, 
+            "value": "Brijesh", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey Brijesh"
+      }, 
+      {
+        "text": "hi", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 17, 
+            "value": "brijesh lakkad", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hi brijesh lakkad"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 15, 
+            "value": "sanket patel", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hi sanket patel"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 17, 
+            "value": "brijesh lakkad", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hi brijesh lakkad how is it going"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 10, 
+            "value": "Brijesh", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hi Brijesh whats up"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 16, 
+            "value": "sanket patel", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey sanket patel whats up"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 10, 
+            "value": "Sanket", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey Sanket"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 10, 
+            "value": "Sanket", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey Sanket how is it going"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 9, 
+            "value": "Sanket", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hi Sanket whats up"
+      }, 
+      {
+        "text": "hi how is it going", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 18, 
+            "value": "brijesh lakkad", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey brijesh lakkad"
+      }, 
+      {
+        "text": "hey whats up", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 11, 
+            "value": "Brijesh", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey Brijesh how is it going"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": " Brijesh", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "helllo i m Brijesh"
+      }, 
+      {
+        "text": "hey", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 18, 
+            "value": "brijesh lakkad", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey brijesh lakkad how is it going"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 10, 
+            "value": "Brijesh", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hi Brijesh"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 16, 
+            "value": "sanket patel", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey sanket patel how is it going"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 11, 
+            "value": "Brijesh", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "General_Greetings", 
+        "text": "hey Brijesh whats up"
+      }, 
+      {
+        "text": "I'm done", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "I d like to stop doing this", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "I am out of here", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "I am leaving", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Hey bot go away", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Have a nice day?", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Go off", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Good. bye.", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Goodbye", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Going now", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Go away", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Get lost", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Finished now, good bye", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "End trial", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Ending this session", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Cya later", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Catch you later", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Bye now", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Bye bye", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "See you", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Time to go", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "That's everything", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "That is all", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Thank you for your time", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Thanks very much, bye!", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Thanks, bye!", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Stop talking to me", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Stop doing this", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Shut up", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "See you later", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Ok goodbye", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "I want to quit", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "It was nice chatting with you", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "I'm leaving now", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Im good thank you", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Im done", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "I have got to go", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Hey you", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hey there", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hey there all", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hey how are you doing", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hello I am looking for some help here", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hello", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hello Agent", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Have you been well?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Greetings", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Good to see you", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Good morning", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Good evening", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Good day", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Ok take me back", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "What's new?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "What's up?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Who is this?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "How is it going?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "You there", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "How have you been?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "How are you today?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "How are things going?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hi there", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hi advisor", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hey twin", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "How r u?", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Looking good eve", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Am I talking to a Bot?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Am I talking to a person or am I talking to an AI?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Am I talking to Watson?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Are you a human or a bot?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Are you a robot?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Am I chatting with a human?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Are you even real?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Are you human?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Are you real?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "How can you prove you are a human?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Is this a computer?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Tell me, are you a human or no?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
+        "text": "Are there jokes?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Can you tell a joke?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Can you tell me a joke?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Do you have a joke?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Do you have humor?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Do you like fun?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Do you like humor?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "I am getting bored", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "I'm bored", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "I want a joke", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "One more joke", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Surprise me with something hilarious", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Tell me a joke", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Tell me something funny", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "What do you do for fun?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "What is your favorite joke?", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "Another joke", 
+        "intent": "General_Jokes"
+      }, 
+      {
+        "text": "You're really irritating", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "You're too stupid", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "You do not seem smart", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "You are very frustrating", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "It is annoying", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Quit annoying me", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Robots are boring", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Robots are stupid", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Stupid", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Why are you so annoying?", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Why are you stupid?", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "You are having delusions", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "You are on my nerves", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "I hate you", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "I hate this!", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "I do not like you", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Hate you", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Everyone hates you", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "Do not like you?", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "You're really frustrating", 
+        "intent": "General_Negative_Feedback"
+      }, 
+      {
+        "text": "I'm looking forward to working with you again! :)", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "Brilliant!", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "Can't believe you are that good", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "How cool is this?", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "I like what you did there! :)", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "Love your work", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "Ok thank you", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "Thank you", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "This is good", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "This is great", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "This is so cool", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You are awesome", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You are great", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You are the best", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You are wonderful", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You gave me exactly what I need!", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You're a genius!", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You the man", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You've been so helpful :)", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "Do you have protection against hacks?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "How do I know if my card info is kept safe?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "How do I know this chat is not a scam?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "How is my credit card info secured?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "How safe is my data?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "I'd like proof of a secure chat", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "In what way can I tell if my plastic is safe?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Is my card info secure?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Is my payment information secure?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Is there a reason to distrust this chat?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Is this an official chat?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Is this a trusted chat site?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Is this conversation secure?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Precautions hackers?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Protection hacks?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Secure conversation?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "What guards do you have in place to protect your customer's data?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "What makes this chat trustworthy?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "What safety measures are used to ensure that chat is secure?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Why would I trust this chat?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Will my conversation remain secured?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Are you safe on hackers?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Can I be sure that my stored card details are held securely?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Conversation secure?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Customer info secured?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "Are you safe?", 
+        "intent": "General_Security_Assurance"
+      }, 
+      {
+        "entities": [
+          {
             "extractor": "ner_crf", 
             "confidence": 0.854, 
             "end": 29, 
@@ -284,6 +1160,12 @@
             "end": 26, 
             "value": "credit card", 
             "entity": "card_type"
+          }, 
+          {
+            "start": 0, 
+            "end": 5, 
+            "value": "Can I", 
+            "entity": "question_yes_no"
           }
         ], 
         "intent": "Banking_Activate_Card", 
@@ -298,10 +1180,10 @@
             "entity": "using_what"
           }, 
           {
-            "start": 44, 
-            "end": 68, 
-            "value": "automated teller machine", 
-            "entity": ""
+            "start": 0, 
+            "end": 17, 
+            "value": "Can you assist me", 
+            "entity": "question_yes_no"
           }
         ], 
         "intent": "Banking_Activate_Card", 
@@ -337,12 +1219,6 @@
             "start": 0, 
             "end": 8, 
             "value": "How long", 
-            "entity": "help_asking_time"
-          }, 
-          {
-            "start": 0, 
-            "end": 8, 
-            "value": "How long takes", 
             "entity": "help_asking_time"
           }
         ], 
@@ -412,12 +1288,6 @@
             "end": 36, 
             "value": "credit ", 
             "entity": "card_type"
-          }, 
-          {
-            "start": 45, 
-            "end": 60, 
-            "value": "online payments", 
-            "entity": "for_what"
           }
         ], 
         "intent": "Banking_Activate_Card", 
@@ -428,248 +1298,180 @@
         "intent": "Banking_Activate_Card"
       }, 
       {
-        "entities": [
-          {
-            "start": 10, 
-            "end": 18, 
-            "value": " Brijesh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "helllo i m Brijesh"
+        "text": "How to deactivate credit?", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
-        "entities": [
-          {
-            "start": 3, 
-            "end": 9, 
-            "value": "Sanket", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hi Sanket"
+        "text": "What is the procedure for credit card deactivation?", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 11, 
-            "value": "Brijesh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey Brijesh"
+        "text": "I want to raise request for deactivating my credit card", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
-        "text": "hi", 
-        "intent": "greet"
+        "text": "Please assist me to revoke my credit card", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
-        "entities": [
-          {
-            "start": 3, 
-            "end": 17, 
-            "value": "brijesh lakkad", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hi brijesh lakkad"
+        "text": "Please revoke my credit card", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
-        "entities": [
-          {
-            "start": 3, 
-            "end": 15, 
-            "value": "sanket patel", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hi sanket patel"
+        "text": "Tell me the ways through which I can close my credit card", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
-        "entities": [
-          {
-            "start": 3, 
-            "end": 17, 
-            "value": "brijesh lakkad", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hi brijesh lakkad how is it going"
+        "text": "Annual charges are high hence want to cancel my credit card", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
-        "entities": [
-          {
-            "start": 3, 
-            "end": 10, 
-            "value": "Brijesh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hi Brijesh whats up"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 16, 
-            "value": "sanket patel", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey sanket patel whats up"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 10, 
-            "value": "Sanket", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey Sanket"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 10, 
-            "value": "Sanket", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey Sanket how is it going"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 3, 
-            "end": 9, 
-            "value": "Sanket", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hi Sanket whats up"
-      }, 
-      {
-        "text": "hi how is it going", 
-        "intent": "greet"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 18, 
-            "value": "brijesh lakkad", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey brijesh lakkad"
-      }, 
-      {
-        "text": "hey whats up", 
-        "intent": "greet"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 11, 
-            "value": "Brijesh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey Brijesh how is it going"
-      }, 
-      {
-        "text": "hey", 
-        "intent": "greet"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 18, 
-            "value": "brijesh lakkad", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey brijesh lakkad how is it going"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 3, 
-            "end": 10, 
-            "value": "Brijesh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hi Brijesh"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 16, 
-            "value": "sanket patel", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey sanket patel how is it going"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 11, 
-            "value": "Brijesh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "greet", 
-        "text": "hey Brijesh whats up"
+        "text": "Cancel a card", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
         "entities": [
           {
             "start": 0, 
             "end": 6, 
-            "value": "348034", 
-            "entity": "get_passcode"
+            "value": "Can I ", 
+            "entity": "question_yes_no"
           }
         ], 
-        "intent": "passcode", 
-        "text": "348034"
+        "intent": "Banking_Cancel_Card", 
+        "text": "Can I cancel a credit card I just applied for?"
       }, 
       {
         "entities": [
           {
             "start": 0, 
-            "end": 6, 
-            "value": "123456", 
-            "entity": "get_passcode"
+            "end": 5, 
+            "value": "Can I", 
+            "entity": "question_yes_no"
           }
         ], 
-        "intent": "passcode", 
-        "text": "123456"
+        "intent": "Banking_Cancel_Card", 
+        "text": "Can I cancel my credit card if I have some pending dues?"
+      }, 
+      {
+        "text": "Details on how to apply for cancellation of credit card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "How to cancel a credit card without hurting its score?", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "How to close credit card online?", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "I am not able to curb my spendings on credit card and so I want to close it", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "I am not using credit card tell me how can I deactivate it", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "I no longer need this credit card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "I want to know about credit deactivation process", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "What are the ways for closing credit card?", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "What is the way to deactivate my credit card?", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "What is the process for closing credit card?", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "What are the charges for new credit card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Where is the credit card fee information?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Where can I see the cost for buying the credit card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "What is the charge for card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "What are the fees?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Can you tell me about how much fee the bank charged for last month on my credit card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Charges included in credit card", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Could you provide additional information regarding card fees?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Does it cost me anything to apply with your company for a credit card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Fee on my card", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Give me more option about credit card charges", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "How can I pay the fee of credit card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "How much do you charge to my credit card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "How much we pay for the maintenance fee?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "I need assistance finding my credit card fee", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Is there some charge for credit card?", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "I want to know about credit card costs.", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "I want to see the costs associated with this card", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "I would like to find out the cost of my credit card", 
+        "intent": "Banking_Fee_Inquiry"
+      }, 
+      {
+        "text": "Need some help with my credit card charges/fees", 
+        "intent": "Banking_Fee_Inquiry"
       }
     ], 
     "entity_synonyms": [
