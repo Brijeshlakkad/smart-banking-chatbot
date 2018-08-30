@@ -39,7 +39,7 @@ entities:
   - question_yes_no
 templates:
   utter_ask_user:
-    - "Please Enter Email(or Username):"
+    - "Please Enter Email:"
   utter_ask_password:
     - "Please Enter Password:"
   utter_greet:

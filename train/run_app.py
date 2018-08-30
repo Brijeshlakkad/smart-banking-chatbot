@@ -7,8 +7,8 @@ from rasa_slack_connector import SlackInput
 nlu_interpreter = RasaNLUInterpreter('models/nlu/default/bank_nlu')
 agent = Agent.load('models/dialogue', interpreter = nlu_interpreter)
 
-input_channel = SlackInput('xoxp-425120221575-423514291121-425486176225-ef2c6b704e441593c4291c3f35fb16b3',
-							'xoxb-425120221575-424086760514-gCS7A1vtLDOzAfG2JYZ6v4uA', # bot verification token
+input_channel = SlackInput('xoxp-425120221575-423514291121-427522917943-222ad26b6eed47c343960c052262bbe2',
+							'xoxb-425120221575-424086760514-dfyqT8euHC0OrAuYgt42RqfE', # bot verification token
 							'1qYDvp1AKXgKTsRuoiuZqTwP', # slack verification token
 							True)
 

@@ -232,3 +232,54 @@
 * General_Ending
     - utter_ending
     - export
+## Generated Story -3064204503568542152
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Access
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Access
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - utter_access
+* Banking_Activate_Card
+    - action_check_validity
+    - action_get_passcode
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_get_passcode
+    - slot{"passcode": "683249"}
+    - slot{"status_access": 1}
+    - utter_activated_card
+* General_Ending
+    - utter_ending
+    - export
+## Generated Story 6932005754758030332
+* Banking_Activate_Card
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Access
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Access
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - utter_access
+* Banking_Activate_Card
+    - action_check_validity
+    - action_get_passcode
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_get_passcode
+    - slot{"passcode": "683249"}
+    - slot{"status_access": 1}
+    - utter_activated_card
+* General_Ending
+    - utter_ending
+    - export

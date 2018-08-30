@@ -20,10 +20,15 @@ class GetPasscode(FormAction):
     def name(self):
         return 'action_get_passcode'
     def submit(self, dispatcher, tracker, domain):
-        results = BrijAPI().search(tracker.get_slot("passcode"))
+        user,password,passcode=tracker.get_slot("user"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        if passcode==None:
+            return [ActionReverted()]
+        ConversationPaused().apply_to(tracker)
+        results = check_passcode(user,password,passcode)
+        ConversationResumed().apply_to(tracker)
         if int(results)!=1:
             dispatcher.utter_message("Please enter valid information")
-            return [ActionReverted(),AllSlotsReset()]
+            return [ActionReverted()]
         return [SlotSet("status_access", results)]
 class GetAccess(FormAction):
     RANDOMIZE = False
@@ -36,7 +41,11 @@ class GetAccess(FormAction):
     def name(self):
         return 'action_get_access'
     def submit(self, dispatcher, tracker, domain):
-        results = BrijAPI().search(tracker.get_slot("user"),tracker.get_slot("password"))
+        user=tracker.get_slot("user")
+        password=tracker.get_slot("password")
+        ConversationPaused().apply_to(tracker)
+        results = check_indentity(user,password)
+        ConversationResumed().apply_to(tracker)
         if int(results)!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
@@ -45,8 +54,9 @@ class CheckValidity(Action):
     def name(self):
         return "action_check_validity"
     def run(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("user"),tracker.get_slot("password")
         access=tracker.get_slot("access")
-        if access!=1:
+        if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
         return []
