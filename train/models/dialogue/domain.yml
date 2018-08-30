@@ -2,6 +2,7 @@ action_factory: null
 action_names:
 - action_get_access
 - action_get_passcode
+- action_check_validity
 - utter_activated_card
 - utter_ask_user
 - utter_ask_password
@@ -12,6 +13,7 @@ action_names:
 actions:
 - actions.GetAccess
 - actions.GetPasscode
+- actions.CheckValidity
 - utter_activated_card
 - utter_ask_user
 - utter_ask_password

@@ -29,6 +29,7 @@
     "prev_action_default_fallback", 
     "prev_action_get_access", 
     "prev_action_get_passcode", 
+    "prev_action_check_validity", 
     "prev_utter_activated_card", 
     "prev_utter_ask_user", 
     "prev_utter_ask_password", 

@@ -14,6 +14,7 @@
     - slot{"access": 1}
     - utter_access
 * Banking_Activate_Card
+    - action_check_validity
     - utter_ask_passcode
 * Banking_Passcode
     - slot{"passcode": "123456"}
@@ -88,6 +89,7 @@
     - slot{"access": 1}
     - utter_access
 * Banking_Activate_Card
+    - action_check_validity
     - action_get_passcode
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -132,6 +134,8 @@
     - export
 ## Generated Story 8397110424208338762
 * Banking_Activate_Card
+    - action_check_validity
+    - action_check_validity
     - action_get_passcode
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -164,11 +168,65 @@
     - slot{"access": 1}
     - utter_access
 * Banking_Activate_Card
+    - action_check_validity
     - action_get_passcode
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
     - action_get_passcode
     - slot{"passcode": "123456bB"}
+    - slot{"status_access": 1}
+    - utter_activated_card
+* General_Ending
+    - utter_ending
+    - export
+## Generated Story -3648642334498179576
+* Banking_Activate_Card
+    - action_check_validity
+    - reset_slots
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Passcode
+    - action_get_access
+    - slot{"user": "brij@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Access
+    - action_get_access
+    - slot{"password": "1234bB"}
+    - slot{"access": 1}
+    - utter_access
+* Banking_Activate_Card
+    - action_check_validity
+    - action_get_passcode
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_get_passcode
+    - slot{"passcode": "123456"}
+    - slot{"status_access": 1}
+    - utter_activated_card
+* General_Ending
+    - utter_ending
+    - export
+## Generated Story 8178781947000455923
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Access
+    - action_get_access
+    - slot{"user": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Access
+    - action_get_access
+    - slot{"password": "123456Bb"}
+    - slot{"access": 1}
+    - utter_access
+* Banking_Activate_Card
+    - action_check_validity
+    - action_get_passcode
+    - slot{"requested_slot": "passcode"}
+* General_Ending
+    - action_get_passcode
+    - slot{"passcode": "123456"}
     - slot{"status_access": 1}
     - utter_activated_card
 * General_Ending

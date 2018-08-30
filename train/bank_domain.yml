@@ -65,6 +65,7 @@ templates:
 actions:
     - actions.GetAccess
     - actions.GetPasscode
+    - actions.CheckValidity
     - utter_activated_card
     - utter_ask_user
     - utter_ask_password
