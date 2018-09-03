@@ -10,7 +10,9 @@ slots:
     type: text
   password:
     type: text
-  passcode:
+  passcode_active:
+    type: text
+  passcode_deactive:
     type: text
   name:
     type: text
@@ -20,7 +22,8 @@ slots:
       - 0
       - 1
 intents:
-  - Banking_Access
+  - Banking_Email
+  - Banking_Password
   - Banking_Passcode
   - Banking_Activate_Card
   - Banking_Cancel_Card
@@ -46,11 +49,17 @@ templates:
     - "Hello!"
     - "Hello! How can i help?"
   utter_activated_card:
-    - "You got it! Boss"
-    - "Okay! Boss"
-    - "Done! Anything else?"
-  utter_ask_passcode:
-    - "Please enter your passcode: "
+    - "You got it! Boss. Your card is activated."
+    - "Okay! Boss. Card is activated."
+    - "Done! Your card is activated"
+  utter_deactivated_card:
+    - "You got it! Boss. Your card is deactivated."
+    - "Okay! Boss. Card is deactivated."
+    - "Done! Your card is deactivated"
+  utter_ask_passcode_active:
+    - "Please enter your passcode to active card: "
+  utter_ask_passcode_deactive:
+    - "Please enter your passcode to deactive card: "
   utter_anything:
     - "Okay! Boss"
     - "Okay :("
@@ -64,12 +73,14 @@ templates:
     - "Go ahead, Ask me anything!"
 actions:
     - actions.GetAccess
-    - actions.GetPasscode
-    - actions.CheckValidity
-    - utter_activated_card
+    - actions.GetActiveCard
+    - actions.GetDeactiveCard
     - utter_ask_user
     - utter_ask_password
+    - utter_ask_passcode_active
+    - utter_ask_passcode_deactive
+    - utter_activated_card
+    - utter_deactivated_card
     - utter_greet
-    - utter_ask_passcode
     - utter_ending
     - utter_access

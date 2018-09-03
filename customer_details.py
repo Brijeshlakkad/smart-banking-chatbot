@@ -539,3 +539,16 @@ def get_request_details(r_id,f):
 		return c.time
 	else:
 		return get_account_by_acc_id(c.acc_id,f)
+
+def change_customer_card_status(user,status):
+	userid=get_any_value(user,"cid")
+	conn,cursor=config.connect_to_database()
+	sql="update cards SET status='%s' where c_id='%s'"%(status,userid)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return 1
+	except:
+		return -99
+	finally:
+		conn.close()

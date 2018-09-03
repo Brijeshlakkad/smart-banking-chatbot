@@ -2,7 +2,6 @@ action_factory: null
 action_names:
 - action_get_access
 - action_get_passcode
-- action_check_validity
 - utter_activated_card
 - utter_ask_user
 - utter_ask_password
@@ -13,7 +12,6 @@ action_names:
 actions:
 - actions.GetAccess
 - actions.GetPasscode
-- actions.CheckValidity
 - utter_activated_card
 - utter_ask_user
 - utter_ask_password
@@ -39,13 +37,15 @@ intents:
     use_entities: true
 - General_Greetings:
     use_entities: true
-- Banking_Access:
-    use_entities: true
 - Banking_Fee_Inquiry:
     use_entities: true
-- Banking_Passcode:
+- Banking_Email:
+    use_entities: true
+- Banking_Password:
     use_entities: true
 - Banking_Activate_Card:
+    use_entities: true
+- Banking_Passcode:
     use_entities: true
 slots:
   access:
@@ -92,7 +92,7 @@ templates:
   utter_ask_password:
   - text: 'Please Enter Password:'
   utter_ask_user:
-  - text: 'Please Enter Email(or Username):'
+  - text: 'Please Enter Email:'
   utter_ending:
   - text: Nice to help you! Boss
   - text: Okiey Dokiey!

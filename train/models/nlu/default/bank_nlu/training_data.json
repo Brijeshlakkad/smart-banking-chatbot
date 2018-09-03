@@ -4,6 +4,114 @@
       {
         "entities": [
           {
+            "start": 0, 
+            "end": 23, 
+            "value": "brijeshlakkad@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "brijeshlakkad@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 9, 
+            "end": 32, 
+            "value": "brijeshlakkad@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "Email is brijeshlakkad@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 28, 
+            "value": "brijeshlakkad@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "it's brijeshlakkad@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 8, 
+            "value": "123456bB", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "123456bB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 13, 
+            "value": "123433#b", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "it's 123433#b"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 21, 
+            "value": "brij133bB", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "Password is brij133bB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 18, 
+            "value": "343423", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "Passcode is 343423"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "326723", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "326723"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 11, 
+            "value": "346763", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "it's 346763"
+      }, 
+      {
+        "entities": [
+          {
             "start": 3, 
             "end": 9, 
             "value": "Sanket", 
@@ -1564,6 +1672,27 @@
         "value": "card"
       }
     ], 
-    "regex_features": []
+    "regex_features": [
+      {
+        "pattern": "[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})", 
+        "name": "email"
+      }, 
+      {
+        "pattern": "hey[^\\s]*", 
+        "name": "greet"
+      }, 
+      {
+        "pattern": "[0-9]{6}", 
+        "name": "passcode"
+      }, 
+      {
+        "pattern": "(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})", 
+        "name": "password"
+      }, 
+      {
+        "pattern": "[0-9]{5}", 
+        "name": "zipcode"
+      }
+    ]
   }
 }

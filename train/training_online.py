@@ -11,7 +11,7 @@ from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
 logger = logging.getLogger(__name__)
 def run_bank_online(input_channel, interpreter,domain_file="bank_domain.yml",training_data_file='data/stories.md'):
-    agent = Agent(domain_file,policies=[MemoizationPolicy(max_history=2), KerasPolicy()],interpreter=interpreter)
+    agent = Agent(domain_file,policies=[MemoizationPolicy(max_history=5), KerasPolicy()],interpreter=interpreter)
     agent.train_online(training_data_file,input_channel=input_channel,batch_size=50,epochs=200,max_training_samples=300)
     return agent
 if __name__ == '__main__':

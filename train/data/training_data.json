@@ -1,6 +1,27 @@
 {
   "rasa_nlu_data": {
-    "regex_features": [],
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "email",
+        "pattern": "[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})"
+      },
+      {
+        "name": "password",
+        "pattern": "(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})"
+      },
+      {
+        "name": "passcode",
+        "pattern": "[0-9]{6}"
+      }
+    ],
     "entity_synonyms": [
       {
         "value": "hey",
@@ -119,6 +140,114 @@
       }
     ],
     "common_examples": [
+      {
+        "text": "brijeshlakkad@gmail.com",
+        "intent": "Banking_Email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "brijeshlakkad@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "Email is brijeshlakkad@gmail.com",
+        "intent": "Banking_Email",
+        "entities": [
+          {
+            "start": 9,
+            "end": 32,
+            "value": "brijeshlakkad@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "it's brijeshlakkad@gmail.com",
+        "intent": "Banking_Email",
+        "entities": [
+          {
+            "start": 5,
+            "end": 28,
+            "value": "brijeshlakkad@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "123456bB",
+        "intent": "Banking_Password",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "123456bB",
+            "entity": "password"
+          }
+        ]
+      },
+      {
+        "text": "it's 123433#b",
+        "intent": "Banking_Password",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "123433#b",
+            "entity": "password"
+          }
+        ]
+      },
+      {
+        "text": "Password is brij133bB",
+        "intent": "Banking_Password",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "brij133bB",
+            "entity": "password"
+          }
+        ]
+      },
+      {
+        "text": "Passcode is 343423",
+        "intent": "Banking_Passcode",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "343423",
+            "entity": "passcode"
+          }
+        ]
+      },
+      {
+        "text": "326723",
+        "intent": "Banking_Passcode",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "326723",
+            "entity": "passcode"
+          }
+        ]
+      },
+      {
+        "text": "it's 346763",
+        "intent": "Banking_Passcode",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "346763",
+            "entity": "passcode"
+          }
+        ]
+      },
       {
         "text": "hi Sanket",
         "intent": "General_Greetings",

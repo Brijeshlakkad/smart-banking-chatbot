@@ -22,8 +22,9 @@ def check_indentity(user,password):
         return -99
 
 def check_passcode(user,password,passcode):
-    f= check_indentity(user,password)
-    print("checked ",f)
+    f=check_indentity(user,password)
+    if f!=1:
+        return -99
     user=protect_data(user)
     password=protect_data(password)
     passcode=protect_data(passcode)
@@ -35,3 +36,17 @@ def check_passcode(user,password,passcode):
             return -99
     except:
         return -99
+
+def get_active_card(user,password,passcode):
+    f1=check_indentity(user,password)
+    f2=check_passcode(user,password,passcode)
+    if f1!=1 and f2!=1:
+        return -99
+    return change_customer_card_status(user,1)
+
+def get_deactive_card(user,password,passcode):
+    f1=check_indentity(user,password)
+    f2=check_passcode(user,password,passcode)
+    if f1!=1 and f2!=1:
+        return -99
+    return change_customer_card_status(user,0)

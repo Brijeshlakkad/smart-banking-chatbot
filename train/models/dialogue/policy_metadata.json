@@ -5,7 +5,8 @@
     }, 
     "action_listen": {
       "slots": [
-        "passcode"
+        "passcode", 
+        "password"
       ]
     }, 
     "action_get_access": {
@@ -16,18 +17,18 @@
         "requested_slot"
       ]
     }, 
+    "utter_activated_card": {
+      "slots": []
+    }, 
+    "utter_access": {
+      "slots": []
+    }, 
     "action_get_passcode": {
       "slots": [
         "passcode", 
         "status_access", 
         "requested_slot"
       ]
-    }, 
-    "utter_access": {
-      "slots": []
-    }, 
-    "action_check_validity": {
-      "slots": []
     }
   }, 
   "policy_names": [
