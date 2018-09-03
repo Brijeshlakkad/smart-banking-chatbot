@@ -1,22 +1,28 @@
 action_factory: null
 action_names:
 - action_get_access
-- action_get_passcode
-- utter_activated_card
+- action_active_card
+- action_deactive_card
 - utter_ask_user
 - utter_ask_password
+- utter_ask_passcode_active
+- utter_ask_passcode_deactive
+- utter_activated_card
+- utter_deactivated_card
 - utter_greet
-- utter_ask_passcode
 - utter_ending
 - utter_access
 actions:
 - actions.GetAccess
-- actions.GetPasscode
-- utter_activated_card
+- actions.GetActiveCard
+- actions.GetDeactiveCard
 - utter_ask_user
 - utter_ask_password
+- utter_ask_passcode_active
+- utter_ask_passcode_deactive
+- utter_activated_card
+- utter_deactivated_card
 - utter_greet
-- utter_ask_passcode
 - utter_ending
 - utter_access
 config:
@@ -57,7 +63,10 @@ slots:
   name:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  passcode:
+  passcode_active:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  passcode_deactive:
     initial_value: null
     type: rasa_core.slots.TextSlot
   password:
@@ -81,18 +90,24 @@ templates:
   - text: Looks like you are logged in, Boss!
   - text: Go ahead, Ask me anything!
   utter_activated_card:
-  - text: You got it! Boss
-  - text: Okay! Boss
-  - text: Done! Anything else?
+  - text: You got it! Boss. Your card is activated.
+  - text: Okay! Boss. Card is activated.
+  - text: Done! Your card is activated
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
-  utter_ask_passcode:
-  - text: 'Please enter your passcode: '
+  utter_ask_passcode_active:
+  - text: 'Please enter your passcode to active card: '
+  utter_ask_passcode_deactive:
+  - text: 'Please enter your passcode to deactive card: '
   utter_ask_password:
   - text: 'Please Enter Password:'
   utter_ask_user:
   - text: 'Please Enter Email:'
+  utter_deactivated_card:
+  - text: You got it! Boss. Your card is deactivated.
+  - text: Okay! Boss. Card is deactivated.
+  - text: Done! Your card is deactivated
   utter_ending:
   - text: Nice to help you! Boss
   - text: Okiey Dokiey!

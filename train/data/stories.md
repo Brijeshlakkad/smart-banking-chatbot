@@ -625,3 +625,27 @@
     - slot{"passcode_deactive": null}
     - utter_deactivated_card
     - export
+## Generated Story -7001253358643313406
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - utter_access
+* Banking_Activate_Card
+    - action_active_card
+    - slot{"requested_slot": "passcode_active"}
+* Banking_Activate_Card
+    - utter_ask_passcode_active
+    - utter_activated_card
+* General_Ending
+    - export
+

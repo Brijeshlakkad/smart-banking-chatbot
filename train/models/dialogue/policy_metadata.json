@@ -5,7 +5,6 @@
     }, 
     "action_listen": {
       "slots": [
-        "passcode", 
         "password"
       ]
     }, 
@@ -13,22 +12,31 @@
       "slots": [
         "access", 
         "password", 
-        "user", 
-        "requested_slot"
+        "requested_slot", 
+        "user"
       ]
     }, 
     "utter_activated_card": {
       "slots": []
     }, 
-    "utter_access": {
-      "slots": []
-    }, 
-    "action_get_passcode": {
+    "action_active_card": {
       "slots": [
-        "passcode", 
         "status_access", 
+        "passcode_active", 
         "requested_slot"
       ]
+    }, 
+    "action_deactive_card": {
+      "slots": [
+        "passcode_deactive", 
+        "requested_slot"
+      ]
+    }, 
+    "utter_deactivated_card": {
+      "slots": []
+    }, 
+    "utter_access": {
+      "slots": []
     }
   }, 
   "policy_names": [
