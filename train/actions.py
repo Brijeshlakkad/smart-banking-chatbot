@@ -39,6 +39,7 @@ class GetActiveCard(FormAction):
         if int(results)!=1:
             dispatcher.utter_message("Please try again! or login again!")
             return [ActionReverted()]
+        dispatcher.utter_template("utter_activated_card",tracker)
         return [SlotSet("passcode_active",None),UserUtteranceReverted()]
 class GetDeactiveCard(FormAction):
     RANDOMIZE = False
@@ -69,6 +70,7 @@ class GetDeactiveCard(FormAction):
         if int(results)!=1:
             dispatcher.utter_message("Please try again! or login again!")
             return [ActionReverted()]
+        dispatcher.utter_template("utter_deactivated_card",tracker)
         return [SlotSet("passcode_deactive",None),UserUtteranceReverted()]
 class GetAccess(FormAction):
     RANDOMIZE = False
@@ -89,4 +91,5 @@ class GetAccess(FormAction):
         if int(results)!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_access",tracker)
         return [SlotSet("access", results)]
