@@ -28,7 +28,7 @@ class GetCardService(FormAction):
             return [ActionReverted(),AllSlotsReset()]
         user,password,passcode=tracker.get_slot("user"),tracker.get_slot("password"),tracker.get_slot("passcode")
         card_permission=tracker.get_slot("card_permission")
-        if passcode==None or card_permission==False:
+        if passcode==None or card_permission!=True:
             return [ActionReverted()]
         ConversationPaused().apply_to(tracker)
         results = check_passcode(user,password,passcode)
@@ -37,7 +37,6 @@ class GetCardService(FormAction):
         if results==1:
             tracker.update(UserUtteranceReverted())
             tracker.update(UserUtteranceReverted())
-            print(tracker.latest_message)
             entities=tracker.latest_message.entities
             intent=tracker.latest_message.intent['name']
             if intent=="Banking_Activate_Card":
@@ -59,6 +58,20 @@ class GetCardService(FormAction):
             return [ActionReverted()]
         dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
         return [SlotSet("passcode",None),SlotSet("card_permission",None),UserUtteranceReverted()]
+class GetFeeInquiry(Action):
+    def name(self):
+        return 'action_fee_inquiry'
+    def run(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("user"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        fees=get_fee_info(user,password)
+        fees=int(fees)
+        fees=round(fees,2)
+        dispatcher.utter_template("utter_fee_inquiry_reply",tracker,fees=fees)
+        return []
 class GetAccess(FormAction):
     RANDOMIZE = False
     @staticmethod

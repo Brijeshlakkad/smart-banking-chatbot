@@ -81,6 +81,9 @@ templates:
     - "Okay! great"
     - "Okay Boss!"
     - "Good luck for that"
+  utter_fee_inquiry_reply:
+    - "Your card cost tax is {fees} $ per year"
+    - "Cost is {fees} $ per year"
 actions:
     - actions.GetAccess
     - actions.GetCardService
@@ -91,6 +94,9 @@ actions:
     - utter_activated_card
     - utter_deactivated_card
     - utter_ask_card_permission
+    - utter_positive_reply
     - utter_greet
     - utter_ending
     - utter_fallback
+    - actions.GetFeeInquiry
+    - utter_fee_inquiry_reply

@@ -50,3 +50,20 @@ def get_deactive_card(user,password,passcode):
     if f1!=1 and f2!=1:
         return -99
     return change_customer_card_status(user,0)
+
+def get_fee_info(user,password):
+    f=check_indentity(user,password)
+    if f!=1:
+        return -99
+    user=protect_data(user)
+    password=protect_data(password)
+    f=get_card_details_by_user(user,"card_type")
+    if f==0:
+        return -99
+    else:
+        if f=="Mastercard":
+            return "10"
+        elif f=="Visacard":
+            return "20"
+        else:
+            return "05"

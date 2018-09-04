@@ -777,3 +777,55 @@
 * affirm
     - utter_ask_passcode
     - export
+## Generated Story -8215533854456126044
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* General_Jokes{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* deny
+    - utter_positive_reply
+* Banking_Cancel_Card
+    - utter_ask_card_permission
+* deny
+    - utter_positive_reply
+    - export
+## Generated Story 2965747183665617429
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* Banking_Cancel_Card
+    - utter_ask_card_permission
+* affirm
+    - utter_ask_passcode
+    - export
