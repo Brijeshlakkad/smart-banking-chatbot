@@ -36,11 +36,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "123456"}
+    - action_card_service
+    - slot{"passcode": "123456"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -92,11 +92,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "123456"}
+    - action_card_service
+    - slot{"passcode": "123456"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -116,11 +116,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * General_Ending
-    - action_active_card
-    - slot{"passcode_active": "123456"}
+    - action_card_service
+    - slot{"passcode": "123456"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -140,11 +140,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -171,11 +171,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -195,10 +195,10 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * General_Ending
-    - action_active_card
+    - action_card_service
     - export
 
 ## Generated Story 2757285166283134466
@@ -225,10 +225,10 @@
     - slot{"access": 1}
     - export
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * General_Ending
-    - action_active_card
+    - action_card_service
     - export
 
 ## Generated Story -904939972818575242
@@ -246,12 +246,12 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
     - export
 ## Generated Story 1586742205556714584
@@ -291,11 +291,11 @@
     - action_get_access
     - slot{"password": "123456bB"}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
 * General_Ending
     - export
@@ -314,11 +314,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -338,12 +338,12 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -394,13 +394,13 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
 * Banking_Passcode
 * General_Ending
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
 * General_Ending
     - utter_ending
@@ -420,12 +420,12 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
 * General_Ending
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
     - export
 ## Generated Story 40810287827716749
@@ -443,11 +443,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
     - export
 
@@ -475,10 +475,10 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
+    - action_card_service
     - export
 
 ## Generated Story 3905829297340829214
@@ -511,11 +511,11 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
     - slot{"status_access": 1}
     - export
 ## Generated Story 3237292208623852838
@@ -532,26 +532,26 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
-    - slot{"passcode_active": null}
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
 * Banking_Cancel_Card
-    - action_deactive_card
-    - slot{"requested_slot": "passcode_deactive"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_deactive_card
-    - slot{"passcode_deactive": "683249"}
-    - slot{"passcode_deactive": null}
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
-    - slot{"passcode_active": null}
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
     - export
 
 ## Generated Story -4156011634757559723
@@ -569,19 +569,19 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_active_card
-    - slot{"passcode_active": "683249"}
-    - slot{"passcode_active": null}
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
 * Banking_Cancel_Card
-    - action_deactive_card
-    - slot{"requested_slot": "passcode_deactive"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_deactive_card
-    - slot{"passcode_deactive": "683249"}
-    - slot{"passcode_deactive": null}
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
     - export
 ## Generated Story -7001253358643313406
 * General_Greetings
@@ -598,10 +598,10 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Activate_Card
-    - utter_ask_passcode_active
+    - utter_ask_passcode
 * General_Ending
     - export
 ## Generated Story 1814218460959648732
@@ -619,10 +619,161 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
-    - action_active_card
-    - slot{"requested_slot": "passcode_active"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
 * Banking_Cancel_Card
-    - action_deactive_card
-    - slot{"requested_slot": "passcode_deactive"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
     - export
 
+## Generated Story 4378156494855587787
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
+    - export
+
+## Generated Story 4378156494855587787
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
+    - export
+## Generated Story -5101546304761170360
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
+* Banking_Cancel_Card
+    - utter_ask_passcode
+    - export
+
+## Generated Story -8986636006510367273
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card{"card_type": "card"}
+    - action_card_service
+    - slot{"requested_slot": "passcode"}
+* Banking_Cancel_Card
+* Banking_Activate_Card
+* General_Ending
+    - utter_ending
+    - export
+
+## Generated Story -931057643534886473
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Cancel_Card
+    - utter_ask_card_permission
+* affirm
+    - utter_ask_passcode
+* Banking_Activate_Card
+    - utter_ask_card_permission
+* deny
+    - utter_positive_reply
+* Banking_Cancel_Card
+    - utter_ask_card_permission
+* affirm
+    - utter_ask_passcode
+    - export
+
+
+## Generated Story -931057643534886474
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Cancel_Card
+    - utter_ask_card_permission
+* affirm
+    - utter_ask_passcode
+* Banking_Activate_Card
+    - utter_ask_card_permission
+* deny
+    - utter_positive_reply
+* Banking_Cancel_Card
+    - utter_ask_card_permission
+* affirm
+    - utter_ask_passcode
+    - export

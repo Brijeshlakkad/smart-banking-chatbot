@@ -10,9 +10,7 @@ slots:
     type: text
   password:
     type: text
-  passcode_active:
-    type: text
-  passcode_deactive:
+  passcode:
     type: text
   name:
     type: text
@@ -21,6 +19,8 @@ slots:
     values:
       - 0
       - 1
+  card_permission:
+    type: text
 intents:
   - Banking_Email
   - Banking_Password
@@ -29,16 +29,19 @@ intents:
   - Banking_Cancel_Card
   - Banking_Fee_Inquiry
   - General_Greetings
+  - affirm
 entities:
   - using_what
   - name
+  - passcode
+  - email
+  - password
   - card_type
   - active_new_card
   - active_cancelled_card
   - necessary_item
   - user_wants
   - help_asking_time
-  - get_passcode
   - question_yes_no
 templates:
   utter_ask_user:
@@ -48,18 +51,18 @@ templates:
   utter_greet:
     - "Hello!"
     - "Hello! How can i help?"
+  utter_ask_card_permission:
+    - "1. You can go to the Personal Settings \n.... \nor I can do it for you, if you want :-)"
   utter_activated_card:
-    - "You got it! Boss. Your card is activated."
-    - "Okay! Boss. Card is activated."
-    - "Done! Your card is activated"
+    - "You got it! Boss. Your {card_type} is activated."
+    - "Okay! Boss. {card_type} is activated."
+    - "Done! Your {card_type} is activated"
   utter_deactivated_card:
     - "You got it! Boss. Your card is deactivated."
     - "Okay! Boss. Card is deactivated."
     - "Done! Your card is deactivated"
-  utter_ask_passcode_active:
-    - "Please enter your passcode to active card: "
-  utter_ask_passcode_deactive:
-    - "Please enter your passcode to deactive card: "
+  utter_ask_passcode:
+    - "Please enter your passcode: "
   utter_anything:
     - "Okay! Boss"
     - "Okay :("
@@ -71,16 +74,23 @@ templates:
     - "Whooo! You are logged in. Ask Anything!"
     - "Looks like you are logged in, Boss!"
     - "Go ahead, Ask me anything!"
+  utter_fallback:
+    - "Sorry, I did not get you! :-("
+    - "Can you please elaborate your query!"
+  utter_positive_reply:
+    - "Okay! great"
+    - "Okay Boss!"
+    - "Good luck for that"
 actions:
     - actions.GetAccess
-    - actions.GetActiveCard
-    - actions.GetDeactiveCard
+    - actions.GetCardService
     - utter_ask_user
     - utter_ask_password
-    - utter_ask_passcode_active
-    - utter_ask_passcode_deactive
+    - utter_access
+    - utter_ask_passcode
     - utter_activated_card
     - utter_deactivated_card
+    - utter_ask_card_permission
     - utter_greet
     - utter_ending
-    - utter_access
+    - utter_fallback

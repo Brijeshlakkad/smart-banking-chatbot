@@ -20,6 +20,10 @@
       {
         "name": "passcode",
         "pattern": "[0-9]{6}"
+      },
+      {
+        "name": "deny",
+        "pattern":"i [will?] [can?] do[^\\s]*"
       }
     ],
     "entity_synonyms": [
@@ -471,6 +475,61 @@
             "value": "Brijesh"
           }
         ]
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "don't do it",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "i can do it",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "no problem, i will do it",
+        "intent": "deny",
+        "entities": []
       },
       {
         "text": "I'm done",
@@ -1281,7 +1340,7 @@
             "start": 21,
             "end": 24,
             "value": "new",
-            "entity": "active_new_card"
+            "entity": "card_type"
           }
         ]
       },
@@ -1304,7 +1363,7 @@
             "start": 11,
             "end": 14,
             "value": "new",
-            "entity": "active_new_card",
+            "entity": "card_type",
             "extractor": "ner_crf",
             "confidence": 0.854,
             "processors": [
@@ -1383,7 +1442,7 @@
             "start": 21,
             "end": 24,
             "value": "new",
-            "entity": "active_new_card",
+            "entity": "card_type",
             "extractor": "ner_crf",
             "confidence": 0.854,
             "processors": [
@@ -1417,7 +1476,7 @@
             "start": 22,
             "end": 36,
             "value": "cancelled card",
-            "entity": "active_cancelled_card",
+            "entity": "card_type",
             "extractor": "ner_crf",
             "confidence": 0.854,
             "processors": [
@@ -1434,7 +1493,7 @@
             "start": 20,
             "end": 34,
             "value": "cancelled card",
-            "entity": "active_cancelled_card",
+            "entity": "card_type",
             "extractor": "ner_crf",
             "confidence": 0.854,
             "processors": [
@@ -1451,7 +1510,7 @@
             "start": 12,
             "end": 26,
             "value": "cancelled card",
-            "entity": "active_cancelled_card",
+            "entity": "card_type",
             "extractor": "ner_crf",
             "confidence": 0.854,
             "processors": [

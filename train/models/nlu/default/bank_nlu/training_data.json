@@ -330,6 +330,50 @@
         "text": "hey Brijesh whats up"
       }, 
       {
+        "text": "yes", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "indeed", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "that's right", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "ok", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "great", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "no", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "don't do it", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "i can do it", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "no problem, i will do it", 
+        "intent": "deny"
+      }, 
+      {
         "text": "I'm done", 
         "intent": "General_Ending"
       }, 
@@ -978,7 +1022,7 @@
             "start": 21, 
             "end": 24, 
             "value": "new", 
-            "entity": "active_new_card"
+            "entity": "card_type"
           }
         ], 
         "intent": "Banking_Activate_Card", 
@@ -1005,7 +1049,7 @@
               "ner_synonyms"
             ], 
             "value": "new", 
-            "entity": "active_new_card", 
+            "entity": "card_type", 
             "start": 11
           }
         ], 
@@ -1084,7 +1128,7 @@
               "ner_synonyms"
             ], 
             "value": "new", 
-            "entity": "active_new_card", 
+            "entity": "card_type", 
             "start": 21
           }
         ], 
@@ -1118,7 +1162,7 @@
               "ner_synonyms"
             ], 
             "value": "cancelled card", 
-            "entity": "active_cancelled_card", 
+            "entity": "card_type", 
             "start": 22
           }
         ], 
@@ -1135,7 +1179,7 @@
               "ner_synonyms"
             ], 
             "value": "cancelled card", 
-            "entity": "active_cancelled_card", 
+            "entity": "card_type", 
             "start": 20
           }
         ], 
@@ -1152,7 +1196,7 @@
               "ner_synonyms"
             ], 
             "value": "cancelled card", 
-            "entity": "active_cancelled_card", 
+            "entity": "card_type", 
             "start": 12
           }
         ], 
@@ -1673,6 +1717,10 @@
       }
     ], 
     "regex_features": [
+      {
+        "pattern": "i [will?] [can?] do[^\\s]*", 
+        "name": "deny"
+      }, 
       {
         "pattern": "[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})", 
         "name": "email"
