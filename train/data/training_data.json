@@ -24,6 +24,10 @@
       {
         "name": "deny",
         "pattern":"i [will?] [can?] do[^\\s]*"
+      },
+      {
+        "name":"Banking_Card_Number",
+        "pattern":"[0-9]{16}"
       }
     ],
     "entity_synonyms": [
@@ -251,6 +255,21 @@
             "entity": "passcode"
           }
         ]
+      },
+      {
+        "text": "4393439815128095",
+        "intent": "Banking_Card_Number",
+        "entities": []
+      },
+      {
+        "text": "4392323257889999",
+        "intent": "Banking_Card_Number",
+        "entities": []
+      },
+      {
+        "text": "34346579018908409",
+        "intent": "Banking_Card_Number",
+        "entities": []
       },
       {
         "text": "hi Sanket",
@@ -1956,6 +1975,106 @@
       {
         "text": "Need some help with my credit card charges/fees",
         "intent": "Banking_Fee_Inquiry",
+        "entities": []
+      },
+      {
+        "text": "How do I get a card reissued?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Please take this old credit card and give me new one",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Please substitute a new card for the worn-out one",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I would like to know how to replace my credit card.",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I want to opt for the replacement of my card as it has worn out",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I want card replacement same day",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I need to get a new card",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "I need some information on how to replace credit card",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "How do I go about requesting a new card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Do I need to validate my new home address in order to get a card replacement?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Credit credit card replacement methods",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Card need to be replaced as it does not work",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me how to re-issue a credit card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I request a replacement for my card online?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I have helpline number to ask credit card replacement?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Can I get info on replacing my credit card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Where from can I issue another card?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "What is the cost for credit card replacement?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "What are the methods using which I can get a new card by replacing it with old one?",
+        "intent": "Banking_Replace_Card",
+        "entities": []
+      },
+      {
+        "text": "Replacement for banking credit card",
+        "intent": "Banking_Replace_Card",
         "entities": []
       }
     ]

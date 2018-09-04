@@ -5,7 +5,7 @@ sys.path.insert(0, parent_dir)
 from config import *
 from security import *
 from customer_details import *
-
+from admin_control import *
 def check_indentity(user,password):
     user=protect_data(user)
     password=protect_data(password)
@@ -67,3 +67,16 @@ def get_fee_info(user,password):
             return "20"
         else:
             return "05"
+def card_replace(user,password,old_card):
+    f=check_indentity(user,password)
+    if f!=1:
+        return -99
+    user=protect_data(user)
+    password=protect_data(password)
+    acc_id=get_account_details_by_user(user,"acc_id")
+    b=delete_customer_card("card_no",old_card)
+    if b==11:
+        b=int(create_card(acc_id))
+        if b==11:
+            return 1
+    return -99

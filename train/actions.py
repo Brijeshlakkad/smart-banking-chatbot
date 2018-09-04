@@ -10,6 +10,27 @@ from rasa_core.actions.action import Action,ActionListen
 from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
+class GetAccess(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+        FreeTextFormField("user"),
+        FreeTextFormField("password")
+        ]
+    def name(self):
+        return 'action_get_access'
+    def submit(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("user")
+        password=tracker.get_slot("password")
+        ConversationPaused().apply_to(tracker)
+        results = check_indentity(user,password)
+        ConversationResumed().apply_to(tracker)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_access",tracker)
+        return [SlotSet("access", results)]
 class GetCardService(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -72,24 +93,34 @@ class GetFeeInquiry(Action):
         fees=round(fees,2)
         dispatcher.utter_template("utter_fee_inquiry_reply",tracker,fees=fees)
         return []
-class GetAccess(FormAction):
+class CardReplaceService(FormAction):
     RANDOMIZE = False
     @staticmethod
     def required_fields():
         return [
-        FreeTextFormField("user"),
-        FreeTextFormField("password")
+        FreeTextFormField("card_replace_with"),
+        BooleanFormField("card_perm","affirm","deny"),
+        FreeTextFormField("passcode")
         ]
     def name(self):
-        return 'action_get_access'
+        return 'action_card_replace'
     def submit(self, dispatcher, tracker, domain):
-        user=tracker.get_slot("user")
-        password=tracker.get_slot("password")
-        ConversationPaused().apply_to(tracker)
-        results = check_indentity(user,password)
-        ConversationResumed().apply_to(tracker)
-        if int(results)!=1:
-            dispatcher.utter_message("Please enter valid information")
+        user,password=tracker.get_slot("user"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
-        dispatcher.utter_template("utter_access",tracker)
-        return [SlotSet("access", results)]
+        user,password,passcode=tracker.get_slot("user"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        card_perm=tracker.get_slot("card_perm")
+        card_replace_with=tracker.get_slot("card_replace_with")
+        if passcode==None or card_replace_with==None or card_perm!=True:
+            return [ActionReverted()]
+        results = check_passcode(user,password,passcode)
+        if int(results)!=1:
+            dispatcher.utter_message("Please try again! or login again!")
+            return [ActionReverted()]
+        results=card_replace(user,password,card_replace_with)
+        if results!=1:
+            dispatcher.utter_message("Please try again! or login again!")
+        dispatcher.utter_template("utter_replace_card_reply",tracker)
+        return [SlotSet("passcode",None),SlotSet("card_perm",None)]

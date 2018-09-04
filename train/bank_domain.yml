@@ -21,15 +21,27 @@ slots:
       - 1
   card_permission:
     type: text
+  card_replace_with:
+    type: text
+  card_perm:
+    type: text
 intents:
+  - General_Greetings
+  - affirm
+  - deny
+  - General_Ending
   - Banking_Email
   - Banking_Password
   - Banking_Passcode
   - Banking_Activate_Card
   - Banking_Cancel_Card
   - Banking_Fee_Inquiry
-  - General_Greetings
-  - affirm
+  - Banking_Replace_Card
+  - General_Jokes
+  - General_Human_or_Bot
+  - General_Negative_Feedback
+  - General_Security_Assurance
+  - Banking_Card_Number
 entities:
   - using_what
   - name
@@ -84,6 +96,14 @@ templates:
   utter_fee_inquiry_reply:
     - "Your card cost tax is {fees} $ per year"
     - "Cost is {fees} $ per year"
+  utter_replace_card_reply:
+    - "Your card replace request has been initiated.\nYou will get your new card details soon."
+  utter_ask_card_replace_with:
+    - "Please enter your card number to replace with: \n(Go to Profile Settings>>Services>>Card Details)"
+    - "Card number to replace with: \n(You can see card number in your Profile Settings>>Services>>Card Details)"
+  utter_ask_card_perm:
+    - "Are you sure?"
+    - "Enter 'Yes' if you want to continue"
 actions:
     - actions.GetAccess
     - actions.GetCardService
@@ -100,3 +120,6 @@ actions:
     - utter_fallback
     - actions.GetFeeInquiry
     - utter_fee_inquiry_reply
+    - utter_ask_card_perm
+    - actions.CardReplaceService
+    - utter_replace_card_reply

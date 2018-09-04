@@ -184,3 +184,15 @@ def provides_requests():
 		return requests
 	except:
 		return "-99"
+def delete_customer_card(field,value):
+	conn,cursor=config.connect_to_database()
+	sql="delete from cards where %s='%s'"%(field,value)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return 11
+	except:
+		conn.rollback()
+		return -99
+	finally:
+		conn.close()

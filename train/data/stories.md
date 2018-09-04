@@ -829,3 +829,61 @@
 * affirm
     - utter_ask_passcode
     - export
+## Generated Story 6682605256985507888
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "4393439815128095"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"requested_slot": "passcode"}
+* General_Ending
+    - export
+## Generated Story -8456394741729833064
+* General_Greetings
+    - utter_greet
+    - action_get_access
+    - slot{"requested_slot": "user"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "4393439815128095"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - export
