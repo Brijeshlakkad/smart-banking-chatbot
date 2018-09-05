@@ -49,9 +49,10 @@ class GetCardService(FormAction):
             return [ActionReverted(),AllSlotsReset()]
         user,password,passcode=tracker.get_slot("user"),tracker.get_slot("password"),tracker.get_slot("passcode")
         card_permission=tracker.get_slot("card_permission")
+        question_yes_no=tracker.get_slot("question_yes_no")
+        using_what=tracker.get_slot("using_what")
         if passcode==None or card_permission!=True:
             return [ActionReverted()]
-        ConversationPaused().apply_to(tracker)
         results = check_passcode(user,password,passcode)
         ent="card"
         template="utter_fallback"
@@ -70,14 +71,21 @@ class GetCardService(FormAction):
             for i in range(len1):
                 if entities[i]["entity"]=="card_type":
                     ent=entities[i]['value']
+                elif entities[i]["entity"]=="using_what":
+                    using_what=entities[i]['value']
+                elif entities[i]["entity"]=="question_yes_no":
+                    question_yes_no=entities[i]['value']
+            if question_yes_no!=None:
+                template="utter_give_pos_ans"
+                using=""
+                if using_what!=None:
+                    using=" ".join(["using",using_what])
+                dispatcher.utter_template(template,tracker,using=using)
+            else:
+                dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
         else:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted()]
-        ConversationResumed().apply_to(tracker)
-        if int(results)!=1:
-            dispatcher.utter_message("Please try again! or login again!")
-            return [ActionReverted()]
-        dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
         return [SlotSet("passcode",None),SlotSet("card_permission",None),UserUtteranceReverted()]
 class GetFeeInquiry(Action):
     def name(self):

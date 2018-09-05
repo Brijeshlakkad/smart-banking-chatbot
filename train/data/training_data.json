@@ -23,11 +23,11 @@
       },
       {
         "name": "deny",
-        "pattern":"i [will?] [can?] do[^\\s]*"
+        "pattern": "i [will?] [can?] do[^\\s]*"
       },
       {
-        "name":"Banking_Card_Number",
-        "pattern":"[0-9]{16}"
+        "name": "Banking_Card_Number",
+        "pattern": "[0-9]{16}"
       }
     ],
     "entity_synonyms": [
@@ -259,17 +259,38 @@
       {
         "text": "4393439815128095",
         "intent": "Banking_Card_Number",
-        "entities": []
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4393439815128095",
+            "entity": "card_no"
+          }
+        ]
       },
       {
-        "text": "4392323257889999",
+        "text": "it's 4392323257889999",
         "intent": "Banking_Card_Number",
-        "entities": []
+        "entities": [
+          {
+            "start": 5,
+            "end": 21,
+            "value": "4392323257889999",
+            "entity": "card_no"
+          }
+        ]
       },
       {
-        "text": "34346579018908409",
+        "text": "card number is 34346579018908409",
         "intent": "Banking_Card_Number",
-        "entities": []
+        "entities": [
+          {
+            "start": 15,
+            "end": 32,
+            "value": "34346579018908409",
+            "entity": "card_no"
+          }
+        ]
       },
       {
         "text": "hi Sanket",

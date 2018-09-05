@@ -19,11 +19,15 @@ slots:
     values:
       - 0
       - 1
-  card_permission:
-    type: text
   card_replace_with:
     type: text
+  card_permission:
+    type: text
   card_perm:
+    type: text
+  question_yes_no:
+    type: text
+  using_what:
     type: text
 intents:
   - General_Greetings
@@ -48,6 +52,7 @@ entities:
   - passcode
   - email
   - password
+  - card_no
   - card_type
   - active_new_card
   - active_cancelled_card
@@ -56,6 +61,8 @@ entities:
   - help_asking_time
   - question_yes_no
 templates:
+  utter_first_access:
+    - "Please first login to our service to use it."
   utter_ask_user:
     - "Please Enter Email:"
   utter_ask_password:
@@ -64,7 +71,7 @@ templates:
     - "Hello!"
     - "Hello! How can i help?"
   utter_ask_card_permission:
-    - "1. You can go to the Personal Settings \n.... \nor I can do it for you, if you want :-)"
+    - "You can do it using several ways:\n1. Goto Profile Settings>>Services>>Active Card\n2. Using ATM\n3. Using Text\nor Should i do it for you?"
   utter_activated_card:
     - "You got it! Boss. Your {card_type} is activated."
     - "Okay! Boss. {card_type} is activated."
@@ -104,20 +111,25 @@ templates:
   utter_ask_card_perm:
     - "Are you sure?"
     - "Enter 'Yes' if you want to continue"
+  utter_give_pos_ans:
+    - "Yes, You can do it {using}!"
+    - "Ofcourse, You can always do it {using}."
 actions:
     - actions.GetAccess
     - actions.GetCardService
     - utter_ask_user
     - utter_ask_password
+    - utter_first_access
     - utter_access
     - utter_ask_passcode
     - utter_activated_card
     - utter_deactivated_card
-    - utter_ask_card_permission
     - utter_positive_reply
     - utter_greet
     - utter_ending
     - utter_fallback
+    - utter_ask_card_permission
+    - utter_give_pos_ans
     - actions.GetFeeInquiry
     - utter_fee_inquiry_reply
     - utter_ask_card_perm
