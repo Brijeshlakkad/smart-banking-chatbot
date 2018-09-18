@@ -1,0 +1,56 @@
+%[Banking_Cancel_Card]('training': '900')
+    ~[Can i?] ~[syn] ~[card_n] ~[card] @[using_what?]
+~[syn]
+    cancelled
+    disabled
+    foreclosing
+    closing
+    close
+    no longer need
+    no longer want
+    revoke
+    revoking
+    turn off
+    off
+    close
+    cancel
+    turning off
+    0
+    setoff
+    disable
+~[Can i]
+    what are the ~[process] for
+    can i
+    assist ~[me?] to
+    help me to
+    get me help to
+    please help me to
+    please assist me to
+~[process]
+    processes
+    steps
+    ways
+    procedures
+    procedure
+~[card_n]
+    ~[my?] ~[card_type?]
+
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit
+
+@[using_what]
+    pin
+    pin number
+    passcode
+    pass number
+    pass num
+    atm password
+    atm Passcode
+    pin num
+    activation keys
+    active keys

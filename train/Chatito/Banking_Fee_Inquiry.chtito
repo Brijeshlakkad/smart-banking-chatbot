@@ -1,0 +1,33 @@
+%[Banking_Fee_Inquiry]('training': '900')
+    ~[Can i?] ~[syn] ~[card_n] ~[card]
+~[syn]
+    charges ~[inquiry?]
+    fees ~[inquiry?]
+    cost ~[inquiry?]
+~[inquiry]
+    inquiry about
+    inquiry for
+~[Can i]
+    what are the ~[process] to get
+    can i get
+    assist ~[me?] to get
+    help me to get
+    get me help to get
+    please help me to get
+    please assist me to get
+~[process]
+    processes
+    steps
+    ways
+    procedures
+    procedure
+~[card_n]
+    ~[my?] ~[card_type?]
+
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit
