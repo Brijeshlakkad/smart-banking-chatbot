@@ -5,8 +5,21 @@
     }, 
     "action_listen": {
       "slots": [
-        "password"
+        "password", 
+        "using_what", 
+        "question_yes_no"
       ]
+    }, 
+    "action_card_replace": {
+      "slots": [
+        "passcode", 
+        "requested_slot", 
+        "card_perm", 
+        "card_replace_with"
+      ]
+    }, 
+    "utter_positive_reply": {
+      "slots": []
     }, 
     "action_get_access": {
       "slots": [
@@ -16,26 +29,16 @@
         "user"
       ]
     }, 
-    "utter_activated_card": {
-      "slots": []
-    }, 
-    "action_active_card": {
+    "action_card_service": {
       "slots": [
+        "passcode", 
         "status_access", 
-        "passcode_active", 
-        "requested_slot"
+        "card_permission", 
+        "requested_slot", 
+        "card_perm"
       ]
     }, 
-    "action_deactive_card": {
-      "slots": [
-        "passcode_deactive", 
-        "requested_slot"
-      ]
-    }, 
-    "utter_deactivated_card": {
-      "slots": []
-    }, 
-    "utter_access": {
+    "utter_ask_passcode": {
       "slots": []
     }
   }, 

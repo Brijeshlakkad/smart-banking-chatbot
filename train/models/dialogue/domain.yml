@@ -1,57 +1,94 @@
 action_factory: null
 action_names:
 - action_get_access
-- action_active_card
-- action_deactive_card
+- action_card_service
 - utter_ask_user
 - utter_ask_password
-- utter_ask_passcode_active
-- utter_ask_passcode_deactive
+- utter_first_access
+- utter_access
+- utter_ask_passcode
 - utter_activated_card
 - utter_deactivated_card
+- utter_positive_reply
 - utter_greet
 - utter_ending
-- utter_access
+- utter_fallback
+- utter_ask_card_permission
+- utter_give_pos_ans
+- action_fee_inquiry
+- utter_fee_inquiry_reply
+- utter_ask_card_perm
+- action_card_replace
+- utter_replace_card_reply
 actions:
 - actions.GetAccess
-- actions.GetActiveCard
-- actions.GetDeactiveCard
+- actions.GetCardService
 - utter_ask_user
 - utter_ask_password
-- utter_ask_passcode_active
-- utter_ask_passcode_deactive
+- utter_first_access
+- utter_access
+- utter_ask_passcode
 - utter_activated_card
 - utter_deactivated_card
+- utter_positive_reply
 - utter_greet
 - utter_ending
-- utter_access
+- utter_fallback
+- utter_ask_card_permission
+- utter_give_pos_ans
+- actions.GetFeeInquiry
+- utter_fee_inquiry_reply
+- utter_ask_card_perm
+- actions.CardReplaceService
+- utter_replace_card_reply
 config:
   store_entities_as_slots: true
 entities:
 - using_what
 - name
+- passcode
+- email
+- password
+- card_no
 - card_type
 - active_new_card
 - active_cancelled_card
 - necessary_item
 - user_wants
 - help_asking_time
-- get_passcode
 - question_yes_no
 intents:
+- General_Security_Assurance:
+    use_entities: true
+- deny:
+    use_entities: true
 - Banking_Cancel_Card:
     use_entities: true
-- General_Greetings:
+- General_Negative_Feedback:
     use_entities: true
-- Banking_Fee_Inquiry:
-    use_entities: true
-- Banking_Email:
+- affirm:
     use_entities: true
 - Banking_Password:
     use_entities: true
-- Banking_Activate_Card:
+- Banking_Fee_Inquiry:
+    use_entities: true
+- General_Ending:
     use_entities: true
 - Banking_Passcode:
+    use_entities: true
+- Banking_Card_Number:
+    use_entities: true
+- General_Jokes:
+    use_entities: true
+- General_Greetings:
+    use_entities: true
+- Banking_Replace_Card:
+    use_entities: true
+- General_Human_or_Bot:
+    use_entities: true
+- Banking_Email:
+    use_entities: true
+- Banking_Activate_Card:
     use_entities: true
 slots:
   access:
@@ -60,16 +97,25 @@ slots:
     values:
     - '0'
     - '1'
+  card_perm:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  card_permission:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  card_replace_with:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   name:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  passcode_active:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
-  passcode_deactive:
+  passcode:
     initial_value: null
     type: rasa_core.slots.TextSlot
   password:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  question_yes_no:
     initial_value: null
     type: rasa_core.slots.TextSlot
   requested_slot:
@@ -84,22 +130,41 @@ slots:
   user:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  using_what:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_access:
   - text: Whooo! You are logged in. Ask Anything!
   - text: Looks like you are logged in, Boss!
   - text: Go ahead, Ask me anything!
   utter_activated_card:
-  - text: You got it! Boss. Your card is activated.
-  - text: Okay! Boss. Card is activated.
-  - text: Done! Your card is activated
+  - text: You got it! Boss. Your {card_type} is activated.
+  - text: Okay! Boss. {card_type} is activated.
+  - text: Done! Your {card_type} is activated
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
-  utter_ask_passcode_active:
-  - text: 'Please enter your passcode to active card: '
-  utter_ask_passcode_deactive:
-  - text: 'Please enter your passcode to deactive card: '
+  utter_ask_card_perm:
+  - text: Are you sure?
+  - text: Enter 'Yes' if you want to continue
+  utter_ask_card_permission:
+  - text: 'You can do it using several ways:
+
+      1. Goto Profile Settings>>Services>>Active Card
+
+      2. Using ATM
+
+      3. Using Text
+
+      or Should i do it for you?'
+  utter_ask_card_replace_with:
+  - text: "Please enter your card number to replace with: \n(Go to Profile Settings>>Services>>Card\
+      \ Details)"
+  - text: "Card number to replace with: \n(You can see card number in your Profile\
+      \ Settings>>Services>>Card Details)"
+  utter_ask_passcode:
+  - text: 'Please enter your passcode: '
   utter_ask_password:
   - text: 'Please Enter Password:'
   utter_ask_user:
@@ -112,6 +177,25 @@ templates:
   - text: Nice to help you! Boss
   - text: Okiey Dokiey!
   - text: Ba Bye!
+  utter_fallback:
+  - text: Sorry, I did not get you! :-(
+  - text: Can you please elaborate your query!
+  utter_fee_inquiry_reply:
+  - text: Your card cost tax is {fees} $ per year
+  - text: Cost is {fees} $ per year
+  utter_first_access:
+  - text: Please first login to our service to use it.
+  utter_give_pos_ans:
+  - text: Yes, You can do it {using}!
+  - text: Ofcourse, You can always do it {using}.
   utter_greet:
   - text: Hello!
   - text: Hello! How can i help?
+  utter_positive_reply:
+  - text: Okay! great
+  - text: Okay Boss!
+  - text: Good luck for that
+  utter_replace_card_reply:
+  - text: 'Your card replace request has been initiated.
+
+      You will get your new card details soon.'
