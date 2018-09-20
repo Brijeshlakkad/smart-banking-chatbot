@@ -13,7 +13,8 @@ from jon_working_with_db import *
 class GetAccess(FormAction):
     RANDOMIZE = False
     @staticmethod
-    def required_fields():
+    def required_fields
+    ():
         return [
         FreeTextFormField("email"),
         FreeTextFormField("password")

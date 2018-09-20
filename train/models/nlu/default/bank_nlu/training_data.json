@@ -36068,6 +36068,54 @@
         ], 
         "intent": "Banking_Email", 
         "text": "k3432jhvjh@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "543444", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "543444"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "231232", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "231232"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "234324", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "234324"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "454556", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "454556"
       }
     ], 
     "entity_synonyms": [
