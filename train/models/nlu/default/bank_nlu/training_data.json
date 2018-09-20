@@ -16,80 +16,284 @@
       {
         "entities": [
           {
-            "start": 9, 
-            "end": 32, 
+            "start": 0, 
+            "end": 23, 
             "value": "brijeshlakkad@gmail.com", 
             "entity": "email"
           }
         ], 
         "intent": "Banking_Email", 
-        "text": "Email is brijeshlakkad@gmail.com"
+        "text": "brijeshlakkad@gmail.com"
       }, 
       {
         "entities": [
           {
-            "start": 5, 
-            "end": 28, 
+            "start": 0, 
+            "end": 23, 
             "value": "brijeshlakkad@gmail.com", 
             "entity": "email"
           }
         ], 
         "intent": "Banking_Email", 
-        "text": "it's brijeshlakkad@gmail.com"
+        "text": "brijeshlakkad@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "123456", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "123456"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 5, 
+            "value": "12345", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "12345"
       }, 
       {
         "entities": [
           {
             "start": 0, 
             "end": 8, 
-            "value": "123456bB", 
+            "value": "password", 
             "entity": "password"
           }
         ], 
         "intent": "Banking_Password", 
-        "text": "123456bB"
+        "text": "password"
       }, 
       {
         "entities": [
           {
-            "start": 5, 
-            "end": 13, 
-            "value": "123433#b", 
+            "start": 0, 
+            "end": 9, 
+            "value": "password1", 
             "entity": "password"
           }
         ], 
         "intent": "Banking_Password", 
-        "text": "it's 123433#b"
+        "text": "password1"
       }, 
       {
         "entities": [
           {
-            "start": 12, 
-            "end": 21, 
-            "value": "brij133bB", 
+            "start": 0, 
+            "end": 9, 
+            "value": "123456789", 
             "entity": "password"
           }
         ], 
         "intent": "Banking_Password", 
-        "text": "Password is brij133bB"
+        "text": "123456789"
       }, 
       {
         "entities": [
           {
-            "start": 12, 
-            "end": 18, 
-            "value": "343423", 
-            "entity": "passcode"
+            "start": 0, 
+            "end": 8, 
+            "value": "12345678", 
+            "entity": "password"
           }
         ], 
-        "intent": "Banking_Passcode", 
-        "text": "Passcode is 343423"
+        "intent": "Banking_Password", 
+        "text": "12345678"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 10, 
+            "value": "1234567890", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "1234567890"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "abc123", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "abc123"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 8, 
+            "value": "computer", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "computer"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "tigger", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "tigger"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 4, 
+            "value": "1234", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "1234"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "a1b2c3", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "a1b2c3"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 3, 
+            "value": "123", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "123"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 11, 
+            "value": "12Bb3242342", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "12Bb3242342"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 15, 
+            "value": "1324234gsdD4324", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "1324234gsdD4324"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 10, 
+            "value": "sdD1213vsd", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "sdD1213vsd"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 10, 
+            "value": "Brijesh123", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "Brijesh123"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 8, 
+            "value": "123sdsds", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "123sdsds"
       }, 
       {
         "entities": [
           {
             "start": 0, 
             "end": 7, 
+            "value": "23433#b", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "23433#b"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 9, 
+            "value": "brij133bB", 
+            "entity": "password"
+          }
+        ], 
+        "intent": "Banking_Password", 
+        "text": "brij133bB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "343423", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "343423"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
             "value": "326723", 
             "entity": "passcode"
           }
@@ -100,14 +304,14 @@
       {
         "entities": [
           {
-            "start": 5, 
-            "end": 11, 
-            "value": "346763", 
+            "start": 0, 
+            "end": 6, 
+            "value": "343434", 
             "entity": "passcode"
           }
         ], 
         "intent": "Banking_Passcode", 
-        "text": "it's 346763"
+        "text": "343434"
       }, 
       {
         "entities": [
@@ -124,26 +328,26 @@
       {
         "entities": [
           {
-            "start": 5, 
-            "end": 21, 
+            "start": 0, 
+            "end": 16, 
             "value": "4392323257889999", 
             "entity": "card_no"
           }
         ], 
         "intent": "Banking_Card_Number", 
-        "text": "it's 4392323257889999"
+        "text": "4392323257889999"
       }, 
       {
         "entities": [
           {
-            "start": 15, 
-            "end": 32, 
+            "start": 0, 
+            "end": 17, 
             "value": "34346579018908409", 
             "entity": "card_no"
           }
         ], 
         "intent": "Banking_Card_Number", 
-        "text": "card number is 34346579018908409"
+        "text": "34346579018908409"
       }, 
       {
         "entities": [
@@ -304,9 +508,9 @@
       {
         "entities": [
           {
-            "start": 10, 
+            "start": 11, 
             "end": 18, 
-            "value": " Brijesh", 
+            "value": "Brijesh", 
             "entity": "name"
           }
         ], 
@@ -1249,8 +1453,8 @@
           }, 
           {
             "start": 22, 
-            "end": 29, 
-            "value": "credit ", 
+            "end": 28, 
+            "value": "credit", 
             "entity": "card_type"
           }
         ], 
@@ -1413,8 +1617,8 @@
         "entities": [
           {
             "start": 21, 
-            "end": 44, 
-            "value": "mastercard credit card ", 
+            "end": 43, 
+            "value": "mastercard credit card", 
             "entity": "card_type"
           }
         ], 
@@ -1437,8 +1641,8 @@
         "entities": [
           {
             "start": 29, 
-            "end": 36, 
-            "value": "credit ", 
+            "end": 35, 
+            "value": "credit", 
             "entity": "card_type"
           }
         ], 
@@ -1485,8 +1689,8 @@
         "entities": [
           {
             "start": 0, 
-            "end": 6, 
-            "value": "Can I ", 
+            "end": 5, 
+            "value": "Can I", 
             "entity": "question_yes_no"
           }
         ], 
@@ -35744,6 +35948,126 @@
         ], 
         "intent": "Banking_Replace_Card", 
         "text": "can i Change visa card atm Passcode"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "348324", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "348324"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "435353", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "435353"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "424233", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "424233"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "324234", 
+            "entity": "passcode"
+          }
+        ], 
+        "intent": "Banking_Passcode", 
+        "text": "324234"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 16, 
+            "value": "bkjbfk@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "bkjbfk@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 16, 
+            "value": "342424@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "342424@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 17, 
+            "value": "kbajsbd@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "kbajsbd@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 18, 
+            "value": "naaslsld@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "naaslsld@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 17, 
+            "value": "jfjbjfb@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "jfjbjfb@gmail.com"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 20, 
+            "value": "k3432jhvjh@gmail.com", 
+            "entity": "email"
+          }
+        ], 
+        "intent": "Banking_Email", 
+        "text": "k3432jhvjh@gmail.com"
       }
     ], 
     "entity_synonyms": [
@@ -35866,28 +36190,24 @@
         "name": "Banking_Card_Number"
       }, 
       {
-        "pattern": "i [will?] [can?] do[^\\s]*", 
-        "name": "deny"
-      }, 
-      {
         "pattern": "[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})", 
-        "name": "email"
-      }, 
-      {
-        "pattern": "hey[^\\s]*", 
-        "name": "greet"
+        "name": "Banking_Email"
       }, 
       {
         "pattern": "[0-9]{6}", 
-        "name": "passcode"
+        "name": "Banking_Passcode"
       }, 
       {
         "pattern": "(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})", 
-        "name": "password"
+        "name": "Banking_Password"
+      }, 
+      {
+        "pattern": "hey[^\\s]*", 
+        "name": "General_Greetings"
       }, 
       {
         "pattern": "[0-9]{5}", 
-        "name": "zipcode"
+        "name": "Zipcode"
       }
     ]
   }

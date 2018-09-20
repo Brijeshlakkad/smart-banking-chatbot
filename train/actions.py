@@ -15,13 +15,13 @@ class GetAccess(FormAction):
     @staticmethod
     def required_fields():
         return [
-        FreeTextFormField("user"),
+        FreeTextFormField("email"),
         FreeTextFormField("password")
         ]
     def name(self):
         return 'action_get_access'
     def submit(self, dispatcher, tracker, domain):
-        user=tracker.get_slot("user")
+        user=tracker.get_slot("email")
         password=tracker.get_slot("password")
         ConversationPaused().apply_to(tracker)
         results = check_indentity(user,password)
@@ -42,12 +42,12 @@ class GetCardService(FormAction):
     def name(self):
         return 'action_card_service'
     def submit(self, dispatcher, tracker, domain):
-        user,password=tracker.get_slot("user"),tracker.get_slot("password")
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
         access=tracker.get_slot("access")
         if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
-        user,password,passcode=tracker.get_slot("user"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
         card_permission=tracker.get_slot("card_permission")
         question_yes_no=tracker.get_slot("question_yes_no")
         using_what=tracker.get_slot("using_what")
@@ -86,12 +86,12 @@ class GetCardService(FormAction):
         else:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted()]
-        return [SlotSet("passcode",None),SlotSet("card_permission",None),UserUtteranceReverted()]
+        return [SlotSet("passcode",None),SlotSet("card_permission",None),FollowupAction('action_listen')]
 class GetFeeInquiry(Action):
     def name(self):
         return 'action_fee_inquiry'
     def run(self, dispatcher, tracker, domain):
-        user,password=tracker.get_slot("user"),tracker.get_slot("password")
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
         access=tracker.get_slot("access")
         if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
@@ -113,12 +113,12 @@ class CardReplaceService(FormAction):
     def name(self):
         return 'action_card_replace'
     def submit(self, dispatcher, tracker, domain):
-        user,password=tracker.get_slot("user"),tracker.get_slot("password")
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
         access=tracker.get_slot("access")
         if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
-        user,password,passcode=tracker.get_slot("user"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
         card_perm=tracker.get_slot("card_perm")
         card_replace_with=tracker.get_slot("card_replace_with")
         if passcode==None or card_replace_with==None or card_perm!=True:

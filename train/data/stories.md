@@ -3,10 +3,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -19,18 +19,18 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -53,18 +53,18 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakk2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakk2@gmail.com"}
+    - slot{"email": "brijeshlakk2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -76,18 +76,18 @@
 * Banking_Activate_Card
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -109,10 +109,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -134,10 +134,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -157,18 +157,18 @@
 ## Generated Story 6932005754758030332
 * Banking_Activate_Card
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -190,10 +190,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -211,18 +211,18 @@
 * Banking_Activate_Card
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -242,10 +242,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -266,18 +266,18 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -290,10 +290,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -312,10 +312,10 @@
 * Banking_Activate_Card
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -337,10 +337,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -363,18 +363,18 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bB"}
     - slot{"password": "123456bB"}
@@ -387,18 +387,18 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -422,10 +422,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -446,10 +446,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -470,19 +470,19 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad22@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad22@gmail.com"}
+    - slot{"email": "brijeshlakkad22@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
     - reset_slots
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -501,10 +501,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -517,10 +517,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -538,10 +538,10 @@
 ## Generated Story 3237292208623852838
 * None
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -576,10 +576,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -606,10 +606,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -628,10 +628,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -651,10 +651,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -671,10 +671,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -690,10 +690,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -712,10 +712,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -725,8 +725,6 @@
 * Banking_Activate_Card{"card_type": "card"}
     - action_card_service
     - slot{"requested_slot": "passcode"}
-* Banking_Cancel_Card
-* Banking_Activate_Card
 * General_Ending
     - utter_ending
     - export
@@ -736,10 +734,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -773,10 +771,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -808,10 +806,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * General_Jokes{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -833,10 +831,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -862,10 +860,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -890,10 +888,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -921,10 +919,10 @@
 * Banking_Activate_Card{"using_what": "atm", "question_yes_no": "can you assist me"}
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -943,10 +941,10 @@
 * None
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -970,10 +968,10 @@
     - slot{"using_what": "atm"}
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -985,7 +983,6 @@
     - slot{"using_what": "atm"}
     - action_card_service
     - slot{"requested_slot": "card_perm"}
-* affirm
 * Banking_Replace_Card
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
@@ -1008,10 +1005,10 @@
     - slot{"question_yes_no": "can i"}
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -1032,10 +1029,10 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -1049,24 +1046,16 @@
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
-* Banking_Activate_Card
-    - action_card_service
-    - slot{"requested_slot": "card_permission"}
-* affirm
-* Banking_Cancel_Card
-    - action_card_service
-    - slot{"requested_slot": "card_permission"}
-* affirm
 * Banking_Replace_Card
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
@@ -1087,17 +1076,17 @@
     - utter_ending
     - export
 
-## Generated Story 388372035986799348
+## Generated Story -5472644567701172068
 * General_Greetings
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
-* Banking_Password{"password": "123456bb"}
+* Banking_Passcode{"password": "123456bb"}
     - slot{"password": "123456bb"}
     - action_get_access
     - slot{"password": "123456bB"}
@@ -1106,39 +1095,133 @@
     - action_card_service
     - slot{"requested_slot": "card_permission"}
 * affirm
-* Banking_Cancel_Card
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_permission": null}
+    - export
+## Generated Story -5472644567701172556
+* General_Greetings
+    - utter_greet
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Passcode{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
     - action_card_service
     - slot{"requested_slot": "card_permission"}
 * affirm
-* Banking_Replace_Card
-    - action_card_replace
-    - slot{"requested_slot": "card_replace_with"}
-* Banking_Card_Number
-    - action_card_replace
-    - slot{"card_replace_with": "4798336906362178"}
-    - slot{"requested_slot": "card_perm"}
-* affirm
-    - action_card_replace
-    - slot{"card_perm": true}
+    - action_card_service
+    - slot{"card_permission": true}
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_card_replace
+    - action_card_service
     - slot{"passcode": "683249"}
     - slot{"passcode": null}
-    - slot{"card_perm": null}
-* General_Ending
-    - utter_ending
+    - slot{"card_permission": null}
+    - export
+## Generated Story -5472644567701172233
+* General_Greetings
+    - utter_greet
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Passcode{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_permission": null}
     - export
 
-## Generated Story 388372035986799348
+## Generated Story 5876969914495444859
+* None
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Cancel_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_permission": null}
+    - export
+## Generated Story 5876969914495444833
+* None
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Cancel_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_permission": null}
+    - export
+## Generated Story -5178645517964229935
 * General_Greetings
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
 * Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
@@ -1149,40 +1232,56 @@
     - action_card_service
     - slot{"requested_slot": "card_permission"}
 * affirm
-* Banking_Cancel_Card
     - action_card_service
-    - slot{"requested_slot": "card_permission"}
-* affirm
-* Banking_Replace_Card
-    - action_card_replace
-    - slot{"requested_slot": "card_replace_with"}
-* Banking_Card_Number
-    - action_card_replace
-    - slot{"card_replace_with": "4798336906362178"}
-    - slot{"requested_slot": "card_perm"}
-* affirm
-    - action_card_replace
-    - slot{"card_perm": true}
+    - slot{"card_permission": true}
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
-    - action_card_replace
+    - action_card_service
     - slot{"passcode": "683249"}
     - slot{"passcode": null}
-    - slot{"card_perm": null}
-* General_Ending
-    - utter_ending
+    - slot{"card_permission": null}
     - export
-## Generated Story -1949627027952977576
+## Generated Story -1680750601335690486
 * General_Greetings
     - utter_greet
     - utter_first_access
     - action_get_access
-    - slot{"requested_slot": "user"}
+    - slot{"requested_slot": "email"}
 * Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - action_get_access
-    - slot{"user": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
     - slot{"requested_slot": "password"}
-* General_Jokes{"password": "123456bb"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Cancel_Card
+    - action_card_service
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_permission": null}
+    - export
+## Generated Story -1163378379126336796
+* General_Greetings
+    - utter_greet
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
     - slot{"password": "123456bb"}
     - action_get_access
     - slot{"password": "123456bB"}
@@ -1191,11 +1290,45 @@
     - action_card_service
     - slot{"requested_slot": "card_permission"}
 * affirm
-* Banking_Cancel_Card
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode{"passcode": "683249"}
+    - slot{"passcode": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_permission": null}
+    - export
+
+## Generated Story -1163378379126336796
+* General_Greetings
+    - utter_greet
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password{"password": "123456bb"}
+    - slot{"password": "123456bb"}
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+* Banking_Activate_Card
     - action_card_service
     - slot{"requested_slot": "card_permission"}
 * affirm
-* Banking_Fee_Inquiry
-    - action_fee_inquiry
+    - action_card_service
+    - slot{"card_permission": true}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode{"passcode": "683249"}
+    - slot{"passcode": "683249"}
+    - action_card_service
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_permission": null}
     - export
 

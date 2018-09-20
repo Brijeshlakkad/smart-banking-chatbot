@@ -2,7 +2,7 @@ action_factory: null
 action_names:
 - action_get_access
 - action_card_service
-- utter_ask_user
+- utter_ask_email
 - utter_ask_password
 - utter_first_access
 - utter_access
@@ -23,7 +23,7 @@ action_names:
 actions:
 - actions.GetAccess
 - actions.GetCardService
-- utter_ask_user
+- utter_ask_email
 - utter_ask_password
 - utter_first_access
 - utter_access
@@ -60,7 +60,7 @@ entities:
 intents:
 - General_Security_Assurance:
     use_entities: true
-- deny:
+- None:
     use_entities: true
 - Banking_Cancel_Card:
     use_entities: true
@@ -68,15 +68,17 @@ intents:
     use_entities: true
 - affirm:
     use_entities: true
-- Banking_Password:
-    use_entities: true
 - Banking_Fee_Inquiry:
+    use_entities: true
+- Banking_Password:
     use_entities: true
 - General_Ending:
     use_entities: true
-- Banking_Passcode:
+- deny:
     use_entities: true
 - Banking_Card_Number:
+    use_entities: true
+- Banking_Passcode:
     use_entities: true
 - General_Jokes:
     use_entities: true
@@ -89,6 +91,8 @@ intents:
 - Banking_Email:
     use_entities: true
 - Banking_Activate_Card:
+    use_entities: true
+- General_Positive_Feedback:
     use_entities: true
 slots:
   access:
@@ -104,6 +108,9 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
   card_replace_with:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  email:
     initial_value: null
     type: rasa_core.slots.TextSlot
   name:
@@ -127,9 +134,6 @@ slots:
     values:
     - '0'
     - '1'
-  user:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
   using_what:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -163,12 +167,12 @@ templates:
       \ Details)"
   - text: "Card number to replace with: \n(You can see card number in your Profile\
       \ Settings>>Services>>Card Details)"
+  utter_ask_email:
+  - text: 'Please Enter Email:'
   utter_ask_passcode:
   - text: 'Please enter your passcode: '
   utter_ask_password:
   - text: 'Please Enter Password:'
-  utter_ask_user:
-  - text: 'Please Enter Email:'
   utter_deactivated_card:
   - text: You got it! Boss. Your card is deactivated.
   - text: Okay! Boss. Card is deactivated.

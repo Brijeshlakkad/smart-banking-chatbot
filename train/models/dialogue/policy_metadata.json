@@ -1,13 +1,18 @@
 {
   "action_fingerprints": {
+    "utter_greet": {
+      "slots": []
+    }, 
     "utter_ending": {
       "slots": []
     }, 
     "action_listen": {
       "slots": [
+        "passcode", 
         "password", 
         "using_what", 
-        "question_yes_no"
+        "question_yes_no", 
+        "email"
       ]
     }, 
     "action_card_replace": {
@@ -25,8 +30,8 @@
       "slots": [
         "access", 
         "password", 
-        "requested_slot", 
-        "user"
+        "email", 
+        "requested_slot"
       ]
     }, 
     "action_card_service": {
@@ -40,6 +45,9 @@
     }, 
     "utter_ask_passcode": {
       "slots": []
+    }, 
+    "utter_first_access": {
+      "slots": []
     }
   }, 
   "policy_names": [
@@ -48,7 +56,7 @@
   ], 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
   "max_histories": [
-    3, 
+    10, 
     5
   ], 
   "rasa_core": "0.10.4"

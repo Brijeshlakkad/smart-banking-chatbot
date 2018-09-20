@@ -6,7 +6,7 @@ slots:
     values:
       - 0
       - 1
-  user:
+  email:
     type: text
   password:
     type: text
@@ -30,9 +30,10 @@ slots:
   using_what:
     type: text
 intents:
-  - General_Greetings
+  - None
   - affirm
   - deny
+  - General_Greetings
   - General_Ending
   - Banking_Email
   - Banking_Password
@@ -44,6 +45,7 @@ intents:
   - General_Jokes
   - General_Human_or_Bot
   - General_Negative_Feedback
+  - General_Positive_Feedback
   - General_Security_Assurance
   - Banking_Card_Number
 entities:
@@ -63,7 +65,7 @@ entities:
 templates:
   utter_first_access:
     - "Please first login to our service to use it."
-  utter_ask_user:
+  utter_ask_email:
     - "Please Enter Email:"
   utter_ask_password:
     - "Please Enter Password:"
@@ -117,7 +119,7 @@ templates:
 actions:
     - actions.GetAccess
     - actions.GetCardService
-    - utter_ask_user
+    - utter_ask_email
     - utter_ask_password
     - utter_first_access
     - utter_access
