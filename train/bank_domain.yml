@@ -4,6 +4,13 @@ slots:
   access:
     type: categorical
     values:
+      - None
+      - 0
+      - 1
+  service_access:
+    type: categorical
+    values:
+      - None
       - 0
       - 1
   email:
@@ -20,11 +27,6 @@ slots:
     type: text
   name:
     type: text
-  status_access:
-    type: categorical
-    values:
-      - 0
-      - 1
   card_replace_with:
     type: text
   card_permission:
@@ -79,7 +81,7 @@ templates:
     - "Hello!"
     - "Hello! How can i help?"
   utter_ask_card_permission:
-    - "You can do it using several ways:\n1. Goto Profile Settings>>Services>>Active Card\n2. Using ATM\n3. Using Text\nor Should i do it for you?"
+    - "You can do it using several ways:\n1. Goto Profile Settings>>Services>>Active/Deactivate Card\n2. Using ATM\n3. Using Text\nor Should i do it for you?"
   utter_activated_card:
     - "You got it! Boss. Your {card_type} is activated."
     - "Okay! Boss. {card_type} is activated."
@@ -91,9 +93,11 @@ templates:
   utter_ask_passcode:
     - "Please enter your passcode: "
   utter_ask_passcode_1:
-    - "Please enter your passcode: "
+    - "Please enter your passcode to active card: "
   utter_ask_passcode_2:
-    - "Please enter your passcode: "
+    - "Please enter your passcode to deactivate card: "
+  utter_ask_passcode_rep:
+    - "Please enter your passcode to replace your card: "
   utter_anything:
     - "Okay! Boss"
     - "Okay :("

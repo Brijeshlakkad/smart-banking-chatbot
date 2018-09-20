@@ -101,6 +101,7 @@ slots:
     initial_value: null
     type: rasa_core.slots.CategoricalSlot
     values:
+    - none
     - '0'
     - '1'
   card_perm:
@@ -127,6 +128,9 @@ slots:
   passcode_2:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  passcode_rep:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   password:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -136,10 +140,11 @@ slots:
   requested_slot:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
-  status_access:
+  service_access:
     initial_value: null
     type: rasa_core.slots.CategoricalSlot
     values:
+    - none
     - '0'
     - '1'
   using_what:
@@ -163,7 +168,7 @@ templates:
   utter_ask_card_permission:
   - text: 'You can do it using several ways:
 
-      1. Goto Profile Settings>>Services>>Active Card
+      1. Goto Profile Settings>>Services>>Active/Deactivate Card
 
       2. Using ATM
 
@@ -180,9 +185,11 @@ templates:
   utter_ask_passcode:
   - text: 'Please enter your passcode: '
   utter_ask_passcode_1:
-  - text: 'Please enter your passcode: '
+  - text: 'Please enter your passcode to active card: '
   utter_ask_passcode_2:
-  - text: 'Please enter your passcode: '
+  - text: 'Please enter your passcode to deactivate card: '
+  utter_ask_passcode_rep:
+  - text: 'Please enter your passcode to replace your card: '
   utter_ask_password:
   - text: 'Please Enter Password:'
   utter_deactivated_card:

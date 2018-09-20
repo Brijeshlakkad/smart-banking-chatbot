@@ -3,15 +3,27 @@
     "utter_greet": {
       "slots": []
     }, 
+    "utter_ending": {
+      "slots": []
+    }, 
     "action_listen": {
       "slots": [
-        "email", 
-        "requested_slot"
+        "requested_slot", 
+        "email"
+      ]
+    }, 
+    "action_card_replace": {
+      "slots": [
+        "passcode_rep", 
+        "requested_slot", 
+        "card_perm", 
+        "card_replace_with"
       ]
     }, 
     "action_cancel_card": {
       "slots": [
         "card_permission", 
+        "service_access", 
         "passcode_2", 
         "requested_slot"
       ]
@@ -24,17 +36,18 @@
         "requested_slot"
       ]
     }, 
+    "action_fee_inquiry": {
+      "slots": []
+    }, 
     "action_activate_card": {
       "slots": [
         "card_permission", 
+        "service_access", 
         "requested_slot", 
         "passcode_1"
       ]
     }, 
     "utter_first_access": {
-      "slots": []
-    }, 
-    "utter_fee_inquiry_reply": {
       "slots": []
     }
   }, 
