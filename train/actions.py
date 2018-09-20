@@ -57,11 +57,14 @@ class ActivateCardService(FormAction):
         ent="card"
         template="utter_fallback"
         if results==1:
+            tracker.update(SlotSet("service_access",1))
             t1=tracker.copy()
-            t1.update(UserUtteranceReverted())
-            t1.update(UserUtteranceReverted())
             entities=t1.latest_message.entities
             intent=t1.latest_message.intent['name']
+            while (intent!="Banking_Activate_Card"):
+                t1.update(UserUtteranceReverted())
+                entities=t1.latest_message.entities
+                intent=t1.latest_message.intent['name']
             if intent=="Banking_Activate_Card":
                 results=get_active_card(user,password,passcode)
                 template="utter_activated_card"
@@ -82,9 +85,9 @@ class ActivateCardService(FormAction):
             else:
                 dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
         else:
-            dispatcher.utter_message("Please enter valid information")
-            return [ActionReverted()]
-        return [SlotSet("card_permission",None),SlotSet("passcode_1",None)]
+            dispatcher.utter_message("(Please enter valid information) Ask me anything ;)")
+            return []
+        return [SlotSet("card_permission",None),SlotSet("passcode_1",None),SlotSet("service_access",None)]
 class CancelCardService(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -111,11 +114,14 @@ class CancelCardService(FormAction):
         ent="card"
         template="utter_fallback"
         if results==1:
+            tracker.update(SlotSet("service_access",1))
             t1=tracker.copy()
-            t1.update(UserUtteranceReverted())
-            t1.update(UserUtteranceReverted())
             entities=t1.latest_message.entities
             intent=t1.latest_message.intent['name']
+            while (intent!="Banking_Cancel_Card"):
+                t1.update(UserUtteranceReverted())
+                entities=t1.latest_message.entities
+                intent=t1.latest_message.intent['name']
             if intent=="Banking_Cancel_Card":
                 results=get_deactive_card(user,password,passcode)
                 template="utter_deactivated_card"
@@ -136,9 +142,9 @@ class CancelCardService(FormAction):
             else:
                 dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
         else:
-            dispatcher.utter_message("Please enter valid information")
-            return [ActionReverted()]
-        return [SlotSet("card_permission",None),SlotSet("passcode_2",None)]
+            dispatcher.utter_message("(Please enter valid information) Ask me anything ;)")
+            return []
+        return [SlotSet("card_permission",None),SlotSet("passcode_2",None),SlotSet("service_access",None)]
 class GetFeeInquiry(Action):
     def name(self):
         return 'action_fee_inquiry'
@@ -179,8 +185,9 @@ class CardReplaceService(FormAction):
         if int(results)!=1:
             dispatcher.utter_message("Please try again! or login again!")
             return [ActionReverted()]
+        tracker.update(SlotSet("service_access",None))
         results=card_replace(user,password,card_replace_with)
         if results!=1:
             dispatcher.utter_message("Please try again! or login again!")
         dispatcher.utter_template("utter_replace_card_reply",tracker)
-        return [SlotSet("passcode_rep",None),SlotSet("card_perm",None)]
+        return [SlotSet("passcode_rep",None),SlotSet("card_perm",None),SlotSet("service_access",None)]
