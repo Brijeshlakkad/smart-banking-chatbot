@@ -117,8 +117,8 @@ templates:
     - "Yes, You can do it {using}!"
     - "Ofcourse, You can always do it {using}."
 actions:
-    - actions.GetAccess
-    - actions.GetCardService
+    - action_get_access
+    - action_card_service
     - utter_ask_email
     - utter_ask_password
     - utter_first_access
@@ -132,8 +132,8 @@ actions:
     - utter_fallback
     - utter_ask_card_permission
     - utter_give_pos_ans
-    - actions.GetFeeInquiry
+    - action_fee_inquiry
     - utter_fee_inquiry_reply
     - utter_ask_card_perm
-    - actions.CardReplaceService
+    - action_card_replace
     - utter_replace_card_reply

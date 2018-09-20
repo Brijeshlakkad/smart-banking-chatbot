@@ -1,5 +1,4 @@
-action_factory: null
-action_names:
+actions:
 - action_get_access
 - action_card_service
 - utter_ask_email
@@ -19,27 +18,6 @@ action_names:
 - utter_fee_inquiry_reply
 - utter_ask_card_perm
 - action_card_replace
-- utter_replace_card_reply
-actions:
-- actions.GetAccess
-- actions.GetCardService
-- utter_ask_email
-- utter_ask_password
-- utter_first_access
-- utter_access
-- utter_ask_passcode
-- utter_activated_card
-- utter_deactivated_card
-- utter_positive_reply
-- utter_greet
-- utter_ending
-- utter_fallback
-- utter_ask_card_permission
-- utter_give_pos_ans
-- actions.GetFeeInquiry
-- utter_fee_inquiry_reply
-- utter_ask_card_perm
-- actions.CardReplaceService
 - utter_replace_card_reply
 config:
   store_entities_as_slots: true

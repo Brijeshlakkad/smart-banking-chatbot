@@ -6,9 +6,10 @@ from __future__ import print_function
 from __future__ import unicode_literals
 import warnings
 warnings.filterwarnings('always')
-from rasa_core.actions.action import Action,ActionListen
-from rasa_core.actions.forms import *
-from rasa_core.events import *
+
+from rasa_core_sdk import *
+from rasa_core_sdk.events import *
+from rasa_core_sdk.forms import *
 from jon_working_with_db import *
 class GetAccess(FormAction):
     RANDOMIZE = False
@@ -86,7 +87,7 @@ class GetCardService(FormAction):
         else:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted()]
-        return [SlotSet("passcode",None),SlotSet("card_permission",None),FollowupAction('action_listen')]
+        return [SlotSet("passcode",None),SlotSet("card_permission",None)]
 class GetFeeInquiry(Action):
     def name(self):
         return 'action_fee_inquiry'
