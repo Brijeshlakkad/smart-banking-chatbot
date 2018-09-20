@@ -12,6 +12,12 @@ slots:
     type: text
   passcode:
     type: text
+  passcode_1:
+    type: text
+  passcode_2:
+    type: text
+  passcode_rep:
+    type: text
   name:
     type: text
   status_access:
@@ -84,6 +90,10 @@ templates:
     - "Done! Your card is deactivated"
   utter_ask_passcode:
     - "Please enter your passcode: "
+  utter_ask_passcode_1:
+    - "Please enter your passcode: "
+  utter_ask_passcode_2:
+    - "Please enter your passcode: "
   utter_anything:
     - "Okay! Boss"
     - "Okay :("
@@ -118,7 +128,8 @@ templates:
     - "Ofcourse, You can always do it {using}."
 actions:
     - actions.GetAccess
-    - actions.GetCardService
+    - actions.ActivateCardService
+    - actions.CancelCardService
     - utter_ask_email
     - utter_ask_password
     - utter_first_access

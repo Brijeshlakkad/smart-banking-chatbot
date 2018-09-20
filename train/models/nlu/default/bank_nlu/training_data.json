@@ -2,352 +2,176 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 23, 
-            "value": "brijeshlakkad@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "brijeshlakkad@gmail.com"
+        "text": "brijeshlakkad@gmail.com", 
+        "intent": "Banking_Email"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 23, 
-            "value": "brijeshlakkad@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "brijeshlakkad@gmail.com"
+        "text": "brijeshlakkad@gmail.com", 
+        "intent": "Banking_Email"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 23, 
-            "value": "brijeshlakkad@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "brijeshlakkad@gmail.com"
+        "text": "brijeshlakkad@gmail.com", 
+        "intent": "Banking_Email"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "123456", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "123456"
+        "text": "123456", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 5, 
-            "value": "12345", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "12345"
+        "text": "12345", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 8, 
-            "value": "password", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "password"
+        "text": "password", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 9, 
-            "value": "password1", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "password1"
+        "text": "password1", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 9, 
-            "value": "123456789", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "123456789"
+        "text": "123456789", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 8, 
-            "value": "12345678", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "12345678"
+        "text": "12345678", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 10, 
-            "value": "1234567890", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "1234567890"
+        "text": "1234567890", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "abc123", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "abc123"
+        "text": "abc123", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 8, 
-            "value": "computer", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "computer"
+        "text": "computer", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "tigger", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "tigger"
+        "text": "tigger", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 4, 
-            "value": "1234", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "1234"
+        "text": "1234", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "a1b2c3", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "a1b2c3"
+        "text": "a1b2c3", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 3, 
-            "value": "123", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "123"
+        "text": "123", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 11, 
-            "value": "12Bb3242342", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "12Bb3242342"
+        "text": "12Bb3242342", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 15, 
-            "value": "1324234gsdD4324", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "1324234gsdD4324"
+        "text": "1324234gsdD4324", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 10, 
-            "value": "sdD1213vsd", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "sdD1213vsd"
+        "text": "sdD1213vsd", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 10, 
-            "value": "Brijesh123", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "Brijesh123"
+        "text": "Brijesh123", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 8, 
-            "value": "123sdsds", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "123sdsds"
+        "text": "123sdsds", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 7, 
-            "value": "23433#b", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "23433#b"
+        "text": "23433#b", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 9, 
-            "value": "brij133bB", 
-            "entity": "password"
-          }
-        ], 
-        "intent": "Banking_Password", 
-        "text": "brij133bB"
+        "text": "brij133bB", 
+        "intent": "Banking_Password"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "343423", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "343423"
+        "text": "343423", 
+        "intent": "Banking_Passcode"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "326723", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "326723"
+        "text": "326723", 
+        "intent": "Banking_Passcode"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "343434", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "343434"
+        "text": "343434", 
+        "intent": "Banking_Passcode"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 16, 
-            "value": "4393439815128095", 
-            "entity": "card_no"
-          }
-        ], 
-        "intent": "Banking_Card_Number", 
-        "text": "4393439815128095"
+        "text": "4393439815128095", 
+        "intent": "Banking_Card_Number"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 16, 
-            "value": "4392323257889999", 
-            "entity": "card_no"
-          }
-        ], 
-        "intent": "Banking_Card_Number", 
-        "text": "4392323257889999"
+        "text": "4392323257889999", 
+        "intent": "Banking_Card_Number"
       }, 
       {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 17, 
-            "value": "34346579018908409", 
-            "entity": "card_no"
-          }
-        ], 
-        "intent": "Banking_Card_Number", 
-        "text": "34346579018908409"
+        "text": "34346579018908409", 
+        "intent": "Banking_Card_Number"
+      }, 
+      {
+        "text": "348324", 
+        "intent": "Banking_Passcode"
+      }, 
+      {
+        "text": "435353", 
+        "intent": "Banking_Passcode"
+      }, 
+      {
+        "text": "424233", 
+        "intent": "Banking_Passcode"
+      }, 
+      {
+        "text": "324234", 
+        "intent": "Banking_Passcode"
+      }, 
+      {
+        "text": "bkjbfk@gmail.com", 
+        "intent": "Banking_Email"
+      }, 
+      {
+        "text": "342424@gmail.com", 
+        "intent": "Banking_Email"
+      }, 
+      {
+        "text": "kbajsbd@gmail.com", 
+        "intent": "Banking_Email"
+      }, 
+      {
+        "text": "naaslsld@gmail.com", 
+        "intent": "Banking_Email"
+      }, 
+      {
+        "text": "jfjbjfb@gmail.com", 
+        "intent": "Banking_Email"
+      }, 
+      {
+        "text": "k3432jhvjh@gmail.com", 
+        "intent": "Banking_Email"
+      }, 
+      {
+        "text": "543444", 
+        "intent": "Banking_Passcode"
+      }, 
+      {
+        "text": "231232", 
+        "intent": "Banking_Passcode"
+      }, 
+      {
+        "text": "234324", 
+        "intent": "Banking_Passcode"
+      }, 
+      {
+        "text": "454556", 
+        "intent": "Banking_Passcode"
       }, 
       {
         "entities": [
@@ -35948,174 +35772,6 @@
         ], 
         "intent": "Banking_Replace_Card", 
         "text": "can i Change visa card atm Passcode"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "348324", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "348324"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "435353", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "435353"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "424233", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "424233"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "324234", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "324234"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 16, 
-            "value": "bkjbfk@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "bkjbfk@gmail.com"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 16, 
-            "value": "342424@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "342424@gmail.com"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 17, 
-            "value": "kbajsbd@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "kbajsbd@gmail.com"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 18, 
-            "value": "naaslsld@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "naaslsld@gmail.com"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 17, 
-            "value": "jfjbjfb@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "jfjbjfb@gmail.com"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 20, 
-            "value": "k3432jhvjh@gmail.com", 
-            "entity": "email"
-          }
-        ], 
-        "intent": "Banking_Email", 
-        "text": "k3432jhvjh@gmail.com"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "543444", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "543444"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "231232", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "231232"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "234324", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "234324"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 6, 
-            "value": "454556", 
-            "entity": "passcode"
-          }
-        ], 
-        "intent": "Banking_Passcode", 
-        "text": "454556"
       }
     ], 
     "entity_synonyms": [

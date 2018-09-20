@@ -1,40 +1,20 @@
 {
-  "max_histories": [
-    null, 
-    10, 
-    10
-  ], 
-  "python": "2.7.15", 
-  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
-  "rasa_core": "0.11.4", 
-  "policy_names": [
-    "rasa_core.policies.fallback.FallbackPolicy", 
-    "rasa_core.policies.memoization.MemoizationPolicy", 
-    "rasa_core.policies.keras_policy.KerasPolicy"
-  ], 
   "action_fingerprints": {
-    "utter_ending": {
+    "utter_greet": {
       "slots": []
     }, 
     "action_listen": {
       "slots": [
-        "passcode", 
-        "password", 
-        "using_what", 
-        "question_yes_no", 
-        "email"
+        "email", 
+        "requested_slot"
       ]
     }, 
-    "action_card_replace": {
+    "action_cancel_card": {
       "slots": [
-        "passcode", 
-        "requested_slot", 
-        "card_perm", 
-        "card_replace_with"
+        "card_permission", 
+        "passcode_2", 
+        "requested_slot"
       ]
-    }, 
-    "utter_positive_reply": {
-      "slots": []
     }, 
     "action_get_access": {
       "slots": [
@@ -44,17 +24,28 @@
         "requested_slot"
       ]
     }, 
-    "action_card_service": {
+    "action_activate_card": {
       "slots": [
-        "passcode", 
-        "status_access", 
         "card_permission", 
         "requested_slot", 
-        "card_perm"
+        "passcode_1"
       ]
     }, 
-    "utter_ask_passcode": {
+    "utter_first_access": {
+      "slots": []
+    }, 
+    "utter_fee_inquiry_reply": {
       "slots": []
     }
-  }
+  }, 
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy", 
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ], 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "max_histories": [
+    10, 
+    5
+  ], 
+  "rasa_core": "0.10.4"
 }
