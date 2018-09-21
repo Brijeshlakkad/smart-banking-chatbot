@@ -74,6 +74,10 @@ templates:
     - "Hello {name}!"
     - "Hello {name}! How can i help?"
     - "Hola {name}"
+  utter_greet_with_question_reply:
+    - "Good! How can i help {name}?"
+    - "Great! How can i help {name}?"
+    - "Happy as 'JonSnow Bank'"
   utter_ask_card_permission:
     - "You can do it using several ways:\n1. Goto Profile Settings>>Services>>Active/Deactivate Card\n2. Using ATM\n3. Using Text\nor Should i do it for you?"
   utter_activated_card:
@@ -120,8 +124,8 @@ templates:
     - "Yes, You can do it {using}!"
     - "Ofcourse, You can always do it {using}."
   utter_human_or_bot_reply:
-    - "I am a bot designed to solve customer problem regarding to bank."
-    - "I am just bot."
+    - "I am a bot named Jon Snow and i m designed to solve customer problem regarding to bank."
+    - "I am just Jon the bot who is programmed to follow your orders."
   utter_negative_feedback_reply:
     - "What did i do {name}? :("
     - "Why are you saying that {name}?"
@@ -130,7 +134,7 @@ templates:
     - "Feeling good to help {name}!"
     - "Thank you {name}. Anything comes up, tell me ;)"
   utter_security_assurance_reply:
-    - "I m glad you asked. I can not provide more information, but i assure you that our conversation is secured."
+    - "I m glad you asked. I can not provide more information, but i assure you that all things are secured including this conversation."
     - "Our conversation is secured. That's all i can tell you now because i m told not to provide other information with this topic."
 actions:
     - actions.GetAccess

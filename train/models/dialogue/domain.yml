@@ -207,9 +207,14 @@ templates:
   - text: Hello {name}!
   - text: Hello {name}! How can i help?
   - text: Hola {name}
+  utter_greet_with_question_reply:
+  - text: Good! How can i help {name}?
+  - text: Great! How can i help {name}?
+  - text: Happy as 'JonSnow Bank'
   utter_human_or_bot_reply:
-  - text: I am a bot designed to solve customer problem regarding to bank.
-  - text: I am just bot.
+  - text: I am a bot named Jon Snow and i m designed to solve customer problem regarding
+      to bank.
+  - text: I am just Jon the bot who is programmed to follow your orders.
   utter_negative_feedback_reply:
   - text: What did i do {name}? :(
   - text: Why are you saying that {name}?
@@ -227,6 +232,6 @@ templates:
       You will get your new card details soon.'
   utter_security_assurance_reply:
   - text: I m glad you asked. I can not provide more information, but i assure you
-      that our conversation is secured.
+      that all things are secured including this conversation.
   - text: Our conversation is secured. That's all i can tell you now because i m told
       not to provide other information with this topic.

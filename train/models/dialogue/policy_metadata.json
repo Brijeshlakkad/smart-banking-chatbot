@@ -6,13 +6,8 @@
         "email"
       ]
     }, 
-    "action_card_replace": {
-      "slots": [
-        "passcode", 
-        "requested_slot", 
-        "card_perm", 
-        "card_replace_with"
-      ]
+    "action_human_or_bot": {
+      "slots": []
     }, 
     "action_cancel_card": {
       "slots": [
@@ -26,6 +21,7 @@
         "access", 
         "password", 
         "email", 
+        "name", 
         "requested_slot"
       ]
     }, 
@@ -33,9 +29,6 @@
       "slots": []
     }, 
     "action_security_assurance": {
-      "slots": []
-    }, 
-    "action_positive_feedback": {
       "slots": []
     }, 
     "action_activate_card": {
@@ -50,6 +43,14 @@
     }, 
     "utter_first_access": {
       "slots": []
+    }, 
+    "action_card_replace": {
+      "slots": [
+        "passcode", 
+        "requested_slot", 
+        "card_perm", 
+        "card_replace_with"
+      ]
     }, 
     "action_negative_feedback": {
       "slots": []

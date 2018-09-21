@@ -1141,6 +1141,16 @@
         "entities": []
       },
       {
+        "text": "You are good man",
+        "intent": "General_Positive_Feedback",
+        "entities": []
+      },
+      {
+        "text": "You are great man",
+        "intent": "General_Positive_Feedback",
+        "entities": []
+      },
+      {
         "text": "You are the best",
         "intent": "General_Positive_Feedback",
         "entities": []
@@ -1723,6 +1733,11 @@
       },
       {
         "text": "I want to raise request for deactivating my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "I said i want to cancel my card",
         "intent": "Banking_Cancel_Card",
         "entities": []
       },

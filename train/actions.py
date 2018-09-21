@@ -28,17 +28,20 @@ class GetAccess(FormAction):
         if int(results)!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
-        name = get_personal_info(user,password,"name")
-        tracker.update(SlotSet("name",name))
+        name = get_personal_info(user,password,"fname")
         dispatcher.utter_template("utter_access",tracker)
-        return [SlotSet("access", results),SlotSet("requested_slot",None)]
+        return [SlotSet("access", results),SlotSet("name",name),SlotSet("requested_slot",None)]
 class ActionGreeting(Action):
     def name(self):
         return 'action_greeting'
     def run(self, dispatcher, tracker, domain):
         name=tracker.get_slot("name")
         name=get_user_name(name)
-        dispatcher.utter_template("utter_greet_reply",tracker,name=name)
+        text=tracker.latest_message.text
+        template="utter_greet_reply"
+        if text.endswith("?"):
+            template="utter_greet_with_question_reply"
+        dispatcher.utter_template(template,tracker,name=name)
         return []
 class ActionEnding(Action):
     def name(self):
@@ -87,7 +90,7 @@ class ActionFallback(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         dispatcher.utter_template("utter_fallback",tracker)
-        return [UserUtteranceReverted()]
+        return []
 class ActivateCardService(FormAction):
     RANDOMIZE = False
     @staticmethod

@@ -742,74 +742,6 @@
         "intent": "General_Human_or_Bot"
       }, 
       {
-        "text": "Are there jokes?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Can you tell a joke?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Can you tell me a joke?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Do you have a joke?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Do you have humor?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Do you like fun?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Do you like humor?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "I am getting bored", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "I'm bored", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "I want a joke", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "One more joke", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Surprise me with something hilarious", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Tell me a joke", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Tell me something funny", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "What do you do for fun?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "What is your favorite joke?", 
-        "intent": "General_Jokes"
-      }, 
-      {
-        "text": "Another joke", 
-        "intent": "General_Jokes"
-      }, 
-      {
         "text": "You're really irritating", 
         "intent": "General_Negative_Feedback"
       }, 
@@ -939,6 +871,14 @@
       }, 
       {
         "text": "You are great", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You are good man", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "You are great man", 
         "intent": "General_Positive_Feedback"
       }, 
       {
@@ -1487,6 +1427,10 @@
       }, 
       {
         "text": "I want to raise request for deactivating my credit card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "I said i want to cancel my card", 
         "intent": "Banking_Cancel_Card"
       }, 
       {
