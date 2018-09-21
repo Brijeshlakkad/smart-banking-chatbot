@@ -22,10 +22,12 @@
     }, 
     "action_cancel_card": {
       "slots": [
-        "card_permission", 
         "service_access", 
+        "requested_slot", 
+        "card_permission", 
         "passcode_2", 
-        "requested_slot"
+        "password", 
+        "email"
       ]
     }, 
     "action_get_access": {

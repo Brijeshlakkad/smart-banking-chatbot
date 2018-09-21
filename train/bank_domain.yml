@@ -19,12 +19,6 @@ slots:
     type: text
   passcode:
     type: text
-  passcode_1:
-    type: text
-  passcode_2:
-    type: text
-  passcode_rep:
-    type: text
   name:
     type: text
   card_replace_with:

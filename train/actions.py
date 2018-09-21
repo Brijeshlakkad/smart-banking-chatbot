@@ -30,7 +30,7 @@ class GetAccess(FormAction):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_access",tracker)
-        return [SlotSet("access", results)]
+        return [SlotSet("access", results),SlotSet("requested_slot",None)]
 class ActivateCardService(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -57,7 +57,6 @@ class ActivateCardService(FormAction):
         ent="card"
         template="utter_fallback"
         if results==1:
-            tracker.update(SlotSet("service_access",1))
             t1=tracker.copy()
             entities=t1.latest_message.entities
             intent=t1.latest_message.intent['name']
@@ -87,7 +86,7 @@ class ActivateCardService(FormAction):
         else:
             dispatcher.utter_message("(Please enter valid information) Ask me anything ;)")
             return []
-        return [SlotSet("card_permission",None),SlotSet("passcode_1",None),SlotSet("service_access",None)]
+        return [SlotSet("card_permission",None),SlotSet("passcode_1",None),SlotSet("requested_slot",None)]
 class CancelCardService(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -114,7 +113,6 @@ class CancelCardService(FormAction):
         ent="card"
         template="utter_fallback"
         if results==1:
-            tracker.update(SlotSet("service_access",1))
             t1=tracker.copy()
             entities=t1.latest_message.entities
             intent=t1.latest_message.intent['name']
@@ -144,7 +142,7 @@ class CancelCardService(FormAction):
         else:
             dispatcher.utter_message("(Please enter valid information) Ask me anything ;)")
             return []
-        return [SlotSet("card_permission",None),SlotSet("passcode_2",None),SlotSet("service_access",None)]
+        return [SlotSet("card_permission",None),SlotSet("passcode_2",None),SlotSet("requested_slot",None)]
 class GetFeeInquiry(Action):
     def name(self):
         return 'action_fee_inquiry'
@@ -185,9 +183,8 @@ class CardReplaceService(FormAction):
         if int(results)!=1:
             dispatcher.utter_message("Please try again! or login again!")
             return [ActionReverted()]
-        tracker.update(SlotSet("service_access",None))
         results=card_replace(user,password,card_replace_with)
         if results!=1:
             dispatcher.utter_message("Please try again! or login again!")
         dispatcher.utter_template("utter_replace_card_reply",tracker)
-        return [SlotSet("passcode_rep",None),SlotSet("card_perm",None),SlotSet("service_access",None)]
+        return [SlotSet("passcode_rep",None),SlotSet("card_perm",None),SlotSet("requested_slot",None)]
