@@ -86,12 +86,6 @@ templates:
     - "Done! Your card is deactivated"
   utter_ask_passcode:
     - "Please enter your passcode: "
-  utter_ask_passcode_1:
-    - "Please enter your passcode to active card: "
-  utter_ask_passcode_2:
-    - "Please enter your passcode to deactivate card: "
-  utter_ask_passcode_rep:
-    - "Please enter your passcode to replace your card: "
   utter_anything:
     - "Okay! Boss"
     - "Okay :("

@@ -36,8 +36,8 @@ class ActivateCardService(FormAction):
     @staticmethod
     def required_fields():
         return [
-        BooleanFormField("card_permission","affirm","deny"),
-        FreeTextFormField("passcode_1")
+        FreeTextFormField("passcode"),
+        BooleanFormField("card_permission","affirm","deny")
         ]
     def name(self):
         return 'action_activate_card'
@@ -47,12 +47,14 @@ class ActivateCardService(FormAction):
         if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
-        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode_1")
+        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
         card_permission=tracker.get_slot("card_permission")
         question_yes_no=tracker.get_slot("question_yes_no")
         using_what=tracker.get_slot("using_what")
-        if passcode==None or card_permission!=True:
+        if passcode==None:
             return [ActionReverted()]
+        if card_permission!=True:
+            return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
         results = check_passcode(user,password,passcode)
         ent="card"
         template="utter_fallback"
@@ -84,16 +86,16 @@ class ActivateCardService(FormAction):
             else:
                 dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
         else:
-            dispatcher.utter_message("(Please enter valid information) Ask me anything ;)")
-            return []
-        return [SlotSet("card_permission",None),SlotSet("passcode_1",None),SlotSet("requested_slot",None)]
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
+        return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
 class CancelCardService(FormAction):
     RANDOMIZE = False
     @staticmethod
     def required_fields():
         return [
-        BooleanFormField("card_permission","affirm","deny"),
-        FreeTextFormField("passcode_2")
+        FreeTextFormField("passcode"),
+        BooleanFormField("card_permission","affirm","deny")
         ]
     def name(self):
         return 'action_cancel_card'
@@ -103,12 +105,14 @@ class CancelCardService(FormAction):
         if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
-        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode_2")
+        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
         card_permission=tracker.get_slot("card_permission")
         question_yes_no=tracker.get_slot("question_yes_no")
         using_what=tracker.get_slot("using_what")
-        if passcode==None or card_permission!=True:
+        if passcode==None:
             return [ActionReverted()]
+        if card_permission!=True:
+            return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
         results = check_passcode(user,password,passcode)
         ent="card"
         template="utter_fallback"
@@ -140,9 +144,9 @@ class CancelCardService(FormAction):
             else:
                 dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
         else:
-            dispatcher.utter_message("(Please enter valid information) Ask me anything ;)")
-            return []
-        return [SlotSet("card_permission",None),SlotSet("passcode_2",None),SlotSet("requested_slot",None)]
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
+        return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
 class GetFeeInquiry(Action):
     def name(self):
         return 'action_fee_inquiry'
@@ -163,8 +167,8 @@ class CardReplaceService(FormAction):
     def required_fields():
         return [
         FreeTextFormField("card_replace_with"),
-        BooleanFormField("card_perm","affirm","deny"),
-        FreeTextFormField("passcode_rep")
+        FreeTextFormField("passcode"),
+        BooleanFormField("card_perm","affirm","deny")
         ]
     def name(self):
         return 'action_card_replace'
@@ -174,17 +178,20 @@ class CardReplaceService(FormAction):
         if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
-        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode_rep")
+        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
         card_perm=tracker.get_slot("card_perm")
         card_replace_with=tracker.get_slot("card_replace_with")
-        if passcode==None or card_replace_with==None or card_perm!=True:
+        if passcode==None or card_replace_with==None or card_perm==None:
             return [ActionReverted()]
+        if card_perm!=True:
+            return [SlotSet("passcode",None),SlotSet("card_permission",None),SlotSet("requested_slot",None),SlotSet("card_replace_with",None)]
         results = check_passcode(user,password,passcode)
         if int(results)!=1:
-            dispatcher.utter_message("Please try again! or login again!")
-            return [ActionReverted()]
-        results=card_replace(user,password,card_replace_with)
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
+        results = card_replace(user,password,card_replace_with)
         if results!=1:
-            dispatcher.utter_message("Please try again! or login again!")
+            dispatcher.utter_message("Please enter valid card number: ")
+            return [SlotSet("card_replace_with",None),SlotSet("requested_slot","card_replace_with")]
         dispatcher.utter_template("utter_replace_card_reply",tracker)
-        return [SlotSet("passcode_rep",None),SlotSet("card_perm",None),SlotSet("requested_slot",None)]
+        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("card_replace_with",None)]

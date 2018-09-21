@@ -122,15 +122,6 @@ slots:
   passcode:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  passcode_1:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
-  passcode_2:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
-  passcode_rep:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
   password:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -184,12 +175,6 @@ templates:
   - text: 'Please Enter Email:'
   utter_ask_passcode:
   - text: 'Please enter your passcode: '
-  utter_ask_passcode_1:
-  - text: 'Please enter your passcode to active card: '
-  utter_ask_passcode_2:
-  - text: 'Please enter your passcode to deactivate card: '
-  utter_ask_passcode_rep:
-  - text: 'Please enter your passcode to replace your card: '
   utter_ask_password:
   - text: 'Please Enter Password:'
   utter_deactivated_card:

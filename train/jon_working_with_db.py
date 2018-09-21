@@ -74,7 +74,10 @@ def card_replace(user,password,old_card):
     user=protect_data(user)
     password=protect_data(password)
     acc_id=get_account_details_by_user(user,"acc_id")
-    b=delete_customer_card("card_no",old_card)
+    card_no=get_card_details_by_user(user,"card_no")
+    if str(card_no)!=str(old_card):
+        return -99
+    b=delete_customer_card("card_no",card_no)
     if b==11:
         b=int(create_card(acc_id))
         if b==11:

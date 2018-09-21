@@ -1,20 +1,17 @@
 {
   "action_fingerprints": {
-    "utter_greet": {
-      "slots": []
-    }, 
     "utter_ending": {
       "slots": []
     }, 
     "action_listen": {
       "slots": [
-        "requested_slot", 
-        "email"
+        "email", 
+        "requested_slot"
       ]
     }, 
     "action_card_replace": {
       "slots": [
-        "passcode_rep", 
+        "passcode", 
         "requested_slot", 
         "card_perm", 
         "card_replace_with"
@@ -22,12 +19,9 @@
     }, 
     "action_cancel_card": {
       "slots": [
-        "service_access", 
-        "requested_slot", 
+        "passcode", 
         "card_permission", 
-        "passcode_2", 
-        "password", 
-        "email"
+        "requested_slot"
       ]
     }, 
     "action_get_access": {
@@ -43,14 +37,10 @@
     }, 
     "action_activate_card": {
       "slots": [
+        "passcode", 
         "card_permission", 
-        "service_access", 
-        "requested_slot", 
-        "passcode_1"
+        "requested_slot"
       ]
-    }, 
-    "utter_first_access": {
-      "slots": []
     }
   }, 
   "policy_names": [
