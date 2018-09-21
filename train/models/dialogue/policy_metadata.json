@@ -1,12 +1,9 @@
 {
   "action_fingerprints": {
-    "utter_ending": {
-      "slots": []
-    }, 
     "action_listen": {
       "slots": [
-        "email", 
-        "requested_slot"
+        "requested_slot", 
+        "email"
       ]
     }, 
     "action_card_replace": {
@@ -35,22 +32,42 @@
     "action_fee_inquiry": {
       "slots": []
     }, 
+    "action_security_assurance": {
+      "slots": []
+    }, 
+    "action_positive_feedback": {
+      "slots": []
+    }, 
     "action_activate_card": {
       "slots": [
         "passcode", 
         "card_permission", 
         "requested_slot"
       ]
+    }, 
+    "action_ending": {
+      "slots": []
+    }, 
+    "utter_first_access": {
+      "slots": []
+    }, 
+    "action_negative_feedback": {
+      "slots": []
+    }, 
+    "action_greeting": {
+      "slots": []
     }
   }, 
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy", 
-    "rasa_core.policies.keras_policy.KerasPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy", 
+    "rasa_core.policies.fallback.FallbackPolicy"
   ], 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
   "max_histories": [
     10, 
-    5
+    5, 
+    null
   ], 
   "rasa_core": "0.10.4"
 }

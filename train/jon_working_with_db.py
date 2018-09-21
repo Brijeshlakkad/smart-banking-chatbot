@@ -83,3 +83,19 @@ def card_replace(user,password,old_card):
         if b==11:
             return 1
     return -99
+def get_personal_info(user,password,field):
+    f=check_indentity(user,password)
+    if f!=1:
+        return -99
+    if field=="name":
+        return "%s %s"%(get_any_value(user,"fname"),get_any_value(user,"lname"))
+    else:
+        return get_any_value(user,field)
+def get_user_name(name):
+    if name!=None:
+        name=str(name)
+        name2="Mr. %s"%name
+        name=random.choice(['Human','',"Boss","Sir",name,name2])
+    else:
+        name=random.choice(['Human','',"Boss","Sir"])
+    return name

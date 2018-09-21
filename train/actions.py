@@ -10,6 +10,7 @@ from rasa_core.actions.action import *
 from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
+import random
 class GetAccess(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -23,14 +24,70 @@ class GetAccess(FormAction):
     def submit(self, dispatcher, tracker, domain):
         user=tracker.get_slot("email")
         password=tracker.get_slot("password")
-        ConversationPaused().apply_to(tracker)
         results = check_indentity(user,password)
-        ConversationResumed().apply_to(tracker)
         if int(results)!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
+        name = get_personal_info(user,password,"name")
+        tracker.update(SlotSet("name",name))
         dispatcher.utter_template("utter_access",tracker)
         return [SlotSet("access", results),SlotSet("requested_slot",None)]
+class ActionGreeting(Action):
+    def name(self):
+        return 'action_greeting'
+    def run(self, dispatcher, tracker, domain):
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        dispatcher.utter_template("utter_greet_reply",tracker,name=name)
+        return []
+class ActionEnding(Action):
+    def name(self):
+        return 'action_ending'
+    def run(self, dispatcher, tracker, domain):
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        dispatcher.utter_template("utter_ending_reply",tracker,name=name)
+        return []
+class ActionHumanOrBot(Action):
+    def name(self):
+        return 'action_human_or_bot'
+    def run(self, dispatcher, tracker, domain):
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        dispatcher.utter_template("utter_human_or_bot_reply",tracker)
+        return []
+class ActionNegativeFeedback(Action):
+    def name(self):
+        return 'action_negative_feedback'
+    def run(self, dispatcher, tracker, domain):
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        dispatcher.utter_template("utter_negative_feedback_reply",tracker,name=name)
+        return []
+class ActionPositiveFeedback(Action):
+    def name(self):
+        return 'action_positive_feedback'
+    def run(self, dispatcher, tracker, domain):
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        dispatcher.utter_template("utter_positive_feedback_reply",tracker, name=name)
+        return []
+class ActionSecurityAssurance(Action):
+    def name(self):
+        return 'action_security_assurance'
+    def run(self, dispatcher, tracker, domain):
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        dispatcher.utter_template("utter_security_assurance_reply",tracker)
+        return []
+class ActionFallback(Action):
+    def name(self):
+        return 'action_fallback'
+    def run(self, dispatcher, tracker, domain):
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        dispatcher.utter_template("utter_fallback",tracker)
+        return [UserUtteranceReverted()]
 class ActivateCardService(FormAction):
     RANDOMIZE = False
     @staticmethod

@@ -44,7 +44,6 @@ intents:
   - Banking_Cancel_Card
   - Banking_Fee_Inquiry
   - Banking_Replace_Card
-  - General_Jokes
   - General_Human_or_Bot
   - General_Negative_Feedback
   - General_Positive_Feedback
@@ -71,9 +70,10 @@ templates:
     - "Please Enter Email:"
   utter_ask_password:
     - "Please Enter Password:"
-  utter_greet:
-    - "Hello!"
-    - "Hello! How can i help?"
+  utter_greet_reply:
+    - "Hello {name}!"
+    - "Hello {name}! How can i help?"
+    - "Hola {name}"
   utter_ask_card_permission:
     - "You can do it using several ways:\n1. Goto Profile Settings>>Services>>Active/Deactivate Card\n2. Using ATM\n3. Using Text\nor Should i do it for you?"
   utter_activated_card:
@@ -89,8 +89,9 @@ templates:
   utter_anything:
     - "Okay! Boss"
     - "Okay :("
-  utter_ending:
-    - "Nice to help you! Boss"
+  utter_ending_reply:
+    - "Nice to help you! {name}"
+    - "See yaaa {name} :)"
     - "Okiey Dokiey!"
     - "Ba Bye!"
   utter_access:
@@ -98,8 +99,8 @@ templates:
     - "Looks like you are logged in, Boss!"
     - "Go ahead, Ask me anything!"
   utter_fallback:
-    - "Sorry, I did not get you! :-("
-    - "Can you please elaborate your query!"
+    - "Sorry, I did not get you {name}! :-("
+    - "Can you please elaborate your query {name}!"
   utter_positive_reply:
     - "Okay! great"
     - "Okay Boss!"
@@ -118,6 +119,19 @@ templates:
   utter_give_pos_ans:
     - "Yes, You can do it {using}!"
     - "Ofcourse, You can always do it {using}."
+  utter_human_or_bot_reply:
+    - "I am a bot designed to solve customer problem regarding to bank."
+    - "I am just bot."
+  utter_negative_feedback_reply:
+    - "What did i do {name}? :("
+    - "Why are you saying that {name}?"
+  utter_positive_feedback_reply:
+    - "Thank you {name} :)"
+    - "Feeling good to help {name}!"
+    - "Thank you {name}. Anything comes up, tell me ;)"
+  utter_security_assurance_reply:
+    - "I m glad you asked. I can not provide more information, but i assure you that our conversation is secured."
+    - "Our conversation is secured. That's all i can tell you now because i m told not to provide other information with this topic."
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -130,9 +144,6 @@ actions:
     - utter_activated_card
     - utter_deactivated_card
     - utter_positive_reply
-    - utter_greet
-    - utter_ending
-    - utter_fallback
     - utter_ask_card_permission
     - utter_give_pos_ans
     - actions.GetFeeInquiry
@@ -140,3 +151,10 @@ actions:
     - utter_ask_card_perm
     - actions.CardReplaceService
     - utter_replace_card_reply
+    - actions.ActionFallback
+    - actions.ActionGreeting
+    - actions.ActionEnding
+    - actions.ActionHumanOrBot
+    - actions.ActionNegativeFeedback
+    - actions.ActionPositiveFeedback
+    - actions.ActionSecurityAssurance

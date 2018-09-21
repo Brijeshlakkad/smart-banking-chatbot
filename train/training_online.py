@@ -9,11 +9,12 @@ from rasa_core.interpreter import RegexInterpreter
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
-
+from rasa_core.policies.fallback import FallbackPolicy
 logger = logging.getLogger(__name__)
 def run_bank_online(input_channel, interpreter,domain_file="bank_domain.yml",training_data_file='data/stories.md'):
     model_path="models/dialogue/"
-    agent = Agent(domain_file,policies=[MemoizationPolicy(max_history=10), KerasPolicy()],interpreter=interpreter)
+    fallback = FallbackPolicy(fallback_action_name="action_fallback", core_threshold=0.2, nlu_threshold=0.4)
+    agent = Agent(domain_file,policies=[MemoizationPolicy(max_history=10), KerasPolicy(), fallback],interpreter=interpreter)
     agent.train_online(training_data_file,input_channel=input_channel,batch_size=200,epochs=150,max_training_samples=1000)
     agent.persist(model_path)
     return agent

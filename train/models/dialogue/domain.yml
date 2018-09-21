@@ -11,9 +11,6 @@ action_names:
 - utter_activated_card
 - utter_deactivated_card
 - utter_positive_reply
-- utter_greet
-- utter_ending
-- utter_fallback
 - utter_ask_card_permission
 - utter_give_pos_ans
 - action_fee_inquiry
@@ -21,6 +18,13 @@ action_names:
 - utter_ask_card_perm
 - action_card_replace
 - utter_replace_card_reply
+- action_fallback
+- action_greeting
+- action_ending
+- action_human_or_bot
+- action_negative_feedback
+- action_positive_feedback
+- action_security_assurance
 actions:
 - actions.GetAccess
 - actions.ActivateCardService
@@ -33,9 +37,6 @@ actions:
 - utter_activated_card
 - utter_deactivated_card
 - utter_positive_reply
-- utter_greet
-- utter_ending
-- utter_fallback
 - utter_ask_card_permission
 - utter_give_pos_ans
 - actions.GetFeeInquiry
@@ -43,6 +44,13 @@ actions:
 - utter_ask_card_perm
 - actions.CardReplaceService
 - utter_replace_card_reply
+- actions.ActionFallback
+- actions.ActionGreeting
+- actions.ActionEnding
+- actions.ActionHumanOrBot
+- actions.ActionNegativeFeedback
+- actions.ActionPositiveFeedback
+- actions.ActionSecurityAssurance
 config:
   store_entities_as_slots: true
 entities:
@@ -60,8 +68,6 @@ entities:
 - help_asking_time
 - question_yes_no
 intents:
-- General_Security_Assurance:
-    use_entities: true
 - None:
     use_entities: true
 - Banking_Cancel_Card:
@@ -82,7 +88,7 @@ intents:
     use_entities: true
 - Banking_Passcode:
     use_entities: true
-- General_Jokes:
+- General_Security_Assurance:
     use_entities: true
 - General_Greetings:
     use_entities: true
@@ -181,13 +187,14 @@ templates:
   - text: You got it! Boss. Your card is deactivated.
   - text: Okay! Boss. Card is deactivated.
   - text: Done! Your card is deactivated
-  utter_ending:
-  - text: Nice to help you! Boss
+  utter_ending_reply:
+  - text: Nice to help you! {name}
+  - text: See yaaa {name} :)
   - text: Okiey Dokiey!
   - text: Ba Bye!
   utter_fallback:
-  - text: Sorry, I did not get you! :-(
-  - text: Can you please elaborate your query!
+  - text: Sorry, I did not get you {name}! :-(
+  - text: Can you please elaborate your query {name}!
   utter_fee_inquiry_reply:
   - text: Your card cost tax is {fees} $ per year
   - text: Cost is {fees} $ per year
@@ -196,9 +203,20 @@ templates:
   utter_give_pos_ans:
   - text: Yes, You can do it {using}!
   - text: Ofcourse, You can always do it {using}.
-  utter_greet:
-  - text: Hello!
-  - text: Hello! How can i help?
+  utter_greet_reply:
+  - text: Hello {name}!
+  - text: Hello {name}! How can i help?
+  - text: Hola {name}
+  utter_human_or_bot_reply:
+  - text: I am a bot designed to solve customer problem regarding to bank.
+  - text: I am just bot.
+  utter_negative_feedback_reply:
+  - text: What did i do {name}? :(
+  - text: Why are you saying that {name}?
+  utter_positive_feedback_reply:
+  - text: Thank you {name} :)
+  - text: Feeling good to help {name}!
+  - text: Thank you {name}. Anything comes up, tell me ;)
   utter_positive_reply:
   - text: Okay! great
   - text: Okay Boss!
@@ -207,3 +225,8 @@ templates:
   - text: 'Your card replace request has been initiated.
 
       You will get your new card details soon.'
+  utter_security_assurance_reply:
+  - text: I m glad you asked. I can not provide more information, but i assure you
+      that our conversation is secured.
+  - text: Our conversation is secured. That's all i can tell you now because i m told
+      not to provide other information with this topic.

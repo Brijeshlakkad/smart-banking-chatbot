@@ -11,7 +11,6 @@
     "intent_General_Ending", 
     "intent_General_Greetings", 
     "intent_General_Human_or_Bot", 
-    "intent_General_Jokes", 
     "intent_General_Negative_Feedback", 
     "intent_General_Positive_Feedback", 
     "intent_General_Security_Assurance", 
@@ -60,15 +59,19 @@
     "prev_utter_activated_card", 
     "prev_utter_deactivated_card", 
     "prev_utter_positive_reply", 
-    "prev_utter_greet", 
-    "prev_utter_ending", 
-    "prev_utter_fallback", 
     "prev_utter_ask_card_permission", 
     "prev_utter_give_pos_ans", 
     "prev_action_fee_inquiry", 
     "prev_utter_fee_inquiry_reply", 
     "prev_utter_ask_card_perm", 
     "prev_action_card_replace", 
-    "prev_utter_replace_card_reply"
+    "prev_utter_replace_card_reply", 
+    "prev_action_fallback", 
+    "prev_action_greeting", 
+    "prev_action_ending", 
+    "prev_action_human_or_bot", 
+    "prev_action_negative_feedback", 
+    "prev_action_positive_feedback", 
+    "prev_action_security_assurance"
   ]
 }
