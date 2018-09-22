@@ -128,6 +128,9 @@ class ActivateCardService(FormAction):
                 intent=t1.latest_message.intent['name']
             if intent=="Banking_Activate_Card":
                 results=get_active_card(user,password,passcode)
+                if results==-22:
+                    dispatcher.utter_message("Your card is already activated.")
+                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
                 template="utter_activated_card"
             len1=len(entities)
             for i in range(len1):
@@ -186,6 +189,9 @@ class CancelCardService(FormAction):
                 intent=t1.latest_message.intent['name']
             if intent=="Banking_Cancel_Card":
                 results=get_deactive_card(user,password,passcode)
+                if results==-22:
+                    dispatcher.utter_message("Your card is already deactivated.")
+                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
                 template="utter_deactivated_card"
             len1=len(entities)
             for i in range(len1):

@@ -42,6 +42,9 @@ def get_active_card(user,password,passcode):
     f2=check_passcode(user,password,passcode)
     if f1!=1 and f2!=1:
         return -99
+    status=get_card_details_by_user(user,"status")
+    if status==1:
+        return -22
     return change_customer_card_status(user,1)
 
 def get_deactive_card(user,password,passcode):
@@ -49,6 +52,9 @@ def get_deactive_card(user,password,passcode):
     f2=check_passcode(user,password,passcode)
     if f1!=1 and f2!=1:
         return -99
+    status=get_card_details_by_user(user,"status")
+    if status==0:
+        return -22
     return change_customer_card_status(user,0)
 
 def get_fee_info(user,password):
