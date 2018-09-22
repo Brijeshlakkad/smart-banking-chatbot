@@ -921,6 +921,11 @@
         "entities": []
       },
       {
+        "text": "Are you a bot?",
+        "intent": "General_Human_or_Bot",
+        "entities": []
+      },
+      {
         "text": "Am I talking to a person or am I talking to an AI?",
         "intent": "General_Human_or_Bot",
         "entities": []
@@ -16208,6 +16213,66 @@
             "value": "pin number"
           }
         ]
+      },
+      {
+        "text": "please deactivate my card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "please deactive my card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "please deactivate card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "please deactive card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "please deactivate my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "please deactive my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "deactivate my card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "deactive my card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "deactivate card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "deactive card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "deactivate my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "deactive my credit card",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
       },
       {
         "text": "assist me to off my card passcode",

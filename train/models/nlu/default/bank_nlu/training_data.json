@@ -698,6 +698,10 @@
         "intent": "General_Human_or_Bot"
       }, 
       {
+        "text": "Are you a bot?", 
+        "intent": "General_Human_or_Bot"
+      }, 
+      {
         "text": "Am I talking to a person or am I talking to an AI?", 
         "intent": "General_Human_or_Bot"
       }, 
@@ -15728,6 +15732,54 @@
         ], 
         "intent": "Banking_Cancel_Card", 
         "text": "what are the procedure for no longer want my bank card pin number"
+      }, 
+      {
+        "text": "please deactivate my card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "please deactive my card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "please deactivate card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "please deactive card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "please deactivate my credit card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "please deactive my credit card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "deactivate my card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "deactive my card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "deactivate card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "deactive card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "deactivate my credit card", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "deactive my credit card", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
         "entities": [
