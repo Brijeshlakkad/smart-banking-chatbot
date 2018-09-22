@@ -118,7 +118,7 @@ class customer_account_by_acc_id:
 
 
 class customer_card:
-	global card_id,c_id,acc_id,holder_name,till_month,till_year,cvv,card_type,card_no
+	global card_id,c_id,acc_id,holder_name,till_month,till_year,cvv,card_type,card_no,status
 	def card_details(self,acc_id):
 		sql="select * from cards where acc_id='%s'"%acc_id
 		conn,cursor=config.connect_to_database()
@@ -135,6 +135,7 @@ class customer_card:
 				self.cvv=row[6]
 				self.card_type=row[7]
 				self.card_no=row[8]
+				self.status=row[9]
 		except:
 			print("Error")
 		conn.close()
@@ -347,6 +348,8 @@ def get_card_details_by_user(user,f):
 		return c.cvv
 	elif f=="card_type":
 		return c.card_type
+	elif f=="status":
+		return c.status
 	else:
 		return 0
 def get_card_details_by_id(userid,f):
@@ -371,6 +374,33 @@ def get_card_details_by_id(userid,f):
 		return c.cvv
 	elif f=="card_type":
 		return c.card_type
+	elif f=="status":
+		return c.status
+	else:
+		return 0
+def get_card_details_by_acc_id(acc_id,f):
+	c=customer_card()
+	c.card_details(acc_id)
+	if f=="card_id":
+		return c.card_id
+	elif f=="c_id":
+		return c.c_id
+	elif f=="card_no":
+		return c.card_no
+	elif f=="acc_id":
+		return c.acc_id
+	elif f=="holder_name":
+		return c.holder_name
+	elif f=="till_month":
+		return c.till_month
+	elif f=="till_year":
+		return c.till_year
+	elif f=="csv":
+		return c.cvv
+	elif f=="card_type":
+		return c.card_type
+	elif f=="status":
+		return c.status
 	else:
 		return 0
 def generate_customer_passcode(user):
