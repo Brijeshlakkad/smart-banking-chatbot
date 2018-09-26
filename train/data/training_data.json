@@ -711,6 +711,46 @@
         "entities": []
       },
       {
+        "text": "Okay bye now",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
+        "text": "Okay bye",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
+        "text": "Okay bye Bot",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
+        "text": "Okay bye Jon",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
+        "text": "See you",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
+        "text": "See yaa",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
+        "text": "See yaaaa",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
+        "text": "Okay bye see yaa",
+        "intent": "General_Ending",
+        "entities": []
+      },
+      {
         "text": "Thank you for your time",
         "intent": "General_Ending",
         "entities": []
@@ -832,6 +872,21 @@
       },
       {
         "text": "Good morning",
+        "intent": "General_Greetings",
+        "entities": []
+      },
+      {
+        "text": "Hello",
+        "intent": "General_Greetings",
+        "entities": []
+      },
+      {
+        "text": "Hello bot",
+        "intent": "General_Greetings",
+        "entities": []
+      },
+      {
+        "text": "Hello from Brijesh",
         "intent": "General_Greetings",
         "entities": []
       },
@@ -1116,7 +1171,22 @@
         "entities": []
       },
       {
+        "text": "Okay",
+        "intent": "General_Positive_Feedback",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "General_Positive_Feedback",
+        "entities": []
+      },
+      {
         "text": "Thank you",
+        "intent": "General_Positive_Feedback",
+        "entities": []
+      },
+      {
+        "text": "Thanks",
         "intent": "General_Positive_Feedback",
         "entities": []
       },
@@ -1313,6 +1383,66 @@
       {
         "text": "Are you safe?",
         "intent": "General_Security_Assurance",
+        "entities": []
+      },
+      {
+        "text": "i said i want to get my card activated",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "i said how i can get my card activated",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "i said please help me with get my card activated",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "i said please get me my card activated",
+        "intent": "Banking_Activate_Card",
+        "entities": []
+      },
+      {
+        "text": "i said i want to get my card deactivated",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "i said how i can get my card deactivated",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "i said please help me with get my card deactivated",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "i said please get me my card deactivated",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "i said i want to get my card cancel",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "i said how i can get my card cancel",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "i said please help me with get my card cancel",
+        "intent": "Banking_Cancel_Card",
+        "entities": []
+      },
+      {
+        "text": "i said please get me my card cancel",
+        "intent": "Banking_Cancel_Card",
         "entities": []
       },
       {

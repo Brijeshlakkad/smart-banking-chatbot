@@ -530,6 +530,38 @@
         "intent": "General_Ending"
       }, 
       {
+        "text": "Okay bye now", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Okay bye", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Okay bye Bot", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Okay bye Jon", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "See you", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "See yaa", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "See yaaaa", 
+        "intent": "General_Ending"
+      }, 
+      {
+        "text": "Okay bye see yaa", 
+        "intent": "General_Ending"
+      }, 
+      {
         "text": "Thank you for your time", 
         "intent": "General_Ending"
       }, 
@@ -627,6 +659,18 @@
       }, 
       {
         "text": "Good morning", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hello", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hello bot", 
+        "intent": "General_Greetings"
+      }, 
+      {
+        "text": "Hello from Brijesh", 
         "intent": "General_Greetings"
       }, 
       {
@@ -854,7 +898,19 @@
         "intent": "General_Positive_Feedback"
       }, 
       {
+        "text": "Okay", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "ok", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
         "text": "Thank you", 
+        "intent": "General_Positive_Feedback"
+      }, 
+      {
+        "text": "Thanks", 
         "intent": "General_Positive_Feedback"
       }, 
       {
@@ -1012,6 +1068,54 @@
       {
         "text": "Are you safe?", 
         "intent": "General_Security_Assurance"
+      }, 
+      {
+        "text": "i said i want to get my card activated", 
+        "intent": "Banking_Activate_Card"
+      }, 
+      {
+        "text": "i said how i can get my card activated", 
+        "intent": "Banking_Activate_Card"
+      }, 
+      {
+        "text": "i said please help me with get my card activated", 
+        "intent": "Banking_Activate_Card"
+      }, 
+      {
+        "text": "i said please get me my card activated", 
+        "intent": "Banking_Activate_Card"
+      }, 
+      {
+        "text": "i said i want to get my card deactivated", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "i said how i can get my card deactivated", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "i said please help me with get my card deactivated", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "i said please get me my card deactivated", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "i said i want to get my card cancel", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "i said how i can get my card cancel", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "i said please help me with get my card cancel", 
+        "intent": "Banking_Cancel_Card"
+      }, 
+      {
+        "text": "i said please get me my card cancel", 
+        "intent": "Banking_Cancel_Card"
       }, 
       {
         "entities": [
