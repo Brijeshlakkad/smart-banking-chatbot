@@ -167,6 +167,20 @@
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
     - export
 ## Generated Story -7262308927873913513
 * General_Human_or_Bot
@@ -317,8 +331,7 @@
     - slot{"requested_slot": null}
     - export
 ## Generated Story -7760860768741243605
-* General_Greetings
-    - action_greeting
+* None
     - utter_first_access
     - action_get_access
     - slot{"requested_slot": "email"}
@@ -416,6 +429,8 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
+* General_Security_Assurance
+    - action_security_assurance
 * General_Ending
     - action_ending
     - export
@@ -660,6 +675,8 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* General_Security_Assurance
+    - action_security_assurance
 * General_Ending
     - action_ending
     - export
@@ -911,6 +928,8 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* General_Security_Assurance
+    - action_security_assurance
     - export
 ## Generated Story -5618305896588619439
 * General_Greetings
@@ -1080,6 +1099,8 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
+* General_Security_Assurance
+    - action_security_assurance
     - export
 ## Generated Story 727824646233554925
 * General_Greetings
@@ -1234,12 +1255,18 @@
     - action_human_or_bot
 * General_Human_or_Bot
     - action_human_or_bot
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * General_Positive_Feedback
     - action_positive_feedback
 * General_Negative_Feedback
     - action_negative_feedback
 * General_Security_Assurance
     - action_security_assurance
+* General_Ending
+    - action_ending
     - export
 
 ## Generated Story -4948951886217829979
@@ -1329,6 +1356,16 @@
     - action_negative_feedback
 * General_Security_Assurance
     - action_security_assurance
+* None
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * Banking_Activate_Card
     - action_activate_card
     - slot{"requested_slot": "passcode"}
@@ -1448,6 +1485,8 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* General_Security_Assurance
+    - action_security_assurance
     - export
 ## Generated Story 1130773148390608041
 * General_Greetings
@@ -1534,6 +1573,8 @@
     - action_human_or_bot
 * General_Security_Assurance
     - action_security_assurance
+* General_Ending
+    - action_ending
     - export
 ## Generated Story 7649361914383260
 * General_Greetings
@@ -1807,6 +1848,20 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
     - export
 ## Generated Story 4196587998254766267
 * General_Greetings
@@ -1842,6 +1897,8 @@
     - action_positive_feedback
 * General_Ending
     - action_ending
+* General_Security_Assurance
+    - action_security_assurance
     - export
 ## Generated Story 4196587998254766203
 * General_Greetings
@@ -2018,6 +2075,16 @@
     - slot{"access": 1}
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * Banking_Activate_Card
     - action_activate_card
     - slot{"requested_slot": "passcode"}
@@ -2149,6 +2216,16 @@
     - slot{"requested_slot": null}
 * General_Greetings
     - action_greeting
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * General_Negative_Feedback
     - action_negative_feedback
 * General_Negative_Feedback
@@ -2194,6 +2271,16 @@
     - action_security_assurance
 * General_Positive_Feedback
     - action_positive_feedback
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
 * General_Greetings
     - action_greeting
     - export
@@ -2225,6 +2312,8 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* General_Ending
+    - action_ending
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -2522,6 +2611,20 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
@@ -2681,6 +2784,10 @@
     - action_positive_feedback
 * General_Greetings
     - action_greeting
+* General_Security_Assurance
+    - action_security_assurance
+* General_Security_Assurance
+    - action_security_assurance
     - export
 ## Generated Story 6543378715159766008
 * Banking_Email
@@ -2828,6 +2935,8 @@
     - slot{"requested_slot": null}
 * General_Greetings
     - action_greeting
+* General_Ending
+    - action_ending
 * General_Negative_Feedback
     - action_negative_feedback
 * General_Negative_Feedback
@@ -2904,6 +3013,10 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* General_Security_Assurance
+    - action_security_assurance
+* General_Security_Assurance
+    - action_security_assurance
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -3001,6 +3114,20 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -3069,6 +3196,8 @@
     - action_positive_feedback
 * General_Greetings
     - action_greeting
+* General_Ending
+    - action_ending
     - export
 ## Generated Story 6543378715159766012
 * Banking_Card_Number
@@ -3457,6 +3586,16 @@
     - action_positive_feedback
 * General_Greetings
     - action_greeting
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
     - export
 ## Generated Story 6543378715159766016
 * Banking_Activate_Card
@@ -3550,6 +3689,8 @@
     - action_security_assurance
 * General_Security_Assurance
     - action_security_assurance
+* General_Ending
+    - action_ending
 * General_Positive_Feedback
     - action_positive_feedback
 * General_Greetings
@@ -3790,10 +3931,22 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * General_Security_Assurance
     - action_security_assurance
 * General_Human_or_Bot
     - action_human_or_bot
+* General_Ending
+    - action_ending
     - export
 ## Generated Story 6802799919969540802
 * General_Greetings
@@ -4041,6 +4194,8 @@
     - action_fallback
 * General_Negative_Feedback
     - action_negative_feedback
+* General_Ending
+    - action_ending
     - export
 ## Generated Story -6036964805923185803
 * General_Negative_Feedback
@@ -4102,6 +4257,20 @@
     - action_greeting
 * General_Human_or_Bot
     - action_human_or_bot
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
@@ -4268,6 +4437,24 @@
     - action_positive_feedback
 * General_Positive_Feedback
     - action_positive_feedback
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "1516202764598805"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
 * General_Ending
     - action_ending
 * Banking_Fee_Inquiry
@@ -4396,6 +4583,22 @@
     - action_greeting
 * General_Ending
     - action_ending
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
+* General_Ending
+    - action_ending
     - export
 ## Generated Story 2694105110943803751
 * General_Greetings
@@ -4486,6 +4689,20 @@
     - slot{"access": 1}
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * Banking_Activate_Card
     - action_activate_card
     - slot{"requested_slot": "passcode"}
@@ -4738,6 +4955,24 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "1516202764598805"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * General_Greetings
@@ -4866,6 +5101,20 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -5164,18 +5413,40 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "1516202764598805"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * General_Greetings
     - action_greeting
 * General_Greetings
     - action_greeting
+* None
+    - action_fallback
 * General_Greetings
     - action_greeting
 * General_Greetings
     - action_greeting
 * General_Greetings
     - action_greeting
+* None
+    - action_fallback
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Human_or_Bot
@@ -5213,6 +5484,20 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
@@ -5296,6 +5581,8 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
+* None
+    - action_fallback
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -5440,6 +5727,8 @@
     - slot{"card_replace_with": null}
 * General_Human_or_Bot
     - action_human_or_bot
+* None
+    - action_fallback
 * General_Positive_Feedback
     - action_positive_feedback
 * General_Positive_Feedback
@@ -5452,6 +5741,24 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "1516202764598805"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * General_Greetings
@@ -5462,6 +5769,10 @@
     - action_greeting
 * General_Greetings
     - action_greeting
+* General_Security_Assurance
+    - action_security_assurance
+* General_Security_Assurance
+    - action_security_assurance
 * General_Greetings
     - action_greeting
 * General_Human_or_Bot
@@ -5497,6 +5808,20 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
@@ -5552,6 +5877,10 @@
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
+* General_Security_Assurance
+    - action_security_assurance
+* General_Security_Assurance
+    - action_security_assurance
 * Banking_Passcode
     - action_cancel_card
     - slot{"passcode": "683249"}
@@ -5590,6 +5919,26 @@
     - action_ending
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* None
+    - action_fallback
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "1516202764598805"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Fee_Inquiry
@@ -5651,3 +6000,232 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
     - export
+## Generated Story -7540471288073866743
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Activate_Card
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* deny
+    - action_activate_card
+    - slot{"card_permission": false}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Cancel_Card
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* deny
+    - action_cancel_card
+    - slot{"card_permission": false}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Ending
+    - action_ending
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "1516202764598805"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* General_Greetings
+    - action_greeting
+* None
+    - action_fallback
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
+* General_Greetings
+    - action_greeting
+* General_Greetings
+    - action_greeting
+* General_Greetings
+    - action_greeting
+* None
+    - action_fallback
+* General_Security_Assurance
+    - action_security_assurance
+* General_Security_Assurance
+    - action_security_assurance
+* General_Greetings
+    - action_greeting
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Human_or_Bot
+    - action_human_or_bot
+    - export
+## Generated Story -4538091086179447342
+* None
+    - action_fallback
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* General_Ending
+    - action_ending
+    - export
+## Generated Story -4538091086179447343
+* None
+    - action_fallback
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Card_Number
+    - action_fallback
+* Banking_Email
+    - action_fallback
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "1516202764598805"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* General_Ending
+    - action_ending
+* None
+    - action_fallback
+* General_Security_Assurance
+    - action_security_assurance
+* General_Security_Assurance
+    - action_security_assurance
+    - export
+## Generated Story 651743356558901636
+* General_Ending
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* affirm
+    - action_fallback
+* affirm
+    - action_fallback
+* affirm
+    - action_fallback
+* affirm
+    - action_fallback
+* affirm
+    - action_fallback
+* General_Ending
+    - action_ending
+* General_Ending
+    - action_ending
+* affirm
+    - action_fallback
+* General_Security_Assurance
+    - action_security_assurance
+* General_Greetings
+    - action_greeting
+* General_Greetings
+    - action_greeting
+* General_Greetings
+    - action_greeting
+* General_Negative_Feedback
+    - action_fallback
+    - export
+
