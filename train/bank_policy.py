@@ -22,10 +22,7 @@ class BankPolicy(KerasPolicy):
             model.add(LSTM(self.rnn_size, return_sequences=True, dropout=0.2))
             model.add(TimeDistributed(Dense(units=output_shape[-1])))
         else:
-            raise ValueError("Cannot construct the model because"
-                             "length of output_shape = {} "
-                             "should be 1 or 2."
-                             "".format(len(output_shape)))
+            raise ValueError("Cannot construct the model because length of output_shape = {} should be 1 or 2.".format(len(output_shape)))
         model.add(Activation('softmax'))
         model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
         logger.debug(model.summary())
