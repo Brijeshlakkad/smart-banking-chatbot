@@ -576,6 +576,56 @@
         "entities": []
       },
       {
+        "text": "you should",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "please do it",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "please do it for me",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "do it",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "do it for me",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "Jon, please do it for me",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "Jon, do it for me",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i will do it",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "i'll do it",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "i should do it",
+        "intent": "deny",
+        "entities": []
+      },
+      {
         "text": "no",
         "intent": "deny",
         "entities": []
