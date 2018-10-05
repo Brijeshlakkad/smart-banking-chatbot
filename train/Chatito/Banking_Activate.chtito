@@ -1,5 +1,5 @@
 %[Banking_Activate_Card]('training': '900')
-    ~[Can i?] ~[syn] ~[card_n] ~[card] @[using_what?]
+    ~[Can i?] ~[syn] ~[my?] ~[card_type] ~[card] ~[using?]
 ~[syn]
     opening
     turn on
@@ -26,15 +26,14 @@
     get me help to
     please help me to
     please assist me to
+    please can you
+    can you
 ~[process]
     processes
     steps
     ways
     procedures
     procedure
-~[card_n]
-    ~[my?] ~[card_type?]
-
 ~[card_type]
     visa
     master
@@ -42,7 +41,8 @@
     bank
     credit
     debit
-
+~[using]
+    using @[using_what]
 @[using_what]
     pin
     pin number
