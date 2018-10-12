@@ -39686,1204 +39686,2914 @@
         "entities": []
       },
       {
-        "text": "9528658059167075",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9528658059167075",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1001911721930823",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1001911721930823",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "8468882288255832",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8468882288255832",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4945187231705273",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4945187231705273",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "3687035271236937",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "3687035271236937",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4908417718123825",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4908417718123825",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1026217036421728",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1026217036421728",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4578618381315835",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4578618381315835",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "0659135932222008",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0659135932222008",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "2521811262732624",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2521811262732624",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "0781018951389028",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0781018951389028",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7946939395996860",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7946939395996860",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "2935088681943202",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2935088681943202",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "6073795239740225",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "6073795239740225",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
         "text": "7324133164990733",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7324133164990733",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "1791507094123624",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1791507094123624",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "0794057909362800",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0794057909362800",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "4771289997524084",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4771289997524084",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "3514747701735881",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "3514747701735881",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "0965421374217691",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0965421374217691",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "8701546044983813",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8701546044983813",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "7521335565809629",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7521335565809629",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "8965254949793994",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8965254949793994",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "5858884282928889",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5858884282928889",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "4312540293934637",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4312540293934637",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "2525895918163890",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2525895918163890",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "4709239471395983",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4709239471395983",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "1162405067811957",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1162405067811957",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "8014070926922862",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8014070926922862",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1216201602229586",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1216201602229586",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "0066340332361435",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0066340332361435",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "2068647813638129",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2068647813638129",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "6668898417039802",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "6668898417039802",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "2972916391011435",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2972916391011435",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9149790359190177",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9149790359190177",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5449925169572111",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5449925169572111",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7172352012246398",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7172352012246398",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "2141119910096272",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2141119910096272",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "8942054635274116",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8942054635274116",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "6207527555321624",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "6207527555321624",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "0666973510448102",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0666973510448102",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "6180996597846477",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "6180996597846477",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "2473822886303193",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2473822886303193",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "1894465263387615",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1894465263387615",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4675415039260675",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4675415039260675",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "3249245613977606",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "3249245613977606",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9823649320191980",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9823649320191980",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4719447976853712",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4719447976853712",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5698429042561023",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5698429042561023",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5965094780770488",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5965094780770488",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "0280062377306735",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0280062377306735",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7830911158333545",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7830911158333545",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "6083559854096700",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "6083559854096700",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "3363046528493293",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "3363046528493293",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9057492200768104",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9057492200768104",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "3471700570792096",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "3471700570792096",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4708946528999656",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4708946528999656",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4633447117887849",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4633447117887849",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "0121608530281923",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0121608530281923",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9160562900137432",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9160562900137432",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1245874129195555",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1245874129195555",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1797450161813988",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1797450161813988",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7097967450023104",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7097967450023104",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "8949317280926675",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8949317280926675",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5716417475287899",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5716417475287899",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7885831641472297",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7885831641472297",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7687637884148911",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7687637884148911",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7855600600079669",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7855600600079669",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9434004582192200",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9434004582192200",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9928999666272622",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9928999666272622",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5728435617183871",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5728435617183871",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "2746272384007492",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2746272384007492",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "2534744429062348",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "2534744429062348",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9799157798134775",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9799157798134775",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7740224684012980",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7740224684012980",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "6273416531059957",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "6273416531059957",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "8938789025980457",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8938789025980457",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "3728665674561429",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "3728665674561429",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5258158505590196",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5258158505590196",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5439702065828768",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5439702065828768",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5260109540020515",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5260109540020515",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7512782422217030",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7512782422217030",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "8896310134025270",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8896310134025270",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1020978962078598",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1020978962078598",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7670514697986336",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7670514697986336",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "8685140901285018",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "8685140901285018",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9543941963397357",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9543941963397357",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "4545195689178174",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4545195689178174",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1733776270049229",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1733776270049229",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9960032209847429",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9960032209847429",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "7051261424161464",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7051261424161464",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "1205434989931971",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1205434989931971",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "9830383706948238",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "9830383706948238",
-            "entity": "card_no"
-          }
-        ]
-      },
-      {
-        "text": "5266114162618424",
-        "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "5266114162618424",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "3805429078587781",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "3805429078587781",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "7430446156690132",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "7430446156690132",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "4727304621164568",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4727304621164568",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "4492403245751089",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "4492403245751089",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "1107572463878963",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "1107572463878963",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
       },
       {
         "text": "0884692483183267",
         "intent": "Banking_Card_Number",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "0884692483183267",
-            "entity": "card_no"
-          }
-        ]
+        "entities": [ ]
+      },
+      {
+        "text": "can you please modify my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "change addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please change present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you modify present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please modify present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "change my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please change my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you change my present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please modify my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please modify present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please change my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you modify addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please change addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please modify my present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you change my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please change addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "modify addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please modify address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "modify my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "change my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you modify my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "change present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please modify addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please change my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you modify my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please change address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please change my present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please modify my present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please change address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "modify present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you change my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you modify address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please modify addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "change my present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you change present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please change my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "modify my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please modify address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please modify my address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please modify my addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please change my present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me addr changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "get me present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me my addr modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my present address changed?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you change addr",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "modify my present address",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my present address modified?",
+        "intent": "Banking_Change_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you provide my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to get me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to get me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to provide me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to give present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you provide me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to provide me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to provide my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you provide my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to give me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to get address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please give present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to give me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to provide me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please give me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to provide present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to provide my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to give my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to get me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you provide my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to give me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to give my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to give present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to give me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to give my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to provide present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to give present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to get addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to give my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please give me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please give me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to provide me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to get addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you provide addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please provide me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to get my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to give me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to provide me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "help me to give me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get me present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you get me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please get my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide me my address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist to give me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to get my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get me addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide me address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to provide present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please get me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "provide present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "get me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give me my present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "please give my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "~assist me to give address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you give present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you provide present address",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "give me my addr",
+        "intent": "Customer_Get_Address",
+        "entities": []
+      },
+      {
+        "text": "can you please provide my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "give me acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to get my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to give me acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give me my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give me my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give me my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide me my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "give my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to get me account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give me my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to get my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "give Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get me my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "give my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get me my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get me my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide me my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give me my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give me my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give me acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to provide me my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to provide acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "provide account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "provide my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get me acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give me my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "provide my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get me my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "provide acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide me my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to get account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "give my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to provide me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to get my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide me account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get me my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to get me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get me my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to get me account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to get acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get me acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to give account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide me my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide me my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to get Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give me my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide me my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to get me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to get me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "provide my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get me my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to get acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get my acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you get me account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide me my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to give acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "provide account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to provide acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to provide account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to provide me account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to provide account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to get me acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you give Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please get acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to provide me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide me my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to provide me my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please provide me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist me to give acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to give me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give my Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get me my account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you please give account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please get me my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get me account no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "give acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you provide acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "can you help me to give my acc no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to give me my acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "get me account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "help me to get me my account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "assist to get me acc_no",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please give me Account number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
+      },
+      {
+        "text": "please provide acc number",
+        "intent": "Customer_Get_Account_Number",
+        "entities": []
       }
     ]
   }

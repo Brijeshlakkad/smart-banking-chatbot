@@ -37,6 +37,8 @@ slots:
       - None
       - 0
       - 1
+  address:
+    type: text
 intents:
   - None
   - affirm
@@ -56,6 +58,8 @@ intents:
   - General_Security_Assurance
   - Banking_Card_Number
   - Customer_Card_Number_Info
+  - Banking_Change_Address
+  - Customer_Get_Address
 entities:
   - using_what
   - name
@@ -148,6 +152,15 @@ templates:
     - "Your card number is {card_no}"
     - "it's {card_no}"
     - "Got it {name}! it's {card_no}"
+  utter_get_addreess_reply:
+    - "{name} Your postal address is: {postal_add}"
+    - "Your postal address is {postal_add}"
+    - "it's {postal_add}"
+    - "Got it {name}! it's {postal_add}"
+  utter_ask_address:
+    - "Please enter your new postal address: "
+  utter_change_address_reply:
+    - "{name} your address has been changed.\nYou can ask me or see for verification of your postal address details on Personal Settings panel."
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -174,4 +187,7 @@ actions:
     - actions.ActionNegativeFeedback
     - actions.ActionPositiveFeedback
     - actions.ActionSecurityAssurance
+    - actions.ActionGetPermission
     - actions.ActionGetCardNumber
+    - actions.ActionGetAddress
+    - actions.ActionChangeAddress

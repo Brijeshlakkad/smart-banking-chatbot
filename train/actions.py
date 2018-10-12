@@ -25,7 +25,76 @@ class ActionGetCardNumber(Action):
             return [ActionReverted(),AllSlotsReset()]
         card_no=get_card_info(user,password,"card_no")
         dispatcher.utter_template("utter_get_card_number_reply",tracker,name=name,card_no=card_no)
-        return [SlotSet("card_no",card_no)]
+        return []
+class ActionGetAddress(Action):
+    def name(self):
+        return 'action_get_address'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        postal_add=get_personal_info(user,password,"postal_add")
+        dispatcher.utter_template("utter_get_addreess_reply",tracker,name=name,postal_add=postal_add)
+        return []
+class ActionGetPermission(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+        FreeTextFormField("passcode"),
+        BooleanFormField("card_perm","affirm","deny")
+        ]
+    def name(self):
+        return 'action_get_permission'
+    def submit(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        card_perm=tracker.get_slot("card_perm")
+        card_replace_with=tracker.get_slot("card_replace_with")
+        if passcode==None or card_perm==None:
+            return [ActionReverted()]
+        if card_perm!=True:
+            return [SlotSet("passcode",None),SlotSet("card_permission",None),SlotSet("requested_slot",None)]
+        results = check_passcode(user,password,passcode)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
+        return [SlotSet("requested_slot",None),SlotSet("service_access",1)]
+class ActionChangeAddress(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+        FreeTextFormField("address")
+        ]
+    def name(self):
+        return 'action_change_address'
+    def submit(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_message("Please try again after few minutes, we are facing problem!")
+            return [ActionReverted(),SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
+        address=tracker.get_slot("address")
+        result=change_customer_details("postal_add",address,user)
+        if result!=1:
+            dispatcher.utter_message("Please try again after few minutes, we are facing problem!")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_change_address_reply",tracker,name=name)
+        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class GetAccess(FormAction):
     RANDOMIZE = False
     @staticmethod

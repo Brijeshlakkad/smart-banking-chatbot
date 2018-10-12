@@ -25,7 +25,10 @@ action_names:
 - action_negative_feedback
 - action_positive_feedback
 - action_security_assurance
+- action_get_permission
 - action_get_card_number
+- action_get_address
+- action_change_address
 actions:
 - actions.GetAccess
 - actions.ActivateCardService
@@ -52,7 +55,10 @@ actions:
 - actions.ActionNegativeFeedback
 - actions.ActionPositiveFeedback
 - actions.ActionSecurityAssurance
+- actions.ActionGetPermission
 - actions.ActionGetCardNumber
+- actions.ActionGetAddress
+- actions.ActionChangeAddress
 config:
   store_entities_as_slots: true
 entities:
@@ -80,6 +86,8 @@ intents:
     use_entities: true
 - Banking_Fee_Inquiry:
     use_entities: true
+- Customer_Get_Address:
+    use_entities: true
 - Banking_Password:
     use_entities: true
 - General_Ending:
@@ -95,6 +103,8 @@ intents:
 - General_Greetings:
     use_entities: true
 - Banking_Replace_Card:
+    use_entities: true
+- Banking_Change_Address:
     use_entities: true
 - Customer_Card_Number_Info:
     use_entities: true
@@ -114,6 +124,9 @@ slots:
     - none
     - '0'
     - '1'
+  address:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   card_perm:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -123,6 +136,13 @@ slots:
   card_replace_with:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  card_status:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - none
+    - '0'
+    - '1'
   email:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -163,6 +183,8 @@ templates:
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
+  utter_ask_address:
+  - text: 'Please enter your new postal address: '
   utter_ask_card_perm:
   - text: Are you sure?
   - text: Enter 'Yes' if you want to continue
@@ -204,6 +226,11 @@ templates:
   - text: Cost is {fees} $ per year
   utter_first_access:
   - text: Please first login to our service to use it.
+  utter_get_addreess_reply:
+  - text: '{name} Your postal address is: {postal_add}'
+  - text: Your postal address is {postal_add}
+  - text: it's {postal_add}
+  - text: Got it {name}! it's {postal_add}
   utter_get_card_number_reply:
   - text: '{name} Your card number is: {card_no}'
   - text: Your card number is {card_no}
