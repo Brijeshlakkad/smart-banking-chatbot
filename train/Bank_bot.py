@@ -61,7 +61,6 @@ def run_bank_bot(serve_forever=True):
 		agent.handle_channel(ConsoleInputChannel())
     return agent
 if __name__ == '__main__':
-    utils.configure_clored_logging(loglevel="INFO")
     parser = argparse.ArgumentParser(description='starts the bot')
     parser.add_argument('task',choices=["train-nlu", "train-dialogue", "run","interpret"],help="what the bot should do - e.g. run or train?")
     task = parser.parse_args().task
