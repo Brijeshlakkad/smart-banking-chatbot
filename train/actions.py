@@ -11,6 +11,21 @@ from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
 import random
+class ActionGetAccountNumber(Action):
+    def name(self):
+        return 'action_get_account_number'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        acc_no=get_account_info(user,password,"acc_no")
+        dispatcher.utter_template("utter_get_account_number_reply",tracker,name=name,acc_no=acc_no)
+        return []
 class ActionGetCardNumber(Action):
     def name(self):
         return 'action_get_card_number'
@@ -74,7 +89,8 @@ class ActionChangeAddress(FormAction):
     @staticmethod
     def required_fields():
         return [
-        FreeTextFormField("address")
+        FreeTextFormField("address1"),
+        FreeTextFormField("address2")
         ]
     def name(self):
         return 'action_change_address'
@@ -88,11 +104,15 @@ class ActionChangeAddress(FormAction):
         if service_access!=1:
             dispatcher.utter_message("Please try again after few minutes, we are facing problem!")
             return [ActionReverted(),SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
-        address=tracker.get_slot("address")
+        address1=tracker.get_slot("address1")
+        address2=tracker.get_slot("address2")
+        address="%s, %s"%(address1,address2)
         result=change_customer_details("postal_add",address,user)
         if result!=1:
             dispatcher.utter_message("Please try again after few minutes, we are facing problem!")
             return [ActionReverted(),AllSlotsReset()]
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
         dispatcher.utter_template("utter_change_address_reply",tracker,name=name)
         return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class GetAccess(FormAction):

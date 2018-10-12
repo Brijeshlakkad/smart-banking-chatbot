@@ -37,7 +37,9 @@ slots:
       - None
       - 0
       - 1
-  address:
+  address1:
+    type: text
+  address2:
     type: text
 intents:
   - None
@@ -60,6 +62,7 @@ intents:
   - Customer_Card_Number_Info
   - Banking_Change_Address
   - Customer_Get_Address
+  - Banking_Get_Account_Number
 entities:
   - using_what
   - name
@@ -157,10 +160,17 @@ templates:
     - "Your postal address is {postal_add}"
     - "it's {postal_add}"
     - "Got it {name}! it's {postal_add}"
-  utter_ask_address:
-    - "Please enter your new postal address: "
+  utter_ask_address1:
+    - "Please enter your new postal address line 1: "
+  utter_ask_address2:
+    - "Please enter your new postal address line 2: "
   utter_change_address_reply:
     - "{name} your address has been changed.\nYou can ask me or see for verification of your postal address details on Personal Settings panel."
+  utter_get_account_number_reply:
+    - "{name} Your account number is: {acc_no}"
+    - "Your account number is {acc_no}"
+    - "it's {acc_no}"
+    - "Got it {name}! it's {acc_no}"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -191,3 +201,4 @@ actions:
     - actions.ActionGetCardNumber
     - actions.ActionGetAddress
     - actions.ActionChangeAddress
+    - actions.ActionGetAccountNumber
