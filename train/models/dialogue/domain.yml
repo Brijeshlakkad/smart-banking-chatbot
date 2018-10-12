@@ -25,6 +25,7 @@ action_names:
 - action_negative_feedback
 - action_positive_feedback
 - action_security_assurance
+- action_get_card_number
 actions:
 - actions.GetAccess
 - actions.ActivateCardService
@@ -51,6 +52,7 @@ actions:
 - actions.ActionNegativeFeedback
 - actions.ActionPositiveFeedback
 - actions.ActionSecurityAssurance
+- actions.ActionGetCardNumber
 config:
   store_entities_as_slots: true
 entities:
@@ -93,6 +95,8 @@ intents:
 - General_Greetings:
     use_entities: true
 - Banking_Replace_Card:
+    use_entities: true
+- Customer_Card_Number_Info:
     use_entities: true
 - General_Human_or_Bot:
     use_entities: true
@@ -200,6 +204,11 @@ templates:
   - text: Cost is {fees} $ per year
   utter_first_access:
   - text: Please first login to our service to use it.
+  utter_get_card_number_reply:
+  - text: '{name} Your card number is: {card_no}'
+  - text: Your card number is {card_no}
+  - text: it's {card_no}
+  - text: Got it {name}! it's {card_no}
   utter_give_pos_ans:
   - text: Yes, You can do it {using}!
   - text: Ofcourse, You can always do it {using}.

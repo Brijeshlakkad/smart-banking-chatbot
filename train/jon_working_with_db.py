@@ -39,6 +39,9 @@ def check_passcode(user,password,passcode):
 
 def get_active_card(user,password,passcode):
     f1=check_indentity(user,password)
+    f3=get_any_value(user,"hasAcc")
+    if f3!=1:
+        return -33
     f2=check_passcode(user,password,passcode)
     if f1!=1 and f2!=1:
         return -99
@@ -94,6 +97,16 @@ def get_personal_info(user,password,field):
     if f!=1:
         return -99
     return get_any_value(user,field)
+def get_account_info(user,password,field):
+    f=check_indentity(user,password)
+    if f!=1:
+        return -99
+    return get_account_details_by_user(user,field)
+def get_card_info(user,password,field):
+    f=check_indentity(user,password)
+    if f!=1:
+        return -99
+    return get_card_details_by_user(user,field)
 def get_user_name(name):
     if name!=None:
         name=str(name)

@@ -31,6 +31,12 @@ slots:
     type: text
   using_what:
     type: text
+  card_status:
+    type: categorical
+    values:
+      - None
+      - 0
+      - 1
 intents:
   - None
   - affirm
@@ -49,6 +55,7 @@ intents:
   - General_Positive_Feedback
   - General_Security_Assurance
   - Banking_Card_Number
+  - Customer_Card_Number_Info
 entities:
   - using_what
   - name
@@ -136,6 +143,11 @@ templates:
   utter_security_assurance_reply:
     - "I m glad you asked. I can not provide more information, but i assure you that all things are secured including this conversation."
     - "Our conversation is secured. That's all i can tell you now because i m told not to provide other information with this topic."
+  utter_get_card_number_reply:
+    - "{name} Your card number is: {card_no}"
+    - "Your card number is {card_no}"
+    - "it's {card_no}"
+    - "Got it {name}! it's {card_no}"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -162,3 +174,4 @@ actions:
     - actions.ActionNegativeFeedback
     - actions.ActionPositiveFeedback
     - actions.ActionSecurityAssurance
+    - actions.ActionGetCardNumber

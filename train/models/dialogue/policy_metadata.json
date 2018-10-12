@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "email", 
-        "requested_slot"
+        "requested_slot", 
+        "email"
       ]
     }, 
     "action_human_or_bot": {
@@ -50,6 +50,9 @@
       ]
     }, 
     "action_ending": {
+      "slots": []
+    }, 
+    "utter_first_access": {
       "slots": []
     }, 
     "action_negative_feedback": {

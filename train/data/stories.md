@@ -3196,6 +3196,8 @@
     - action_positive_feedback
 * General_Greetings
     - action_greeting
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Ending
     - action_ending
     - export
@@ -3687,6 +3689,8 @@
     - slot{"requested_slot": null}
 * General_Security_Assurance
     - action_security_assurance
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Security_Assurance
     - action_security_assurance
 * General_Ending
@@ -4435,6 +4439,8 @@
     - action_human_or_bot
 * General_Positive_Feedback
     - action_positive_feedback
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Replace_Card
@@ -4699,6 +4705,8 @@
     - action_fallback
 * Banking_Password
     - action_fallback
+* Customer_Card_Number_Info
+    - action_get_card_number
 * affirm
     - action_fallback
 * deny
@@ -4955,6 +4963,8 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* Customer_Card_Number_Info
+    - action_get_card_number
 * Banking_Replace_Card
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
@@ -5316,6 +5326,12 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* Customer_Card_Number_Info
+    - action_get_card_number
+* Customer_Card_Number_Info
+    - action_get_card_number
+* Customer_Card_Number_Info
+    - action_get_card_number
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
@@ -5729,6 +5745,8 @@
     - action_human_or_bot
 * None
     - action_fallback
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Positive_Feedback
     - action_positive_feedback
 * General_Positive_Feedback
@@ -5818,6 +5836,8 @@
     - action_fallback
 * Banking_Password
     - action_fallback
+* Customer_Card_Number_Info
+    - action_get_card_number
 * affirm
     - action_fallback
 * deny
@@ -5877,10 +5897,6 @@
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
-* General_Security_Assurance
-    - action_security_assurance
-* General_Security_Assurance
-    - action_security_assurance
 * Banking_Passcode
     - action_cancel_card
     - slot{"passcode": "683249"}
@@ -5945,6 +5961,8 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Greetings
     - action_greeting
 * General_Greetings
@@ -5953,6 +5971,8 @@
     - action_greeting
 * General_Greetings
     - action_greeting
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Greetings
     - action_greeting
 * General_Human_or_Bot
@@ -6028,6 +6048,8 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
+* Customer_Card_Number_Info
+    - action_get_card_number
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
@@ -6107,6 +6129,8 @@
     - action_security_assurance
 * General_Greetings
     - action_greeting
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Human_or_Bot
@@ -6179,6 +6203,8 @@
     - slot{"card_replace_with": null}
 * General_Ending
     - action_ending
+* Customer_Card_Number_Info
+    - action_get_card_number
 * None
     - action_fallback
 * General_Security_Assurance
@@ -6221,6 +6247,8 @@
     - action_security_assurance
 * General_Greetings
     - action_greeting
+* Customer_Card_Number_Info
+    - action_get_card_number
 * General_Greetings
     - action_greeting
 * General_Greetings
@@ -6229,3 +6257,21 @@
     - action_fallback
     - export
 
+## Generated Story 3027524632470871196
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Customer_Card_Number_Info
+    - action_get_card_number
+    - export

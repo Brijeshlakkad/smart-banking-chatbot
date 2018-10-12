@@ -37684,6 +37684,3206 @@
         "text": "want to cancel card",
         "intent": "Banking_Cancel_Card",
         "entities": []
+      },
+      {
+        "text": "please help me to get card number of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card no of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me visa card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card no of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get visa card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card no of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my visa card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my visa card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get visa card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my visa card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my visa card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card no of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my visa card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my master cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get visa card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get cardno of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card number of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of my debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my visa card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me credit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of debit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me visa card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my master card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get cardno of my card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of my bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my debit card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my visa card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card number of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card_no of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get credit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of my credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my atm card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get credit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me debit card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get card_no of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get my card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my bank card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of bank card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card number of card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card no of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of my visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me bank card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me my master card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card no of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get card number of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get cardno of my atm card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me debit cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "can you please help me to get card_no of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me my credit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card_no of my master card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me bank cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get my atm card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please show me visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my master card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get visa card number",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me my bank card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please get me my debit card_no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please help me to get visa cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get cardno of visa card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "help me to get atm card no",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "get me atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "show me atm cardno",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "please can you please help me to get card no of credit card",
+        "intent": "Customer_Card_Number_Info",
+        "entities": []
+      },
+      {
+        "text": "9528658059167075",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9528658059167075",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1001911721930823",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1001911721930823",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8468882288255832",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8468882288255832",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4945187231705273",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4945187231705273",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "3687035271236937",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "3687035271236937",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4908417718123825",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4908417718123825",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1026217036421728",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1026217036421728",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4578618381315835",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4578618381315835",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0659135932222008",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0659135932222008",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2521811262732624",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2521811262732624",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0781018951389028",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0781018951389028",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7946939395996860",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7946939395996860",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2935088681943202",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2935088681943202",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "6073795239740225",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "6073795239740225",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7324133164990733",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7324133164990733",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1791507094123624",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1791507094123624",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0794057909362800",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0794057909362800",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4771289997524084",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4771289997524084",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "3514747701735881",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "3514747701735881",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0965421374217691",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0965421374217691",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8701546044983813",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8701546044983813",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7521335565809629",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7521335565809629",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8965254949793994",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8965254949793994",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5858884282928889",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5858884282928889",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4312540293934637",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4312540293934637",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2525895918163890",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2525895918163890",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4709239471395983",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4709239471395983",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1162405067811957",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1162405067811957",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8014070926922862",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8014070926922862",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1216201602229586",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1216201602229586",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0066340332361435",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0066340332361435",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2068647813638129",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2068647813638129",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "6668898417039802",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "6668898417039802",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2972916391011435",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2972916391011435",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9149790359190177",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9149790359190177",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5449925169572111",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5449925169572111",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7172352012246398",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7172352012246398",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2141119910096272",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2141119910096272",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8942054635274116",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8942054635274116",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "6207527555321624",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "6207527555321624",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0666973510448102",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0666973510448102",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "6180996597846477",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "6180996597846477",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2473822886303193",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2473822886303193",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1894465263387615",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1894465263387615",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4675415039260675",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4675415039260675",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "3249245613977606",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "3249245613977606",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9823649320191980",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9823649320191980",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4719447976853712",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4719447976853712",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5698429042561023",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5698429042561023",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5965094780770488",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5965094780770488",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0280062377306735",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0280062377306735",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7830911158333545",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7830911158333545",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "6083559854096700",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "6083559854096700",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "3363046528493293",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "3363046528493293",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9057492200768104",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9057492200768104",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "3471700570792096",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "3471700570792096",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4708946528999656",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4708946528999656",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4633447117887849",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4633447117887849",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0121608530281923",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0121608530281923",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9160562900137432",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9160562900137432",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1245874129195555",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1245874129195555",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1797450161813988",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1797450161813988",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7097967450023104",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7097967450023104",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8949317280926675",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8949317280926675",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5716417475287899",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5716417475287899",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7885831641472297",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7885831641472297",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7687637884148911",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7687637884148911",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7855600600079669",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7855600600079669",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9434004582192200",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9434004582192200",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9928999666272622",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9928999666272622",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5728435617183871",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5728435617183871",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2746272384007492",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2746272384007492",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "2534744429062348",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "2534744429062348",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9799157798134775",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9799157798134775",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7740224684012980",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7740224684012980",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "6273416531059957",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "6273416531059957",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8938789025980457",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8938789025980457",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "3728665674561429",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "3728665674561429",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5258158505590196",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5258158505590196",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5439702065828768",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5439702065828768",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5260109540020515",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5260109540020515",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7512782422217030",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7512782422217030",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8896310134025270",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8896310134025270",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1020978962078598",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1020978962078598",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7670514697986336",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7670514697986336",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "8685140901285018",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "8685140901285018",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9543941963397357",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9543941963397357",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4545195689178174",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4545195689178174",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1733776270049229",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1733776270049229",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9960032209847429",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9960032209847429",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7051261424161464",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7051261424161464",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1205434989931971",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1205434989931971",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "9830383706948238",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "9830383706948238",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "5266114162618424",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "5266114162618424",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "3805429078587781",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "3805429078587781",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "7430446156690132",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "7430446156690132",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4727304621164568",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4727304621164568",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "4492403245751089",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "4492403245751089",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "1107572463878963",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "1107572463878963",
+            "entity": "card_no"
+          }
+        ]
+      },
+      {
+        "text": "0884692483183267",
+        "intent": "Banking_Card_Number",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "0884692483183267",
+            "entity": "card_no"
+          }
+        ]
       }
     ]
   }

@@ -11,6 +11,21 @@ from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
 import random
+class ActionGetCardNumber(Action):
+    def name(self):
+        return 'action_get_card_number'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        card_no=get_card_info(user,password,"card_no")
+        dispatcher.utter_template("utter_get_card_number_reply",tracker,name=name,card_no=card_no)
+        return [SlotSet("card_no",card_no)]
 class GetAccess(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -29,8 +44,9 @@ class GetAccess(FormAction):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         name = get_personal_info(user,password,"fname")
+        card_status=get_card_info(user,password,"status")
         dispatcher.utter_template("utter_access",tracker)
-        return [SlotSet("access", results),SlotSet("name",name),SlotSet("requested_slot",None)]
+        return [SlotSet("access", results),SlotSet("name",name),SlotSet("requested_slot",None),SlotSet("card_status",card_status)]
 class ActionGreeting(Action):
     def name(self):
         return 'action_greeting'
@@ -128,7 +144,10 @@ class ActivateCardService(FormAction):
                 intent=t1.latest_message.intent['name']
             if intent=="Banking_Activate_Card":
                 results=get_active_card(user,password,passcode)
-                if results==-22:
+                if results==-33:
+                    dispatcher.utter_message("Your do not have any account yet.")
+                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+                elif results==-22:
                     dispatcher.utter_message("Your card is already activated.")
                     return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
                 template="utter_activated_card"
@@ -189,7 +208,10 @@ class CancelCardService(FormAction):
                 intent=t1.latest_message.intent['name']
             if intent=="Banking_Cancel_Card":
                 results=get_deactive_card(user,password,passcode)
-                if results==-22:
+                if results==-33:
+                    dispatcher.utter_message("Your do not have any account yet.")
+                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+                elif results==-22:
                     dispatcher.utter_message("Your card is already deactivated.")
                     return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
                 template="utter_deactivated_card"

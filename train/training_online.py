@@ -16,7 +16,7 @@ def run_bank_online(input_channel, interpreter,domain_file="bank_domain.yml",tra
     model_path="models/dialogue/"
     fallback = FallbackPolicy(fallback_action_name="action_fallback", core_threshold=0.2, nlu_threshold=0.2)
     agent = Agent(domain_file,policies=[MemoizationPolicy(max_history=10), KerasPolicy(), fallback],interpreter=interpreter)
-    agent.train_online(training_data_file,input_channel=input_channel,batch_size=200,epochs=194)
+    agent.train_online(training_data_file,input_channel=input_channel,batch_size=200,epochs=194,max_training_samples=400)
     agent.persist(model_path)
     return agent
 if __name__ == '__main__':

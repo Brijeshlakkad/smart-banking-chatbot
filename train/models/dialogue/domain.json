@@ -8,6 +8,7 @@
     "intent_Banking_Passcode", 
     "intent_Banking_Password", 
     "intent_Banking_Replace_Card", 
+    "intent_Customer_Card_Number_Info", 
     "intent_General_Ending", 
     "intent_General_Greetings", 
     "intent_General_Human_or_Bot", 
@@ -72,6 +73,7 @@
     "prev_action_human_or_bot", 
     "prev_action_negative_feedback", 
     "prev_action_positive_feedback", 
-    "prev_action_security_assurance"
+    "prev_action_security_assurance", 
+    "prev_action_get_card_number"
   ]
 }
