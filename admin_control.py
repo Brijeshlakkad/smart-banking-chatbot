@@ -196,3 +196,28 @@ def delete_customer_card(field,value):
 		return -99
 	finally:
 		conn.close()
+def change_customer_details(field,value,user):
+	column_value=['password','contact','postal_add','passcode','username']
+	if field not in column_value:
+		return -11
+	conn,cursor=config.connect_to_database()
+	if field=="username":
+		sql="select email from customers where username='%s'"%value
+		try:
+			cursor.execute(sql)
+			if cursor.rowcount!=0:
+				row=cursor.fetchone()
+				if user!=row[0]:
+					return -11
+		except:
+			return -99
+	sql="update customers SET %s='%s' where email='%s'"%(field,value,user)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return 1
+	except:
+		conn.rollback()
+		return -99
+	finally:
+		conn.close()

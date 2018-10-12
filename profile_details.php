@@ -25,7 +25,7 @@ check_pages(); ?>
 						<td><label for="s_user">Username:</label><br></td>
 						<td><input type="text" class="form-control" name="s_user" placeholder="Enter Username" ng-model="s_user"  ng-style="userStyle" ng-change="analyze4(s_user)" onKeyUp="check_exists(this.value,'s_user')" onBlur="check_exists(this.value,'s_user')"  required user-dir></td>
 						<td>
-						<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty">
+						<span style="color:red" id="s_user" ng-show="myForm.s_user.$dirty"></span>
 						</td>
 						</tr>
 						</div>
