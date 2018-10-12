@@ -6,7 +6,7 @@
 	</div>
 	<div class="row">
 		<form ng-app="myapp" ng-controller="BrijController" name="myForm" method="post" novalidate>
-		<div class="row" style="padding-top: 20px;"><div class="col-md-offset-4 col-md-4 col-md-offset-4"><div id="l_status"></div></div></div>
+		<div class="row" style="padding-top: 20px;"><div class="col-md-offset-4 col-md-4 col-md-offset-4"><div ng-show="l_status_0" class="alert alert-danger">Email or password is wrong</div><div ng-show="l_status_1" class="alert alert-success">Login in..</div></div></div>
 		<table class="myTable">
 			<div class="form-group">
 			<tr>
@@ -33,7 +33,7 @@
 			<tr>
 				<td></td>
 				<td>
-					<span style="color:red" id="l_password" ng-show="myForm.l_password.$dirty && myForm.l_password.$invalid">
+					<span style="color:red;" id="l_password" ng-show="myForm.l_password.$dirty && myForm.l_password.$invalid">
 					<span ng-show="myForm.l_password.$error.required">Password is required.</span>
 					</span>
 				</td>
@@ -41,11 +41,11 @@
 			</tr>
 			</div>
 			<tr>
-			
-				<td><input type="submit" class="btn btn-primary" onclick="return login_status()" ng-disabled="myForm.l_email.$invalid || myForm.l_password.$invalid"></td>
+
+				<td><input type="submit" class="btn btn-primary" ng-click="login_status()" ng-disabled="myForm.l_email.$invalid || myForm.l_password.$invalid"></td>
 				<td></td>
 				<td></td>
-			
+
 			</tr>
 			<tr>
 				<td>
@@ -69,9 +69,15 @@
 	$("#show_pass").password('toggle');
 </script>
 <script>
+$("select[name='l_email']").focus();
 	var myApp = angular.module("myapp", []);
 	myApp.controller("BrijController", function($scope,$http) {
-        
+				$scope.addCustomClass = function (ele_id,c_name) {
+                angular.element(document.querySelector("#"+ele_id)).addClass(""+c_name);
+            };
+            $scope.removeCustomClass = function (ele_id,c_name) {
+                angular.element(document.querySelector("#"+ele_id)).removeClass(""+c_name);
+            };
 				$scope.emailStyle = {
 					"border-width":"1.45px"
                 };
@@ -79,48 +85,36 @@
 					var patt2=new RegExp("^[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$");
                     if(patt2.test(value)) {
 						$scope.emailStyle["border-color"] = "green";
-                    } 
+                    }
 					else {
                         $scope.emailStyle["border-color"] = "red";
                     }
                 };
+					$scope.login_status =function()
+									{
+										$http({
+													method : "POST",
+													url : "login_data.php",
+													data: "l_email="+$scope.l_email+"&l_password="+$scope.l_password,
+													headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+												}).then(function mySuccess(response) {
+													flag = response.data;
+													// we should be using flag in only this block so logic in following
+													if(flag.startsWith("11"))
+													{
+														$scope.l_status_0=false;
+														$scope.l_status_1=true;
+														document.location=flag.substr(2);
+													}
+													else
+													{
+														$scope.l_status_1=false;
+														$scope.l_status_0=true;
+													}
+												}, function myError(response) {
 
+												});
+									};
 });
-
-function login_status()
-	{
-		var email =	document.myForm.l_email.value;
-		var pass =	document.myForm.l_password.value;
-		var l_email=document.getElementById('l_email').innerHTML;
-		var l_pass=document.getElementById('l_password').innerHTML;
-		if(l_email!="Email is required." && l_email!="Invalid email address." && l_pass!="Password is required.")
-			{
-				var x=new XMLHttpRequest();
-				x.onreadystatechange=function()
-				{
-					if(x.readyState==4 && x.status==200)
-						{
-							var data=this.responseText;
-							if(data!=0)
-							{
-								$("#l_status").removeClass("alert alert-danger").addClass("alert alert-success").html("Logging in....");
-								document.location="profile.php";
-							}
-							else
-							{
-								$("#l_status").removeClass("alert alert-success").addClass("alert alert-danger").html("Email or password is wrong");
-							}
-						}
-				};
-				x.open("POST","login_data.php",true);
-				x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-				x.send("l_email="+email+"&l_password="+pass);
-			}
-		else
-		{
-			document.getElementById('l_status').innerHTML="<p style='color:red;'>please enter details properly</p>"
-		}
-		return;
-	}	
 </script>
 <?php include("footer.php"); ?>
