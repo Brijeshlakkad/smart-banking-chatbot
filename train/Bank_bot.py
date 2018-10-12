@@ -37,14 +37,14 @@ def train_nlu():
     training_data = load_data('data/training_data.json')
     trainer = Trainer(config.load("config.yml"))
     trainer.train(training_data)
-    model_directory = trainer.persist('models/nlu/',
-                                      fixed_model_name="bank_nlu")
+    model_directory = trainer.persist('models/nlu/', fixed_model_name="bank_nlu")
     return model_directory
 
 def run_nlu():
-    from rasa_nlu import config
-    from rasa_nlu.model import Interpreter
-    interpreter = Interpreter.load("models/nlu/default/bank_nlu",config.load('config.yml'))
+    from rasa_core.agent import Agent
+    from rasa_core.interpreter import RasaNLUInterpreter
+    from rasa_core.channels.console import ConsoleInputChannel
+    interpreter = RasaNLUInterpreter('models/nlu/default/bank_nlu')
     while True:
         inp=raw_input()
         if inp=="quit":
@@ -60,11 +60,10 @@ def run_bank_bot(serve_forever=True):
     if serve_forever:
 		agent.handle_channel(ConsoleInputChannel())
     return agent
-
 if __name__ == '__main__':
-    utils.configure_colored_logging(loglevel="INFO")
+    utils.configure_clored_logging(loglevel="INFO")
     parser = argparse.ArgumentParser(description='starts the bot')
-    parser.add_argument('task',choices=["train-nlu", "train-dialogue", "run"],help="what the bot should do - e.g. run or train?")
+    parser.add_argument('task',choices=["train-nlu", "train-dialogue", "run","interpret"],help="what the bot should do - e.g. run or train?")
     task = parser.parse_args().task
     if task == "train-nlu":
         train_nlu()
@@ -73,6 +72,7 @@ if __name__ == '__main__':
     elif task=="run":
         train_dialogue()
         run_bank_bot()
-    else:
-        warnings.warn("Need to pass either 'train-nlu', 'train-dialogue' or 'run' to use the script.")
+    elif task=="interpret":
+        run_nlu()
+        warnings.warn("Need to pass either 'train-nlu', 'train-dialogue', 'run' or 'Interpret message only' to use the script.")
         exit(1)
