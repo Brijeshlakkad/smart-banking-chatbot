@@ -26,6 +26,20 @@ class ActionGetAccountNumber(Action):
         acc_no=get_account_info(user,password,"acc_no")
         dispatcher.utter_template("utter_get_account_number_reply",tracker,name=name,acc_no=acc_no)
         return []
+class ActionGetSecureInfo(Action):
+    def name(self):
+        return 'action_get_secure_info'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_get_secure_info_reply",tracker,name=name)
+        return []
 class ActionGetCardNumber(Action):
     def name(self):
         return 'action_get_card_number'

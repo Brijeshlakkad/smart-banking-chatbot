@@ -63,6 +63,7 @@ intents:
   - Banking_Change_Address
   - Customer_Get_Address
   - Banking_Get_Account_Number
+  - Banking_Get_Secure_Info
 entities:
   - using_what
   - name
@@ -171,6 +172,8 @@ templates:
     - "Your account number is {acc_no}"
     - "it's {acc_no}"
     - "Got it {name}! it's {acc_no}"
+  utter_get_secure_info_reply:
+    - "Sorry, {name} i can not provide you with credential information because of your security reasons.\n You can always see this info in your Personal Settings"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -202,3 +205,5 @@ actions:
     - actions.ActionGetAddress
     - actions.ActionChangeAddress
     - actions.ActionGetAccountNumber
+    - actions.ActionGetSecureInfo
+    
