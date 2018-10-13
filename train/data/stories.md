@@ -964,21 +964,13 @@
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
     - action_activate_card
-    - slot{"passcode": "683249"}
+    - slot{"passcode": "683248"}
     - slot{"requested_slot": "card_permission"}
 * affirm
     - action_activate_card
     - slot{"card_permission": true}
     - slot{"passcode": null}
     - slot{"requested_slot": "passcode"}
-* General_Greetings
-    - action_greeting
-* General_Human_or_Bot
-    - action_human_or_bot
-* General_Security_Assurance
-    - action_security_assurance
-* General_Ending
-    - action_ending
 * Banking_Passcode
     - action_activate_card
     - slot{"passcode": "683244"}
@@ -3271,7 +3263,7 @@
     - action_positive_feedback
 * General_Greetings
     - action_greeting
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Ending
     - action_ending
@@ -3789,7 +3781,7 @@
     - slot{"requested_slot": null}
 * General_Security_Assurance
     - action_security_assurance
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Security_Assurance
     - action_security_assurance
@@ -4564,7 +4556,7 @@
     - action_human_or_bot
 * General_Positive_Feedback
     - action_positive_feedback
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Positive_Feedback
     - action_positive_feedback
@@ -4830,7 +4822,7 @@
     - action_fallback
 * Banking_Password
     - action_fallback
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * affirm
     - action_fallback
@@ -5088,7 +5080,7 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Replace_Card
     - action_card_replace
@@ -5476,11 +5468,11 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Cancel_Card
     - action_cancel_card
@@ -5945,7 +5937,7 @@
     - action_human_or_bot
 * None
     - action_fallback
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Positive_Feedback
     - action_positive_feedback
@@ -6061,7 +6053,7 @@
     - action_fallback
 * Banking_Password
     - action_fallback
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * affirm
     - action_fallback
@@ -6186,7 +6178,7 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Greetings
     - action_greeting
@@ -6196,7 +6188,7 @@
     - action_greeting
 * General_Greetings
     - action_greeting
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Greetings
     - action_greeting
@@ -6273,7 +6265,7 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Cancel_Card
     - action_cancel_card
@@ -6354,7 +6346,7 @@
     - action_security_assurance
 * General_Greetings
     - action_greeting
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Human_or_Bot
     - action_human_or_bot
@@ -6453,7 +6445,7 @@
     - slot{"card_replace_with": null}
 * General_Ending
     - action_ending
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * None
     - action_fallback
@@ -6497,7 +6489,7 @@
     - action_security_assurance
 * General_Greetings
     - action_greeting
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * General_Greetings
     - action_greeting
@@ -6522,7 +6514,7 @@
     - slot{"access": 1}
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
     - export
 ## Generated Story 1103120832134722744
@@ -6542,13 +6534,13 @@
     - slot{"card_status": 1}
 * Banking_Card_Number
     - action_fallback
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
     - export
 ## Generated Story 3216728030664051191
@@ -6567,21 +6559,21 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
     - slot{"card_status": 1}
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
     - export
 ## Generated Story 3118227895396548757
@@ -6625,11 +6617,11 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
     - export
 ## Generated Story 5383217485651238721
@@ -6673,9 +6665,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_card_number
     - export
 
@@ -6702,9 +6694,9 @@
     - action_get_account_number
 * Banking_Get_Account_Number
     - action_get_account_number
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Change_Address
     - action_get_permission
@@ -6733,9 +6725,9 @@
     - slot{"service_access": 0}
 * Banking_Get_Account_Number
     - action_get_account_number
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
     - export
 ## Generated Story 8474381663895004999
@@ -6754,9 +6746,9 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
     - slot{"card_status": 1}
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Replace_Card
     - action_card_replace
@@ -6927,25 +6919,25 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
 * Banking_Get_Account_Number
     - action_get_account_number
 * Banking_Get_Account_Number
     - action_get_account_number
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
-* Customer_Get_Address
+* Banking_Get_Address
     - action_get_address
 * Banking_Activate_Card
     - action_activate_card
@@ -7057,7 +7049,7 @@
     - slot{"card_permission": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Customer_Card_Number_Info
+* Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Get_Account_Number
     - action_get_card_number
@@ -7081,15 +7073,17 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
     - slot{"card_status": 1}
-* Banking_Get_Secure_Info
+* Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
-* Banking_Get_Secure_Info
+* Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
-* Banking_Get_Secure_Info
+* Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
-* Banking_Get_Secure_Info
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
-* Banking_Get_Secure_Info
+* Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
 * Banking_Change_Address
     - action_get_permission
@@ -7165,6 +7159,750 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Banking_Get_Secure_Info
+* Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
+    - export
+## Generated Story -2012772651329155725
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+* Banking_Get_Email
+    - action_get_email
+    - export
+## Generated Story -653554185918743824
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Change_Address
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_get_permission
+    - slot{"card_perm": true}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address1": "line 3"}
+    - slot{"requested_slot": "address2"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address2": "line 4"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+    - export
+## Generated Story -653554185918743801
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Secure_Info{"to_get": "pincode"}
+    - action_get_secure_info
+* Banking_Get_Email
+    - action_get_email
+* Banking_Change_Address
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_get_permission
+    - slot{"card_perm": true}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address1": "line 3"}
+    - slot{"requested_slot": "address2"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address2": "line 4"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+    - export
+## Generated Story -653554185918743802
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Email
+    - action_get_email
+* Banking_Change_Address
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_get_permission
+    - slot{"card_perm": true}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address1": "line 3"}
+    - slot{"requested_slot": "address2"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address2": "line 4"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+    - export
+## Generated Story -653554185918743802
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Change_Address
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_get_permission
+    - slot{"card_perm": true}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address1": "line 3"}
+    - slot{"requested_slot": "address2"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address2": "line 4"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Secure_Info{"to_get": "pincode"}
+    - action_get_secure_info
+* Banking_Get_Secure_Info{"to_get": "till year"}
+    - action_get_secure_info
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+    - export
+## Generated Story 269667539882731793
+* Banking_Password
+    - action_fallback
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Address
+    - action_get_address
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Secure_Info{"to_get": "pincode"}
+    - action_get_secure_info
+* Banking_Get_Secure_Info{"to_get": "till year"}
+    - action_get_secure_info
+    - export
+## Generated Story 724319925843976076
+* General_Greetings
+    - action_greeting
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - reset_slots
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"requested_slot": null}
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "8243641221541506"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* Banking_Activate_Card
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Secure_Info{"to_get": "pincode"}
+    - action_get_secure_info
+* Banking_Activate_Card
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* General_Ending
+    - action_ending
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Cancel_Card
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* General_Greetings
+    - action_greeting
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"card_replace_with": "2226559871508183"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* Banking_Cancel_Card
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Change_Address
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_get_permission
+    - slot{"card_perm": true}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address1": "line 3"}
+    - slot{"requested_slot": "address2"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address2": "line 4"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+    - export
+## Generated Story 704616726743976076
+* General_Greetings
+    - action_greeting
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - reset_slots
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"requested_slot": null}
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "8243641221541506"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Activate_Card
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Secure_Info{"to_get": "pincode"}
+    - action_get_secure_info
+* Banking_Activate_Card
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* General_Ending
+    - action_ending
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Positive_Feedback
+    - action_positive_feedback
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Cancel_Card
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* General_Greetings
+    - action_greeting
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Replace_Card
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"card_replace_with": "2226559871508183"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* Banking_Cancel_Card
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* General_Security_Assurance
+    - action_security_assurance
+* General_Security_Assurance
+    - action_security_assurance
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Greetings
+    - action_greeting
+* Banking_Email
+    - action_fallback
+* Banking_Change_Address
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_get_permission
+    - slot{"card_perm": true}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address1": "line 3"}
+    - slot{"requested_slot": "address2"}
+* Banking_Get_Account_Number
+    - action_change_address
+    - slot{"address2": "line 4"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Passcode
+    - action_fallback
+* Banking_Password
+    - action_fallback
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Cancel_Card
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "68683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* affirm
+    - action_fallback
+* deny
+    - action_fallback
+    - export
+## Generated Story -8495635612802232263
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Card_Number
+    - action_get_card_number
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+    - export
+## Generated Story 3864276728715726568
+* General_Greetings
+    - action_greeting
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+    - export
+## Generated Story -7076425160612054182
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Password
+    - action_get_access
+    - slot{"email": "1"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - reset_slots
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Card_Number
+    - action_get_card_number
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Address
+    - action_get_address
+* Banking_Get_Card_Number
+    - action_get_card_number
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Activate_Card
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Number
+    - action_get_card_number
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Address
+    - action_get_address
+* Banking_Get_Account_Number
+    - action_get_account_number
     - export

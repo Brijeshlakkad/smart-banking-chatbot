@@ -11,6 +11,61 @@ from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
 import random
+class ActionGetAccStatus(Action):
+    def name(self):
+        return 'action_get_acc_status'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        hasAcc=get_personal_info(user,password,"hasAcc")
+        template="utter_get_acc_status_reply_"
+        if hasAcc!=0:
+            status=get_account_info(user,password,"status")
+            status=int(status)
+            if status in [0,1]:
+                template+="%s"%status
+            else:
+                template="utter_error_caught_reply"
+        else:
+            template+="2"
+        dispatcher.utter_template(template,tracker,name=name)
+        return []
+class ActionGetEmail(Action):
+    def name(self):
+        return 'action_get_email'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        email=get_personal_info(user,password,"email")
+        dispatcher.utter_template("utter_get_email_reply",tracker,name=name,email=email)
+        return []
+class ActionGetUsername(Action):
+    def name(self):
+        return 'action_get_username'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        username=get_personal_info(user,password,"username")
+        dispatcher.utter_template("utter_get_username_reply",tracker,name=name,username=username)
+        return []
 class ActionGetAccountNumber(Action):
     def name(self):
         return 'action_get_account_number'
@@ -38,7 +93,12 @@ class ActionGetSecureInfo(Action):
         if int(results)!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
-        dispatcher.utter_template("utter_get_secure_info_reply",tracker,name=name)
+        entities=tracker.latest_message.entities
+        template="utter_get_secure_info_reply"
+        ent=""
+        if len(entities)>0:
+            ent=entities[0]["entity"]
+        dispatcher.utter_template(template,tracker,name=name,ent=ent)
         return []
 class ActionGetCardNumber(Action):
     def name(self):
@@ -115,18 +175,18 @@ class ActionChangeAddress(FormAction):
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
         service_access=tracker.get_slot("service_access")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
         if service_access!=1:
-            dispatcher.utter_message("Please try again after few minutes, we are facing problem!")
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [ActionReverted(),SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         address1=tracker.get_slot("address1")
         address2=tracker.get_slot("address2")
         address="%s, %s"%(address1,address2)
         result=change_customer_details("postal_add",address,user)
         if result!=1:
-            dispatcher.utter_message("Please try again after few minutes, we are facing problem!")
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [ActionReverted(),AllSlotsReset()]
-        name=tracker.get_slot("name")
-        name=get_user_name(name)
         dispatcher.utter_template("utter_change_address_reply",tracker,name=name)
         return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class GetAccess(FormAction):

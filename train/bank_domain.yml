@@ -59,11 +59,14 @@ intents:
   - General_Positive_Feedback
   - General_Security_Assurance
   - Banking_Card_Number
-  - Customer_Card_Number_Info
+  - Banking_Get_Card_Number
   - Banking_Change_Address
-  - Customer_Get_Address
+  - Banking_Get_Address
   - Banking_Get_Account_Number
   - Banking_Get_Secure_Info
+  - Banking_Get_Email
+  - Banking_Get_Username
+  - Banking_Get_Acc_Status
 entities:
   - using_what
   - name
@@ -173,7 +176,25 @@ templates:
     - "it's {acc_no}"
     - "Got it {name}! it's {acc_no}"
   utter_get_secure_info_reply:
-    - "Sorry, {name} i can not provide you with credential information because of your security reasons.\n You can always see this info in your Personal Settings"
+    - "Sorry, {name} i can not provide you with {ent} credential information because of your security reasons.\n You can always see this info in your Personal Settings"
+  utter_get_email_reply:
+    - "{name} Your email is: {email}"
+    - "Your email is {email}"
+    - "it's {email}"
+    - "Got it {name}! it's {email}"
+  utter_get_username_reply:
+    - "{name} Your username is: {username}"
+    - "Your username is {username}"
+    - "it's {username}"
+    - "Got it {name}! it's {username}"
+  utter_error_caught_reply:
+    - "{name} We're sorry; Please try again after few minutes, we are facing problem! :("
+  utter_get_acc_status_reply_0:
+    - "{name} your account is deactivate now"
+  utter_get_acc_status_reply_1:
+    - "{name} your account is activate currently"
+  utter_get_acc_status_reply_2:
+    - "{name} your account is not yet created"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -206,4 +227,6 @@ actions:
     - actions.ActionChangeAddress
     - actions.ActionGetAccountNumber
     - actions.ActionGetSecureInfo
-    
+    - actions.ActionGetEmail
+    - actions.ActionGetUsername
+    - actions.ActionGetAccStatus

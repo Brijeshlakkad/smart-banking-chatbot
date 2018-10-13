@@ -76,7 +76,7 @@ class customer_by_id:
 		conn.close()
 
 class customer_account:
-	global acc_id,c_id,acc_no,acc_type,acc_name,balance,passcode
+	global acc_id,c_id,acc_no,acc_type,acc_name,balance,passcode,status
 	def account_details(self,c_id):
 		sql="select * from accounts where c_id='%s'"%c_id
 		conn,cursor=config.connect_to_database()
@@ -92,11 +92,12 @@ class customer_account:
 				self.created_time=row[5]
 				self.passcode=row[6]
 				self.acc_no=row[7]
+				self.status=row[8]
 		except:
 			print("Error")
 		conn.close()
 class customer_account_by_acc_id:
-	global acc_id,c_id,acc_no,acc_type,acc_name,balance,passcode
+	global acc_id,c_id,acc_no,acc_type,acc_name,balance,passcode,status
 	def account_details(self,acc_id):
 		sql="select * from accounts where acc_id='%s'"%acc_id
 		conn,cursor=config.connect_to_database()
@@ -112,6 +113,7 @@ class customer_account_by_acc_id:
 				self.created_time=row[5]
 				self.passcode=row[6]
 				self.acc_no=row[7]
+				self.status=row[8]
 		except:
 			print("Error")
 		conn.close()
@@ -279,6 +281,8 @@ def get_account_details_by_id(userid,f):
 		return acc.passcode
 	elif f=="created_time":
 		return acc.created_time
+	elif f=="status":
+		return acc.status
 	else:
 		return 0
 
@@ -302,6 +306,8 @@ def get_account_details_by_user(user,f):
 		return acc.passcode
 	elif f=="created_time":
 		return acc.created_time
+	elif f=="status":
+		return acc.status
 	else:
 		return 0
 def get_account_by_acc_id(acc_id,f):
@@ -323,6 +329,8 @@ def get_account_by_acc_id(acc_id,f):
 		return acc.passcode
 	elif f=="created_time":
 		return acc.created_time
+	elif f=="status":
+		return acc.status
 	else:
 		return get_any_value_by_id(acc.c_id,f)
 
