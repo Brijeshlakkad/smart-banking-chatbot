@@ -7906,3 +7906,33 @@
 * Banking_Get_Account_Number
     - action_get_account_number
     - export
+## Generated Story 1275230421311302295
+* General_Greetings
+    - action_greeting
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad2@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Card_Number
+    - action_get_card_number
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* General_Positive_Feedback
+    - action_positive_feedback
+    - export

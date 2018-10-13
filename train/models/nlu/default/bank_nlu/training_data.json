@@ -36087,1603 +36087,1603 @@
       }, 
       {
         "text": "can you please provide card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to overcome me master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to search me my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to overcome debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to give my my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please prepare me debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to get me my master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to search me my my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you catch credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to catch my master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to prepare my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to show my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to prepare my my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to search me my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please catch my bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to give me my my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please search me master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to get my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to provide debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to search master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to give my bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please give my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to provide my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to give me my my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to catch me my visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to prepare my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you give me visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to show me my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to display debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "come with me master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to obtain me my card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to provide me my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to catch me my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "give master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to catch my my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to come with my my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to find me my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you give me my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to display my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to prepare my my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "prepare me atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to catch card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to search me my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please get me visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to search me master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to obtain my my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to overcome me debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please prepare me bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to search my my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to find my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please catch visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to obtain my my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to obtain my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to come with me my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to prepare my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to obtain me master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "find my master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to give my my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to get me my my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you overcome my visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to catch atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to provide me my credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to obtain atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to overcome me my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "prepare me my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to provide my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please search me credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with me credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to find me atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to catch my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "come with master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to find me my my bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to provide my visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to overcome my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to come with me my master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to obtain master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you obtain debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to get my my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please overcome me my visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to give me my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to obtain me my my card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to give me bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to obtain my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please obtain me my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to show me my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to provide me my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you prepare bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to find me my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to overcome me my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to obtain me my visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please show my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to find me my my visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to obtain me atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to prepare me my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to catch my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please give debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to prepare visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to overcome me my card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "overcome me atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to provide bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to provide my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to overcome me my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please give master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to give me my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to catch my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to show my my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to display atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please prepare me my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to find visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to overcome my visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please find me my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to obtain me cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to search my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "get me my credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to come with cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to obtain card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to get my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please search my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to prepare my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to prepare my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please display my atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to get my my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to search atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to give me my my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you search master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to prepare card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to give me my credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to overcome my master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to give my master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to show credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "come with me my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to prepare me my my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to come with me my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please come with my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to find my visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to catch me my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to overcome my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please get me my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to catch me visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to show my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please provide me my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to search me my master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to prepare my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to provide me my my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to come with credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please overcome me debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to search my master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to overcome my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to provide me my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please find me debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to prepare me debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to get my my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to search credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "search me atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to find debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to get my my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to overcome my my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "obtain visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to overcome my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to give my my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to obtain my my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please obtain visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to provide debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with my master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you search my credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to display my my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to find me credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to search me my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to give master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to come with me my my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please search my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to come with my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please find my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to provide master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to come with master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to come with my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please prepare my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to find me my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to provide me visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to provide my credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please get bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to show me my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to provide my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to prepare me my bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to search me my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you overcome credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to obtain me my atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to obtain my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to prepare my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "prepare me my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to provide my card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to search me my my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to get credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "provide me card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to show me my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to show me visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to search my cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please overcome my bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to show master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to search master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you find master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to find my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to come with me my master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "show master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to give my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to come with me my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you catch me master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to get me my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to find master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to search me my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to provide my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to catch bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "overcome my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to prepare me my my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to display my my master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "get me my visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to search me my master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to catch me my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to display my credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please display me credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to find me visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to overcome my my visa card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to give my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "give my credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to get bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to catch atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to get me my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to come with me credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you get bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to get my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to catch my my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please provide my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to overcome atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to catch my my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please obtain me my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to come with me credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to obtain me atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to obtain my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please provide me my master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to get me master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to come with my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you get card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to prepare me credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to find me my visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to search me my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to provide me bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to display me my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you come with my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to provide me my my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please catch me my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to overcome me bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with my my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to search my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please find bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to show me my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to obtain me my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to display credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to find cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to obtain my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you provide master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to search my my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you provide my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to show my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to search debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to give atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please give bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to prepare me my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to prepare me my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to show me my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "get me my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to catch my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to overcome me debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to give my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to search me master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you search my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to obtain me my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with me card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you give my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to obtain visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to give me my my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to obtain me my credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to give me my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please show me visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to overcome bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to prepare me my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please obtain me my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to provide my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to overcome me my bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please search me atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with me visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to come with me my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to find me my master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to provide me bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to display me my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "get my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to overcome me bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you show me my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to give me my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to obtain my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with my my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to show me my my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to prepare my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please come with bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to obtain my my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please display atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to get my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to provide me credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to provide me my atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to search me my visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to come with master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you overcome me my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to overcome my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to find me my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please get me master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to give atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to display me my atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "prepare debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to prepare my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to give me my atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to search my my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to provide me my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please provide me my visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to overcome me my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to find me my card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please overcome me master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to come with me my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to display my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to search bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "come with my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to come with my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to come with me debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please display me credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to come with me bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to provide me my card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to give me atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you get my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to catch me atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to obtain my my atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to come with credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please provide master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to obtain visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to prepare my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to come with visa card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to obtain me debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "find me credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to search my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to catch me master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to catch my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "get my master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to get me my master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to get me my master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you search me my bank cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to catch me my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "prepare me my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to show bank card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to show me my my credit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to give me my my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to overcome me credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please prepare credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to give my atm card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to prepare me my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to give atm card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "help me to search me card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please display my bank card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to provide master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you please obtain my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to give me my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to display me my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to provide my my debit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you catch my debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please help me to find my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to come with me my atm cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to prepare my my visa card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to obtain me my atm card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you prepare my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to give me credit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you get debit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to catch master card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to show me my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to display my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you catch my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist me to catch me my my card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to give my visa cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please assist to find my my credit card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to come with my debit card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to show my bank card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you obtain my master card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist to show my debit card no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please provide me master card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to provide my my credit cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "can you help me to give me master cardno", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "assist me to show card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "show me card number", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "please can you help me to show me my card_no", 
-        "intent": "Customer_Card_Number_Info"
+        "intent": "Banking_Get_Card_Number"
       }, 
       {
         "text": "7324133164990733", 
