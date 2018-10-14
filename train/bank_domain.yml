@@ -41,6 +41,12 @@ slots:
     type: text
   address2:
     type: text
+  new_username:
+    type: text
+  last_otp:
+    type: text
+  got_otp:
+    type: text
 intents:
   - None
   - affirm
@@ -67,6 +73,8 @@ intents:
   - Banking_Get_Email
   - Banking_Get_Username
   - Banking_Get_Acc_Status
+  - Banking_Change_Credential_Info
+  - Banking_Change_Username
 entities:
   - using_what
   - name
@@ -168,15 +176,13 @@ templates:
     - "Please enter your new postal address line 1: "
   utter_ask_address2:
     - "Please enter your new postal address line 2: "
-  utter_change_address_reply:
-    - "{name} your address has been changed.\nYou can ask me or see for verification of your postal address details on Personal Settings panel."
   utter_get_account_number_reply:
     - "{name} Your account number is: {acc_no}"
     - "Your account number is {acc_no}"
     - "it's {acc_no}"
     - "Got it {name}! it's {acc_no}"
   utter_get_secure_info_reply:
-    - "Sorry, {name} i can not provide you with {ent} credential information because of your security reasons.\n You can always see this info in your Personal Settings"
+    - "Sorry, {name} i can not provide you with {ent} credential information because of your security reasons.\nYou can always see this info in your Personal Settings"
   utter_get_email_reply:
     - "{name} Your email is: {email}"
     - "Your email is {email}"
@@ -195,6 +201,14 @@ templates:
     - "{name} your account is activate currently"
   utter_get_acc_status_reply_2:
     - "{name} your account is not yet created"
+  utter_change_credential_info_reply:
+    - "{name} you can not change this {ent} credential information through chatbot."
+  utter_ask_username:
+    - "Please enter your new username: "
+  utter_change_entity_reply:
+    - "{name} your {ent} has been changed.\nYou can ask me or see for verification of your {ent} details on Personal Settings panel."
+  utter_ask_got_otp:
+    - "We have sent OTP to your registered mail id. Please enter OTP HERE:"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -230,3 +244,4 @@ actions:
     - actions.ActionGetEmail
     - actions.ActionGetUsername
     - actions.ActionGetAccStatus
+    - actions.ActionChangeCredentialInfo

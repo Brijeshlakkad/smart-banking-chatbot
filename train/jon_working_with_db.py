@@ -6,6 +6,8 @@ from config import *
 from security import *
 from customer_details import *
 from admin_control import *
+from send_mail import Mail
+from string import punctuation
 def check_indentity(user,password):
     user=protect_data(user)
     password=protect_data(password)
@@ -115,3 +117,33 @@ def get_user_name(name):
     else:
         name=random.choice(['Human','',"Boss","Sir"])
     return name
+def get_pure_ent(ent):
+    l1=list(punctuation)
+    for i in range(len(l1)):
+        ent=ent.replace(l1[i]," ")
+    return ent
+def get_final_entity(ent):
+    "still remained"
+    acc_num=["acc number","account number","acc number","account no","acc no","acc_no",'no of account','number of acc','no of acc','number of account']
+    card_num=["card number","card no","card num"]
+    till_month=["till_month","till month","expiry month"]
+    till_year=["till_year","till year","expiry year"]
+    cvv=['csv','cv','cvv']
+    card_type=['card type','card_type','type of card','type of my card']
+    holder_name=['holder name','final name','name','account name','acc name','acc_name','accountname','holder_name','holder','name of holder']
+    gender=['gender','sexuality','sex']
+    ent=get_pure_ent(ent)
+    if ent in acc_num:
+        return "acc_no"
+    elif ent in card_num:
+        return "card_no"
+    elif ent in till_month:
+        return "till_month"
+    elif ent in till_year:
+        return "till_year"
+def send_otp_to_customer(user,password):
+    f=check_indentity(user,password)
+    if f!=1:
+        return -99
+    m=Mail()
+    return m.send_otp_mail(user)

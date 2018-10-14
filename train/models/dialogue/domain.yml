@@ -29,6 +29,12 @@ action_names:
 - action_get_card_number
 - action_get_address
 - action_change_address
+- action_get_account_number
+- action_get_secure_info
+- action_get_email
+- action_get_username
+- action_get_acc_status
+- action_change_credential_info
 actions:
 - actions.GetAccess
 - actions.ActivateCardService
@@ -59,6 +65,12 @@ actions:
 - actions.ActionGetCardNumber
 - actions.ActionGetAddress
 - actions.ActionChangeAddress
+- actions.ActionGetAccountNumber
+- actions.ActionGetSecureInfo
+- actions.ActionGetEmail
+- actions.ActionGetUsername
+- actions.ActionGetAccStatus
+- actions.ActionChangeCredentialInfo
 config:
   store_entities_as_slots: true
 entities:
@@ -80,41 +92,55 @@ intents:
     use_entities: true
 - Banking_Cancel_Card:
     use_entities: true
+- Banking_Password:
+    use_entities: true
+- General_Ending:
+    use_entities: true
+- Banking_Get_Acc_Status:
+    use_entities: true
+- General_Security_Assurance:
+    use_entities: true
+- Banking_Get_Account_Number:
+    use_entities: true
+- General_Greetings:
+    use_entities: true
+- Banking_Get_Username:
+    use_entities: true
+- Banking_Change_Address:
+    use_entities: true
+- General_Positive_Feedback:
+    use_entities: true
+- General_Human_or_Bot:
+    use_entities: true
+- Banking_Activate_Card:
+    use_entities: true
+- Banking_Get_Address:
+    use_entities: true
+- deny:
+    use_entities: true
+- Banking_Change_Username:
+    use_entities: true
+- Banking_Change_Credential_Info:
+    use_entities: true
 - General_Negative_Feedback:
     use_entities: true
 - affirm:
     use_entities: true
 - Banking_Fee_Inquiry:
     use_entities: true
-- Customer_Get_Address:
-    use_entities: true
-- Banking_Password:
-    use_entities: true
-- General_Ending:
-    use_entities: true
-- deny:
-    use_entities: true
-- Banking_Card_Number:
+- Banking_Get_Secure_Info:
     use_entities: true
 - Banking_Passcode:
     use_entities: true
-- General_Security_Assurance:
+- Banking_Card_Number:
     use_entities: true
-- General_Greetings:
+- Banking_Get_Card_Number:
+    use_entities: true
+- Banking_Get_Email:
     use_entities: true
 - Banking_Replace_Card:
     use_entities: true
-- Banking_Change_Address:
-    use_entities: true
-- Customer_Card_Number_Info:
-    use_entities: true
-- General_Human_or_Bot:
-    use_entities: true
 - Banking_Email:
-    use_entities: true
-- Banking_Activate_Card:
-    use_entities: true
-- General_Positive_Feedback:
     use_entities: true
 slots:
   access:
@@ -124,7 +150,10 @@ slots:
     - none
     - '0'
     - '1'
-  address:
+  address1:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  address2:
     initial_value: null
     type: rasa_core.slots.TextSlot
   card_perm:
@@ -183,8 +212,10 @@ templates:
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
-  utter_ask_address:
-  - text: 'Please enter your new postal address: '
+  utter_ask_address1:
+  - text: 'Please enter your new postal address line 1: '
+  utter_ask_address2:
+  - text: 'Please enter your new postal address line 2: '
   utter_ask_card_perm:
   - text: Are you sure?
   - text: Enter 'Yes' if you want to continue
@@ -209,6 +240,13 @@ templates:
   - text: 'Please enter your passcode: '
   utter_ask_password:
   - text: 'Please Enter Password:'
+  utter_change_address_reply:
+  - text: '{name} your address has been changed.
+
+      You can ask me or see for verification of your postal address details on Personal
+      Settings panel.'
+  utter_change_credential_info_reply:
+  - text: '{name} you can not change this {ent} credential information through chatbot.'
   utter_deactivated_card:
   - text: You got it! Boss. Your card is deactivated.
   - text: Okay! Boss. Card is deactivated.
@@ -218,6 +256,9 @@ templates:
   - text: See yaaa {name} :)
   - text: Okiey Dokiey!
   - text: Ba Bye!
+  utter_error_caught_reply:
+  - text: '{name} We''re sorry; Please try again after few minutes, we are facing
+      problem! :('
   utter_fallback:
   - text: Sorry, I did not get you {name}! :-(
   - text: Can you please elaborate your query {name}!
@@ -226,6 +267,17 @@ templates:
   - text: Cost is {fees} $ per year
   utter_first_access:
   - text: Please first login to our service to use it.
+  utter_get_acc_status_reply_0:
+  - text: '{name} your account is deactivate now'
+  utter_get_acc_status_reply_1:
+  - text: '{name} your account is activate currently'
+  utter_get_acc_status_reply_2:
+  - text: '{name} your account is not yet created'
+  utter_get_account_number_reply:
+  - text: '{name} Your account number is: {acc_no}'
+  - text: Your account number is {acc_no}
+  - text: it's {acc_no}
+  - text: Got it {name}! it's {acc_no}
   utter_get_addreess_reply:
   - text: '{name} Your postal address is: {postal_add}'
   - text: Your postal address is {postal_add}
@@ -236,6 +288,20 @@ templates:
   - text: Your card number is {card_no}
   - text: it's {card_no}
   - text: Got it {name}! it's {card_no}
+  utter_get_email_reply:
+  - text: '{name} Your email is: {email}'
+  - text: Your email is {email}
+  - text: it's {email}
+  - text: Got it {name}! it's {email}
+  utter_get_secure_info_reply:
+  - text: "Sorry, {name} i can not provide you with {ent} credential information because\
+      \ of your security reasons.\n You can always see this info in your Personal\
+      \ Settings"
+  utter_get_username_reply:
+  - text: '{name} Your username is: {username}'
+  - text: Your username is {username}
+  - text: it's {username}
+  - text: Got it {name}! it's {username}
   utter_give_pos_ans:
   - text: Yes, You can do it {using}!
   - text: Ofcourse, You can always do it {using}.

@@ -1,5 +1,14 @@
 {
   "action_fingerprints": {
+    "action_get_permission": {
+      "slots": [
+        "passcode", 
+        "card_permission", 
+        "service_access", 
+        "requested_slot", 
+        "card_perm"
+      ]
+    }, 
     "action_listen": {
       "slots": [
         "requested_slot", 
@@ -7,13 +16,12 @@
       ]
     }, 
     "action_get_card_number": {
-      "slots": [
-        "card_no"
-      ]
+      "slots": []
     }, 
     "action_card_replace": {
       "slots": [
         "passcode", 
+        "card_permission", 
         "requested_slot", 
         "card_perm", 
         "card_replace_with"
@@ -49,16 +57,41 @@
     "action_fallback": {
       "slots": []
     }, 
+    "action_change_address": {
+      "slots": [
+        "service_access", 
+        "requested_slot", 
+        "card_perm", 
+        "address1", 
+        "address2", 
+        "passcode"
+      ]
+    }, 
+    "action_get_secure_info": {
+      "slots": []
+    }, 
     "action_fee_inquiry": {
       "slots": []
     }, 
     "action_security_assurance": {
       "slots": []
     }, 
+    "action_positive_feedback": {
+      "slots": []
+    }, 
     "action_human_or_bot": {
       "slots": []
     }, 
+    "action_get_account_number": {
+      "slots": []
+    }, 
     "action_ending": {
+      "slots": []
+    }, 
+    "action_get_acc_status": {
+      "slots": []
+    }, 
+    "action_get_email": {
       "slots": []
     }, 
     "action_negative_feedback": {
