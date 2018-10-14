@@ -47,6 +47,14 @@ slots:
     type: text
   got_otp:
     type: text
+  username:
+    type: text
+  new_passcode:
+    type: text
+  new_passcode:
+    type: text
+  contact:
+    type: text
 intents:
   - None
   - affirm
@@ -75,6 +83,9 @@ intents:
   - Banking_Get_Acc_Status
   - Banking_Change_Credential_Info
   - Banking_Change_Username
+  - Banking_Change_Passcode
+  - Banking_Change_Password
+  - Banking_Change_Contact
 entities:
   - using_what
   - name
@@ -208,7 +219,13 @@ templates:
   utter_change_entity_reply:
     - "{name} your {ent} has been changed.\nYou can ask me or see for verification of your {ent} details on Personal Settings panel."
   utter_ask_got_otp:
-    - "We have sent OTP to your registered mail id. Please enter OTP HERE:"
+    - "We have sent OTP to your registered mail id. Please enter\n1. To resend the otp\n2. To cancel this request\nor Enter OTP HERE:"
+  utter_ask_new_passcode:
+    - "Please enter your new passcode: "
+  utter_ask_new_password:
+    - "Please enter your new password: "
+  utter_ask_new_contact:
+    - "Please enter your new contact: "
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -245,3 +262,9 @@ actions:
     - actions.ActionGetUsername
     - actions.ActionGetAccStatus
     - actions.ActionChangeCredentialInfo
+    - actions.ActionSendOTP
+    - actions.ActionGetOTPPermission
+    - actions.ActionChangeUsername
+    - actions.ActionChangePasscode
+    - actions.ActionChangePassword
+    - actions.ActionChangeContact

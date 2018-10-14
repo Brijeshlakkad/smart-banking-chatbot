@@ -209,7 +209,14 @@ def change_customer_details(field,value,user):
 					return -11
 		except:
 			return -99
-	sql="update customers SET %s='%s' where email='%s'"%(field,value,user)
+	if field=="passcode":
+		cid=customer_details.get_any_value(user,"cid")
+		table_name="accounts"
+		condition="c_id='%s'"%cid
+	else:
+		table_name="customers"
+		condition="email='%s'"%user
+	sql="update %s SET %s='%s' where %s"%(table_name,field,value,condition)
 	try:
 		cursor.execute(sql)
 		conn.commit()

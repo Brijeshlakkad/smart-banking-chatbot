@@ -100412,6 +100412,3206 @@
         ], 
         "intent": "Banking_Change_Credential_Info", 
         "text": "please adjust expiry year"
+      }, 
+      {
+        "text": "can you adjust pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to modify pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to surrogate me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass-code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get my pass_code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me pass_code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to correct passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modify my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to refinement my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get pass code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you modify my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my pass-code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to adjust my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass_code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to modify me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please adjust pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass-code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to correct pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me my pass_code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modulation me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass-code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modulation passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you surrogate pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to get my pass code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to turn to pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me my pass_code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to turn to pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you turn to passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get pass code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to surrogate my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to adjust my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me my passcode turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to transit my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get my pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to surrogate my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me pass_code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to turn to my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you transit passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modify me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my pass code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get my pass_code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get pass-code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you modify my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modify my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to transit pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me my pass_code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to modify me pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "modulation pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me my pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get my passcode adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to transit pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to adjust my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to turn to my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you modulation passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me my pass-code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass-code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to surrogate my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get my pass code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to refinement me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please modify my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to turn to pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass_code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me pass-code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to change my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass_code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me passcode corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please change pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to adjust my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to refinement me passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me my pass_code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to turn to me passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to change my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please transit my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass-code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass-code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to surrogate me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get my pass_code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modify pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me my pass code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my passcode modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to adjust passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please surrogate pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to transit pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to surrogate pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get pass-code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to surrogate me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "surrogate my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to modify pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my pass-code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me my pass code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to change me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my passcode adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to adjust my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please correct my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get passcode transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass_code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to modulation me pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to refinement me my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get passcode modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get pass-code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to change pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to refinement my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please adjust passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get passcode changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to change my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "adjust pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get my pass code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to turn to my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get my pass_code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to refinement my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass_code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to modify pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to refinement me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get pass-code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to surrogate pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to refinement me passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my pass code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to turn to pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my passcode transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to adjust me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you surrogate pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to transit me pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me pass-code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to adjust my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please modify pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me my passcode refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to turn to my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to adjust my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get passcode transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my passcode changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to correct my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to change my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you adjust my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass_code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to adjust me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass_code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "modulation pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to adjust me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to transit my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to get my pass_code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to transit me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modify me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass-code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please refinement pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get passcode refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to surrogate pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to correct passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get passcode modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass_code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "transit pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to turn to my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get my pass code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to surrogate pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to change my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass-code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you turn to my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to correct me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass_code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to change me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get pass code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get my pass_code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to change my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to surrogate me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass-code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to correct me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to get pass code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me pass code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please refinement my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to correct passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to surrogate pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to refinement me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "modify my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to refinement my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to transit pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my pass-code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to modify my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get pass code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to modify me pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "transit passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to turn to me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get my pass code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass-code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me my pass-code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to refinement pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please transit my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to modify my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to turn to my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modify passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "surrogate passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get pass_code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my passcode surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass-code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to surrogate my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please turn to passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to correct my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to change my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to correct me pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to refinement my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you change my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my passcode transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modify me passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to correct my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my passcode transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to turn to me passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "turn to my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to change my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me my pass_code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get pass_code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to refinement me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me my pass-code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to modulation my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you turn to pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modulation my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get passcode transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to modulation pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get pass_code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please turn to my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to modulation my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my pass-code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modulation pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to turn to me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get passcode adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you adjust my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to modulation my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get my pass code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to refinement me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me pass_code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to change passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "adjust pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get my pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modulation me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to adjust my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get pass-code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to adjust pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to turn to my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me pass_code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modify me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to surrogate me my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to correct pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to get passcode modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me my passcode corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to adjust me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me pass-code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to turn to passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please adjust my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to refinement passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get passcode modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to turn to pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to transit my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my pass_code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "surrogate pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to modify pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get my pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass_code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to change pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to surrogate pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my pass-code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me my passcode refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please modulation my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to surrogate my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to surrogate passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get my passcode refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to turn to pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass_code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to adjust me my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you modify my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to transit me my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me passcode changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to refinement passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get passcode modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to modify me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get pass_code corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to modulation my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you surrogate my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to turn to me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me passcode turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to get pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to correct pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me pass-code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get pass_code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "refinement passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modify me pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please transit my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to adjust pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to turn to my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to modify me passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get passcode surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to modulation me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please correct my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to adjust me my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get my pass_code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please correct pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to modulation my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to modulation pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get passcode changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to correct me my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get passcode corrected", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get pass code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please surrogate my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to modulation my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to change pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to surrogate passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to get pass_code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me my pass-code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please modify passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me pass code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to refinement pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to correct pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me passcode modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please correct my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to transit me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to refinement me pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get my pass_code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to surrogate my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to modulation my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass-code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "turn to my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me my passcode turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get pass code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to refinement me pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to refinement my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get pass-code surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to change me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get me passcode changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to correct me my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my pass_code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to transit my pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist to correct my passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you get my passcode refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me passcode surrogated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please change pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to surrogate passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to surrogate pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get my pass-code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my passcode turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to turn to my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "change my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist me to correct my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get pass code adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please refinement my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to adjust me pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to refinement pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get passcode changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get my pass_code modified", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "help me to surrogate pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to get my pass code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to transit pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get me my passcode transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "get my pass code turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get pass-code modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to correct me my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to modulation pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please refinement my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get my pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get pass_code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get me my pass-code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to transit passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "adjust my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass-code refined", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to refinement me my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get my pass code transited", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please get my passcode turned", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please assist me to modify pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you turn to pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to adjust passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to transit my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please can you help me to correct my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "assist to modify my pass code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please help me to get passcode modulated", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please help me to get passcode adjusted", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "modulation passcode", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you help me to modulation me pass-code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "please get me pass_code changed", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you please adjust my pass_code", 
+        "intent": "Banking_Change_Passcode"
+      }, 
+      {
+        "text": "can you surrogate password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to correct pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to modify my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my passwod corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get pass-word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modify passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my pass_word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "adjust password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get passwod turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to refinement pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get pass_word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to transit password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to surrogate me passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me passwod refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my password changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to correct me passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please modulation passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to adjust passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get pass_word modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to turn to pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get my pass-word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get passwod surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please correct my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to modulation my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get pass-word modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to change me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to correct my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my pass_word modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get pass-word modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please refinement pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modulation me passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to adjust pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get pass-word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me pass-word refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modify my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please adjust password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my passwrd modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my pass_word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modify passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to turn to my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modulation me password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my passwod transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to surrogate my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my passwod changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to modulation me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "adjust passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me my pass_word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to refinement me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get my pass_word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to adjust passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please modify my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to adjust password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get password corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to correct me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me pass_word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my pass_word corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to refinement me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please modify my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to correct my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get pass_word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modify my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my password refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to change me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get pass-word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please correct passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to adjust my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me pass-word refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to modulation my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you change my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to adjust me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get pass_word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to turn to passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get my passwrd transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to turn to my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my pass_word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to refinement my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "adjust my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me passwrd modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modulation password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my passwod turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get my password adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to refinement me passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get passwod changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get my pass-word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to surrogate me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you refinement my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to surrogate passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me pass_word corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to surrogate me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to transit my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my pass-word refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please correct my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to adjust me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get pass_word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get pass_word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modulation me my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me passwod turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to transit my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to refinement my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get my passwrd transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please change my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me pass-word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modify me password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to adjust pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get pass_word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get pass-word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to surrogate passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you surrogate pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me passwod turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to refinement me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to modulation pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "turn to passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to refinement me password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get password transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get passwod surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modulation me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my pass_word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to adjust passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to turn to passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me pass-word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my pass-word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please correct passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to refinement pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get pass_word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to transit passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to correct me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get pass-word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get pass_word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "adjust passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get password changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to refinement me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "turn to pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to transit password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me passwod modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to refinement password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my passwrd changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to transit me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my pass-word refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my password changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to surrogate me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please modify my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to modulation my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to turn to me passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you modulation my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to modify passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me pass-word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my passwod corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me pass-word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to turn to my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to correct my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get passwrd adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to correct me my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you change pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get my passwod transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to refinement passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get my passwod modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get pass-word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please change passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to correct my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to transit me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my password changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my pass_word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to surrogate me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to surrogate passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modulation passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get pass-word corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please modulation pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get my passwod turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to change pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to turn to password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get pass_word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my passwrd corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to adjust my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please refinement my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get passwrd corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get my password refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my pass-word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "surrogate passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to adjust passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to surrogate pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my passwrd transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to transit passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my password corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "surrogate my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my passwod refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modulation my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my passwrd corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get pass-word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to refinement my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "refinement passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my passwod modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me my passwrd refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to refinement me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please surrogate my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my pass_word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get pass_word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to transit password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to correct my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to transit me passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to adjust me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get pass-word modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me passwrd turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to correct pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please surrogate passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my password adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to surrogate password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to modify my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my pass-word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please modulation passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get pass_word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me passwrd transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to turn to passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to modulation my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to correct pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get password adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me pass_word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you turn to my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modify pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get my password modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me my pass-word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to turn to password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get passwrd surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to adjust passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please adjust passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get my passwrd surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to surrogate my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modify me my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please adjust my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to turn to my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get passwod modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me passwod adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to transit pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get passwrd surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my passwod modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to change me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to change my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please change my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get passwod refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to turn to me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get password turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please turn to passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get my password modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to transit my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modify me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me my password changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to transit pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get my password refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my passwod transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to surrogate pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to modify passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you surrogate passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me passwod transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to adjust me password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to change me passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please change pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get my pass_word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to surrogate me passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my pass_word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to change my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "modulation pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to correct pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get pass-word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my pass-word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to refinement me my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you transit my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my pass-word modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to transit me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to modify my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me pass_word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to surrogate me my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to correct password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get my password corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get my passwod changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modify my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to transit passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me password adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my pass-word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please turn to passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me my pass-word corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to turn to my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get pass_word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to change my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to adjust me password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "change pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to adjust my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my passwod modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to adjust me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get my pass_word corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get my password turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me password modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to transit passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to adjust pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you correct password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to transit me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my passwod surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to modify pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modulation me my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get my passwod adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me passwod surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please turn to my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to modulation my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to refinement pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you correct passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me passwod changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to correct my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get my password modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please surrogate my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get my password corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my pass-word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to modify me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to refinement me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my passwod refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get my pass_word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to correct me password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "transit my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to turn to me pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "correct passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to modify password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get me passwrd changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modulation password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get my pass_word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get pass_word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modify my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please refinement my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to turn to my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me pass_word changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to surrogate my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my passwod transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please change my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get passwrd changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to transit pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me password modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to refinement pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to modulation me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to modulation my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get passwrd refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to turn to me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get my password transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you modify pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to transit passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me my pass-word modulated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please transit password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my password turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to adjust my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to modify my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my pass-word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please adjust password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modulation me my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get passwrd adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to transit my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get pass_word refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please can you help me to transit my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to transit my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "modify passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modulation me pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me passwrd surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "correct my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me passwrd modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get password changed", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me my passwod corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to adjust password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get passwod turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to get pass-word adjusted", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "refinement my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to correct my password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please get me pass_word surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please modulation passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to adjust me my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my passwrd turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "get me passwod transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get pass_word refined", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to turn to my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my pass-word turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you adjust passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist to change password", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to get my password corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my password turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modify passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "help me to modulation me my pass_word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to get my password surrogated", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get pass-word corrected", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please change passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist to modify my passwrd", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you help me to adjust my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me password modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to refinement my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please help me to get password modified", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you correct my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "assist me to surrogate my passwod", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you get me my pass_word transited", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "can you please get passwod turned", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please help me to modulation my pass-word", 
+        "intent": "Banking_Change_Password"
+      }, 
+      {
+        "text": "please assist me to surrogate passwod", 
+        "intent": "Banking_Change_Password"
       }
     ], 
     "entity_synonyms": [
