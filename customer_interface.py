@@ -1,5 +1,5 @@
-#!/usr/bin/python 
-import cgi, cgitb 
+#!/usr/bin/python
+import cgi, cgitb
 import sys
 import security
 import customer_details
@@ -8,7 +8,7 @@ import feedback_modules
 import jon_snow_brain
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
 cgitb.enable(display=0, logdir="/path/to/logdir")
-form = cgi.FieldStorage()	
+form = cgi.FieldStorage()
 if form.getvalue('get_data'):
 	user=security.protect_data(form.getvalue('user'))
 	get_data = security.protect_data(form.getvalue('get_data'))
@@ -126,4 +126,31 @@ if form.getvalue("update_bill_details") and form.getvalue("postal_add") and form
 	state=security.protect_data(form.getvalue("state"))
 	country=security.protect_data(form.getvalue("country"))
 	flag_bit=customer_details.update_bill_details(user,postal_add,perm_add,pincode,city,state,country)
+	print("%s"%flag_bit)
+if form.getvalue("check_acc_num_exists") and form.getvalue("user"):
+	user=security.protect_data(form.getvalue("user"))
+	acc_no=security.protect_data(form.getvalue("check_acc_num_exists"))
+	userid=customer_details.get_any_value(user,"cid")
+	flag_bit=customer_details.check_acc_num_exists(acc_no,userid)
+	flag_bit=security.protect_data(flag_bit)
+	print("%s"%flag_bit)
+if form.getvalue("make_transaction") and form.getvalue("user") and form.getvalue("acc_num") and form.getvalue("amount"):
+	user=security.protect_data(form.getvalue("user"))
+	userid=customer_details.get_any_value(user,"cid")
+	amount=security.protect_data(form.getvalue("amount"))
+	transaction_state=security.protect_data(form.getvalue("make_transaction"))
+	if transaction_state==None or amount==None:
+		print("-99")
+	amount=int(amount)
+	transaction_state=int(transaction_state)
+	if transaction_state==0:
+		from_acc_no=get_account_by_acc_id(userid,"acc_no")
+		to_acc_no=security.protect_data(form.getvalue("acc_num"))
+	elif transaction_state==1:
+		to_acc_no=get_account_by_acc_id(userid,"acc_no")
+		from_acc_no=security.protect_data(form.getvalue("acc_num"))
+	else:
+		print("-99")
+	flag_bit=customer_details.make_transaction(from_acc_no,to_acc_no,amount)
+	flag_bit=security.protect_data(flag_bit)
 	print("%s"%flag_bit)

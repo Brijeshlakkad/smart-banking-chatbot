@@ -117,7 +117,27 @@ class customer_account_by_acc_id:
 		except:
 			print("Error")
 		conn.close()
-
+class customer_account_by_acc_no:
+	global acc_id,c_id,acc_no,acc_type,acc_name,balance,passcode,status
+	def account_details(self,acc_no):
+		sql="select * from accounts where acc_no='%s'"%acc_no
+		conn,cursor=config.connect_to_database()
+		try:
+			cursor.execute(sql)
+			results=cursor.fetchall()
+			for row in results:
+				self.acc_id=row[0]
+				self.c_id=row[1]
+				self.acc_name=row[2]
+				self.acc_type=row[3]
+				self.balance=row[4]
+				self.created_time=row[5]
+				self.passcode=row[6]
+				self.acc_no=row[7]
+				self.status=row[8]
+		except:
+			print("Error")
+		conn.close()
 
 class customer_card:
 	global card_id,c_id,acc_id,holder_name,till_month,till_year,cvv,card_type,card_no,status
@@ -333,6 +353,29 @@ def get_account_by_acc_id(acc_id,f):
 		return acc.status
 	else:
 		return get_any_value_by_id(acc.c_id,f)
+def get_account_by_acc_no(acc_no,f):
+	acc=customer_account_by_acc_no()
+	acc.account_details(acc_no)
+	if f=="acc_id":
+		return acc.acc_id
+	elif f=="c_id":
+		return acc.c_id
+	elif f=="acc_no":
+		return acc.acc_no
+	elif f=="acc_type":
+		return acc.acc_type
+	elif f=="acc_name":
+		return acc.acc_name
+	elif f=="balance":
+		return acc.balance
+	elif f=="passcode":
+		return acc.passcode
+	elif f=="created_time":
+		return acc.created_time
+	elif f=="status":
+		return acc.status
+	else:
+		return -99
 
 def get_card_details_by_user(user,f):
 	acc_id=get_account_details_by_user(user,"acc_id")
@@ -587,6 +630,43 @@ def change_customer_card_status(user,status):
 		conn.commit()
 		return 1
 	except:
+		conn.rollback()
+		return -99
+	finally:
+		conn.close()
+def check_acc_num_exists(acc_no,userid):
+	conn,cursor=config.connect_to_database()
+	sql="select c_id,acc_name from accounts where acc_no='%s'"%(acc_no)
+	try:
+		cursor.execute(sql)
+		if cursor.rowcount==1:
+			row=cursor.fetchone()
+			c_id="%s"%row[0]
+			userid="%s"%userid
+			if c_id==userid:
+				return -22
+			return "11%s"%row[1]
+		return -33
+	except:
+		return -99
+	finally:
+		conn.close()
+def make_transaction(from_acc_no,to_acc_no,amount):
+	conn,cursor=config.connect_to_database()
+	sql="insert into transactions(from_acc,to_acc,amount) values('%s','%s','%s')"%(from_acc_no,to_acc_no,amount)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		sql="SELECT t_id FROM transactions ORDER BY t_id DESC LIMIT 1;"
+		try:
+			cursor.execute(sql)
+			row=cursor.fetchone()
+			return "11%s"%row[0]
+		except:
+			conn.rollback()
+			return -99
+	except:
+		conn.rollback()
 		return -99
 	finally:
 		conn.close()
