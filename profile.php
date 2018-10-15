@@ -74,7 +74,7 @@
 			<div class="button btn btn-primary">
 				<center>
 			<div style="padding:30px;">
-				<span ng-click="change_transaction_state(transaction_state_id)">{{transaction_state_display}}</span>
+				<span>{{transaction_state_display}}</span>
 
 				<table class="myTable">
 			<tr><td><span><input type='text' name='acc_num' ng-change="check_acc_exists(acc_num)" ng-model="acc_num" placeholder="Enter Account Number" ng-style="acc_num_style" class="form-control" accnum-dir required/></span></td></tr>
@@ -151,24 +151,7 @@ user="<?php echo $_SESSION[Userid]; ?>";
 myApp.controller("BrijController", function($scope,$http) {
 	$scope.user="<?php echo $_SESSION[Userid]; ?>";
 	$scope.transaction_state_display="Send Money to";
-	$scope.transaction_state_id=0;
 	$scope.show_acc_name="";
-	$scope.amount_error="";
-	$scope.change_transaction_state=function(){
-		if($scope.transaction_state_id==0)
-		{
-			$scope.transaction_state_display="Receive Money from";
-			$scope.transaction_state_id=1;
-		}
-		else{
-			$scope.transaction_state_display="Send Money to";
-			$scope.transaction_state_id=0;
-		}
-	};
-	$scope.xx=function()
-	{
-			alert();
-	};
 	$scope.acc_num_style = {
 		"border-width":"1.45px"
 					};
@@ -211,7 +194,7 @@ myApp.controller("BrijController", function($scope,$http) {
 								$http({
 									method : "POST",
 									url : "customer_interface.py",
-									data: "make_transaction="+$scope.transaction_state_id+"&user="+$scope.user+"&acc_num="+$scope.acc_num+"&amount="+$scope.amount,
+									data: "make_transaction="+$scope.user+"&acc_num="+$scope.acc_num+"&amount="+$scope.amount,
 									headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 								}).then(function mySuccess(response) {
 									flag = response.data;

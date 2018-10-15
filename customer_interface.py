@@ -134,23 +134,13 @@ if form.getvalue("check_acc_num_exists") and form.getvalue("user"):
 	flag_bit=customer_details.check_acc_num_exists(acc_no,userid)
 	flag_bit=security.protect_data(flag_bit)
 	print("%s"%flag_bit)
-if form.getvalue("make_transaction") and form.getvalue("user") and form.getvalue("acc_num") and form.getvalue("amount"):
-	user=security.protect_data(form.getvalue("user"))
-	userid=customer_details.get_any_value(user,"cid")
+if form.getvalue("make_transaction") and form.getvalue("acc_num") and form.getvalue("amount"):
+	user=security.protect_data(form.getvalue("make_transaction"))
 	amount=security.protect_data(form.getvalue("amount"))
-	transaction_state=security.protect_data(form.getvalue("make_transaction"))
-	if transaction_state==None or amount==None:
+	from_acc_no=customer_details.get_account_details_by_user(user,"acc_no")
+	if from_acc_no==0:
 		print("-99")
-	amount=int(amount)
-	transaction_state=int(transaction_state)
-	if transaction_state==0:
-		from_acc_no=get_account_by_acc_id(userid,"acc_no")
-		to_acc_no=security.protect_data(form.getvalue("acc_num"))
-	elif transaction_state==1:
-		to_acc_no=get_account_by_acc_id(userid,"acc_no")
-		from_acc_no=security.protect_data(form.getvalue("acc_num"))
-	else:
-		print("-99")
+	to_acc_no=security.protect_data(form.getvalue("acc_num"))
 	flag_bit=customer_details.make_transaction(from_acc_no,to_acc_no,amount)
 	flag_bit=security.protect_data(flag_bit)
 	print("%s"%flag_bit)
