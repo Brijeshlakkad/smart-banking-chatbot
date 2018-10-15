@@ -51,7 +51,7 @@ slots:
     type: text
   new_passcode:
     type: text
-  new_passcode:
+  new_password:
     type: text
   contact:
     type: text
@@ -86,6 +86,7 @@ intents:
   - Banking_Change_Passcode
   - Banking_Change_Password
   - Banking_Change_Contact
+  - Banking_Report_Missing_Card
 entities:
   - using_what
   - name
@@ -224,27 +225,18 @@ templates:
     - "Please enter your new passcode: "
   utter_ask_new_password:
     - "Please enter your new password: "
-  utter_ask_new_contact:
+  utter_ask_contact:
     - "Please enter your new contact: "
+  utter_report_missing_card_reply:
+    - "{name} You can deactivate your card using several ways :\n1. Goto Profile Settings>>Services>>Active/Deactivate Card\n2. Using ATM\n3. Using Text\n4. You can always ask me to cancel your card and you can active it again using me!"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
     - actions.CancelCardService
-    - utter_ask_email
-    - utter_ask_password
     - utter_first_access
-    - utter_access
-    - utter_ask_passcode
-    - utter_activated_card
-    - utter_deactivated_card
     - utter_positive_reply
-    - utter_ask_card_permission
-    - utter_give_pos_ans
     - actions.GetFeeInquiry
-    - utter_fee_inquiry_reply
-    - utter_ask_card_perm
     - actions.CardReplaceService
-    - utter_replace_card_reply
     - actions.ActionFallback
     - actions.ActionGreeting
     - actions.ActionEnding
@@ -268,3 +260,4 @@ actions:
     - actions.ActionChangePasscode
     - actions.ActionChangePassword
     - actions.ActionChangeContact
+    - actions.ActionReportMissingCard
