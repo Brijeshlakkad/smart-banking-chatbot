@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 18, 2018 at 06:06 AM
+-- Generation Time: Oct 15, 2018 at 10:00 AM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -45,7 +45,7 @@ CREATE TABLE `accounts` (
 INSERT INTO `accounts` (`acc_id`, `c_id`, `acc_name`, `acc_type`, `balance`, `created_time`, `passcode`, `acc_no`, `status`) VALUES
 (4, 70, 'Brijesh Rameshbhai Lakkad', 'saving', '0', '2018-08-01 20:24:57', '123456', '007046167267', 1),
 (16, 1, 'Brijesh Rameshbhai Lakkad', 'saving', '0', '2018-08-06 17:33:32', '-99', '007046167268', 1),
-(19, 100, 'Brijesh Rameshbhai Lakkad', 'saving', '0', '2018-08-20 15:44:59', '123456', '007046167290', 1),
+(19, 100, 'Sanket Patel', 'saving', '0', '2018-08-20 15:44:59', '123456', '007046167290', 1),
 (20, 101, 'Brijesh Rameshbhai Lakkad', 'saving', '0', '2018-08-20 16:15:47', '683249', '007046167255', 1);
 
 -- --------------------------------------------------------
@@ -89,7 +89,8 @@ CREATE TABLE `cards` (
 
 INSERT INTO `cards` (`card_id`, `c_id`, `acc_id`, `holder_name`, `till_month`, `till_year`, `csv`, `card_type`, `card_no`, `status`) VALUES
 (10, 70, 4, 'Brijesh Rameshbhai Lakkad', '08', '19', '494', 'Mastercard', '2685498962451745', 1),
-(18, 101, 20, 'Brijesh Rameshbhai Lakkad', '09', '19', '552', 'Mastercard', '8337366081648530', 0);
+(38, 100, 19, 'Sanket Patel', '10', '19', '656', 'Mastercard', '5743344187443345', 1),
+(44, 101, 20, 'Brijesh Rameshbhai Lakkad', '10', '19', '970', 'Mastercard', '2428205825599963', 0);
 
 -- --------------------------------------------------------
 
@@ -150,18 +151,19 @@ CREATE TABLE `customers` (
   `time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `jon` int(1) DEFAULT '0',
-  `hasAcc` int(11) NOT NULL DEFAULT '0'
+  `hasAcc` int(11) NOT NULL DEFAULT '0',
+  `last_otp` varchar(6) DEFAULT '-99'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`cid`, `username`, `fname`, `lname`, `email`, `password`, `contact`, `postal_add`, `perm_add`, `city`, `state`, `country`, `middle_name`, `pincode`, `dob`, `gender`, `time`, `created_time`, `jon`, `hasAcc`) VALUES
-(1, 'brijeshlakkad22222', 'Brijesh', 'Lakkad', 'lakkadbrijesh@gmail.com', '12345b', '7046167268', 'xyz', 'xyz', 'surat', 'gujarat', 'india', 'Rameshbhai', '395006', NULL, 'Male', '2018-07-27 08:56:55', '2018-07-27 16:33:37', 0, 1),
-(70, 'Brijesh', 'Brijesh', 'Lakkad', 'brij79lakkad@gmail.com', '123456bB', '7046167267', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'Rameshbhai', '395008', '2018-07-03', 'Male', '2018-07-31 13:44:07', '2018-07-31 13:44:07', 1, 1),
-(100, 'sanketpatel2', 'Sanket', 'Patel', 'patelsanket864@gmail.com', '123456bB', '7046167290', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'J', '395006', '2018-08-08', 'Male', '2018-08-20 15:13:11', '2018-08-20 15:13:11', 1, 0),
-(101, 'brijeshlakkad2', 'Brijesh', 'Lakkad', 'brijeshlakkad2@gmail.com', '123456bB', '7046167255', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'R', '395006', '2018-08-08', 'Male', '2018-08-20 16:12:13', '2018-08-20 16:12:13', 1, 1);
+INSERT INTO `customers` (`cid`, `username`, `fname`, `lname`, `email`, `password`, `contact`, `postal_add`, `perm_add`, `city`, `state`, `country`, `middle_name`, `pincode`, `dob`, `gender`, `time`, `created_time`, `jon`, `hasAcc`, `last_otp`) VALUES
+(1, 'brijeshlakkad22222', 'Brijesh', 'Lakkad', 'lakkadbrijesh@gmail.com', '12345b', '7046167268', 'xyz', 'xyz', 'surat', 'gujarat', 'india', 'Rameshbhai', '395006', NULL, 'Male', '2018-07-27 08:56:55', '2018-07-27 16:33:37', 0, 1, '-99'),
+(70, 'Brijesh', 'Brijesh', 'Lakkad', 'brij79lakkad@gmail.com', '123456bB', '7046167267', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'Rameshbhai', '395008', '2018-07-03', 'Male', '2018-07-31 13:44:07', '2018-07-31 13:44:07', 1, 1, '-99'),
+(100, 'sanketpatel2', 'Sanket', 'Patel', 'patelsanket864@gmail.com', '123456bB', '7046167290', '205, Nanddham Apartment', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'J', '395006', '2018-08-08', 'Male', '2018-08-20 15:13:11', '2018-08-20 15:13:11', 1, 0, '-99'),
+(101, 'brijeshlakkad', 'Brijesh', 'Lakkad', 'brijeshlakkad22@gmail.com', '123456bb', '1010101010', 'line 2, line 3', 'Near Ashok Vatika Society, L.H.Road', 'Surat', 'Gujarat', 'India', 'R', '395006', '2018-08-08', 'Male', '2018-08-20 16:12:13', '2018-08-20 16:12:13', 1, 1, '469819');
 
 -- --------------------------------------------------------
 
@@ -186,34 +188,6 @@ INSERT INTO `feedbacks` (`f_id`, `email`, `f_text`, `time`) VALUES
 (4, 'brij79lakkad@gmail.com', '1234', '2018-07-27 09:24:41'),
 (5, 'brijeshlakkad22@gmail.com', 'Ickdsbkdbs', '2018-08-20 16:27:55'),
 (6, 'brij79lakkad@gmail.com', 'dlsjdsldlsk', '2018-08-23 00:58:33');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `loans`
---
-
-CREATE TABLE `loans` (
-  `l_id` int(10) NOT NULL,
-  `loan_id` int(10) NOT NULL,
-  `c_id` int(10) NOT NULL,
-  `acc_id` int(10) NOT NULL,
-  `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `loan_details`
---
-
-CREATE TABLE `loan_details` (
-  `loan_id` int(10) NOT NULL,
-  `amount` varchar(10) NOT NULL,
-  `interest` varchar(10) NOT NULL,
-  `tenure` varchar(10) NOT NULL,
-  `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -300,21 +274,6 @@ ALTER TABLE `feedbacks`
   ADD UNIQUE KEY `f_id` (`f_id`);
 
 --
--- Indexes for table `loans`
---
-ALTER TABLE `loans`
-  ADD PRIMARY KEY (`l_id`),
-  ADD KEY `c_id` (`c_id`),
-  ADD KEY `acc_id` (`acc_id`),
-  ADD KEY `loan_id` (`loan_id`);
-
---
--- Indexes for table `loan_details`
---
-ALTER TABLE `loan_details`
-  ADD PRIMARY KEY (`loan_id`);
-
---
 -- Indexes for table `requests`
 --
 ALTER TABLE `requests`
@@ -349,7 +308,7 @@ ALTER TABLE `bank_atm`
 -- AUTO_INCREMENT for table `cards`
 --
 ALTER TABLE `cards`
-  MODIFY `card_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `card_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `chats`
@@ -368,18 +327,6 @@ ALTER TABLE `customers`
 --
 ALTER TABLE `feedbacks`
   MODIFY `f_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `loans`
---
-ALTER TABLE `loans`
-  MODIFY `l_id` int(10) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `loan_details`
---
-ALTER TABLE `loan_details`
-  MODIFY `loan_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `requests`
@@ -409,14 +356,6 @@ ALTER TABLE `accounts`
 ALTER TABLE `cards`
   ADD CONSTRAINT `cards_ibfk_1` FOREIGN KEY (`c_id`) REFERENCES `customers` (`cid`),
   ADD CONSTRAINT `cards_ibfk_2` FOREIGN KEY (`acc_id`) REFERENCES `accounts` (`acc_id`);
-
---
--- Constraints for table `loans`
---
-ALTER TABLE `loans`
-  ADD CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`c_id`) REFERENCES `customers` (`cid`),
-  ADD CONSTRAINT `loans_ibfk_2` FOREIGN KEY (`acc_id`) REFERENCES `accounts` (`acc_id`),
-  ADD CONSTRAINT `loans_ibfk_3` FOREIGN KEY (`loan_id`) REFERENCES `loan_details` (`loan_id`);
 
 --
 -- Constraints for table `requests`
