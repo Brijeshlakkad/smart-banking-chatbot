@@ -142,5 +142,5 @@ if form.getvalue("make_transaction") and form.getvalue("acc_num") and form.getva
 		print("-99")
 	to_acc_no=security.protect_data(form.getvalue("acc_num"))
 	flag_bit=customer_details.make_transaction(from_acc_no,to_acc_no,amount)
-	flag_bit=security.protect_data(flag_bit)
+	flag_bit=flag_bit.strip()
 	print("%s"%flag_bit)

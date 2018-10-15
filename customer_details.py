@@ -651,22 +651,57 @@ def check_acc_num_exists(acc_no,userid):
 		return -99
 	finally:
 		conn.close()
+def transaction_happened(cursor,from_acc_no,to_acc_no,amount):
+	amount=int(amount)
+	accs=[from_acc_no,to_acc_no]
+	dict={}
+	for i in range(len(accs)):
+		sql="select balance from accounts where acc_no='%s'"%(accs[i])
+		try:
+			cursor.execute(sql)
+			row=cursor.fetchone()
+			balance=int(row[0])
+			dict.update(dict.fromkeys([accs[i]],balance))
+			if (accs[i]==from_acc_no and balance<amount):
+				return -22
+		except:
+			return -99
+	for acc,balance in dict.items():
+		if acc==from_acc_no:
+			balance-=amount
+		elif acc==to_acc_no:
+			balance+=amount
+		sql="update accounts SET balance='%s' where acc_no='%s'"%(balance,acc)
+		try:
+			cursor.execute(sql)
+			return 11
+		except:
+			conn.rollback()
+			return -99
 def make_transaction(from_acc_no,to_acc_no,amount):
 	conn,cursor=config.connect_to_database()
+	trans_id=2179516709
 	sql="insert into transactions(from_acc,to_acc,amount) values('%s','%s','%s')"%(from_acc_no,to_acc_no,amount)
 	try:
 		cursor.execute(sql)
+		flag=transaction_happened(cursor,from_acc_no,to_acc_no,amount)
+		if flag==-22:
+			return "<span style='color:red;'>You have inefficient balance! :(</span>"
+		if flag!=11:
+			return flag
 		conn.commit()
 		sql="SELECT t_id FROM transactions ORDER BY t_id DESC LIMIT 1;"
 		try:
 			cursor.execute(sql)
 			row=cursor.fetchone()
-			return "11%s"%row[0]
+			t_id=row[0]
+			t_id=int(t_id)
+			trans_id+=t_id
+			return "11<table class='myTable'><tr><td><span style='color:rgba(32,78,148,1);'>Transactions id</span><td><td>#%s</td></tr><tr><td>From Account Number<td><td>%s</td></tr><tr><td>To Account Number<td><td>%s</td></tr></table>"%(trans_id,from_acc_no,to_acc_no)
 		except:
-			conn.rollback()
 			return -99
 	except:
 		conn.rollback()
-		return -99
+		return -999
 	finally:
 		conn.close()

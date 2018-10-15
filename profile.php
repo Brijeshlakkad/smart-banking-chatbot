@@ -114,7 +114,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-        <div class="alert alert-success">{{success_modal_val}}</div>
+        <div class="alert alert-success"><div ng-bind-html="success_modal_val"></div></div>
         </div>
       </div>
     </div>
@@ -148,7 +148,7 @@
 <script>
 var myApp = angular.module("myapp", []);
 user="<?php echo $_SESSION[Userid]; ?>";
-myApp.controller("BrijController", function($scope,$http) {
+myApp.controller("BrijController", function($scope,$http,$sce) {
 	$scope.user="<?php echo $_SESSION[Userid]; ?>";
 	$scope.transaction_state_display="Send Money to";
 	$scope.show_acc_name="";
@@ -156,7 +156,7 @@ myApp.controller("BrijController", function($scope,$http) {
 		"border-width":"1.45px"
 					};
 	$scope.check_acc_exists = function(value) {
-						var flag=1;
+						    var flag=1;
 								$http({
 									method : "POST",
 									url : "customer_interface.py",
@@ -199,10 +199,9 @@ myApp.controller("BrijController", function($scope,$http) {
 								}).then(function mySuccess(response) {
 									flag = response.data;
 									flag=flag.trim();
-                  alert(flag);
 									if(flag.startsWith("11"))
 									{
-										$scope.success_modal_val=flag.substr(2);
+										$scope.success_modal_val=$sce.trustAsHtml(flag.substr(2));
 										$("#success_modal_scope").modal("show");
 									}
 									else {
@@ -331,4 +330,6 @@ $(document).ready(function(){
 	});
 });
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
 <?php include("footer.php"); ?>
