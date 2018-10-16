@@ -11,6 +11,35 @@ from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
 import random
+class ActionViewActivity(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+        FreeTextFormField("num_trans")
+        ]
+    def name(self):
+        return 'action_view_activity'
+    def submit(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        template="utter_view_activity_reply"
+        num_trans=tracker.get_slot("num_trans")
+        if num_trans=="any" or num_trans==None or num_trans=="" or type(num_trans)!=int:
+            num_trans=2
+        num_trans=int(num_trans)
+        acc_no=get_account_info(user,password,"acc_no")
+        if acc_no==0:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [ActionReverted()]
+        ans=get_last_transaction_without_html_tags(acc_no,num_trans)
+        dispatcher.utter_template(template,tracker,name=name,ans=ans)
+        return [SletSet("num_trans",None)]
 class ActionReportMissingCard(Action):
     def name(self):
         return 'action_report_missing_card'
@@ -256,6 +285,21 @@ class ActionGetAccStatus(Action):
             template+="2"
         dispatcher.utter_template(template,tracker,name=name)
         return []
+class ActionGetContact(Action):
+    def name(self):
+        return 'action_get_contact'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        contact=get_personal_info(user,password,"contact")
+        dispatcher.utter_template("utter_got_asked_reply",tracker,name=name,key="contact number",value=contact)
+        return []
 class ActionGetEmail(Action):
     def name(self):
         return 'action_get_email'
@@ -269,7 +313,8 @@ class ActionGetEmail(Action):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         email=get_personal_info(user,password,"email")
-        dispatcher.utter_template("utter_get_email_reply",tracker,name=name,email=email)
+        key=random.choice(['email id','email address','email'])
+        dispatcher.utter_template("utter_got_asked_reply",tracker,name=name,key=key,value=email)
         return []
 class ActionGetUsername(Action):
     def name(self):
@@ -284,7 +329,7 @@ class ActionGetUsername(Action):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         username=get_personal_info(user,password,"username")
-        dispatcher.utter_template("utter_get_username_reply",tracker,name=name,username=username)
+        dispatcher.utter_template("utter_got_asked_reply",tracker,name=name,key="username",value=username)
         return []
 class ActionGetAccountNumber(Action):
     def name(self):
@@ -299,7 +344,7 @@ class ActionGetAccountNumber(Action):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         acc_no=get_account_info(user,password,"acc_no")
-        dispatcher.utter_template("utter_get_account_number_reply",tracker,name=name,acc_no=acc_no)
+        dispatcher.utter_template("utter_got_asked_reply",tracker,name=name,key="account number",value=acc_no)
         return []
 class ActionGetSecureInfo(Action):
     def name(self):
@@ -333,7 +378,7 @@ class ActionGetCardNumber(Action):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         card_no=get_card_info(user,password,"card_no")
-        dispatcher.utter_template("utter_get_card_number_reply",tracker,name=name,card_no=card_no)
+        dispatcher.utter_template("utter_got_asked_reply",tracker,name=name,key="card number",value=card_no)
         return []
 class ActionGetAddress(Action):
     def name(self):
@@ -348,7 +393,7 @@ class ActionGetAddress(Action):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         postal_add=get_personal_info(user,password,"postal_add")
-        dispatcher.utter_template("utter_get_addreess_reply",tracker,name=name,postal_add=postal_add)
+        dispatcher.utter_template("utter_got_asked_reply",tracker,name=name,key="postal address",value=postal_add)
         return []
 class ActionGetPermission(FormAction):
     RANDOMIZE = False

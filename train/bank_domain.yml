@@ -55,6 +55,8 @@ slots:
     type: text
   contact:
     type: text
+  num_trans:
+    type: text
 intents:
   - None
   - affirm
@@ -81,12 +83,14 @@ intents:
   - Banking_Get_Email
   - Banking_Get_Username
   - Banking_Get_Acc_Status
+  - Banking_Get_Contact
   - Banking_Change_Credential_Info
   - Banking_Change_Username
   - Banking_Change_Passcode
   - Banking_Change_Password
   - Banking_Change_Contact
   - Banking_Report_Missing_Card
+  - Banking_View_Activity
 entities:
   - using_what
   - name
@@ -101,13 +105,20 @@ entities:
   - user_wants
   - help_asking_time
   - question_yes_no
+  - num_trans
 templates:
   utter_first_access:
     - "Please first login to our service to use it."
   utter_ask_email:
-    - "Please Enter Email:"
+    - "Please tell me your email:"
+    - "Please tell me your email address:"
+    - "Please tell me your email id:"
+    - "Please give me your email:"
+    - "Please give me your email address:"
+    - "Please give me your email id:"
   utter_ask_password:
-    - "Please Enter Password:"
+    - "Please tell me your password:"
+    - "Please give me your password:"
   utter_greet_reply:
     - "Hello {name}!"
     - "Hello {name}! How can i help?"
@@ -185,9 +196,9 @@ templates:
     - "it's {postal_add}"
     - "Got it {name}! it's {postal_add}"
   utter_ask_address1:
-    - "Please enter your new postal address line 1: "
+    - "Please tell me your new postal address line 1: "
   utter_ask_address2:
-    - "Please enter your new postal address line 2: "
+    - "Please tell me your new postal address line 2: "
   utter_get_account_number_reply:
     - "{name} Your account number is: {acc_no}"
     - "Your account number is {acc_no}"
@@ -216,19 +227,28 @@ templates:
   utter_change_credential_info_reply:
     - "{name} you can not change this {ent} credential information through chatbot."
   utter_ask_username:
-    - "Please enter your new username: "
+    - "Tell me your new username: "
   utter_change_entity_reply:
     - "{name} your {ent} has been changed.\nYou can ask me or see for verification of your {ent} details on Personal Settings panel."
   utter_ask_got_otp:
     - "We have sent OTP to your registered mail id. Please enter\n1. To resend the otp\n2. To cancel this request\nor Enter OTP HERE:"
   utter_ask_new_passcode:
-    - "Please enter your new passcode: "
+    - "Please tell me your new passcode: "
   utter_ask_new_password:
-    - "Please enter your new password: "
+    - "Please tell me your new password: "
   utter_ask_contact:
-    - "Please enter your new contact: "
+    - "Please tell me your new contact: "
   utter_report_missing_card_reply:
     - "{name} You can deactivate your card using several ways :\n1. Goto Profile Settings>>Services>>Active/Deactivate Card\n2. Using ATM\n3. Using Text\n4. You can always ask me to cancel your card and you can active it again using me!"
+  utter_ask_num_trans:
+    - "Please tell me how many transaction activities would you like to see?"
+  utter_view_activity_reply:
+    -"{name} {ans}"
+  utter_got_asked_reply:
+    - "{name} Your {key} is: {value}"
+    - "Your {key} is {value}"
+    - "it's {value}"
+    - "Got it {name}! it's {value}"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -253,6 +273,7 @@ actions:
     - actions.ActionGetEmail
     - actions.ActionGetUsername
     - actions.ActionGetAccStatus
+    - actions.ActionGetContact
     - actions.ActionChangeCredentialInfo
     - actions.ActionSendOTP
     - actions.ActionGetOTPPermission
@@ -261,3 +282,4 @@ actions:
     - actions.ActionChangePassword
     - actions.ActionChangeContact
     - actions.ActionReportMissingCard
+    - actions.ActionViewActivity
