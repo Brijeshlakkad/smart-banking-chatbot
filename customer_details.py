@@ -697,7 +697,7 @@ def make_transaction(from_acc_no,to_acc_no,amount):
 			t_id=row[0]
 			t_id=int(t_id)
 			trans_id+=t_id
-			return "11<table class='myTable'><tr><td><span style='color:rgba(32,78,148,1);'>Transactions id</span><td><td>#%s</td></tr><tr><td>From Account Number<td><td>%s</td></tr><tr><td>To Account Number<td><td>%s</td></tr></table>"%(trans_id,from_acc_no,to_acc_no)
+			return "11<table class='myTable'><tr><td><span style='color:rgba(32,78,148,1);'>Transactions id</span></td><td>#%s</td></tr><tr><td>From Account Number</td><td>%s</td></tr><tr><td>To Account Number</td><td>%s</td></tr><tr><td>Amount</td><td>Rs. %s</td></tr></table>"%(trans_id,from_acc_no,to_acc_no,amount)
 		except:
 			return -99
 	except:
@@ -705,3 +705,24 @@ def make_transaction(from_acc_no,to_acc_no,amount):
 		return -999
 	finally:
 		conn.close()
+def get_last_transaction(acc_no,n):
+	conn,cursor=config.connect_to_database()
+	trans_id=2179516709
+	sql="SELECT t_id,from_acc,to_acc,amount FROM transactions where from_acc='%s' or to_acc='%s' ORDER BY t_id DESC LIMIT %s;"%(acc_no,acc_no,n)
+	try:
+		cursor.execute(sql)
+		results=cursor.fetchall()
+		num=cursor.rowcount
+		num_str=str(num).zfill(2)
+		response="""11%s<br/><div class="row"><b>Last %s Transactions</b></div>"""%(num_str,num_str)
+		for row in results:
+			t_id=row[0]
+			t_id=int(t_id)
+			from_acc_no=row[1]
+			to_acc_no=row[2]
+			trans_id+=t_id
+			amount=row[3]
+			response+="""<hr/><div class="row"><div class="col-sm-6" style='color:rgba(254,254,254,1);'>Transactions id</div><div class="col-sm-6">#%s</div></div><div class="row"><div class="col-sm-6" >From Account Number</div><div class="col-sm-6" >%s</div></div><div class="row"><div class="col-sm-6" >To Account Number</div><div class="col-sm-6">%s</div></div><div class="row"><div class="col-sm-6" >Amount</div><div class="col-sm-6">Rs. %s</div></div>"""%(trans_id,from_acc_no,to_acc_no,amount)
+		return response
+	except:
+		return -99

@@ -105,7 +105,16 @@
 				<a class="btn btn-primary" id="ask_question">Ask questions to me >></a>
 			</div>
 		</div>
-		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+      <div class="button btn btn-primary">
+        <center>
+    			<div style="padding:30px;">
+    				<span>{{header_of_passbook}}</span>
+            <div ng-bind-html="show_last_5_transaction" style="font-size:15px;" ng-click="show_more_transactions()"></div>
+          </div>
+        </center>
+      </div>
+</div>
 </div>
 <div class="modal fade" id="success_modal_scope" role="dialog">
     <div class="modal-dialog">
@@ -150,11 +159,50 @@ var myApp = angular.module("myapp", []);
 user="<?php echo $_SESSION[Userid]; ?>";
 myApp.controller("BrijController", function($scope,$http,$sce) {
 	$scope.user="<?php echo $_SESSION[Userid]; ?>";
+  $scope.header_of_passbook="Passbook";
 	$scope.transaction_state_display="Send Money to";
 	$scope.show_acc_name="";
 	$scope.acc_num_style = {
 		"border-width":"1.45px"
-					};
+	};
+  $scope.get_trans_num=2;
+  $scope.get_last_transaction=function(num){
+    var flag=1;
+    $scope.get_trans_num=num;
+    $http({
+      method : "POST",
+      url : "customer_interface.py",
+      data: "get_last_transaction="+$scope.user+"&num_of_transactions="+$scope.get_trans_num,
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+    }).then(function mySuccess(response) {
+      flag = response.data;
+      flag=flag.trim();
+      if(flag.startsWith("11"))
+      {
+        $scope.last_trans_num=parseInt(flag.substr(2,2));
+        $scope.show_last_5_transaction=$sce.trustAsHtml(flag.substr(4));
+      }
+      else {
+
+      }
+    }, function myError(response) {
+
+    });
+  };
+  $scope.get_last_transaction($scope.get_trans_num);
+  $scope.show_more_transactions=function()
+  {
+    if($scope.last_trans_num<$scope.get_trans_num)
+    {
+      $scope.success_modal_val=$sce.trustAsHtml("<b>You have reached maximum limit of transactions</b>");
+      $("#success_modal_scope").modal("show");
+      return;
+    }
+    else{
+      $scope.get_trans_num+=2;
+      $scope.get_last_transaction($scope.get_trans_num);
+    }
+  };
 	$scope.check_acc_exists = function(value) {
 						    var flag=1;
 								$http({

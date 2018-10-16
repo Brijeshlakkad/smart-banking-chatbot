@@ -144,3 +144,10 @@ if form.getvalue("make_transaction") and form.getvalue("acc_num") and form.getva
 	flag_bit=customer_details.make_transaction(from_acc_no,to_acc_no,amount)
 	flag_bit=flag_bit.strip()
 	print("%s"%flag_bit)
+if form.getvalue("get_last_transaction") and form.getvalue("num_of_transactions"):
+	user=security.protect_data(form.getvalue("get_last_transaction"))
+	num=security.protect_data(form.getvalue("num_of_transactions"))
+	acc_no=customer_details.get_account_details_by_user(user,"acc_no")
+	flag_bit=customer_details.get_last_transaction(acc_no,num)
+	flag_bit=flag_bit.strip()
+	print("%s"%flag_bit)
