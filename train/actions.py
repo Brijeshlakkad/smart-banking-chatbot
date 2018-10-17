@@ -10,7 +10,190 @@ from rasa_core.actions.action import *
 from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
-import random
+import random,re
+class ActionBotControlStartOver(Action):
+    def name(self):
+        return "action_bot_control_start_over"
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_bot_control_start_over_reply",tracker,name=name)
+        return [AllSlotsReset()]
+class ActionBotControlStandby(Action):
+    def name(self):
+        return "action_bot_control_standby"
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_bot_control_standby_reply",tracker,name=name)
+        return []
+class ActionBotControlConfirmPresence(Action):
+    def name(self):
+        return 'action_bot_control_confirm_presence'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_bot_control_confirm_presence_reply",tracker,name=name)
+        return []
+class ActionBotControlChangeSubject(Action):
+    def name(self):
+        return 'action_bot_control_change_subject'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_bot_control_change_subject_reply",tracker,name=name)
+        return []
+class ActionAskInputTransferMoney(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+        BooleanFormField("transfer_perm","affirm","deny"),
+        FreeTextFormField("where"),
+        FreeTextFormField("amount")
+        ]
+    def name(self):
+        return 'action_ask_input_transfer_money'
+    def submit(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        transfer_perm=tracker.get_slot("transfer_perm")
+        where=tracker.get_slot("where")
+        amount=tracker.get_slot("amount")
+        amount=str(amount)
+        if transfer_perm==None:
+            return [SlotSet("transfer_perm",None),SlotSet("requested_slot","transfer_perm"),SlotSet("service_access",None)]
+        if transfer_perm!=True:
+            return [SlotSet("transfer_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        userid=get_personal_info(user,password,"cid")
+        from_acc_no=get_account_info(user,password,"acc_no")
+        result_where=str(check_acc_num_exists(where,userid))
+        if not result_where.startswith("11"):
+            dispatcher.utter_message("Please enter valid account number: ")
+            return [SlotSet("where",None),SlotSet("amount",None),SlotSet("requested_slot","where")]
+        if amount==None or (not re.match("[0-9]+",amount)):
+            dispatcher.utter_message("Please enter valid amount: ")
+            return [SlotSet("amount",None),SlotSet("requested_slot","amount")]
+        amount=int(amount)
+        if amount>50000:
+            dispatcher.utter_message("Please enter valid amount less than Rs.50000: ")
+            return [SlotSet("amount",None),SlotSet("requested_slot","amount")]
+        return [SlotSet("service_access",1),SlotSet("requested_slot",None)]
+class ActionTransferMoney(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+            FreeTextFormField("got_otp")
+        ]
+    def name(self):
+        return 'action_transfer_money'
+    def submit(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        template="utter_sent_money_reply"
+        transfer_perm=tracker.get_slot("transfer_perm")
+        where=tracker.get_slot("where")
+        amount=tracker.get_slot("amount")
+        service_access=tracker.get_slot("service_access")
+        if service_access==None or service_access!=1:
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        if transfer_perm==None or transfer_perm!=True:
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        userid=get_personal_info(user,password,"cid")
+        from_acc_no=get_account_info(user,password,"acc_no")
+        result_where=str(check_acc_num_exists(where,userid))
+        if not result_where.startswith("11"):
+            dispatcher.utter_message("Transaction Failed! Account number was not correct.")
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        to_acc_no=where
+        amount=str(amount)
+        if amount==None or (not re.match("[0-9]+",amount)):
+            dispatcher.utter_message("Transaction Failed! Amount was incorrect!")
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        amount=int(amount)
+        if amount>50000:
+            dispatcher.utter_message("Transaction Failed! Amount was incorrect!")
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        acc_name=result_where[2:]
+        got_otp=tracker.get_slot("got_otp")
+        last_otp=tracker.get_slot("last_otp")
+        last_otp=int(last_otp)
+        if last_otp==-99:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        got_otp=str(got_otp)
+        if got_otp==None or (not re.match("[0-9]{6}",got_otp)):
+            dispatcher.utter_message("Transaction Failed! OTP was not correct.")
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        got_otp=int(got_otp)
+        if got_otp==1:
+            otp=send_otp_to_customer(user,password)
+            return [SlotSet("last_otp",otp),SlotSet("requested_slot","got_otp")]
+        if got_otp==2:
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        if last_otp!=got_otp:
+            dispatcher.utter_message("Transaction Failed! OTP was incorrect!")
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        result_transfer=str(make_transaction(from_acc_no,to_acc_no,amount))
+        if not result_transfer.startswith("11"):
+            dispatcher.utter_message("Transaction Failed!")
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        dispatcher.utter_template(template,tracker,name=name,to_acc_name=acc_name)
+        ans=get_last_transaction_without_html_tags(from_acc_no,1)
+        dispatcher.utter_template("utter_view_activity_reply",tracker,name=name,ans=ans)
+        return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+class ActionSendOTPForTransaction(Action):
+    def name(self):
+        return 'action_send_otp_for_transaction'
+    def run(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        service_access=tracker.get_slot("service_access")
+        if service_access==None or service_access!=1:
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
+        #otp=send_otp_to_customer(user,password)
+        otp=111111
+        dispatcher.utter_template("utter_ask_got_otp",tracker)
+        return [SlotSet("last_otp",otp),SlotSet("requested_slot","got_otp")]
 class ActionViewActivity(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -39,7 +222,7 @@ class ActionViewActivity(FormAction):
             return [ActionReverted()]
         ans=get_last_transaction_without_html_tags(acc_no,num_trans)
         dispatcher.utter_template(template,tracker,name=name,ans=ans)
-        return [SletSet("num_trans",None)]
+        return [SlotSet("num_trans",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class ActionReportMissingCard(Action):
     def name(self):
         return 'action_report_missing_card'

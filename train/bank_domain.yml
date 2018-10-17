@@ -57,6 +57,12 @@ slots:
     type: text
   num_trans:
     type: text
+  transfer_perm:
+    type: text
+  where:
+    type: text
+  amount:
+    type: text
 intents:
   - None
   - affirm
@@ -91,6 +97,11 @@ intents:
   - Banking_Change_Contact
   - Banking_Report_Missing_Card
   - Banking_View_Activity
+  - Banking_Transfer_Money
+  - Bot_Control_Change_Subject
+  - Bot_Control_Confirm_Presence
+  - Bot_Control_Standby
+  - Bot_Control_Start_Over
 entities:
   - using_what
   - name
@@ -243,12 +254,39 @@ templates:
   utter_ask_num_trans:
     - "Please tell me how many transaction activities would you like to see?"
   utter_view_activity_reply:
-    -"{name} {ans}"
+    -"{name}\n{ans}"
   utter_got_asked_reply:
     - "{name} Your {key} is: {value}"
     - "Your {key} is {value}"
     - "it's {value}"
     - "Got it {name}! it's {value}"
+  utter_ask_transfer_perm:
+    - "With the help of Jon Snow Bot Service, To Transfer liquid, i have found following information from our bank.\n1. You can wire your money to only accounts registered in our bank\n2. Maximum limit to transfer money is Rs.50,000\nor Should i transfer money for you?"
+  utter_ask_where:
+    - "Enter JonSnow Bank account number: "
+  utter_ask_amount:
+    - "Enter amount to transfer: "
+  utter_sent_money_reply:
+    - "{name} your money is transferred successfully to the {to_acc_name}"
+  utter_bot_control_change_subject_reply:
+    - "{name} ok sure! What do you want to talk about?"
+    - "Ok {name}, What other issues regarding bank do you want to talk about?"
+  utter_bot_control_confirm_presence_reply:
+    - "I'm here {name}"
+    - "I'm alive {name}. Hit me questions ;)"
+    - "I'm here {name}. Hit me questions"
+    - "I didn't go anywhere. Ask me anything!"
+    - "I'm alive {name}. Ask me anything!"
+    - "I'm here {name}. Ask me anything!"
+  utter_bot_control_standby_reply:
+    - "Ok! I'll wait for you {name}."
+    - "Ok! Wake me up when you are ready {name}."
+    - "Okay! gotcha. Tell me when you are ready {name}."
+    - "Ok! Wake me up when you have issues {name}."
+    - "Okay! gotcha. Tell me when you have issues {name}."
+  utter_bot_control_start_over_reply:
+    - "Okay! {name}"
+    - "Ok! As you want {name}."
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -283,3 +321,10 @@ actions:
     - actions.ActionChangeContact
     - actions.ActionReportMissingCard
     - actions.ActionViewActivity
+    - actions.ActionAskInputTransferMoney
+    - actions.ActionSendOTPForTransaction
+    - actions.ActionTransferMoney
+    - actions.ActionBotControlChangeSubject
+    - actions.ActionBotControlConfirmPresence
+    - actions.ActionBotControlStandby
+    - actions.ActionBotControlStartOver
