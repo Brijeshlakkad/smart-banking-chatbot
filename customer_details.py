@@ -726,3 +726,26 @@ def get_last_transaction(acc_no,n):
 		return response
 	except:
 		return -99
+def get_last_transaction_without_html_tags(acc_no,n):
+	conn,cursor=config.connect_to_database()
+	trans_id=2179516709
+	sql="SELECT t_id,from_acc,to_acc,amount FROM transactions where from_acc='%s' or to_acc='%s' ORDER BY t_id DESC LIMIT %s;"%(acc_no,acc_no,n)
+	try:
+		cursor.execute(sql)
+		results=cursor.fetchall()
+		num=cursor.rowcount
+		num_str=str(num).zfill(2)
+		response="""Last %s Transactions"""%(num_str)
+		i=int(n)+1
+		for row in results:
+			t_id=row[0]
+			t_id=int(t_id)
+			from_acc_no=row[1]
+			to_acc_no=row[2]
+			trans_id+=t_id
+			amount=row[3]
+			i-=1
+			response+="""\n-----%s----\nTransactions id: #%s\nFrom Account Number: %s\nTo Account Number: %s\nAmount: Rs. %s"""%(i,trans_id,from_acc_no,to_acc_no,amount)
+		return response
+	except:
+		return -99
