@@ -1,0 +1,25 @@
+%[Banking_Get_Email]('training': '500')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[my?] ~[intent]
+~[intent]
+    email
+    email address
+    email id
+    google mail id
+    yahoo mail id
+    registered mail id
+    registered mail
+~[verb]
+    find
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with

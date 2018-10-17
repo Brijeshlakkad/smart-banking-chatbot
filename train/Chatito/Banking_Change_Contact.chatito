@@ -1,0 +1,37 @@
+%[Banking_Change_Contact]('training': '600')
+    ~[can you?] ~[please?] ~[verb] ~[my?] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[my?] ~[intent]
+    ~[can you?] ~[please?] get ~[me?] ~[my?] ~[intent] ~[verb2]
+    ~[can you?] ~[please?] help me to get ~[my?] ~[intent] ~[verb2]
+~[intent]
+    mobile number
+    mobile no
+    mob no
+    mob number
+    mobile num
+    mobile
+    contact
+    contact number
+    contact num
+    contact no
+~[verb]
+    change
+    modify
+    adjust
+    transit
+    correct
+    turn to
+    surrogate
+    modulation
+    refinement
+~[verb2]
+    changed
+    modified
+    adjusted
+    transited
+    corrected
+    turned
+    surrogated
+    modulated
+    refined

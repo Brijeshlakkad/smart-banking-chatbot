@@ -1,0 +1,15 @@
+%[Banking_Transfer_Money]('training': '400')
+    ~[can you?] ~[please?] ~[verb] ~[my?] ~[intent] ~[to other bank account?]
+    ~[please?] ~[can you?] help me to ~[verb] ~[my?] ~[intent] ~[to other bank account?]
+    ~[please?] assist ~[me?] to ~[verb] ~[my?] ~[intent] ~[to other bank account?]
+~[verb]
+    transfer
+    wire
+    send
+~[noun]
+    ~[my?] accounts
+    ~[my?] a/c
+~[intent]
+    money
+    liquid
+    funds

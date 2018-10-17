@@ -1,0 +1,81 @@
+%[Banking_View_Activity]('training': '2100')
+    Do you know about ~[intent] of ~[noun]?
+    Can I get statement for ~[intent] in last @[num_trans?] ~[tran_1]?
+    ~[tran?] ~[intent]
+    What is the amount of interest that got ~[intent_words] to my a/c?
+    When was the @[num_trans?] ~[tran_2] ~[noun?]?
+    Where to ~[intent_1] @[num_trans?] ~[intent] for ~[noun]?
+    @[num_trans?] ~[intent_1] ~[intent]
+    Please tell me @[num_trans?] ~[intent] ~[tran_1]
+    Places where ~[intent] can be ~[intent_2]
+    I would like to see @[num_trans?] recent activity on ~[noun]
+    I want someone to help me ~[intent_1] @[num_trans?] ~[intent] and summary for every activity of my account
+    I wanna ~[intent_1] ~[intent]
+~[intent]
+    ~[noun?] activities
+    recent activity
+    ~[noun?] ~[activity] history
+    ~[noun?] ~[activity] summary
+    ~[noun?] transactions
+~[noun]
+    ~[my?] accounts
+    ~[my?] a/c
+~[intent_2]
+    checked
+    viewd
+    found
+    displayed
+    showed
+    searched
+    got
+    provided
+    obtained
+    prepared
+    overcame
+    caught
+    came with
+~[intent_1]
+    check
+    view
+    show
+    see
+    find
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with
+~[tran_1]
+    transactions
+    trans
+    details
+    summary
+~[tran_2]
+    levy order processed for
+    levy order of
+~[intent_words]
+    credited
+    debited
+    transacted
+    added
+    deducted
+    incremented
+    decremented
+@[num_trans]
+    10
+    2
+    3
+    4
+    1
+    7
+    9
+    12
+    14
+    3
+    any

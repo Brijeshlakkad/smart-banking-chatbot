@@ -1,0 +1,16 @@
+%[Banking_Get_Account_Number]('training': '200')
+    ~[can you?] ~[please?] ~[verb] ~[my?] ~[intent]
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[intent]
+~[intent]
+    Account number
+    account number
+    acc number
+    account no
+    acc no
+    acc_no
+~[verb]
+    get
+    give
+    provide

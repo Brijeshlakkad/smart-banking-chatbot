@@ -1,0 +1,29 @@
+%[Customer_Card_Number_Info]('training': '400')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[card_type?] ~[card_no]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[card_type?] ~[card_no]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[my?] ~[card_type?] ~[card_no]
+~[card_no]
+    card number
+    card no
+    card_no
+    cardno
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit
+~[verb]
+    find
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with

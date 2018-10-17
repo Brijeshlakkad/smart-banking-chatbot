@@ -1,0 +1,44 @@
+%[Banking_Report_Missing_Card]('training': '900')
+    What steps should be taken in the event of a ~[intent] ~[my?] ~[card_type?] card?
+    ~[My?] ~[card_type?] card is ~[intent] how should I cancel it
+    Someone took ~[my?] ~[card_type?] card!
+    What are the options with the ~[card_type?] card ~[intent_1]?
+    I would like to know what to do if I ~[intent_1] ~[my?] ~[card_type?] card
+    Can I lock my credit card until I find it?
+    Help! I ~[intent_1] my credit card with my purse in the taxi and I'm afraid someone's gonna use it
+    How can I cancel my credit card which was ~[intent]?
+    How do I file for a ~[intent] card?
+    How do I go about reporting a ~[card_type?] card ~[intent]?
+    How do I report the ~[intent] of ~[my?] ~[card_type?] card?
+    How much is the charge for a ~[intent] ~[card_type?] card?
+    I have ~[intent] ~[my?] ~[card_type?] card and I want to deactivate it
+    I have ~[intent_words] ~[my?] ~[card_type?] card
+    I need assistance as I've ~[intent_words] ~[my?] ~[card_type?] card
+    Is there any charge for registering a complaint for ~[my?] ~[card_type?] card ~[intent]?
+    What if I ~[intent] ~[my?] ~[card_type?] card?
+    What if I ~[intent_words] ~[my?] ~[card_type?] card?
+    What is the procedure to report ~[intent] ~[my?] ~[card_type?] card?
+    What is the way to report a ~[intent] card?
+    What steps can I take when I ~[intent] ~[my?] ~[card_type?] card?
+~[intent]
+    missing
+    lost
+    loss
+    took by someone
+    theft
+    stolen
+~[intent_words]
+    no idea where ~[i?] placed
+    loss
+    lose
+    left
+~[intent_1]
+    lose
+    left
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit

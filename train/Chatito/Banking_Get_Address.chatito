@@ -1,0 +1,25 @@
+%[Banking_Get_Address]('training': '400')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[my?] ~[intent]
+~[intent]
+    present address
+    address
+    addr
+    adress
+    addres
+    postal address
+    postal addr
+~[verb]
+    find
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with

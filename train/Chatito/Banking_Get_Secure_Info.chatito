@@ -1,0 +1,30 @@
+%[Banking_Get_Secure_Info]('training': '1500')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] @[to_get]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] @[to_get]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] @[to_get]
+@[to_get]
+    password
+    passcode
+    pass code
+    pass-code
+    cvv
+    card cvv
+    till_month
+    till_year
+    till month
+    till year
+    expiry year
+    expiry month
+~[verb]
+    find
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with
