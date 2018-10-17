@@ -135,7 +135,7 @@ def provides_feedbacks():
 		num_row=int(cursor.rowcount)
 		if num_row!=0:
 			i=0
-			feedbacks="""<div class="row" style="margin:20px;"><caption><h2>Feedbacks</h2></caption><table class='customerTable table-striped'><tr><td><b>Index no.</b></td><td><b>Email</b></td><td><b>Feedbacks</b></td><td><b>Time</b></td></tr>"""
+			feedbacks="""<div class="row" style="margin:20px;"><caption><h2>Feedbacks <button class="btn btn-primary" id="feedback_refresh"><span class="glyphicon glyphicon-refresh"></span></button></h2></caption><table class='customerTable table-striped'><tr><td><b>Index no.</b></td><td><b>Email</b></td><td><b>Feedbacks</b></td><td><b>Time</b></td></tr>"""
 			for row in results:
 				f_id=row[0]
 				email=row[1]
@@ -143,7 +143,25 @@ def provides_feedbacks():
 				time=row[3]
 				i+=1
 				feedbacks+="""<tr id='%s' style="cursor:pointer;"><td>%s</td><td><a class='btn btn-link' href='mailto:%s'>%s</a></td><td>%s</td><td>%s</td></tr>"""%(f_id,i,email,email,f_text,time)
-			feedbacks+="</table></div>"
+			feedbacks+="""</table></div>
+			<script>
+			var get_table_of_details=function(flag)
+			{
+				$.ajax({
+		     		type: 'POST',
+					url: 'admin_interface.py',
+		           	data: 'flag='+flag,
+		         	success  : function (data)
+		         	{
+						$("#show_here").empty();
+						$("#show_here").html(data);
+		         	}
+					});
+			};
+			$("#feedback_refresh").click(function(){
+				get_table_of_details("new_feedbacks");
+			});
+			</script>"""
 		else:
 			feedbacks=no_found.no_found("We have not got any feedbacks, yet.")
 		return feedbacks
@@ -151,14 +169,14 @@ def provides_feedbacks():
 		return "-99"
 def provides_requests():
 	conn,cursor=config.connect_to_database()
-	sql="select * from requests"
+	sql="select * from requests ORDER BY created_time DESC"
 	try:
 		cursor.execute(sql)
 		results=cursor.fetchall()
 		num_row=int(cursor.rowcount)
 		if num_row!=0:
 			i=0
-			requests="""<div class="row" style="margin:20px;"><caption><h2>Requests</h2></caption><table class='customerTable table-striped'><tr><td><b>Index no.</b></td><td><b>Account Number</b></td><td><b>Account Name</b></td><td><b>Requesting</b></td><td><b>Time</b></td></tr>"""
+			requests="""<div class="row" style="margin:20px;"><caption><h2>Requests <button class="btn btn-primary" id="request_refresh"><span class="glyphicon glyphicon-refresh"></span></button></h2></caption><table class='customerTable table-striped'><tr><td><b>Index no.</b></td><td><b>Account Number</b></td><td><b>Account Name</b></td><td><b>Requesting</b></td><td><b>Time</b></td></tr>"""
 			for row in results:
 				r_id=row[0]
 				acc_id=row[1]
@@ -172,7 +190,24 @@ def provides_requests():
 				profile_link="""<a class='btn btn-link' id='profile_link'>%s</a>"""%acc_name
 				requests+="""<tr class='clickable-row' id='%s' style="cursor:pointer;"><td>%s</td><td id='%s' class='c_id'>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>"""%(r_id,i,c_id,acc_no,profile_link,req,time)
 			requests+="</table></div>"
-			requests+="""<script>$(".clickable-row").click(function() {
+			requests+="""<script>
+			var get_table_of_details=function(flag)
+			{
+				$.ajax({
+		     		type: 'POST',
+					url: 'admin_interface.py',
+		           	data: 'flag='+flag,
+		         	success  : function (data)
+		         	{
+						$("#show_here").empty();
+						$("#show_here").html(data);
+		         	}
+					});
+			};
+			$("#request_refresh").click(function(){
+				get_table_of_details("new_requests");
+			});
+			$(".clickable-row").click(function() {
 			var r_id=$(this).attr("id");
 			var c_id=$(this).children("td.c_id").attr("id");
 			$(this).append("<form action='customer_profile.php' id='show_customer' method='post'><input type='hidden' name='request_id' value='"+r_id+"' /><input type='hidden' name='customer_id' value='"+c_id+"' /></form>");

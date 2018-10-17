@@ -8,7 +8,7 @@ $(document).ready(function(){
 	var get_table_of_details=function(flag)
 	{
 		$.ajax({
-     		type: 'POST', 
+     		type: 'POST',
 			url: 'admin_interface.py',
            	data: 'flag='+flag,
          	success  : function (data)
