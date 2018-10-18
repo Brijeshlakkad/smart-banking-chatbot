@@ -408,6 +408,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -988,6 +990,8 @@
 * General_Human_or_Bot
     - action_human_or_bot
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1062,6 +1066,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1114,6 +1120,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1163,6 +1171,8 @@
     - slot{"access": 1}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1276,6 +1286,8 @@
     - slot{"access": 1}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1367,6 +1379,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1610,6 +1624,8 @@
     - slot{"access": 1}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1764,6 +1780,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -1981,6 +1999,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2088,6 +2108,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2195,6 +2217,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2304,6 +2328,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2401,6 +2427,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2498,6 +2526,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2609,6 +2639,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2706,6 +2738,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2807,6 +2841,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -2906,6 +2942,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3055,6 +3093,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3166,6 +3206,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3320,6 +3362,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3417,6 +3461,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3514,6 +3560,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3611,6 +3659,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3742,6 +3792,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -3851,6 +3903,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Password
@@ -3933,6 +3987,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Password
@@ -4026,6 +4082,8 @@
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Password
@@ -4120,6 +4178,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Password
@@ -4898,6 +4958,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -4924,6 +4986,8 @@
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -5033,6 +5097,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -5590,6 +5656,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -5732,6 +5800,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -5766,6 +5836,8 @@
 * Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -5964,6 +6036,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6162,6 +6236,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6334,6 +6410,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6366,6 +6444,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6540,6 +6620,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6713,6 +6795,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6749,6 +6833,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6921,6 +7007,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -6951,6 +7039,8 @@
 * None
     - action_fallback
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -7085,6 +7175,8 @@
 * General_Ending
     - action_ending
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -7221,6 +7313,8 @@
 * deny
     - action_fallback
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -7577,6 +7671,8 @@
 * Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -8291,6 +8387,8 @@
 * Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -8444,6 +8542,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -8524,6 +8624,8 @@
 * Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -8679,6 +8781,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -9018,6 +9122,8 @@
 * Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -9185,6 +9291,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -9274,6 +9382,8 @@
 * Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -9412,6 +9522,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -11918,6 +12030,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -12113,6 +12227,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -12285,6 +12401,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -12421,6 +12539,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -12593,6 +12713,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -12794,6 +12916,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -12960,6 +13084,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -13096,6 +13222,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -13268,6 +13396,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -13439,6 +13569,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -15084,6 +15216,8 @@
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -15334,6 +15468,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number
@@ -15709,6 +15845,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Passcode
@@ -15744,6 +15882,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Password
@@ -15856,6 +15996,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_card_replace
     - slot{"requested_slot": "card_replace_with"}
 * Banking_Card_Number

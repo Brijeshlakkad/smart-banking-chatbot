@@ -1164,6 +1164,34 @@ class GetFeeInquiry(Action):
         fees=round(fees,2)
         dispatcher.utter_template("utter_fee_inquiry_reply",tracker,fees=fees)
         return []
+class ActionCheckAccAndCard(Action):
+    def name(self):
+        return 'action_check_account_and_card'
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if results!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        userid=get_personal_info(user,password,"cid")
+        hasAcc=get_personal_info(user,password,"hasAcc")
+        if hasAcc==-99:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
+        elif hasAcc==0:
+            dispatcher.utter_message("You do not have any account yet. You can apply for a card application after getting an JonSnow Bank account.")
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
+        cardExist=customer_card_has(userid)
+        if cardExist==-22:
+            dispatcher.utter_message("You do not have any card yet, But you can apply for a card application.")
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
+        elif cardExist==-99:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
+        return [SlotSet("service_access",1)]
 class CardReplaceService(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -1184,6 +1212,10 @@ class CardReplaceService(FormAction):
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
         user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
         card_perm=tracker.get_slot("card_perm")
         card_replace_with=tracker.get_slot("card_replace_with")
         if passcode==None or card_replace_with==None or card_perm==None:
@@ -1191,21 +1223,6 @@ class CardReplaceService(FormAction):
         if card_perm!=True:
             return [SlotSet("passcode",None),SlotSet("card_permission",None),SlotSet("requested_slot",None),SlotSet("card_replace_with",None)]
         passcode=str(passcode)
-        userid=get_personal_info(user,password,"cid")
-        hasAcc=get_personal_info(user,password,"hasAcc")
-        if hasAcc==-99:
-            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
-        elif hasAcc==0:
-            dispatcher.utter_message("You do not have any account yet. You can apply for a card application after getting an JonSnow Bank account.")
-            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
-        cardExist=customer_card_has(userid)
-        if cardExist==-22:
-            dispatcher.utter_message("You do not have any card yet, But you can apply for a card application.")
-            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
-        elif cardExist==-99:
-            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
         card_replace_with=str(card_replace_with)
         if not re.match("[0-9]+",card_replace_with):
             dispatcher.utter_message("Please enter valid card number: ")

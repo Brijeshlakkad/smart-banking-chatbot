@@ -351,3 +351,4 @@ actions:
     - actions.ActionGetAccountBalance
     - actions.ActionGetCardRequestStatus
     - actions.ActionCardRequest
+    - actions.ActionCheckAccAndCard
