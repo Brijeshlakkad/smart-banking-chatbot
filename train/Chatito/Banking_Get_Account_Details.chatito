@@ -1,0 +1,40 @@
+%[Banking_Get_Account_Details]('training': '800')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[my?] ~[intent]
+    How can i be ~[verb_1] ~[intent]?
+~[intent]
+    Account details
+    account details
+    acc details
+    account details
+    acc details
+    a/c details
+~[verb]
+    find
+    check
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with
+~[verb_1]
+    checked
+    viewed
+    found
+    displayed
+    showed
+    searched
+    got
+    provided
+    obtained
+    prepared
+    overcame
+    caught
+    came with

@@ -1,0 +1,55 @@
+%[Banking_Card_Request]('training': '1700')
+    ~[can you?] ~[please?] ~[verb] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[intent]
+    How can i be get ~[intent] ~[verb_1]?
+    ~[varb?] ~[card_type?] card ~[sub_intent]
+~[intent]
+    ~[a?] ~[sub_intent] for card
+~[sub_intent]
+    request
+    appeal
+    application
+    call
+    demand
+    desire
+    inquiry
+    invitation
+    offer
+    recourse
+    requisition
+    solicitation
+~[verb]
+    raise
+    initiate
+    make
+    generate
+    induce
+    originate
+    bear
+    give rise to
+    whip up
+    achieve
+    bring about
+    cause
+    develop
+    engender
+    provoke
+    set up
+~[verb_1]
+    raised
+    initiated
+    made
+    generated
+    induced
+    originated
+    beared
+    give rose to
+    whip up
+    achieved
+    brought
+    caused
+    developed
+    engendered
+    provoked
+    set up

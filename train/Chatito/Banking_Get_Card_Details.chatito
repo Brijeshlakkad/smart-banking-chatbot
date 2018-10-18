@@ -1,0 +1,45 @@
+%[Banking_Get_Card_Details]('training': '800')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[my?] ~[intent]
+    How can i be ~[verb_1] ~[intent]?
+~[intent]
+    ~[card_type?] card details
+    ~[card_type?] card summary
+    ~[card_type?] card all details
+    ~[verb] ~[intent]
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit
+~[verb]
+    find
+    check
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with
+~[verb_1]
+    checked
+    viewd
+    found
+    displayed
+    showed
+    searched
+    got
+    provided
+    obtained
+    prepared
+    overcame
+    caught
+    came with

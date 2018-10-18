@@ -1,0 +1,15 @@
+%[affirm]('training': '1200')
+    ~[intent] ~[please?] ~[verb?]
+~[intent]
+    yes
+    why not
+    do it
+    hell yeah
+    hell yaa
+    hell ya
+~[verb]
+    help ~[me?]
+    assist ~[me?]
+    get ~[me?]
+    get me some time
+    help and get me some ~[free?] time
