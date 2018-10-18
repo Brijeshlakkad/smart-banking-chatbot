@@ -90,7 +90,7 @@ def card_replace(user,password,old_card):
         return -99
     b=delete_customer_card("card_no",card_no)
     if b==11:
-        b=int(create_card(acc_id))
+        b=int(request_services(acc_id,"card"))
         if b==11:
             return 1
     return -99
