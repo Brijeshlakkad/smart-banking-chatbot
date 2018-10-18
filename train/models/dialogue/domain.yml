@@ -3,21 +3,10 @@ action_names:
 - action_get_access
 - action_activate_card
 - action_cancel_card
-- utter_ask_email
-- utter_ask_password
 - utter_first_access
-- utter_access
-- utter_ask_passcode
-- utter_activated_card
-- utter_deactivated_card
 - utter_positive_reply
-- utter_ask_card_permission
-- utter_give_pos_ans
 - action_fee_inquiry
-- utter_fee_inquiry_reply
-- utter_ask_card_perm
 - action_card_replace
-- utter_replace_card_reply
 - action_fallback
 - action_greeting
 - action_ending
@@ -34,26 +23,35 @@ action_names:
 - action_get_email
 - action_get_username
 - action_get_acc_status
+- action_get_contact
 - action_change_credential_info
+- action_send_otp
+- action_get_otp_permission
+- action_change_username
+- action_change_passcode
+- action_change_password
+- action_change_contact
+- action_report_missing_card
+- action_view_activity
+- action_ask_input_transfer_money
+- action_send_otp_for_transaction
+- action_transfer_money
+- action_bot_control_change_subject
+- action_bot_control_confirm_presence
+- action_bot_control_standby
+- action_bot_control_start_over
+- action_get_card_status
+- action_get_card_details
+- action_get_account_details
+- action_get_account_balance
 actions:
 - actions.GetAccess
 - actions.ActivateCardService
 - actions.CancelCardService
-- utter_ask_email
-- utter_ask_password
 - utter_first_access
-- utter_access
-- utter_ask_passcode
-- utter_activated_card
-- utter_deactivated_card
 - utter_positive_reply
-- utter_ask_card_permission
-- utter_give_pos_ans
 - actions.GetFeeInquiry
-- utter_fee_inquiry_reply
-- utter_ask_card_perm
 - actions.CardReplaceService
-- utter_replace_card_reply
 - actions.ActionFallback
 - actions.ActionGreeting
 - actions.ActionEnding
@@ -70,7 +68,27 @@ actions:
 - actions.ActionGetEmail
 - actions.ActionGetUsername
 - actions.ActionGetAccStatus
+- actions.ActionGetContact
 - actions.ActionChangeCredentialInfo
+- actions.ActionSendOTP
+- actions.ActionGetOTPPermission
+- actions.ActionChangeUsername
+- actions.ActionChangePasscode
+- actions.ActionChangePassword
+- actions.ActionChangeContact
+- actions.ActionReportMissingCard
+- actions.ActionViewActivity
+- actions.ActionAskInputTransferMoney
+- actions.ActionSendOTPForTransaction
+- actions.ActionTransferMoney
+- actions.ActionBotControlChangeSubject
+- actions.ActionBotControlConfirmPresence
+- actions.ActionBotControlStandby
+- actions.ActionBotControlStartOver
+- actions.ActionGetCardStatus
+- actions.ActionGetCardDetails
+- actions.ActionGetAccountDetails
+- actions.ActionGetAccountBalance
 config:
   store_entities_as_slots: true
 entities:
@@ -87,14 +105,25 @@ entities:
 - user_wants
 - help_asking_time
 - question_yes_no
+- num_trans
 intents:
 - None:
     use_entities: true
 - Banking_Cancel_Card:
     use_entities: true
+- Banking_Report_Missing_Card:
+    use_entities: true
+- Banking_Get_Card_Details:
+    use_entities: true
 - Banking_Password:
     use_entities: true
+- Bot_Control_Change_Subject:
+    use_entities: true
 - General_Ending:
+    use_entities: true
+- Banking_Change_Contact:
+    use_entities: true
+- Banking_Transfer_Money:
     use_entities: true
 - Banking_Get_Acc_Status:
     use_entities: true
@@ -116,6 +145,10 @@ intents:
     use_entities: true
 - Banking_Get_Address:
     use_entities: true
+- Banking_Change_Password:
+    use_entities: true
+- Banking_Get_Card_Status:
+    use_entities: true
 - deny:
     use_entities: true
 - Banking_Change_Username:
@@ -125,6 +158,8 @@ intents:
 - General_Negative_Feedback:
     use_entities: true
 - affirm:
+    use_entities: true
+- Bot_Control_Confirm_Presence:
     use_entities: true
 - Banking_Fee_Inquiry:
     use_entities: true
@@ -136,11 +171,25 @@ intents:
     use_entities: true
 - Banking_Get_Card_Number:
     use_entities: true
+- Bot_Control_Standby:
+    use_entities: true
 - Banking_Get_Email:
     use_entities: true
 - Banking_Replace_Card:
     use_entities: true
+- Banking_View_Activity:
+    use_entities: true
+- Banking_Get_Account_Details:
+    use_entities: true
+- Banking_Get_Account_Balance:
+    use_entities: true
+- Bot_Control_Start_Over:
+    use_entities: true
+- Banking_Change_Passcode:
+    use_entities: true
 - Banking_Email:
+    use_entities: true
+- Banking_Get_Contact:
     use_entities: true
 slots:
   access:
@@ -154,6 +203,9 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
   address2:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  amount:
     initial_value: null
     type: rasa_core.slots.TextSlot
   card_perm:
@@ -172,10 +224,31 @@ slots:
     - none
     - '0'
     - '1'
+  contact:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   email:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  got_otp:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  last_otp:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   name:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  new_passcode:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  new_password:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  new_username:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  num_trans:
     initial_value: null
     type: rasa_core.slots.TextSlot
   passcode:
@@ -197,7 +270,16 @@ slots:
     - none
     - '0'
     - '1'
+  transfer_perm:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  username:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   using_what:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  where:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
@@ -213,9 +295,11 @@ templates:
   - text: Okay! Boss
   - text: Okay :(
   utter_ask_address1:
-  - text: 'Please enter your new postal address line 1: '
+  - text: 'Please tell me your new postal address line 1: '
   utter_ask_address2:
-  - text: 'Please enter your new postal address line 2: '
+  - text: 'Please tell me your new postal address line 2: '
+  utter_ask_amount:
+  - text: 'Enter amount to transfer: '
   utter_ask_card_perm:
   - text: Are you sure?
   - text: Enter 'Yes' if you want to continue
@@ -234,19 +318,73 @@ templates:
       \ Details)"
   - text: "Card number to replace with: \n(You can see card number in your Profile\
       \ Settings>>Services>>Card Details)"
+  utter_ask_contact:
+  - text: 'Please tell me your new contact: '
   utter_ask_email:
-  - text: 'Please Enter Email:'
+  - text: 'Please tell me your email:'
+  - text: 'Please tell me your email address:'
+  - text: 'Please tell me your email id:'
+  - text: 'Please give me your email:'
+  - text: 'Please give me your email address:'
+  - text: 'Please give me your email id:'
+  utter_ask_got_otp:
+  - text: 'We have sent OTP to your registered mail id. Please enter
+
+      1. To resend the otp
+
+      2. To cancel this request
+
+      or Enter OTP HERE:'
+  utter_ask_new_passcode:
+  - text: 'Please tell me your new passcode: '
+  utter_ask_new_password:
+  - text: 'Please tell me your new password: '
+  utter_ask_num_trans:
+  - text: Please tell me how many transaction activities would you like to see?
   utter_ask_passcode:
   - text: 'Please enter your passcode: '
   utter_ask_password:
-  - text: 'Please Enter Password:'
-  utter_change_address_reply:
-  - text: '{name} your address has been changed.
+  - text: 'Please tell me your password:'
+  - text: 'Please give me your password:'
+  utter_ask_transfer_perm:
+  - text: 'With the help of Jon Snow Bot Service, To Transfer liquid, i have found
+      following information from our bank.
 
-      You can ask me or see for verification of your postal address details on Personal
-      Settings panel.'
+      1. You can wire your money to only accounts registered in our bank
+
+      2. Maximum limit to transfer money is Rs.50,000
+
+      or Should i transfer money for you?'
+  utter_ask_username:
+  - text: 'Tell me your new username: '
+  utter_ask_where:
+  - text: 'Enter JonSnow Bank account number: '
+  utter_bot_control_change_subject_reply:
+  - text: '{name} ok sure! What do you want to talk about?'
+  - text: Ok {name}, What other issues regarding bank do you want to talk about?
+  utter_bot_control_confirm_presence_reply:
+  - text: I'm here {name}
+  - text: I'm alive {name}. Hit me questions ;)
+  - text: I'm here {name}. Hit me questions
+  - text: I didn't go anywhere. Ask me anything!
+  - text: I'm alive {name}. Ask me anything!
+  - text: I'm here {name}. Ask me anything!
+  utter_bot_control_standby_reply:
+  - text: Ok! I'll wait for you {name}.
+  - text: Ok! Wake me up when you are ready {name}.
+  - text: Okay! gotcha. Tell me when you are ready {name}.
+  - text: Ok! Wake me up when you have issues {name}.
+  - text: Okay! gotcha. Tell me when you have issues {name}.
+  utter_bot_control_start_over_reply:
+  - text: Okay! {name}
+  - text: Ok! As you want {name}.
   utter_change_credential_info_reply:
   - text: '{name} you can not change this {ent} credential information through chatbot.'
+  utter_change_entity_reply:
+  - text: '{name} your {ent} has been changed.
+
+      You can ask me or see for verification of your {ent} details on Personal Settings
+      panel.'
   utter_deactivated_card:
   - text: You got it! Boss. Your card is deactivated.
   - text: Okay! Boss. Card is deactivated.
@@ -273,6 +411,11 @@ templates:
   - text: '{name} your account is activate currently'
   utter_get_acc_status_reply_2:
   - text: '{name} your account is not yet created'
+  utter_get_account_balance_reply:
+  - text: '{name} your {acc} balance is Rs.{balance}'
+  utter_get_account_details_reply:
+  - text: 'Sorry, {name}! I can not provide other credential information. The details
+      i can provide are: 1. Account Number, 2. Account Balance and 3. Account Status'
   utter_get_account_number_reply:
   - text: '{name} Your account number is: {acc_no}'
   - text: Your account number is {acc_no}
@@ -283,20 +426,27 @@ templates:
   - text: Your postal address is {postal_add}
   - text: it's {postal_add}
   - text: Got it {name}! it's {postal_add}
+  utter_get_card_details_reply:
+  - text: 'Sorry, {name}! I can not provide other credential information. I can only
+      provide card number of your relevant card and its status. '
   utter_get_card_number_reply:
   - text: '{name} Your card number is: {card_no}'
   - text: Your card number is {card_no}
   - text: it's {card_no}
   - text: Got it {name}! it's {card_no}
+  utter_get_card_status_reply:
+  - text: '{name} your card is currently {status}'
+  - text: '{name} your card is {status} currently'
   utter_get_email_reply:
   - text: '{name} Your email is: {email}'
   - text: Your email is {email}
   - text: it's {email}
   - text: Got it {name}! it's {email}
   utter_get_secure_info_reply:
-  - text: "Sorry, {name} i can not provide you with {ent} credential information because\
-      \ of your security reasons.\n You can always see this info in your Personal\
-      \ Settings"
+  - text: 'Sorry, {name} i can not provide you with {ent} credential information because
+      of your security reasons.
+
+      You can always see this info in your Personal Settings'
   utter_get_username_reply:
   - text: '{name} Your username is: {username}'
   - text: Your username is {username}
@@ -305,6 +455,11 @@ templates:
   utter_give_pos_ans:
   - text: Yes, You can do it {using}!
   - text: Ofcourse, You can always do it {using}.
+  utter_got_asked_reply:
+  - text: '{name} Your {key} is: {value}'
+  - text: Your {key} is {value}
+  - text: it's {value}
+  - text: Got it {name}! it's {value}
   utter_greet_reply:
   - text: Hello {name}!
   - text: Hello {name}! How can i help?
@@ -332,8 +487,37 @@ templates:
   - text: 'Your card replace request has been initiated.
 
       You will get your new card details soon.'
+  utter_report_missing_card_reply:
+  - text: '{name} You can deactivate your card using several ways :
+
+      1. Goto Profile Settings>>Services>>Active/Deactivate Card
+
+      2. Using ATM
+
+      3. Using Text
+
+      4. You can always ask me to cancel your card and you can active it again using
+      me!'
   utter_security_assurance_reply:
   - text: I m glad you asked. I can not provide more information, but i assure you
       that all things are secured including this conversation.
   - text: Our conversation is secured. That's all i can tell you now because i m told
       not to provide other information with this topic.
+  utter_sent_money_reply:
+  - text: '{name} your money is transferred successfully to the {to_acc_name}'
+  utter_view_activity_reply:
+  - text: '-'
+  - text: '"'
+  - text: '{'
+  - text: n
+  - text: a
+  - text: m
+  - text: e
+  - text: '}'
+  - text: ' '
+  - text: '{'
+  - text: a
+  - text: n
+  - text: s
+  - text: '}'
+  - text: '"'

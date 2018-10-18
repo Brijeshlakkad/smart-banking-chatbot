@@ -89,9 +89,10 @@ def card_replace(user,password,old_card):
     if str(card_no)!=str(old_card):
         return -99
     b=delete_customer_card("card_no",card_no)
-    if b==11:
-        b=int(request_services(acc_id,"card"))
-        if b==11:
+    c=delete_customer_request(acc_id,"card")
+    if b==11 and c==11:
+        b=str(request_services(acc_id,"card"))
+        if b=="11":
             return 1
     return -99
 def get_personal_info(user,password,field):
