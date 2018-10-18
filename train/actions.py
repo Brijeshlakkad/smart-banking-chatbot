@@ -24,9 +24,13 @@ class ActionGetAccountBalance(Action):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         balance=get_account_info(user,password,"balance")
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("requested_slot",None),SlotSet("service_access",None)]
         acc=random.choice(['account','a/c','acc'])
         dispatcher.utter_template("utter_get_account_balance_reply",tracker,name=name,balance=balance,acc=acc)
-        return []
+        return [SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionGetAccountDetails(Action):
     def name(self):
         return "action_get_account_details"
