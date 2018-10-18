@@ -234,8 +234,8 @@ def delete_customer_card(field,value):
 def change_customer_details(field,value,user):
 	column_value=['postal_add','username','contact',"passcode","password"]
 	conn,cursor=config.connect_to_database()
-	if field=="username":
-		sql="select email from customers where username='%s'"%value
+	if field=="username" or field=="contact":
+		sql="select email from customers where %s='%s'"%(field,value)
 		try:
 			cursor.execute(sql)
 			if cursor.rowcount!=0:
