@@ -258,7 +258,7 @@ templates:
   utter_ask_num_trans:
     - "Please tell me how many transaction activities would you like to see?"
   utter_view_activity_reply:
-    -"{name}\n{ans}"
+    -"{name} {ans}"
   utter_got_asked_reply:
     - "{name} Your {key} is: {value}"
     - "Your {key} is {value}"
