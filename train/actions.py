@@ -20,7 +20,7 @@ class ActionGetAccountBalance(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         balance=get_account_info(user,password,"balance")
@@ -36,7 +36,7 @@ class ActionGetAccountDetails(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_get_account_details_reply",tracker,name=name)
@@ -50,7 +50,7 @@ class ActionGetCardDetails(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_get_card_details_reply",tracker,name=name)
@@ -64,7 +64,7 @@ class ActionGetCardStatus(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         status=get_card_info(user,password,"status")
@@ -86,7 +86,7 @@ class ActionBotControlStartOver(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_bot_control_start_over_reply",tracker,name=name)
@@ -100,7 +100,7 @@ class ActionBotControlStandby(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_bot_control_standby_reply",tracker,name=name)
@@ -114,7 +114,7 @@ class ActionBotControlConfirmPresence(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_bot_control_confirm_presence_reply",tracker,name=name)
@@ -128,7 +128,7 @@ class ActionBotControlChangeSubject(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_bot_control_change_subject_reply",tracker,name=name)
@@ -518,7 +518,7 @@ class ActionGetAccStatus(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         hasAcc=get_personal_info(user,password,"hasAcc")
@@ -543,7 +543,7 @@ class ActionGetContact(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         contact=get_personal_info(user,password,"contact")
@@ -558,7 +558,7 @@ class ActionGetEmail(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         email=get_personal_info(user,password,"email")
@@ -574,7 +574,7 @@ class ActionGetUsername(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         username=get_personal_info(user,password,"username")
@@ -589,7 +589,7 @@ class ActionGetAccountNumber(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         acc_no=get_account_info(user,password,"acc_no")
@@ -604,7 +604,7 @@ class ActionGetSecureInfo(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         entities=tracker.latest_message.entities
@@ -623,7 +623,7 @@ class ActionGetCardNumber(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         card_no=get_card_info(user,password,"card_no")
@@ -638,7 +638,7 @@ class ActionGetAddress(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         postal_add=get_personal_info(user,password,"postal_add")
@@ -666,11 +666,15 @@ class ActionGetPermission(FormAction):
             return [ActionReverted()]
         if card_perm!=True:
             return [SlotSet("passcode",None),SlotSet("card_permission",None),SlotSet("requested_slot",None)]
-        results = check_passcode(user,password,passcode)
-        if int(results)!=1:
+        passcode=str(passcode)
+        if not re.match("[0-9]{6}",passcode):
             dispatcher.utter_message("Please enter valid passcode: ")
-            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
-        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",1)]
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot","passcode")]
+        results = check_passcode(user,password,passcode)
+        if results==1:
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",1)]
+        dispatcher.utter_message("Please enter valid passcode: ")
+        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot","passcode")]
 class GetAccess(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -685,7 +689,7 @@ class GetAccess(FormAction):
         user=tracker.get_slot("email")
         password=tracker.get_slot("password")
         results = check_indentity(user,password)
-        if int(results)!=1:
+        if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         name = get_personal_info(user,password,"fname")
@@ -776,6 +780,10 @@ class ActivateCardService(FormAction):
             return [ActionReverted()]
         if card_permission!=True:
             return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+        passcode=str(passcode)
+        if not re.match("[0-9]{6}",passcode):
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
         ent="card"
         template="utter_fallback"
@@ -840,6 +848,10 @@ class CancelCardService(FormAction):
             return [ActionReverted()]
         if card_permission!=True:
             return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+        passcode=str(passcode)
+        if not re.match("[0-9]{6}",passcode):
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
         ent="card"
         template="utter_fallback"
@@ -918,7 +930,16 @@ class CardReplaceService(FormAction):
             return [ActionReverted()]
         if card_perm!=True:
             return [SlotSet("passcode",None),SlotSet("card_permission",None),SlotSet("requested_slot",None),SlotSet("card_replace_with",None)]
+        passcode=str(passcode)
+        if not re.match("[0-9]{6}",passcode):
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
+        passcode=int(passcode)
         results = check_passcode(user,password,passcode)
+        results=str(results)
+        if not re.match("[0-9]+",results):
+            dispatcher.utter_message("Please enter valid passcode: ")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         if int(results)!=1:
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
