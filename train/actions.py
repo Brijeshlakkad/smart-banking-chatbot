@@ -331,7 +331,7 @@ class ActionChangeContact(FormAction):
             return [SlotSet("contact",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         if result!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return []
+            return [SlotSet("contact",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="contact")
         return [SlotSet("contact",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class ActionChangePasscode(FormAction):
@@ -359,7 +359,7 @@ class ActionChangePasscode(FormAction):
         result=change_customer_details("passcode",new_passcode,user)
         if result!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return []
+            return [SlotSet("new_passcode",None),SlotSet("passcode",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="passcode")
         return [SlotSet("new_passcode",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class ActionChangePassword(FormAction):
@@ -383,11 +383,11 @@ class ActionChangePassword(FormAction):
         new_password=tracker.get_slot("new_password")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
         result=change_customer_details("password",new_password,user)
         if result!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return []
+            return [SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="password")
         return [AllSlotsReset()]
 class ActionGetOTPPermission(FormAction):
@@ -462,7 +462,7 @@ class ActionChangeUsername(FormAction):
             return [SlotSet("username",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         if result!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return []
+            return [SlotSet("username",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="username")
         return [SlotSet("username",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class ActionChangeAddress(FormAction):
@@ -493,7 +493,7 @@ class ActionChangeAddress(FormAction):
         result=change_customer_details("postal_add",address,user)
         if result!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return []
+            return [SlotSet("address1",None),SlotSet("address2",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="postal address")
         return [SlotSet("address1",None),SlotSet("address2",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
 class ActionChangeCredentialInfo(Action):
