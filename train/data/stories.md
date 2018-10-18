@@ -4222,6 +4222,108 @@
     - slot{"requested_slot": null}
 * None
     - action_fallback
+* Banking_Change_Passcode{"to_get": "pincode"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "683249"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Passcode
+    - action_change_passcode
+    - slot{"new_passcode": "683240"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bb"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bb"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* General_Ending
+    - action_change_address
+    - slot{"address1": "line 2"}
+    - slot{"requested_slot": "address2"}
+* General_Ending
+    - action_change_address
+    - slot{"address2": "line 3"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* General_Ending
+    - action_ending
 * General_Security_Assurance
     - action_security_assurance
 * General_Positive_Feedback
@@ -4483,6 +4585,108 @@
     - action_greeting
 * General_Human_or_Bot
     - action_human_or_bot
+* Banking_Change_Passcode{"to_get": "pincode"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "683249"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Passcode
+    - action_change_passcode
+    - slot{"new_passcode": "683240"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bb"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bb"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* General_Ending
+    - action_change_address
+    - slot{"address1": "line 2"}
+    - slot{"requested_slot": "address2"}
+* General_Ending
+    - action_change_address
+    - slot{"address2": "line 3"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* General_Ending
+    - action_ending
 * None
     - action_fallback
 * Banking_Card_Number
@@ -4536,6 +4740,78 @@
     - action_greeting
 * General_Human_or_Bot
     - action_human_or_bot
+* Banking_Change_Passcode{"to_get": "pincode"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "683249"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Passcode
+    - action_change_passcode
+    - slot{"new_passcode": "683240"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* General_Ending
+    - action_change_address
+    - slot{"address1": "line 2"}
+    - slot{"requested_slot": "address2"}
+* General_Ending
+    - action_change_address
+    - slot{"address2": "line 3"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* General_Ending
+    - action_ending
 * Banking_Cancel_Card
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
@@ -4870,6 +5146,108 @@
     - action_fee_inquiry
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* Banking_Change_Passcode{"to_get": "pincode"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "683249"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Passcode
+    - action_change_passcode
+    - slot{"new_passcode": "683240"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bb"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bb"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* General_Ending
+    - action_change_address
+    - slot{"address1": "line 2"}
+    - slot{"requested_slot": "address2"}
+* General_Ending
+    - action_change_address
+    - slot{"address2": "line 3"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* General_Ending
+    - action_ending
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * Banking_Fee_Inquiry
@@ -5042,6 +5420,108 @@
     - action_fallback
 * Banking_Card_Number
     - action_fallback
+* Banking_Change_Passcode{"to_get": "pincode"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "683249"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Passcode
+    - action_change_passcode
+    - slot{"new_passcode": "683240"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bb"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bb"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* General_Ending
+    - action_change_address
+    - slot{"address1": "line 2"}
+    - slot{"requested_slot": "address2"}
+* General_Ending
+    - action_change_address
+    - slot{"address2": "line 3"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* General_Ending
+    - action_ending
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -9985,6 +10465,10 @@
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
 * Bot_Control_Start_Over
     - action_bot_control_start_over
     - reset_slots
@@ -10002,6 +10486,10 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
     - slot{"card_status": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
 * General_Ending
     - action_ending
     - export
@@ -10117,6 +10605,10 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
 * General_Ending
     - action_ending
     - export
@@ -10209,6 +10701,8 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
+* Banking_Get_Card_Details
+    - action_get_card_details
 * General_Ending
     - action_ending
     - export
@@ -10381,6 +10875,10 @@
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
 * General_Ending
     - action_ending
     - export
@@ -10881,6 +11379,10 @@
     - slot{"amount": null}
     - slot{"service_access": null}
     - slot{"requested_slot": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
     - export
 ## Generated Story 7046167267599127823
 * General_Greetings
@@ -11020,7 +11522,7 @@
     - slot{"service_access": null}
     - slot{"requested_slot": null}
     - export
-## Generated Story 1121559810203302077
+## Generated Story 1121559810203302001
 * General_Greetings
     - action_greeting
     - utter_first_access
@@ -11064,7 +11566,7 @@
     - slot{"requested_slot": null}
     - slot{"card_status": 0}
     - export
-## Generated Story -4962768954708642141
+## Generated Story -4962768954708642101
 * General_Greetings
     - action_get_access
     - slot{"requested_slot": "email"}
@@ -11118,4 +11620,363 @@
     - slot{"amount": null}
     - slot{"service_access": null}
     - slot{"requested_slot": null}
+    - export
+## Generated Story -4962768954708642102
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167267"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+    - export
+## Generated Story 3837956320155024560
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Account_Details
+    - action_get_account_details
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Banking_Get_Card_Details
+    - action_get_card_details
+    - export
+
+## Generated Story 3837956320155020021
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Account_Details
+    - action_get_account_details
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167267"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* deny
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* affirm
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Start_Over
+    - action_bot_control_start_over
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+    - export
+## Generated Story -8301051817368246606
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Account_Details
+    - action_get_account_details
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167267"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* deny
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* affirm
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Start_Over
+    - action_bot_control_start_over
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+    - export
+## Generated Story -8301051817368246606
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
+* Banking_Get_Account_Details
+    - action_get_account_details
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167267"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* deny
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* affirm
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Start_Over
+    - action_bot_control_start_over
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 0}
     - export

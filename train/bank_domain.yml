@@ -102,6 +102,10 @@ intents:
   - Bot_Control_Confirm_Presence
   - Bot_Control_Standby
   - Bot_Control_Start_Over
+  - Banking_Get_Card_Status
+  - Banking_Get_Card_Details
+  - Banking_Get_Account_Details
+  - Banking_Get_Account_Balance
 entities:
   - using_what
   - name
@@ -287,6 +291,15 @@ templates:
   utter_bot_control_start_over_reply:
     - "Okay! {name}"
     - "Ok! As you want {name}."
+  utter_get_card_status_reply:
+    - "{name} your card is currently {status}"
+    - "{name} your card is {status} currently"
+  utter_get_card_details_reply:
+    - "Sorry, {name}! I can not provide other credential information. I can only provide card number of your relevant card and its status. "
+  utter_get_account_details_reply:
+    - "Sorry, {name}! I can not provide other credential information. The details i can provide are: 1. Account Number, 2. Account Balance and 3. Account Status"
+  utter_get_account_balance_reply:
+    - "{name} your {acc} balance is Rs.{balance}"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -328,3 +341,7 @@ actions:
     - actions.ActionBotControlConfirmPresence
     - actions.ActionBotControlStandby
     - actions.ActionBotControlStartOver
+    - actions.ActionGetCardStatus
+    - actions.ActionGetCardDetails
+    - actions.ActionGetAccountDetails
+    - actions.ActionGetAccountBalance

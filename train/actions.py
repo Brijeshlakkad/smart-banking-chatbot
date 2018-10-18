@@ -11,6 +11,72 @@ from rasa_core.actions.forms import *
 from rasa_core.events import *
 from jon_working_with_db import *
 import random,re
+class ActionGetAccountBalance(Action):
+    def name(self):
+        return "action_get_account_balance"
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        balance=get_account_info(user,password,"balance")
+        acc=random.choice(['account','a/c','acc'])
+        dispatcher.utter_template("utter_get_account_balance_reply",tracker,name=name,balance=balance,acc=acc)
+        return []
+class ActionGetAccountDetails(Action):
+    def name(self):
+        return "action_get_account_details"
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_get_account_details_reply",tracker,name=name)
+        return []
+class ActionGetCardDetails(Action):
+    def name(self):
+        return "action_get_card_details"
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_get_card_details_reply",tracker,name=name)
+        return []
+class ActionGetCardStatus(Action):
+    def name(self):
+        return "action_get_card_status"
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if int(results)!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        status=get_card_info(user,password,"status")
+        if status==1:
+            status="active"
+        elif status==0:
+            status="deactive"
+        else:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return []
+        dispatcher.utter_template("utter_get_card_status_reply",tracker,name=name,status=status)
+        return []
 class ActionBotControlStartOver(Action):
     def name(self):
         return "action_bot_control_start_over"
