@@ -324,7 +324,7 @@ class ActionChangeContact(FormAction):
         contact=tracker.get_slot("contact")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
         result=change_customer_details("contact",contact,user)
         if result==-11:
             dispatcher.utter_message("This contact number is already registered with another account")
@@ -355,7 +355,7 @@ class ActionChangePasscode(FormAction):
         new_passcode=tracker.get_slot("new_passcode")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
         result=change_customer_details("passcode",new_passcode,user)
         if result!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
@@ -455,7 +455,7 @@ class ActionChangeUsername(FormAction):
         username=tracker.get_slot("username")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
         result=change_customer_details("username",username,user)
         if result==-11:
             dispatcher.utter_message("This contact number is already registered with another account")
@@ -486,7 +486,7 @@ class ActionChangeAddress(FormAction):
         name=get_user_name(name)
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
         address1=tracker.get_slot("address1")
         address2=tracker.get_slot("address2")
         address="%s, %s"%(address1,address2)
