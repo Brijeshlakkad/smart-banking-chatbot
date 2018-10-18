@@ -749,3 +749,29 @@ def get_last_transaction_without_html_tags(acc_no,n):
 		return response
 	except:
 		return -99
+	finally:
+		conn.close()
+def customer_card_exists(userid,card_no):
+	conn,cursor=config.connect_to_database()
+	sql="select card_id from cards where card_no='%s' and c_id='%s'"%(userid,card_no)
+	try:
+		cursor.execute(sql)
+		return cursor.rowcount
+	except:
+		return -99
+	finally:
+		conn.close()
+
+def customer_card_has(userid):
+	conn,cursor=config.connect_to_database()
+	sql="select card_no from cards where c_id='%s'"%(userid)
+	try:
+		cursor.execute(sql)
+		if cursor.rowcount==1:
+			row=cursor.fetchone()
+			return row[0]
+		return -99
+	except:
+		return -99
+	finally:
+		conn.close()
