@@ -261,3 +261,15 @@ def change_customer_details(field,value,user):
 		return -99
 	finally:
 		conn.close()
+def delete_customer_request(acc_id,card_req):
+	conn,cursor=config.connect_to_database()
+	sql="delete from requests where acc_id='%s' and card_loan='%s'"%(acc_id,card_req)
+	try:
+		cursor.execute(sql)
+		conn.commit()
+		return 11
+	except:
+		conn.rollback()
+		return -99
+	finally:
+		conn.close()
