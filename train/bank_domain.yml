@@ -106,6 +106,8 @@ intents:
   - Banking_Get_Card_Details
   - Banking_Get_Account_Details
   - Banking_Get_Account_Balance
+  - Banking_Get_Card_Request_Status
+  - Banking_Card_Request
 entities:
   - using_what
   - name
@@ -300,6 +302,8 @@ templates:
     - "Sorry, {name}! I can not provide other credential information. The details i can provide are: 1. Account Number, 2. Account Balance and 3. Account Status"
   utter_get_account_balance_reply:
     - "{name} your {acc} balance is Rs.{balance}"
+  utter_get_card_exist_status_reply:
+    - "{name} your card request is {value}"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -345,3 +349,5 @@ actions:
     - actions.ActionGetCardDetails
     - actions.ActionGetAccountDetails
     - actions.ActionGetAccountBalance
+    - actions.ActionGetCardRequestStatus
+    - actions.ActionCardRequest
