@@ -604,7 +604,23 @@ class request:
 			return "-99"
 		finally:
 			conn.close()
-
+class request_by_acc_id:
+	global acc_id,status
+	def request_details(self,acc_id):
+		conn,cursor=config.connect_to_database()
+		sql="select * from requests where acc_id='%s'"%acc_id
+		try:
+			cursor.execute(sql)
+			row=cursor.fetchone()
+			self.r_id=row[0]
+			self.acc_id=row[1]
+			self.req=row[2]
+			self.status=row[3]
+			self.time=row[4]
+		except:
+			return -99
+		finally:
+			conn.close()
 def get_request_details(r_id,f):
 	c=request()
 	c.request_details(r_id)
@@ -620,6 +636,22 @@ def get_request_details(r_id,f):
 		return c.time
 	else:
 		return get_account_by_acc_id(c.acc_id,f)
+
+def get_request_details_by_acc_id(acc_id,f):
+	c=request_by_acc_id()
+	c.request_details(acc_id)
+	if f=="r_id":
+		return c.r_id
+	elif f=="acc_id":
+		return c.acc_id
+	elif f=="req":
+		return c.req
+	elif f=="status":
+		return c.status
+	elif f=="time":
+		return c.time
+	else:
+		return -99
 
 def change_customer_card_status(user,status):
 	userid=get_any_value(user,"cid")
@@ -753,7 +785,7 @@ def get_last_transaction_without_html_tags(acc_no,n):
 		conn.close()
 def customer_card_exists(userid,card_no):
 	conn,cursor=config.connect_to_database()
-	sql="select card_id from cards where card_no='%s' and c_id='%s'"%(userid,card_no)
+	sql="select card_id from cards where card_no='%s' and c_id='%s'"%(card_no,userid)
 	try:
 		cursor.execute(sql)
 		return cursor.rowcount
@@ -770,7 +802,17 @@ def customer_card_has(userid):
 		if cursor.rowcount==1:
 			row=cursor.fetchone()
 			return row[0]
+		return -22
+	except:
 		return -99
+	finally:
+		conn.close()
+def check_request_exist(acc_id):
+	conn,cursor=config.connect_to_database()
+	sql="select r_id from requests where acc_id='%s'"%(acc_id)
+	try:
+		cursor.execute(sql)
+		return cursor.rowcount
 	except:
 		return -99
 	finally:
