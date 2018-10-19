@@ -3,7 +3,15 @@
     ~[please?] ~[can you?] help me to ~[verb] ~[intent]
     ~[please?] assist ~[me?] to ~[verb] ~[intent]
     How can i be get ~[intent] ~[verb_1]?
-    ~[varb?] ~[card_type?] card ~[sub_intent]
+    ~[verb?] ~[a?] ~[card_type?] card ~[sub_intent]
+    have you ~[verb_1] ~[any?] ~[card] ~[sub_intent] yet?
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit
 ~[intent]
     ~[a?] ~[sub_intent] for card
 ~[sub_intent]
