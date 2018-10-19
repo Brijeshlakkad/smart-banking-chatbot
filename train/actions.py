@@ -1225,6 +1225,7 @@ class CardReplaceService(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
         card_perm=tracker.get_slot("card_perm")
+        userid=get_personal_info(user,password,"cid")
         card_replace_with=tracker.get_slot("card_replace_with")
         if passcode==None or card_replace_with==None or card_perm==None:
             return [ActionReverted()]
