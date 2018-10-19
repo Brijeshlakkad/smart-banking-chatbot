@@ -649,7 +649,7 @@ class ActionCardRequest(Action):
         results=str(request_services(acc_id,"card"))
         if results=="11":
             template="utter_card_request_reply"
-            dispatcher.utter_template(template,tracker,name=name,value=value)
+            dispatcher.utter_template(template,tracker,name=name)
         else:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
         return []
@@ -984,6 +984,10 @@ class ActivateCardService(FormAction):
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
         user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
         card_permission=tracker.get_slot("card_permission")
         question_yes_no=tracker.get_slot("question_yes_no")
         using_what=tracker.get_slot("using_what")
@@ -1067,6 +1071,10 @@ class CancelCardService(FormAction):
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
         user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None)]
         card_permission=tracker.get_slot("card_permission")
         question_yes_no=tracker.get_slot("question_yes_no")
         using_what=tracker.get_slot("using_what")
