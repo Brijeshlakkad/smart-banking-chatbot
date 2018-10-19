@@ -1162,7 +1162,7 @@ class GetFeeInquiry(Action):
             return []
         cardExist=customer_card_has(userid)
         if cardExist==-22:
-            dispatcher.utter_message("You do not have any card yet, But you can apply for a card application.")
+            dispatcher.utter_message("You do not have any card yet, But you can apply for a card application. You can always check status for card application in your Personal Settings Panel or you could ask me which will be easy for you i guess!")
             return []
         elif cardExist==-99:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
@@ -1194,7 +1194,16 @@ class ActionCheckAccAndCard(Action):
             return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         cardExist=customer_card_has(userid)
         if cardExist==-22:
-            dispatcher.utter_message("You do not have any card yet, But you can apply for a card application.")
+            acc_id=get_account_details_by_id(userid,"acc_id")
+            res=check_request_exist(acc_id)
+            if res!=1:
+                mes="%s You do not have any card yet, But you can apply for a card application."%name
+                dispatcher.utter_message(mes)
+                return []
+            elif res==-99:
+                dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+                return []
+            dispatcher.utter_message("You do not have any card yet, But as i can see you already have raised a request for card application.")
             return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         elif cardExist==-99:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
