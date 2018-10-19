@@ -253,6 +253,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -313,6 +315,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -340,6 +344,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "card_permission"}
 * affirm
@@ -382,6 +388,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -475,6 +483,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -518,6 +528,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -545,6 +557,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -577,6 +591,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -632,6 +648,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -689,6 +707,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -744,6 +764,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -799,6 +821,8 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -902,6 +926,8 @@
 * General_Ending
     - action_ending
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -937,6 +963,8 @@
     - slot{"access": 1}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -950,6 +978,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1030,6 +1060,8 @@
     - slot{"access": 1}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1102,6 +1134,8 @@
     - slot{"access": 1}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "card_permission"}
 * affirm
@@ -1353,6 +1387,8 @@
 * deny
     - action_fallback
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1441,6 +1477,8 @@
     - slot{"access": 1}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1499,6 +1537,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1583,6 +1623,8 @@
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * affirm
@@ -1643,6 +1685,8 @@
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1673,6 +1717,8 @@
 * General_Greetings
     - action_greeting
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1819,6 +1865,8 @@
 * General_Human_or_Bot
     - action_human_or_bot
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1957,6 +2005,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2066,6 +2116,8 @@
 * deny
     - action_fallback
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2165,6 +2217,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2284,6 +2338,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2385,6 +2441,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2484,6 +2542,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2583,6 +2643,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2696,6 +2758,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2799,6 +2863,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2898,6 +2964,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3047,6 +3115,8 @@
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3150,6 +3220,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3291,6 +3363,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3419,6 +3493,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3518,6 +3594,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3617,6 +3695,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3726,6 +3806,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4932,6 +5014,8 @@
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5071,6 +5155,8 @@
 * General_Human_or_Bot
     - action_human_or_bot
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5150,6 +5236,8 @@
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5343,6 +5431,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5382,6 +5472,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5578,6 +5670,8 @@
 * deny
     - action_fallback
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5617,6 +5711,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5630,6 +5726,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5722,6 +5820,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5761,6 +5861,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5774,6 +5876,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5888,6 +5992,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5974,6 +6080,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5987,6 +6095,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6135,6 +6245,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6197,6 +6309,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6210,6 +6324,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6302,6 +6418,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6347,6 +6465,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6360,6 +6480,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6504,6 +6626,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6581,6 +6705,8 @@
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6594,6 +6720,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6717,6 +6845,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6756,6 +6886,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6769,6 +6901,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6889,6 +7023,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6968,6 +7104,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6981,6 +7119,8 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -7108,6 +7248,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -7139,6 +7281,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -7903,6 +8047,8 @@
 * Banking_Get_Address
     - action_get_address
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -8406,6 +8552,8 @@
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8421,6 +8569,8 @@
 * Banking_Get_Secure_Info{"to_get": "pincode"}
     - action_get_secure_info
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8645,6 +8795,8 @@
 * Banking_Get_Acc_Status
     - action_get_acc_status
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8660,6 +8812,8 @@
 * Banking_Get_Secure_Info{"to_get": "pincode"}
     - action_get_secure_info
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8999,6 +9153,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -9143,6 +9299,8 @@
 * Banking_Get_Acc_Status
     - action_get_acc_status
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9158,6 +9316,8 @@
 * Banking_Get_Secure_Info{"to_get": "pincode"}
     - action_get_secure_info
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9422,6 +9582,8 @@
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9437,6 +9599,8 @@
 * Banking_Get_Secure_Info{"to_get": "pincode"}
     - action_get_secure_info
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9669,6 +9833,8 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -9690,6 +9856,8 @@
 * Banking_Get_Account_Number
     - action_get_account_number
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9705,6 +9873,8 @@
 * Banking_Get_Secure_Info{"to_get": "pincode"}
     - action_get_secure_info
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -10913,6 +11083,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -12002,6 +12174,8 @@
 * General_Greetings
     - action_greeting
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -12373,6 +12547,8 @@
 * General_Greetings
     - action_greeting
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -12685,6 +12861,8 @@
 * General_Greetings
     - action_greeting
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -13056,6 +13234,8 @@
 * General_Greetings
     - action_greeting
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -13368,6 +13548,8 @@
 * General_Greetings
     - action_greeting
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -13713,6 +13895,8 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -14264,6 +14448,8 @@
 * Bot_Control_Standby
     - action_bot_control_standby
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -14607,6 +14793,8 @@
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -15188,6 +15376,8 @@
 * General_Greetings
     - action_greeting
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -15289,6 +15479,8 @@
 * Banking_Get_Email
     - action_get_email
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -16327,6 +16519,8 @@
 * Banking_Get_Card_Request_Status
     - action_get_card_request_status
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -16590,6 +16784,8 @@
 * Banking_Get_Card_Request_Status
     - action_get_card_request_status
 * Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_activate_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -16793,8 +16989,74 @@
     - action_get_secure_info
 * Banking_Get_Secure_Info{"to_get": "cvv"}
     - action_get_secure_info
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Get_Card_Number{"to_change": "card number"}
+    - action_get_card_number
 * Banking_Get_Email
     - action_get_email
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bB"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* General_Greetings
+    - action_greeting
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Get_Account_Details
+    - action_get_account_details
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Bot_Control_Change_Subject
+    - action_bot_control_change_subject
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * Banking_Card_Request
@@ -16832,4 +17094,302 @@
     - slot{"service_access": 0}
 * Bot_Control_Standby
     - action_bot_control_standby
+    - export
+## Generated Story 2789026124003713133
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Card_Request
+    - action_card_request
+* Banking_Get_Card_Request_Status
+    - action_get_card_request_status
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "11111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "11111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "111111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "1111111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1111111111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_View_Activity
+    - action_change_address
+    - slot{"address1": "line 3"}
+    - slot{"requested_slot": "address2"}
+* Banking_View_Activity
+    - action_change_address
+    - slot{"address2": "line 4"}
+    - slot{"address1": null}
+    - slot{"address2": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Address
+    - action_get_address
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Secure_Info{"to_get": "cvv"}
+    - action_get_secure_info
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* General_Greetings
+    - action_greeting
+* Banking_Get_Contact
+    - action_get_contact
+* Banking_Change_Passcode
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "111111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "111vv"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "dfjsdfjn1"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "1111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Passcode
+    - action_change_passcode
+    - slot{"new_passcode": "683240"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Credential_Info{"to_change": "email id"}
+    - action_change_credential_info
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+    - export
+## Generated Story 3683642582845328862
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683240"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Bot_Control_Start_Over
+    - action_bot_control_start_over
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "1234567bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bB"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+    - slot{"card_status": 1}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* General_Greetings
+    - action_greeting
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Get_Card_Number{"to_change": "card number"}
+    - action_get_card_number
+* Banking_Get_Address
+    - action_get_address
+* General_Positive_Feedback
+    - action_positive_feedback
+* Banking_Get_Address
+    - action_get_address
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Secure_Info{"to_get": "cvv"}
+    - action_get_secure_info
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* General_Greetings
+    - action_greeting
+* Banking_Get_Contact
+    - action_get_contact
+* Banking_Change_Credential_Info
+    - action_change_credential_info
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Credential_Info{"to_get": "cvv"}
+    - action_change_credential_info
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Get_Account_Details
+    - action_get_account_details
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Banking_Get_Account_Balance
+    - action_get_account_balance
+* Bot_Control_Change_Subject
+    - action_bot_control_change_subject
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* General_Ending
+    - action_ending
     - export

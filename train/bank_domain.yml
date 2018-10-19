@@ -304,6 +304,8 @@ templates:
     - "{name} your {acc} balance is Rs.{balance}"
   utter_get_card_exist_status_reply:
     - "{name} your card request is {value}"
+  utter_card_request_reply:
+    - "{name} i have reaised request for card application. You can check your card application status at Personal Setting Panel in your account or You can always ask me."
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
