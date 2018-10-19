@@ -281,7 +281,9 @@
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -358,7 +360,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -402,7 +406,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -618,7 +624,9 @@
     - action_security_assurance
 * General_Ending
     - action_ending
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -675,7 +683,9 @@
     - action_security_assurance
 * General_Ending
     - action_ending
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -734,7 +744,9 @@
     - action_security_assurance
 * General_Ending
     - action_ending
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -791,7 +803,9 @@
     - action_security_assurance
 * General_Ending
     - action_ending
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -835,7 +849,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -862,7 +878,9 @@
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -891,7 +909,9 @@
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -904,7 +924,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1002,7 +1024,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1084,7 +1108,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1338,7 +1364,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1401,7 +1429,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1448,7 +1478,9 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1491,7 +1523,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Password
@@ -1735,7 +1769,9 @@
     - action_human_or_bot
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1812,7 +1848,9 @@
     - action_positive_feedback
 * General_Human_or_Bot
     - action_human_or_bot
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -1908,7 +1946,9 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2025,7 +2065,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2068,7 +2110,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2136,7 +2180,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2179,7 +2225,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2237,7 +2285,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2290,7 +2340,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2360,7 +2412,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2403,7 +2457,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2461,7 +2517,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2504,7 +2562,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2562,7 +2622,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2605,7 +2667,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2677,7 +2741,9 @@
     - action_fallback
 * deny
     - action_fallback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2720,7 +2786,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2778,7 +2846,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2821,7 +2891,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2883,7 +2955,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2926,7 +3000,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -2984,7 +3060,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3029,7 +3107,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3139,7 +3219,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3182,7 +3264,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3254,7 +3338,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3297,7 +3383,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3412,7 +3500,9 @@
     - slot{"requested_slot": null}
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3455,7 +3545,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3513,7 +3605,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3556,7 +3650,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3614,7 +3710,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3657,7 +3755,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3715,7 +3815,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3758,7 +3860,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3850,7 +3954,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3922,7 +4028,9 @@
     - slot{"amount": null}
     - slot{"service_access": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -3971,7 +4079,9 @@
     - action_positive_feedback
 * Banking_Fee_Inquiry
     - action_fee_inquiry
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4017,7 +4127,9 @@
     - action_security_assurance
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4055,7 +4167,9 @@
     - action_negative_feedback
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4097,7 +4211,9 @@
     - action_security_assurance
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4192,7 +4308,9 @@
     - action_security_assurance
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4246,7 +4364,9 @@
     - action_negative_feedback
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4312,7 +4432,9 @@
     - action_negative_feedback
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4432,7 +4554,9 @@
     - action_security_assurance
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4478,7 +4602,9 @@
     - action_greeting
 * General_Human_or_Bot
     - action_human_or_bot
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4517,7 +4643,9 @@
     - action_greeting
 * General_Human_or_Bot
     - action_human_or_bot
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4608,7 +4736,9 @@
     - slot{"requested_slot": null}
 * General_Human_or_Bot
     - action_human_or_bot
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4649,7 +4779,9 @@
     - action_greeting
 * General_Human_or_Bot
     - action_human_or_bot
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4803,7 +4935,9 @@
     - action_fallback
 * deny
     - action_fallback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4914,7 +5048,9 @@
     - action_get_card_details
 * General_Ending
     - action_ending
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -4953,7 +5089,9 @@
     - action_greeting
 * General_Human_or_Bot
     - action_human_or_bot
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5028,7 +5166,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5169,7 +5309,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5445,7 +5587,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5458,7 +5602,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5684,7 +5830,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5697,7 +5845,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5740,7 +5890,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5834,7 +5986,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5847,7 +6001,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -5890,7 +6046,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6006,7 +6164,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6066,7 +6226,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6132,7 +6294,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6282,7 +6446,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6295,7 +6461,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6338,7 +6506,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6438,7 +6608,9 @@
     - action_get_card_number
 * Banking_Get_Card_Number
     - action_get_card_number
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6451,7 +6623,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6518,7 +6692,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"service_access": 0}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6654,7 +6830,9 @@
     - action_fallback
 * deny
     - action_fallback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6667,7 +6845,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6734,7 +6914,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6859,7 +7041,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6872,7 +7056,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -6915,7 +7101,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -7077,7 +7265,9 @@
     - action_fallback
 * deny
     - action_fallback
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -7090,7 +7280,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -7133,7 +7325,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -7297,7 +7491,9 @@
     - slot{"requested_slot": null}
 * Banking_Get_Card_Number
     - action_get_card_number
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8061,7 +8257,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -8074,7 +8272,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -8668,7 +8868,9 @@
     - action_positive_feedback
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8711,7 +8913,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8855,7 +9059,9 @@
     - action_get_acc_status
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -8954,7 +9160,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9007,7 +9215,9 @@
     - action_fallback
 * Banking_Get_Acc_Status
     - action_get_acc_status
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9427,7 +9637,9 @@
     - action_security_assurance
 * Banking_Change_Credential_Info
     - action_change_credential_info
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9470,7 +9682,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9662,7 +9876,9 @@
     - action_get_card_number
 * Banking_Get_Acc_Status
     - action_get_acc_status
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9705,7 +9921,9 @@
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -9899,7 +10117,9 @@
     - action_get_acc_status
 * General_Security_Assurance
     - action_security_assurance
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -11107,7 +11327,9 @@
 * Banking_View_Activity{"num_trans": "10"}
     - slot{"num_trans": "10"}
     - action_view_activity
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -12188,7 +12410,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -12387,7 +12611,9 @@
     - slot{"requested_slot": null}
 * Banking_Report_Missing_Card
     - action_report_missing_card
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -12561,7 +12787,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -12701,7 +12929,9 @@
     - slot{"requested_slot": null}
 * Banking_Report_Missing_Card
     - action_report_missing_card
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -12875,7 +13105,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -13080,7 +13312,9 @@
     - action_get_card_details
 * Banking_Report_Missing_Card
     - action_report_missing_card
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -13248,7 +13482,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -13388,7 +13624,9 @@
     - slot{"service_access": 0}
 * Banking_Report_Missing_Card
     - action_report_missing_card
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -13562,7 +13800,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -13737,7 +13977,9 @@
     - slot{"requested_slot": null}
 * Banking_Report_Missing_Card
     - action_report_missing_card
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -14020,7 +14262,9 @@
     - action_get_account_balance
     - slot{"requested_slot": null}
     - slot{"service_access": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Password
@@ -15390,7 +15634,9 @@
     - slot{"card_permission": null}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Card_Number
@@ -15646,7 +15892,9 @@
     - action_report_missing_card
 * Banking_Get_Card_Request_Status
     - action_get_card_request_status
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -15879,7 +16127,9 @@
     - slot{"access": 1}
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
-* Banking_Cancel_Card
+#* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Password
@@ -16656,6 +16906,8 @@
     - slot{"service_access": null}
     - slot{"requested_slot": null}
 * Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
     - action_cancel_card
     - slot{"requested_slot": "passcode"}
 * Banking_Passcode
@@ -17390,6 +17642,403 @@
     - action_bot_control_standby
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
+* General_Ending
+    - action_ending
+    - export
+## Generated Story 8478800041111939432
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* General_Greetings
+    - action_get_access
+    - slot{"email": "brij"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - reset_slots
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Card_Request
+    - action_card_request
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad22"}
+    - slot{"username": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Change_Contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167267"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Banking_Get_Card_Request_Status
+    - action_get_card_request_status
+* Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"card_replace_with": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "3667609902587292"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+    - export
+## Generated Story -9092031023145926405
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683240"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Bot_Control_Start_Over
+    - action_bot_control_start_over
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "1234567bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bB"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Bot_Control_Change_Subject
+    - action_bot_control_change_subject
+* General_Positive_Feedback
+    - action_positive_feedback
+* Banking_Change_Passcode
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "11111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "111111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "11111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": "got_otp"}
+    - slot{"service_access": 0}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Passcode
+    - action_change_passcode
+    - slot{"new_passcode": "683240"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"card_replace_with": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"card_replace_with": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"card_replace_with": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "3243242"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* General_Greetings
+    - action_activate_card
+    - slot{"passcode": "dfdfg"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "3224234"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "232323"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Password
+    - action_activate_card
+    - slot{"passcode": "32324nng"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "3434343"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "23423vvv"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683240"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* General_Greetings
+    - action_greeting
+* Banking_Fee_Inquiry
+    - action_fee_inquiry
+* General_Human_or_Bot
+    - action_human_or_bot
+* General_Negative_Feedback
+    - action_negative_feedback
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Get_Card_Number{"to_change": "card number"}
+    - action_get_card_number
+* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_cancel_card
+    - slot{"passcode": "683240"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Address
+    - action_get_address
+* General_Positive_Feedback
+    - action_positive_feedback
+* Banking_Get_Address
+    - action_get_address
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Secure_Info{"to_get": "cvv"}
+    - action_get_secure_info
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+* Banking_Get_Email
+    - action_get_email
+* Banking_Get_Username
+    - action_get_username
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* General_Greetings
+    - action_greeting
+* Banking_Get_Contact
+    - action_get_contact
+* Banking_Change_Credential_Info
+    - action_change_credential_info
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 0}
 * General_Ending
     - action_ending
     - export
