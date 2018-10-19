@@ -116,16 +116,13 @@ def verify_card_request(r_id,acc_id,status):
 		cursor.execute(sql)
 		m=send_mail.Mail()
 		st=m.send_mail(user,sub,cont)
-		st=str(st)
-		if st=="11":
-			conn.commit()
-			return "11"
-		else:
-			conn.rollback()
-			return "-99"
+		conn.commit()
+		return "11"
 	except:
 		conn.rollback()
 		return "-99"
+	finally:
+		conn.close()
 def provides_feedbacks():
 	conn,cursor=config.connect_to_database()
 	sql="select * from feedbacks"
