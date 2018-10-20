@@ -440,6 +440,10 @@ class ActionChangePasscode(FormAction):
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        passcode=str(passcode)
+        if not re.match("[0-9]{6}",passcode):
+            dispatcher.utter_message("Passcode should not contain character and it should be of 6 numbers.\nPlease enter valid Passcode:\n")
+            return [SlotSet("passcode",None),SlotSet("requested_slot","passcode"),SlotSet("service_access",service_access)]
         hasAcc=get_personal_info(user,password,"hasAcc")
         if hasAcc==-99:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
@@ -475,6 +479,10 @@ class ActionChangePassword(FormAction):
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        new_password=str(new_password)
+        if not re.match("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})",new_password):
+            dispatcher.utter_message("Password should contain at least one number and at least one character. It also have at least length of 6 characters")
+            return [SlotSet("new_password",None),SlotSet("requested_slot","new_password"),SlotSet("service_access",service_access)]
         result=change_customer_details("password",new_password,user)
         if result!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
