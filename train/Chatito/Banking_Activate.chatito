@@ -54,3 +54,66 @@
     pin num
     activation keys
     active keys
+
+%[Banking_Activate_Card]('training': '500')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[intent]
+    How can i be ~[verb_1] ~[intent]?
+~[card]
+    ~[card_type?] card
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit
+~[intent]
+    ~[card] ~[active]
+~[active]
+    opened
+    turned on
+    activating
+    active
+    activated
+    activation
+    on
+    initiated
+    initiating
+    begun
+    begining
+    turning on
+    1
+    setup
+    re-enabling
+    re-enabled
+    enabled
+~[verb]
+    find
+    check
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with
+~[verb_1]
+    checked
+    viewed
+    found
+    displayed
+    showed
+    searched
+    got
+    provided
+    obtained
+    prepared
+    overcame
+    caught
+    came with

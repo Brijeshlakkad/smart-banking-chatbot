@@ -40,3 +40,72 @@
     pin num
     activation keys
     active keys
+
+%[Banking_Replace_Card]('training': '700')
+    ~[can you?] ~[please?] ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
+    ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[intent]
+    How can i be ~[verb_1] ~[intent]?
+    ~[replace] ~[card]
+~[card]
+    ~[card_type?] card
+~[card_type]
+    visa
+    master
+    atm
+    bank
+    credit
+    debit
+~[intent]
+    ~[card] ~[replace]
+~[replace]
+    replace
+    change
+    oust
+    recover
+    reinstate
+    restore
+    take over
+    alter
+    compensate
+    displace
+    mend
+    patch
+    reconstitute
+    recoup
+    redeem
+    redress
+    reestablish
+    regain
+    reimburse
+    repay
+    restitute
+    retrieve
+~[verb]
+    find
+    check
+    search
+    get
+    give
+    provide
+    show
+    display
+    obtain
+    prepare
+    overcome
+    catch
+    come with
+~[verb_1]
+    checked
+    viewed
+    found
+    displayed
+    showed
+    searched
+    got
+    provided
+    obtained
+    prepared
+    overcame
+    caught
+    came with

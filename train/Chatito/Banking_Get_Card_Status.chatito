@@ -3,6 +3,7 @@
     ~[please?] ~[can you?] help me to ~[verb] ~[me?] ~[my?] ~[intent]
     ~[please?] assist ~[me?] to ~[verb] ~[me?] ~[my?] ~[my?] ~[intent]
     How can i be ~[verb_1] ~[intent]?
+    ~[verb?] status of ~[my?] ~[card_type?] card
 ~[intent]
     ~[card_type?] card status
 ~[card_type]
