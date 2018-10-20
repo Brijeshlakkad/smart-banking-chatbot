@@ -1053,7 +1053,7 @@ class ActivateCardService(FormAction):
         else:
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
-        return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+        return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class CancelCardService(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -1140,7 +1140,7 @@ class CancelCardService(FormAction):
         else:
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
-        return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+        return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class GetFeeInquiry(Action):
     def name(self):
         return 'action_fee_inquiry'
@@ -1261,4 +1261,4 @@ class CardReplaceService(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
         dispatcher.utter_template("utter_replace_card_reply",tracker)
-        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None)]
+        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("card_replace_with",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
