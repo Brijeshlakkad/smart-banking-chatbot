@@ -635,7 +635,7 @@ class ActionCardRequest(Action):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return []
         elif cardExist!=-22:
-            dispatcher.utter_message("You already have a card.")
+            dispatcher.utter_message("You already have a card. If you have lost your card you can cancel your card and replace your card.")
             return []
         acc_id=get_account_details_by_id(userid,"acc_id")
         res=check_request_exist(acc_id)
