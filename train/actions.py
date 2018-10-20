@@ -283,7 +283,7 @@ class ActionTransferMoney(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
         got_otp=str(got_otp)
-        if (not re.match("[0-9]{6}",got_otp)):
+        if (not re.match("[0-9]+",got_otp)):
             dispatcher.utter_message("Transaction Failed! OTP was not correct.")
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
         got_otp=int(got_otp)
@@ -503,7 +503,7 @@ class ActionGetOTPPermission(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
         got_otp=str(got_otp)
-        if not re.match("[0-9]{6}",got_otp):
+        if not re.match("[0-9]+",got_otp):
             dispatcher.utter_message("OTP is not valid\nPlease enter valid OTP:\n")
             return [SlotSet("got_otp",None),SlotSet("requested_slot","got_otp"),SlotSet("service_access",0)]
         got_otp=int(got_otp)
@@ -879,7 +879,7 @@ class ActionGetPermission(FormAction):
         if passcode==None:
             return [ActionReverted()]
         passcode=str(passcode)
-        if not re.match("[0-9]{6}",passcode):
+        if not re.match("[0-9]+",passcode):
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
@@ -1003,7 +1003,7 @@ class ActivateCardService(FormAction):
             dispatcher.utter_message("You do not have any account yet. You can apply for a card application after getting an JonSnow Bank account.")
             return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
         passcode=str(passcode)
-        if not re.match("[0-9]{6}",passcode):
+        if not re.match("[0-9]+",passcode):
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
@@ -1090,7 +1090,7 @@ class CancelCardService(FormAction):
             dispatcher.utter_message("You do not have any account yet. You can apply for a card application after getting an JonSnow Bank account.")
             return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
         passcode=str(passcode)
-        if not re.match("[0-9]{6}",passcode):
+        if not re.match("[0-9]+",passcode):
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
@@ -1249,7 +1249,7 @@ class CardReplaceService(FormAction):
         if f!=1:
             dispatcher.utter_message("Please enter valid card number: ")
             return [SlotSet("card_replace_with",None),SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot","card_replace_with")]
-        if not re.match("[0-9]{6}",passcode):
+        if not re.match("[0-9]+",passcode):
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
