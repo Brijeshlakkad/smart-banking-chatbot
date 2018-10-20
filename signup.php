@@ -72,7 +72,7 @@
 			<tr>
 			<td><label for="s_password">Password:</label><br></td>
 			<td><input  type="password" class="form-control" name="s_password" placeholder="Enter Password"  ng-model="s_password" ng-style="passwordStrength" ng-change="analyze(s_password)" required pass-dir></td>
-			<td><a class="badge my_badge" data-toggle="tooltip" data-placement="top" title="Password should contain at least one number and at least one character">?</a>
+			<td><a class="badge my_badge" data-toggle="tooltip" data-placement="top" title="Password should contain at least one number and at least one character. It also have at least length of 6 characters">?</a>
 			<span style="color:red" id="s_password" ng-show="myForm.s_password.$dirty && myForm.s_password.$invalid">
 			<span ng-show="myForm.s_password.$error.required">Password is required</span>
 			<span ng-show="!myForm.s_password.$error.required && myForm.s_password.$error.passvalid">Invalid Password</span>
