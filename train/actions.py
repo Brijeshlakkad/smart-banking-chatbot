@@ -341,10 +341,10 @@ class ActionViewActivity(FormAction):
         hasAcc=get_personal_info(user,password,"hasAcc")
         if hasAcc==-99:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            [SlotSet("num_trans",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
+            return [SlotSet("num_trans",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         elif hasAcc==0:
             dispatcher.utter_message("You do not have any account yet. You can apply for a card application after getting an JonSnow Bank account.")
-            [SlotSet("num_trans",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
+            return [SlotSet("num_trans",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         template="utter_view_activity_reply"
         num_trans=tracker.get_slot("num_trans")
         if num_trans=="any" or num_trans==None or num_trans=="" or type(num_trans)!=int:
@@ -355,7 +355,7 @@ class ActionViewActivity(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [ActionReverted()]
         ans=get_last_transaction_without_html_tags(acc_no,num_trans)
-        ans=str(ans)
+        ans=security.protect_data(str(ans))
         dispatcher.utter_template(template,tracker,name=name,ans=ans)
         return [SlotSet("num_trans",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionReportMissingCard(Action):
