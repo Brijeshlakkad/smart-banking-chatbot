@@ -306,6 +306,11 @@ templates:
     - "{name} your card request is {value}"
   utter_card_request_reply:
     - "{name} i have reaised request for card application. You can check your card application status at Personal Setting Panel in your account or You can always ask me."
+  utter_just_reply:
+    - "Okay!"
+    - "Great!"
+    - "Okay! Boss"
+    - "Ok, Got it!"
 actions:
     - actions.GetAccess
     - actions.ActivateCardService
@@ -354,3 +359,4 @@ actions:
     - actions.ActionGetCardRequestStatus
     - actions.ActionCardRequest
     - actions.ActionCheckAccAndCard
+    - utter_just_reply
