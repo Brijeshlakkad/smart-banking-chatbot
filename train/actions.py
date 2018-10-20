@@ -23,6 +23,10 @@ class ActionGetAccountBalance(Action):
         if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("requested_slot",None),SlotSet("service_access",None)]
         hasAcc=get_personal_info(user,password,"hasAcc")
         if hasAcc==-99:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
@@ -200,6 +204,10 @@ class ActionAskInputTransferMoney(FormAction):
             return [ActionReverted(),AllSlotsReset()]
         name=tracker.get_slot("name")
         name=get_user_name(name)
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
         userid=get_personal_info(user,password,"cid")
         hasAcc=get_personal_info(user,password,"hasAcc")
         if hasAcc==-99:
@@ -337,6 +345,10 @@ class ActionViewActivity(FormAction):
             return [ActionReverted(),AllSlotsReset()]
         name=tracker.get_slot("name")
         name=get_user_name(name)
+        service_access=tracker.get_slot("service_access")
+        if service_access!=1:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("num_trans",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         userid=get_personal_info(user,password,"cid")
         hasAcc=get_personal_info(user,password,"hasAcc")
         if hasAcc==-99:
