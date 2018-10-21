@@ -1,22 +1,238 @@
 {
   "max_histories": [
-    null, 
-    15, 
-    15
+    3, 
+    5
   ], 
   "python": "2.7.15", 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
-  "rasa_core": "0.11.5", 
+  "rasa_core": "0.11.12", 
   "policy_names": [
-    "rasa_core.policies.fallback.FallbackPolicy", 
     "rasa_core.policies.memoization.MemoizationPolicy", 
     "rasa_core.policies.keras_policy.KerasPolicy"
   ], 
   "action_fingerprints": {
+    "action_get_card_request_status": {
+      "slots": []
+    }, 
+    "action_card_request": {
+      "slots": []
+    }, 
+    "action_get_otp_permission": {
+      "slots": [
+        "service_access", 
+        "requested_slot", 
+        "last_otp", 
+        "got_otp"
+      ]
+    }, 
+    "action_human_or_bot": {
+      "slots": []
+    }, 
+    "action_change_passcode": {
+      "slots": [
+        "service_access", 
+        "requested_slot", 
+        "new_passcode", 
+        "got_otp", 
+        "passcode", 
+        "last_otp"
+      ]
+    }, 
+    "action_get_address": {
+      "slots": []
+    }, 
+    "action_check_account_and_card": {
+      "slots": [
+        "passcode", 
+        "service_access", 
+        "requested_slot", 
+        "card_perm", 
+        "card_replace_with"
+      ]
+    }, 
+    "action_fallback": {
+      "slots": []
+    }, 
+    "action_activate_card": {
+      "slots": [
+        "passcode", 
+        "card_permission", 
+        "requested_slot"
+      ]
+    }, 
+    "action_send_otp_for_transaction": {
+      "slots": [
+        "requested_slot", 
+        "last_otp"
+      ]
+    }, 
+    "action_change_username": {
+      "slots": [
+        "username", 
+        "passcode", 
+        "service_access", 
+        "requested_slot", 
+        "card_perm"
+      ]
+    }, 
+    "action_get_card_status": {
+      "slots": []
+    }, 
     "action_listen": {
+      "slots": [
+        "num_trans", 
+        "requested_slot", 
+        "email"
+      ]
+    }, 
+    "action_card_replace": {
+      "slots": [
+        "passcode", 
+        "card_permission", 
+        "requested_slot", 
+        "card_perm", 
+        "card_replace_with"
+      ]
+    }, 
+    "action_cancel_card": {
+      "slots": [
+        "passcode", 
+        "card_permission", 
+        "requested_slot"
+      ]
+    }, 
+    "action_ask_input_transfer_money": {
+      "slots": [
+        "service_access", 
+        "amount", 
+        "transfer_perm", 
+        "where", 
+        "requested_slot"
+      ]
+    }, 
+    "action_view_activity": {
+      "slots": [
+        "num_trans", 
+        "service_access", 
+        "requested_slot"
+      ]
+    }, 
+    "action_change_address": {
+      "slots": [
+        "service_access", 
+        "requested_slot", 
+        "card_perm", 
+        "address1", 
+        "address2", 
+        "card_replace_with", 
+        "passcode"
+      ]
+    }, 
+    "action_get_account_number": {
+      "slots": []
+    }, 
+    "action_ending": {
+      "slots": []
+    }, 
+    "action_negative_feedback": {
+      "slots": []
+    }, 
+    "action_change_credential_info": {
+      "slots": [
+        "passcode", 
+        "service_access", 
+        "requested_slot", 
+        "card_perm"
+      ]
+    }, 
+    "action_get_email": {
+      "slots": []
+    }, 
+    "action_bot_control_standby": {
+      "slots": []
+    }, 
+    "action_get_card_details": {
+      "slots": []
+    }, 
+    "action_get_secure_info": {
+      "slots": []
+    }, 
+    "action_fee_inquiry": {
+      "slots": []
+    }, 
+    "action_transfer_money": {
+      "slots": [
+        "service_access", 
+        "requested_slot", 
+        "amount", 
+        "got_otp", 
+        "transfer_perm", 
+        "where", 
+        "last_otp"
+      ]
+    }, 
+    "action_send_otp": {
+      "slots": [
+        "requested_slot", 
+        "last_otp"
+      ]
+    }, 
+    "action_change_password": {
+      "slots": [
+        "service_access", 
+        "requested_slot", 
+        "new_password", 
+        "got_otp", 
+        "password", 
+        "last_otp"
+      ]
+    }, 
+    "action_get_acc_status": {
+      "slots": []
+    }, 
+    "action_get_account_balance": {
+      "slots": [
+        "service_access", 
+        "requested_slot"
+      ]
+    }, 
+    "action_change_contact": {
+      "slots": [
+        "contact", 
+        "service_access", 
+        "requested_slot"
+      ]
+    }, 
+    "action_get_card_number": {
       "slots": []
     }, 
     "action_get_access": {
+      "slots": [
+        "name", 
+        "card_status", 
+        "access", 
+        "password", 
+        "email", 
+        "requested_slot"
+      ]
+    }, 
+    "action_bot_control_start_over": {
+      "slots": []
+    }, 
+    "action_get_permission": {
+      "slots": [
+        "passcode", 
+        "service_access", 
+        "requested_slot"
+      ]
+    }, 
+    "action_positive_feedback": {
+      "slots": []
+    }, 
+    "action_security_assurance": {
+      "slots": []
+    }, 
+    "action_greeting": {
       "slots": []
     }
   }
