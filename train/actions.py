@@ -1004,6 +1004,8 @@ class ActivateCardService(FormAction):
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
         user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
         service_access=tracker.get_slot("service_access")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
@@ -1091,6 +1093,8 @@ class CancelCardService(FormAction):
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
         user,password,passcode=tracker.get_slot("email"),tracker.get_slot("password"),tracker.get_slot("passcode")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
         service_access=tracker.get_slot("service_access")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
