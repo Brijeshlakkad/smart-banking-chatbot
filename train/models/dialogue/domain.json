@@ -3,6 +3,7 @@
     "intent_Banking_Activate_Card", 
     "intent_Banking_Cancel_Card", 
     "intent_Banking_Card_Number", 
+    "intent_Banking_Card_Request", 
     "intent_Banking_Change_Address", 
     "intent_Banking_Change_Contact", 
     "intent_Banking_Change_Credential_Info", 
@@ -18,6 +19,7 @@
     "intent_Banking_Get_Address", 
     "intent_Banking_Get_Card_Details", 
     "intent_Banking_Get_Card_Number", 
+    "intent_Banking_Get_Card_Request_Status", 
     "intent_Banking_Get_Card_Status", 
     "intent_Banking_Get_Contact", 
     "intent_Banking_Get_Email", 
@@ -133,6 +135,10 @@
     "prev_action_get_card_status", 
     "prev_action_get_card_details", 
     "prev_action_get_account_details", 
-    "prev_action_get_account_balance"
+    "prev_action_get_account_balance", 
+    "prev_action_get_card_request_status", 
+    "prev_action_card_request", 
+    "prev_action_check_account_and_card", 
+    "prev_utter_just_reply"
   ]
 }
