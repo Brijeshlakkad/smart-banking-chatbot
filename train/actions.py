@@ -6,9 +6,9 @@ from __future__ import print_function
 from __future__ import unicode_literals
 import warnings
 warnings.filterwarnings('always')
-from rasa_core.actions.action import *
-from rasa_core.actions.forms import *
-from rasa_core.events import *
+from rasa_core_sdk import *
+from rasa_core_sdk.events import *
+from rasa_core_sdk.forms import *
 from jon_working_with_db import *
 import random,re
 class ActionGetAccountBalance(Action):
