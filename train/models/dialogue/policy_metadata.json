@@ -1,14 +1,16 @@
 {
   "max_histories": [
-    3, 
-    5
+    15, 
+    5, 
+    null
   ], 
   "python": "2.7.15", 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
   "rasa_core": "0.11.12", 
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy", 
-    "rasa_core.policies.keras_policy.KerasPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy", 
+    "rasa_core.policies.fallback.FallbackPolicy"
   ], 
   "action_fingerprints": {
     "action_get_card_request_status": {
