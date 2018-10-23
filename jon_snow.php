@@ -7,7 +7,7 @@
 
 		<div>
 			<ul id="chatOutput" class="chat_container" style="list-style-type: none;">
-			
+
 			</ul>
 		</div>
 		<div class="row" ng-app="myapp" ng-controller="BrijController">
@@ -25,7 +25,7 @@
 <script>
 var myApp = angular.module("myapp", []);
 myApp.controller("BrijController", function($scope,$http) {
-	
+
 	});
 $(document).ready(function(){
 	$("#chatRefresh").click();
@@ -33,21 +33,16 @@ $(document).ready(function(){
 		var message=$("#message").val();
 		var userid=$("div.userid").attr("id");
 		$.ajax({
-				type: 'POST', 
-				url: 'customer_interface.py',
-				data: 'message='+message+"&user="+userid,
+				type: 'GET',
+				url: 'http://localhost:5005/webhooks/chatroom/conversations/695ba1ff-4bfc-422f-882b-e8c0d8bdb00b/log',
+				data: {"sender": "Rasa","text": message},
 				success  : function (data)
 				{
-					$(document).ajaxStop(function(){
-						if(data==11)
-						{
-							location.reload();
-						}
-					});
+					alert(data);
 				}
 			});
 	});
-	
+
 });
 </script>
 
