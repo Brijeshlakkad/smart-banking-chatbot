@@ -1,5 +1,23 @@
 <?php include_once("header.php"); ?>
 <?php check_session(); ?>
+
+<script>  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '182961315923841',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <style>
 .button {
     display: block;
@@ -96,15 +114,20 @@
 </div></center></div>
 </form>
 </div>
-		<div class="col-lg-4">
-			<h2 class="c_header">Jon Snow is here.</h2>
-			<div class="row" style="margin-top: 20px;">
-				<div class="row" style="margin: 50px;">
-					Want Help?
-				</div>
-				<a class="btn btn-primary" id="ask_question">Ask questions to me >></a>
-			</div>
-		</div>
+<div class="col-lg-4">
+<h2 class="c_header">Jon Snow is here.</h2>
+<div class="row" style="margin-top: 20px;">
+  <div class="row" style="margin: 50px;">
+    Want Help?
+  </div>
+  <div class="fb-messengermessageus"
+    messenger_app_id="182961315923841"
+    page_id="354180721992855"
+    size="xlarge">
+  </div>
+</div>
+
+</div>
 		<div class="col-lg-4">
       <div class="button btn btn-primary">
         <center>
