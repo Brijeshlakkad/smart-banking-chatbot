@@ -11,6 +11,7 @@ from rasa_core_sdk.events import *
 from rasa_core_sdk.forms import *
 from jon_working_with_db import *
 import random,re
+import security
 class ActionGetAccountBalance(Action):
     def name(self):
         return "action_get_account_balance"
@@ -925,7 +926,11 @@ class GetAccess(FormAction):
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
         name = get_personal_info(user,password,"fname")
-        dispatcher.utter_template("utter_access",tracker)
+        access=tracker.get_slot("access")
+        if access==1:
+            template="utter_already_login"
+        template="utter_access"
+        dispatcher.utter_template(template,tracker)
         return [SlotSet("access", results),SlotSet("name",name),SlotSet("requested_slot",None)]
 class ActionGreeting(Action):
     def name(self):
@@ -933,7 +938,7 @@ class ActionGreeting(Action):
     def run(self, dispatcher, tracker, domain):
         name=tracker.get_slot("name")
         name=get_user_name(name)
-        text=tracker.latest_message.text
+        text=tracker.latest_message['text']
         template="utter_greet_reply"
         if text.endswith("?"):
             template="utter_greet_with_question_reply"
