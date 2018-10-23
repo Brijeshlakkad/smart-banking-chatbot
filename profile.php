@@ -1,5 +1,6 @@
 <?php include_once("header.php"); ?>
-<?php check_session(); ?>
+<?php check_session();
+check_pages(); ?>
 
 <script>  window.fbAsyncInit = function() {
     FB.init({
@@ -83,6 +84,9 @@
     transform: translateY(-15px);
   }
 }
+.customImg {
+  border-radius: 50%;
+}
 </style>
 <div class="container-fluid my_well">
 	<div ng-app="myapp" ng-controller="BrijController" style="margin-top: 20px;">
@@ -118,6 +122,7 @@
 <h2 class="c_header">Jon Snow is here.</h2>
 <div class="row" style="margin-top: 20px;">
   <div class="row" style="margin: 50px;">
+    <img src="images/jon-snow.jpg" alt="JonSnow" class="customImg" style="width:200px"><br/>
     Want Help?
   </div>
   <div class="fb-messengermessageus"
