@@ -946,7 +946,7 @@ class ActionEnding(Action):
         name=tracker.get_slot("name")
         name=get_user_name(name)
         dispatcher.utter_template("utter_ending_reply",tracker,name=name)
-        return []
+        return [AllSlotsReset()]
 class ActionHumanOrBot(Action):
     def name(self):
         return 'action_human_or_bot'
@@ -1029,7 +1029,6 @@ class ActivateCardService(FormAction):
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
-        ent="card"
         template="utter_fallback"
         if results==1:
             userid=get_personal_info(user,password,"cid")
@@ -1040,38 +1039,23 @@ class ActivateCardService(FormAction):
             elif cardExist==-99:
                 dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
                 return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
-            t1=tracker.copy()
-            entities=t1.latest_message["entities"]
-            intent=t1.latest_message["intent"]["name"]
-            while (intent!="Banking_Activate_Card"):
-                t1.update(UserUtteranceReverted())
-                entities=t1.latest_message["entities"]
-                intent=t1.latest_message["intent"]["name"]
-            if intent=="Banking_Activate_Card":
-                results=get_active_card(user,password,passcode)
-                if results==-33:
-                    dispatcher.utter_message("Your do not have any account yet.")
-                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
-                elif results==-22:
-                    dispatcher.utter_message("Your card is already activated.")
-                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
-                template="utter_activated_card"
-            len1=len(entities)
-            for i in range(len1):
-                if entities[i]["entity"]=="card_type":
-                    ent=entities[i]['value']
-                elif entities[i]["entity"]=="using_what":
-                    using_what=entities[i]['value']
-                elif entities[i]["entity"]=="question_yes_no":
-                    question_yes_no=entities[i]['value']
-            if question_yes_no!=None:
-                template="utter_give_pos_ans"
-                using=""
-                if using_what!=None:
-                    using=" ".join(["using",using_what])
-                dispatcher.utter_template(template,tracker,using=using)
+            results=get_active_card(user,password,passcode)
+            if results==-33:
+                dispatcher.utter_message("Your do not have any account yet.")
+                return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+            elif results==-22:
+                dispatcher.utter_message("Your card is already activated.")
+                return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+            template="utter_activated_card"
+            card_type=tracker.get_slot("card_type")
+            using_what=tracker.get_slot("using_what")
+            if card_type==None:
+                card_type="card"
+            if using_what==None:
+                using_what=""
             else:
-                dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
+                using_what=" %s"%using_what
+            dispatcher.utter_template(template,tracker,card_type=card_type.capitalize(),using_what=using_what)
         else:
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
@@ -1118,7 +1102,6 @@ class CancelCardService(FormAction):
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]
         results = check_passcode(user,password,passcode)
-        ent="card"
         template="utter_fallback"
         if results==1:
             userid=get_personal_info(user,password,"cid")
@@ -1129,38 +1112,23 @@ class CancelCardService(FormAction):
             elif cardExist==-99:
                 dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
                 return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
-            t1=tracker.copy()
-            entities=t1.latest_message["entities"]
-            intent=t1.latest_message["intent"]["name"]
-            while (intent!="Banking_Cancel_Card"):
-                t1.update(UserUtteranceReverted())
-                entities=t1.latest_message["entities"]
-                intent=t1.latest_message["intent"]["name"]
-            if intent=="Banking_Cancel_Card":
-                results=get_deactive_card(user,password,passcode)
-                if results==-33:
-                    dispatcher.utter_message("Your do not have any account yet.")
-                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
-                elif results==-22:
-                    dispatcher.utter_message("Your card is already deactivated.")
-                    return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
-                template="utter_deactivated_card"
-            len1=len(entities)
-            for i in range(len1):
-                if entities[i]["entity"]=="card_type":
-                    ent=entities[i]['value']
-                elif entities[i]["entity"]=="using_what":
-                    using_what=entities[i]['value']
-                elif entities[i]["entity"]=="question_yes_no":
-                    question_yes_no=entities[i]['value']
-            if question_yes_no!=None:
-                template="utter_give_pos_ans"
-                using=""
-                if using_what!=None:
-                    using=" ".join(["using",using_what])
-                dispatcher.utter_template(template,tracker,using=using)
+            results=get_deactive_card(user,password,passcode)
+            if results==-33:
+                dispatcher.utter_message("Your do not have any account yet.")
+                return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+            elif results==-22:
+                dispatcher.utter_message("Your card is already deactivated.")
+                return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
+            template="utter_deactivated_card"
+            card_type=tracker.get_slot("card_type")
+            using_what=tracker.get_slot("using_what")
+            if card_type==None:
+                card_type="card"
+            if using_what==None:
+                using_what=""
             else:
-                dispatcher.utter_template(template,tracker,card_type=ent.capitalize())
+                using_what=" %s"%using_what
+            dispatcher.utter_template(template,tracker,card_type=card_type.capitalize(),using_what=using_what)
         else:
             dispatcher.utter_message("Please enter valid passcode: ")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode")]

@@ -63,6 +63,12 @@ slots:
     type: text
   amount:
     type: text
+  card_type:
+    type: text
+  using_what:
+    type: text
+  question_yes_no:
+    type: text
 intents:
   - None
   - affirm
@@ -147,13 +153,13 @@ templates:
   utter_ask_card_permission:
     - "You can do it using several ways:\n1. Goto Profile Settings>>Services>>Active/Deactivate Card\n2. Using ATM\n3. Using Text\nor Should i do it for you?"
   utter_activated_card:
-    - "You got it! Boss. Your {card_type} is activated."
-    - "Okay! Boss. {card_type} is activated."
-    - "Done! Your {card_type} is activated"
+    - "You got it! Boss. Your {card_type} is activated{using_what}."
+    - "Okay! Boss. {card_type} is activated{using_what}."
+    - "Done! Your {card_type} is activated{using_what}."
   utter_deactivated_card:
-    - "You got it! Boss. Your card is deactivated."
-    - "Okay! Boss. Card is deactivated."
-    - "Done! Your card is deactivated"
+    - "You got it! Boss. Your {card_type} is deactivated{using_what}."
+    - "Okay! Boss. {card_type} is deactivated{using_what}."
+    - "Done! Your {card_type} is deactivated{using_what}."
   utter_ask_passcode:
     - "Please enter your passcode: "
   utter_anything:
