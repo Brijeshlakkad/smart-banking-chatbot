@@ -623,7 +623,7 @@ class ActionChangeCredentialInfo(Action):
         service_access=tracker.get_slot("service_access")
         name=tracker.get_slot("name")
         name=get_user_name(name)
-        entities=tracker.latest_message.entities
+        entities=tracker.latest_message["entities"]
         ent=""
         if len(entities)>0:
             ent=entities[0]["value"]
@@ -828,7 +828,7 @@ class ActionGetSecureInfo(Action):
         if results!=1:
             dispatcher.utter_message("Please enter valid information")
             return [ActionReverted(),AllSlotsReset()]
-        entities=tracker.latest_message.entities
+        entities=tracker.latest_message["entities"]
         template="utter_get_secure_info_reply"
         ent=""
         if len(entities)>0:
@@ -1041,12 +1041,12 @@ class ActivateCardService(FormAction):
                 dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
                 return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
             t1=tracker.copy()
-            entities=t1.latest_message.entities
-            intent=t1.latest_message.intent['name']
+            entities=t1.latest_message["entities"]
+            intent=t1.latest_message["intent"]["name"]
             while (intent!="Banking_Activate_Card"):
                 t1.update(UserUtteranceReverted())
-                entities=t1.latest_message.entities
-                intent=t1.latest_message.intent['name']
+                entities=t1.latest_message["entities"]
+                intent=t1.latest_message["intent"]["name"]
             if intent=="Banking_Activate_Card":
                 results=get_active_card(user,password,passcode)
                 if results==-33:
@@ -1130,12 +1130,12 @@ class CancelCardService(FormAction):
                 dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
                 return [SlotSet("card_permission",None),SlotSet("passcode",None),SlotSet("requested_slot",None)]
             t1=tracker.copy()
-            entities=t1.latest_message.entities
-            intent=t1.latest_message.intent['name']
+            entities=t1.latest_message["entities"]
+            intent=t1.latest_message["intent"]["name"]
             while (intent!="Banking_Cancel_Card"):
                 t1.update(UserUtteranceReverted())
-                entities=t1.latest_message.entities
-                intent=t1.latest_message.intent['name']
+                entities=t1.latest_message["entities"]
+                intent=t1.latest_message["intent"]["name"]
             if intent=="Banking_Cancel_Card":
                 results=get_deactive_card(user,password,passcode)
                 if results==-33:
