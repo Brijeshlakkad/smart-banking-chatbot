@@ -1,5 +1,5 @@
 {
-    "trained_at": "20181023-101933", 
+    "trained_at": "20181023-115321", 
     "pipeline": [
         {
             "class": "rasa_nlu.utils.spacy_utils.SpacyNLP", 
@@ -31,7 +31,10 @@
             "scoring_function": "f1_weighted", 
             "max_cross_validation_folds": 5, 
             "classifier_file": "intent_classifier_sklearn.pkl", 
-            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
+            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier", 
+            "gamma": [
+                0.1
+            ]
         }, 
         {
             "BILOU_flag": true, 
@@ -73,7 +76,7 @@
             "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper"
         }
     ], 
-    "rasa_nlu_version": "0.13.2", 
+    "rasa_nlu_version": "0.13.7", 
     "training_data": "training_data.json", 
     "language": "en"
 }

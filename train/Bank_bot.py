@@ -78,7 +78,7 @@ def run_bank_bot_for_web():
 # $ python -m rasa_utils.bot  -d models/dialogue -u models/nlu/default/bank_nlu --endpoints endpoints.yml --enable_api
 
 # run fb connector
-# $ python -m rasa_core.run -d models/dialogue -u models/nlu/default/bank_nlu --port 5002 --credentials credentials.yml --endpoints endpoints.yml --enable_api
+# $ python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/bank_nlu --port 5002 --credentials credentials.yml --endpoints endpoints.yml 
 
 if __name__ == '__main__':
     utils.configure_colored_logging(loglevel="INFO")
