@@ -12,6 +12,46 @@ from rasa_core_sdk.forms import *
 from jon_working_with_db import *
 import random,re
 import security
+class ActionBotDesc(Action):
+    def name(self):
+        return "action_get_bot_desc"
+    def run(self, dispatcher, tracker, domain):
+        user=tracker.get_slot("email")
+        password=tracker.get_slot("password")
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        results = check_indentity(user,password)
+        if results!=1:
+            dispatcher.utter_message("Please enter valid information")
+            return [ActionReverted(),AllSlotsReset()]
+        dispatcher.utter_template("utter_bot_desc",tracker,name=name)
+        return []
+class ActionFindOperator(FormAction):
+    RANDOMIZE = False
+    @staticmethod
+    def required_fields():
+        return [
+        FreeTextFormField("bank_name"),
+        FreeTextFormField("ab")
+        ]
+    def name(self):
+        return 'action_find_operator'
+    def submit(self, dispatcher, tracker, domain):
+        user,password=tracker.get_slot("email"),tracker.get_slot("password")
+        access=tracker.get_slot("access")
+        if user==None or password==None or access!=1:
+            dispatcher.utter_message("Please log in our service, to use Jon service!")
+            return [ActionReverted(),AllSlotsReset()]
+        name=tracker.get_slot("name")
+        name=get_user_name(name)
+        bank_name=tracker.get_slot("bank_name")
+        ab=tracker.get_slot("ab")
+        result=get_link_for_map(bank_name,ab)
+        if result==-99:
+            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
+            return [SlotSet("bank_name",None),SlotSet("ab",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
+        #dispatcher.utter_template("utter_found_operator_location",tracker,name=name,ent="postal address")
+        return [SlotSet("bank_name",None),SlotSet("ab",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionGetAccountBalance(Action):
     def name(self):
         return "action_get_account_balance"
@@ -35,10 +75,6 @@ class ActionGetAccountBalance(Action):
         elif hasAcc==0:
             dispatcher.utter_message("You do not have any account yet. You can apply for a card application after getting an JonSnow Bank account.")
             return []
-        service_access=tracker.get_slot("service_access")
-        if service_access!=1:
-            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("requested_slot",None),SlotSet("service_access",None)]
         balance=get_account_info(user,password,"balance")
         acc=random.choice(['account','a/c','acc'])
         dispatcher.utter_template("utter_get_account_balance_reply",tracker,name=name,balance=balance,acc=acc)
@@ -494,7 +530,7 @@ class ActionChangePassword(FormAction):
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
         new_password=str(new_password)
         if not re.match("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})",new_password):
-            dispatcher.utter_message("Password should contain at least one number and at least one character. It also have at least length of 6 characters")
+            dispatcher.utter_message("Password should contain at least one number and at least one character. It also have at least length of 6 characters.\n Please enter new password:")
             return [SlotSet("new_password",None),SlotSet("requested_slot","new_password"),SlotSet("service_access",service_access)]
         result=change_customer_details("password",new_password,user)
         if result!=1:

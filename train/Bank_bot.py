@@ -25,7 +25,7 @@ def train_dialogue(domain_file="bank_domain.yml",model_path="models/dialogue/",t
     fallback = FallbackPolicy(fallback_action_name="action_fallback", core_threshold=0.2, nlu_threshold=0.2)
     agent = Agent(domain_file,policies=[MemoizationPolicy(max_history=15),KerasPolicy(),fallback])
     training_data = agent.load_data(training_data_file)
-    agent.train(training_data,batch_size=200,epochs=150,validation_split=0.2)
+    agent.train(training_data,batch_size=200,epochs=150,validation_split=0.2,max_training_samples=500)
     agent.persist(model_path)
     return agent
 
@@ -68,7 +68,7 @@ def run_bank_bot_for_web():
     agent = Agent.load('models/dialogue', interpreter = interpreter)
     channel = BotServerInputChannel(agent)
     agent.handle_channels([channel])
-# $ python -m rasa_core.train -d bank_domain.yml -s data/stories.md -o models/current/dialogue --batch_size 500 --epochs 200 --history 15 --validation_split 0.2 --nlu_threshold 0.2 --core_threshold 0.2 --fallback_action_name action_fallback
+# $ python -m rasa_core.train -d bank_domain.yml -s data/stories.md -o models/dialogue --batch_size 500 --epochs 200 --history 15 --validation_split 0.2 --nlu_threshold 0.2 --core_threshold 0.2 --fallback_action_name action_fallback
 
 # $ python -m rasa_core.run --enable_api  -d models/dialogue -u models/nlu/default/bank_nlu --endpoints endpoints.yml
 
@@ -78,7 +78,7 @@ def run_bank_bot_for_web():
 # $ python -m rasa_utils.bot  -d models/dialogue -u models/nlu/default/bank_nlu --endpoints endpoints.yml --enable_api
 
 # run fb connector
-# $ python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/bank_nlu --port 5002 --credentials credentials.yml --endpoints endpoints.yml 
+# $ python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/bank_nlu --port 5002 --credentials credentials.yml --endpoints endpoints.yml
 
 if __name__ == '__main__':
     utils.configure_colored_logging(loglevel="INFO")
