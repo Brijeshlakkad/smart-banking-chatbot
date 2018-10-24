@@ -26,32 +26,6 @@ class ActionBotDesc(Action):
             return [ActionReverted(),AllSlotsReset()]
         dispatcher.utter_template("utter_bot_desc",tracker,name=name)
         return []
-class ActionFindOperator(FormAction):
-    RANDOMIZE = False
-    @staticmethod
-    def required_fields():
-        return [
-        FreeTextFormField("bank_name"),
-        FreeTextFormField("ab")
-        ]
-    def name(self):
-        return 'action_find_operator'
-    def submit(self, dispatcher, tracker, domain):
-        user,password=tracker.get_slot("email"),tracker.get_slot("password")
-        access=tracker.get_slot("access")
-        if user==None or password==None or access!=1:
-            dispatcher.utter_message("Please log in our service, to use Jon service!")
-            return [ActionReverted(),AllSlotsReset()]
-        name=tracker.get_slot("name")
-        name=get_user_name(name)
-        bank_name=tracker.get_slot("bank_name")
-        ab=tracker.get_slot("ab")
-        result=get_link_for_map(bank_name,ab)
-        if result==-99:
-            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("bank_name",None),SlotSet("ab",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
-        #dispatcher.utter_template("utter_found_operator_location",tracker,name=name,ent="postal address")
-        return [SlotSet("bank_name",None),SlotSet("ab",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionGetAccountBalance(Action):
     def name(self):
         return "action_get_account_balance"
@@ -339,7 +313,7 @@ class ActionTransferMoney(FormAction):
         result_transfer=str(make_transaction(from_acc_no,to_acc_no,amount))
         if result_transfer=="-22":
             dispatcher.utter_message("Transaction Failed! You have inefficient money.")
-        if not result_transfer.startswith("11"):
+        elif not result_transfer.startswith("11"):
             dispatcher.utter_message("Transaction Failed!")
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]

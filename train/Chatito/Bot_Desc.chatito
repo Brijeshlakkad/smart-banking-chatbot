@@ -1,0 +1,39 @@
+%[Bot_Desc]('training': '800')
+    ~[verb] ~[me?] ~[your?] ~[desc]
+    ~[desc] of you
+    ~[your?] ~[desc]
+    ~[verb] ~[me?] ~[desc] of you
+~[verb]
+    deliver
+    hand out
+    hand over
+    present
+    provide
+    turn over
+    convey
+~[desc]
+    detail
+    explanation
+    information
+    narration
+    narrative
+    portrayal
+    report
+    sketch
+    statement
+    story
+    summary
+    tale
+    version
+    ABCs
+    brief
+    declaration
+    delineation
+    explication
+    fingerprint
+    summarization
+    monograph
+    portraiture
+    presentment
+    representation
+    specification

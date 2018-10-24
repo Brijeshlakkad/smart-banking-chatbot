@@ -118,7 +118,6 @@ intents:
   - Banking_Get_Account_Balance
   - Banking_Get_Card_Request_Status
   - Banking_Card_Request
-  - Banking_Find_Operator
   - Bot_Desc
 entities:
   - using_what
@@ -325,11 +324,6 @@ templates:
     - "Great!"
     - "Okay! Boss"
     - "Ok, Got it!"
-  utter_ask_bank_name:
-    - "Please tell me bank name you want to find: "
-    - "Please give me bank name you want to find: "
-  utter_ask_ab:
-    - "Sir, Do you want to find bank or atm?"
   utter_bot_desc:
     - "{name} I am a chatbot build for act as a bank assistant to help customers with their questions and i can done work in just a minute!"
 actions:
@@ -381,5 +375,4 @@ actions:
     - action_card_request
     - action_check_account_and_card
     - utter_just_reply
-    - action_find_operator
     - action_get_bot_desc

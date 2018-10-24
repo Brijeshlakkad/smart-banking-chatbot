@@ -12,10 +12,8 @@
     - slot{"access": 1}
 * None
     - action_fallback
-* Bot_Dec
+* Bot_Desc
     - action_get_bot_desc
-* Banking_Find_Operator
-    - action_find_operator
     - export
 ## Generated Story -7262308927873913501
 * None
@@ -228,10 +226,8 @@
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
-* Bot_Dec
+* Bot_Desc
     - action_get_bot_desc
-* Banking_Find_Operator
-    - action_find_operator
     - export
 ## Generated Story -7262308927873913512
 * deny
@@ -19072,8 +19068,6 @@
     - action_greeting
 * None
     - action_fallback
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * General_Human_or_Bot
@@ -19203,8 +19197,6 @@
     - action_fallback
 * Banking_Card_Number
     - action_fallback
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -19381,8 +19373,6 @@
     - action_fallback
 * Bot_Desc
     - action_get_bot_desc
-* Banking_Find_Operator
-    - action_find_operator
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Get_Card_Number{"to_change": "card number"}
@@ -19526,8 +19516,6 @@
     - action_positive_feedback
 * None
     - action_fallback
-* Banking_Find_Operator
-    - action_find_operator
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Fee_Inquiry
@@ -20254,8 +20242,6 @@
     - action_bot_control_change_subject
 * Bot_Desc
     - action_get_bot_desc
-* Banking_Find_Operator
-    - action_find_operator
 * Bot_Control_Standby
     - action_bot_control_standby
 * Bot_Control_Confirm_Presence
@@ -20328,8 +20314,6 @@
     - action_fallback
 * Banking_Card_Number
     - action_fallback
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Card_Number
     - action_fallback
 * Banking_Activate_Card
@@ -20943,8 +20927,6 @@
     - action_bot_control_change_subject
 * Bot_Control_Standby
     - action_bot_control_standby
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Get_Account_Details
     - action_get_account_details
 * Bot_Control_Confirm_Presence
@@ -21113,8 +21095,6 @@
     - slot{"card_perm": null}
     - slot{"card_replace_with": null}
     - slot{"requested_slot": null}
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Replace_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -21788,8 +21768,6 @@
     - slot{"username": null}
     - slot{"requested_slot": null}
     - slot{"service_access": null}
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Change_Passcode
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -21936,8 +21914,6 @@
     - slot{"service_access": null}
 * affirm
     - utter_just_reply
-* Banking_Find_Operator
-    - action_find_operator
 * Bot_Control_Start_Over
     - action_bot_control_start_over
     - reset_slots
@@ -22183,8 +22159,6 @@
     - action_positive_feedback
 * Banking_Get_Card_Number{"to_change": "card number"}
     - action_get_card_number
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Get_Address
     - action_get_address
 * Banking_Get_Account_Details
@@ -22297,8 +22271,6 @@
     - action_get_bot_desc
 * None
     - action_fallback
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Get_Secure_Info{"to_get": "passcode"}
     - action_get_secure_info
 * Banking_Replace_Card
@@ -22635,8 +22607,6 @@
     - slot{"service_access": null}
 * Banking_Get_Card_Request_Status
     - action_get_card_request_status
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Get_Account_Balance
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -22844,8 +22814,6 @@
     - slot{"access": 1}
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -23048,8 +23016,6 @@
     - slot{"requested_slot": null}
 * None
     - action_fallback
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Transfer_Money
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
@@ -23516,8 +23482,6 @@
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
     - slot{"service_access": null}
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Replace_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -23717,8 +23681,6 @@
     - action_get_account_details
 * General_Positive_Feedback
     - action_positive_feedback
-* Banking_Find_Operator
-    - action_find_operator
 * Banking_Get_Account_Balance
     - action_check_account_and_card
     - slot{"service_access": 1}

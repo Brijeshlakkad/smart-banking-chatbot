@@ -1,0 +1,82 @@
+%[Banking_Find_Operator]('training': '1000')
+    ~[verb] ~[me?] ~[what] location]
+    location of ~[what]
+    ~[what] location
+    ~[verb] ~[me?] location of ~[what
+~[what]
+    @[bank_name] @[ab]
+    @[ab] of @[bank_name]
+@[bank_name]
+    RBI
+    Reserve Bank of India
+    NABARD
+    National Bank for Agriculture and Rural Development
+    SBI
+    State Bank of India
+    SBBJ
+    State bank of Bikaner and Jaipur
+    SBM
+    State bank of Mysore
+    SBH
+    State bank of Hyderabad
+    SBI
+    State bank of Indore
+    SBS
+    State bank of Saurashtra
+    SBT
+    State bank of Travancore
+    SBP
+    State bank of Patiala
+    IDBI
+    Industrial Development Bank of India
+    HDFC
+    Housing Development and Finance Corporation
+    ICICI
+    Industrial Credit and Investment Corporation of India Limited
+    PNB
+    Punjab National Bank
+    BOI
+    Bank of India
+    UBI
+    United Bank of India
+    BMB
+    Bharatiya Mahila Bank
+    UOB
+    Union Bank of India
+    BOB
+    Bank of Baroda
+    BOM
+    Bank of Maharashtra
+    IOB
+    Indian Overseas Bank
+    UCO
+    United Commercial Bank
+    CBI
+    Central Bank of India
+    OBC
+    Oriental Bank of Commerce
+    BOR
+    Bank of Rajasthan
+    CUB
+    City Union Bank
+    CSB
+    Catholic Syrian Bank
+    KVB
+    Karur Vysya Bank
+    LVB
+    Lakshmi Vilas Bank
+    SIB
+    South Indian Bank
+    TMB
+    Tamilnad Mercantile Bank
+    EXIM
+    Export-Import Bank
+    IIBI
+    Industrial Investment Bank of India
+    SIDBI
+    Small Industries Development Bank of India
+    NHB
+    National Housing Bank
+@[ab]
+    ATM
+    Bank]

@@ -148,10 +148,3 @@ def send_otp_to_customer(user,password):
         return -99
     m=Mail()
     return m.send_otp_mail(user)
-def get_link_for_map(bank_name,ab):
-    import webbrowser, sys
-    s="%s %s"%(bank_name,ab)
-    try:
-        webbrowser.open('https://www.google.com/maps/place/' + s)
-    except:
-        return -99
