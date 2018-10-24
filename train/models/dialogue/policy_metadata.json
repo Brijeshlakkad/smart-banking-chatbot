@@ -6,7 +6,7 @@
   ], 
   "python": "2.7.15", 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
-  "rasa_core": "0.11.3", 
+  "rasa_core": "0.11.12", 
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy", 
     "rasa_core.policies.keras_policy.KerasPolicy", 
@@ -54,6 +54,13 @@
     }, 
     "action_fallback": {
       "slots": []
+    }, 
+    "action_view_activity": {
+      "slots": [
+        "num_trans", 
+        "service_access", 
+        "requested_slot"
+      ]
     }, 
     "action_activate_card": {
       "slots": [
@@ -112,12 +119,8 @@
         "requested_slot"
       ]
     }, 
-    "action_view_activity": {
-      "slots": [
-        "num_trans", 
-        "service_access", 
-        "requested_slot"
-      ]
+    "action_bot_control_confirm_presence": {
+      "slots": []
     }, 
     "action_change_address": {
       "slots": [

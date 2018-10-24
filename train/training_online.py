@@ -21,4 +21,4 @@ if __name__ == '__main__':
     utils.configure_colored_logging(loglevel="INFO")
     agent = train_agent()
     online.run_online_learning(agent)
-#to train using cmd: $ python -m rasa_core_sdk.endpoint --actions actions & python -m rasa_core.train --online -o models/dialogue  -d bank_domain.yml -s data/stories.md --endpoints endpoints.yml --batch_size 500 --epochs 200 --history 15 --validation_split 0.2 --nlu_threshold 0.2 --core_threshold 0.2 --fallback_action_name action_fallback 
+#to train using cmd: $ python -m rasa_core_sdk.endpoint --actions actions & python -m rasa_core.train --online -o models/dialogue -u models/nlu/default/bank_nlu  -d bank_domain.yml -s data/stories.md --endpoints endpoints.yml --batch_size 500 --epochs 200 --history 15 --validation_split 0.2 --nlu_threshold 0.2 --core_threshold 0.2 --fallback_action_name action_fallback

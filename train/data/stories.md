@@ -10,6 +10,12 @@
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
+* None
+    - action_fallback
+* Bot_Dec
+    - action_get_bot_desc
+* Banking_Find_Operator
+    - action_find_operator
     - export
 ## Generated Story -7262308927873913501
 * None
@@ -24,8 +30,6 @@
     - slot{"password": "123456bB"}
     - slot{"access": 1}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -224,6 +228,10 @@
     - action_get_access
     - slot{"password": "123456bB"}
     - slot{"access": 1}
+* Bot_Dec
+    - action_get_bot_desc
+* Banking_Find_Operator
+    - action_find_operator
     - export
 ## Generated Story -7262308927873913512
 * deny
@@ -448,13 +456,13 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Details
     - action_get_card_details
 * Banking_Activate_Card
@@ -607,6 +615,7 @@
     - action_bot_control_confirm_presence
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 3069591684343179850
 * Banking_Activate_Card
@@ -649,6 +658,7 @@
     - action_security_assurance
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 526328178651403057
 * None
@@ -694,6 +704,7 @@
     - action_security_assurance
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -7384317693158248151
 * General_Greetings
@@ -809,6 +820,7 @@
     - slot{"requested_slot": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 
 ## Generated Story 2701575969188271026
@@ -1303,6 +1315,7 @@
     - action_security_assurance
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 
 ## Generated Story -4948951886217829979
@@ -1623,6 +1636,7 @@
     - action_security_assurance
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 7649361914383260
 * General_Greetings
@@ -1780,6 +1794,7 @@
     - action_security_assurance
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -1498709384297915511
 * General_Greetings
@@ -1815,6 +1830,7 @@
     - action_positive_feedback
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -2134908216374034294
 * General_Greetings
@@ -1875,6 +1891,7 @@
     - slot{"card_replace_with": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -1412130866494721174
 * General_Greetings
@@ -1978,6 +1995,7 @@
     - action_human_or_bot
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 4196587998254766202
 * General_Greetings
@@ -1997,6 +2015,7 @@
     - action_positive_feedback
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 4196587998254766201
 * General_Greetings
@@ -2018,6 +2037,7 @@
     - action_positive_feedback
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 6543378715159766846
 * General_Greetings
@@ -2194,8 +2214,6 @@
 * General_Negative_Feedback
     - action_negative_feedback
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -2498,8 +2516,6 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -2690,8 +2706,6 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -3210,7 +3224,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Password
     - action_get_otp_permission
@@ -3230,7 +3243,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Security_Assurance
     - action_security_assurance
 * General_Positive_Feedback
@@ -3256,7 +3269,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293222"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -3276,7 +3288,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -3486,7 +3498,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Cancel_Card
     - action_get_otp_permission
@@ -3506,7 +3517,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Security_Assurance
     - action_security_assurance
 * General_Positive_Feedback
@@ -3517,6 +3528,7 @@
     - action_get_card_number
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 6543378715159766012
 * Banking_Card_Number
@@ -3553,8 +3565,6 @@
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -4012,7 +4022,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -4032,7 +4041,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -4085,8 +4094,6 @@
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -4325,7 +4332,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -4345,7 +4351,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 6802799919969540801
 * General_Greetings
@@ -4431,6 +4437,7 @@
     - action_human_or_bot
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 6802799919969540802
 * General_Greetings
@@ -4545,7 +4552,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -4559,7 +4566,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -4611,7 +4618,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -4630,7 +4637,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Card_Details
@@ -4789,12 +4796,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Greetings
     - action_greeting
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -4846,6 +4851,7 @@
     - action_negative_feedback
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -6036964805923185803
 * General_Negative_Feedback
@@ -4918,7 +4924,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -4932,7 +4938,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -4984,7 +4990,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -5003,7 +5009,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Card_Details
@@ -5074,7 +5080,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -5088,7 +5094,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -5111,7 +5117,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -5130,7 +5136,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Card_Details
@@ -5239,7 +5245,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -5348,7 +5354,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * General_Greetings
@@ -5363,6 +5369,7 @@
     - action_greeting
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 313086574448792304
 * General_Greetings
@@ -5436,8 +5443,6 @@
 * General_Human_or_Bot
     - action_human_or_bot
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -5500,7 +5505,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -5514,7 +5519,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -5566,7 +5571,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -5585,7 +5590,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Card_Details
@@ -5640,13 +5645,14 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * affirm
     - action_fallback
 * deny
     - action_fallback
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 2694105110943803751
 * General_Greetings
@@ -5747,7 +5753,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Human_or_Bot
     - action_human_or_bot
     - export
@@ -5779,7 +5785,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -5793,7 +5799,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -5845,7 +5851,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -5864,7 +5870,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Card_Details
@@ -5893,7 +5899,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Email
     - action_fallback
 * Banking_Passcode
@@ -5909,13 +5915,13 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Number
     - action_get_card_number
 * affirm
@@ -6006,13 +6012,13 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Cancel_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -6324,11 +6330,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -6348,7 +6353,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Cancel_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -6365,8 +6370,6 @@
     - slot{"passcode": null}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -6447,7 +6450,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Cancel_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -6533,7 +6536,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Greetings
     - action_greeting
 * General_Greetings
@@ -6599,7 +6602,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Cancel_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -6825,7 +6828,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -6845,7 +6847,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Cancel_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -6939,6 +6941,7 @@
 ## Generated Story 2694105110943803711
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 2694105110943803706
 * Banking_Passcode
@@ -7017,7 +7020,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -7037,7 +7039,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -7112,8 +7114,6 @@
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -7390,7 +7390,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -7410,7 +7409,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Passcode
     - action_fallback
 * Banking_Password
@@ -7592,10 +7591,12 @@
 ## Generated Story 2694105110943803710
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -5436525067242023978
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 
 ## Generated Story 3570068404446949526
@@ -7769,7 +7770,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -7789,7 +7789,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Human_or_Bot
     - action_human_or_bot
     - export
@@ -7810,6 +7810,7 @@
     - slot{"requested_slot": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -4538091086179447343
 * None
@@ -8017,7 +8018,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Get_Address
@@ -8045,7 +8046,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8065,7 +8065,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Change_Username
@@ -8086,7 +8086,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Get_Address
@@ -8110,7 +8110,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8130,7 +8129,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Get_Address
@@ -8167,7 +8166,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8187,7 +8185,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Account_Number
     - action_get_account_number
 * Banking_Get_Card_Number
@@ -8237,7 +8235,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8257,7 +8254,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 3287614382393857571
 * General_Greetings
@@ -8277,7 +8274,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8297,7 +8293,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 70536121716141053
 * General_Greetings
@@ -8332,11 +8328,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8356,10 +8351,8 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -8407,7 +8400,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8427,7 +8419,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Get_Address
@@ -8495,6 +8487,7 @@
     - slot{"requested_slot": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 399461254303087383
 * General_Greetings
@@ -8514,7 +8507,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8534,7 +8526,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - slot{"requested_slot": null}
     - slot{"card_replace_with": null}
 * Banking_Get_Card_Number
@@ -8575,7 +8567,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8595,7 +8586,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 1938738162715600079
 * General_Greetings
@@ -8623,7 +8614,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8643,7 +8633,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
     - export
@@ -8695,7 +8685,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8715,7 +8704,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story -653554185918743801
 * General_Greetings
@@ -8743,7 +8732,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8763,7 +8751,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Username
     - action_get_username
 * Banking_Get_Email
@@ -8795,7 +8783,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Cancel_Card
     - action_get_otp_permission
@@ -8815,7 +8802,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story -653554185918743802
 * General_Greetings
@@ -8835,7 +8822,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -8855,7 +8841,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Secure_Info{"to_get": "pincode"}
     - action_get_secure_info
 * Banking_Get_Secure_Info{"to_get": "till year"}
@@ -8906,7 +8892,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Email
     - action_get_email
 * Banking_Get_Secure_Info{"to_get": "pincode"}
@@ -9038,12 +9024,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Human_or_Bot
     - action_human_or_bot
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -9139,7 +9123,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -9159,7 +9142,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 704616726743976076
 * General_Greetings
@@ -9260,7 +9243,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Get_Acc_Status
@@ -9289,11 +9272,13 @@
 * General_Negative_Feedback
     - action_negative_feedback
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -9345,7 +9330,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Negative_Feedback
     - action_negative_feedback
 * General_Security_Assurance
@@ -9398,7 +9383,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -9418,7 +9402,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Passcode
     - action_fallback
 * Banking_Password
@@ -9509,7 +9493,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Acc_Status
     - action_get_acc_status
 * Banking_Get_Acc_Status
@@ -9590,11 +9574,13 @@
 * Banking_Get_Card_Number
     - action_get_card_number
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -9626,7 +9612,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Account_Number
     - action_get_account_number
 * Banking_Get_Address
@@ -9755,8 +9741,6 @@
 * General_Ending
     - action_ending
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -9786,11 +9770,13 @@
     - slot{"service_access": null}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -9842,7 +9828,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -9926,7 +9912,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Passcode
     - action_get_otp_permission
@@ -9946,11 +9931,12 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 2663072898449704776
 * General_Greetings
@@ -10010,7 +9996,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -10048,7 +10034,23 @@
 * General_Human_or_Bot
     - action_human_or_bot
 * Banking_Change_Contact
-    - action_get_contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167267"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Get_Acc_Status
@@ -10056,11 +10058,13 @@
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -10167,7 +10171,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Passcode
     - action_get_otp_permission
@@ -10187,7 +10190,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 1104439229264069591
 * General_Greetings
@@ -10215,11 +10218,13 @@
 * Banking_Get_Acc_Status
     - action_get_acc_status
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Standby
     - action_bot_control_standby
 * Bot_Control_Start_Over
@@ -10328,7 +10333,23 @@
 * General_Ending
     - action_ending
 * Banking_Change_Contact
-    - action_get_contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167267"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Positive_Feedback
@@ -10374,7 +10395,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Secure_Info{"to_get": "password"}
     - action_get_secure_info
 * Banking_View_Activity{"num_trans": "2"}
@@ -10398,7 +10419,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Passcode
     - action_get_otp_permission
@@ -10418,7 +10438,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 
 ## Generated Story 9039243891003185239
@@ -10439,7 +10459,6 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "293872"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Card_Number
     - action_get_otp_permission
@@ -10459,7 +10478,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -10535,24 +10554,23 @@
     - slot{"got_otp": "2"}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "791511"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Passcode
     - action_get_otp_permission
     - slot{"got_otp": "791511"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "7791511"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1"}
@@ -10563,13 +10581,13 @@
     - slot{"got_otp": "805604"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "2"}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Email
     - action_get_email
 * Banking_View_Activity{"num_trans": "5"}
@@ -10598,7 +10616,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 
 ## Generated Story 1194136697501862913
@@ -10627,20 +10645,19 @@
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": "937202"}
-    - action_get_otp_permission
     - slot{"requested_slot": "got_otp"}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "937202"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "2"}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Greetings
     - action_greeting
     - export
@@ -10682,7 +10699,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_View_Activity{"num_trans": "1"}
     - slot{"num_trans": "1"}
     - action_check_account_and_card
@@ -10720,7 +10737,7 @@
     - slot{"got_otp": "122222"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -10739,7 +10756,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Greetings
     - action_greeting
     - export
@@ -10780,9 +10797,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -5496057712032733736
 * General_Greetings
@@ -10821,7 +10839,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -10840,9 +10858,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -495805262192395592
 * General_Greetings
@@ -10876,7 +10895,7 @@
     - slot{"contact": "11010101010"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -10894,7 +10913,7 @@
     - slot{"passcode": "11010101010"}
     - slot{"passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_View_Activity{"num_trans": "10"}
     - slot{"num_trans": "10"}
     - action_check_account_and_card
@@ -10920,13 +10939,15 @@
     - slot{"password": "11010101010"}
     - slot{"password": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * Bot_Control_Start_Over
@@ -10947,6 +10968,7 @@
     - slot{"requested_slot": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -2555790476185591691
 * General_Greetings
@@ -11009,10 +11031,8 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -11066,7 +11086,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -11080,7 +11100,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11140,13 +11160,15 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -11176,6 +11198,7 @@
     - action_get_card_details
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -70461672674925501
 * General_Greetings
@@ -11201,7 +11224,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -11215,7 +11238,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11267,7 +11290,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11286,13 +11309,14 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Card_Details
     - action_get_card_details
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -70461672674925502
 * General_Greetings
@@ -11318,7 +11342,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -11332,7 +11356,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11380,11 +11404,12 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Details
     - action_get_card_details
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -70461672674925503
 * General_Greetings
@@ -11410,7 +11435,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -11424,7 +11449,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11455,9 +11480,26 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Change_Contact
-    - action_get_contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167267"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -70461672674925504
 * General_Greetings
@@ -11483,7 +11525,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -11497,7 +11539,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11536,7 +11578,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -11550,13 +11592,14 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Card_Details
     - action_get_card_details
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 7046167267689384105
 * General_Greetings
@@ -11640,13 +11683,15 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -11688,7 +11733,7 @@
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -11702,11 +11747,28 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
-    - action_get_contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167267"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -3666984385462551122
 * General_Greetings
@@ -11761,6 +11823,7 @@
     - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 
 ## Generated Story -4610364056084722110
@@ -11819,7 +11882,7 @@
     - slot{"access": 1}
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
-#* Banking_View_Activity
+* Banking_View_Activity
     - action_check_account_and_card
     - slot{"service_access": 1}
     - action_view_activity
@@ -11882,18 +11945,36 @@
 * Banking_Get_Address
     - action_get_address
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
 * Bot_Control_Standby
     - action_bot_control_standby
 * Banking_Change_Contact
-    - action_get_contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167267"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11916,7 +11997,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -11935,9 +12016,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 7046167267599127821
 * General_Greetings
@@ -11963,8 +12045,6 @@
 * Banking_Get_Address
     - action_get_address
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12021,19 +12101,19 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 7046167267599127822
 * General_Greetings
@@ -12061,8 +12141,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12185,19 +12263,19 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story -2008499078547416956
 * General_Greetings
@@ -12215,8 +12293,6 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12262,11 +12338,13 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -12305,8 +12383,6 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12362,8 +12438,6 @@
     - slot{"name": "Brijesh"}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12476,8 +12550,6 @@
 * Banking_Get_Card_Details
     - action_get_card_details
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12521,11 +12593,13 @@
 * Banking_Get_Card_Details
     - action_get_card_details
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -12594,8 +12668,6 @@
 * Banking_Get_Card_Details
     - action_get_card_details
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12639,11 +12711,13 @@
 * Banking_Get_Card_Details
     - action_get_card_details
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -12704,8 +12778,6 @@
 * Banking_Get_Card_Details
     - action_get_card_details
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -12749,11 +12821,13 @@
 * Banking_Get_Card_Details
     - action_get_card_details
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * affirm
@@ -12879,7 +12953,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Get_Address
@@ -12903,13 +12977,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -12927,7 +13001,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -12945,7 +13019,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -12963,7 +13037,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -12973,7 +13047,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -13060,8 +13134,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -13169,6 +13241,7 @@
     - action_get_card_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461001
 * General_Greetings
@@ -13264,13 +13337,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -13288,7 +13361,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -13306,7 +13379,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -13316,7 +13389,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -13395,8 +13468,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -13504,6 +13575,7 @@
     - action_get_card_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461002
 * General_Greetings
@@ -13604,7 +13676,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Get_Address
@@ -13628,13 +13700,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * General_Security_Assurance
@@ -13656,7 +13728,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -13666,7 +13738,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -13717,7 +13789,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -13735,7 +13807,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -13797,8 +13869,6 @@
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -13912,6 +13982,7 @@
     - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461003
 * General_Greetings
@@ -14016,7 +14087,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Change_Credential_Info
@@ -14024,13 +14095,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -14048,7 +14119,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -14066,7 +14137,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -14084,7 +14155,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Report_Missing_Card
     - action_report_missing_card
 * Banking_Cancel_Card
@@ -14138,8 +14209,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -14247,6 +14316,7 @@
     - action_get_card_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461004
 * General_Greetings
@@ -14345,7 +14415,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Get_Address
@@ -14369,13 +14439,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -14393,7 +14463,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -14411,7 +14481,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -14421,7 +14491,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -14508,8 +14578,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -14617,6 +14685,7 @@
     - action_get_card_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461005
 * General_Greetings
@@ -14825,7 +14894,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story -1624304156385627545
 * General_Greetings
@@ -14928,19 +14997,19 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -14954,10 +15023,8 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -15047,6 +15114,7 @@
     - action_get_card_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461006
 * General_Greetings
@@ -15149,19 +15217,19 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -15175,7 +15243,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -15319,6 +15387,7 @@
     - action_get_card_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461008
 * General_Greetings
@@ -15421,19 +15490,19 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -15447,7 +15516,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -15542,7 +15611,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -15560,7 +15629,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -15664,7 +15733,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -15774,6 +15843,7 @@
     - slot{"requested_slot": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461008
 * General_Greetings
@@ -15827,19 +15897,19 @@
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -15853,7 +15923,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Number{"to_change": "card number"}
     - action_get_card_number
 * Banking_Get_Address
@@ -15871,13 +15941,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -15910,6 +15980,7 @@
     - action_bot_control_confirm_presence
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461008
 * General_Greetings
@@ -15969,19 +16040,19 @@
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -15995,7 +16066,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Number{"to_change": "card number"}
     - action_get_card_number
 * Banking_Get_Address
@@ -16007,13 +16078,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -16050,6 +16121,7 @@
     - action_bot_control_confirm_presence
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 704616726770461009
 * General_Greetings
@@ -16105,19 +16177,19 @@
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -16131,7 +16203,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Number{"to_change": "card number"}
     - action_get_card_number
 * Banking_Get_Address
@@ -16143,13 +16215,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -16276,7 +16348,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
 * Banking_Get_Address
@@ -16351,13 +16423,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -16375,7 +16447,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -16393,7 +16465,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -16411,7 +16483,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -16421,7 +16493,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -16512,8 +16584,6 @@
 * Banking_Card_Request
     - action_card_request
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -16749,6 +16819,7 @@
     - action_get_card_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -1740963651222841529
 * General_Greetings
@@ -16790,8 +16861,6 @@
 * Banking_Card_Request
     - action_card_request
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -16833,8 +16902,6 @@
 * Banking_Card_Request
     - action_card_request
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -17062,6 +17129,7 @@
     - slot{"card_replace_with": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 
 ## Generated Story -8872551443458384299
@@ -17124,31 +17192,31 @@
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -17167,7 +17235,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Email
     - action_get_email
 * Banking_Get_Username
@@ -17183,13 +17251,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -17310,8 +17378,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -17424,7 +17490,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Secure_Info{"to_get": "passcode"}
     - action_get_secure_info
 * Banking_Get_Secure_Info{"to_get": "cvv"}
@@ -17444,7 +17510,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
 * Banking_Card_Number
@@ -17465,7 +17531,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Greetings
     - action_greeting
 * General_Ending
@@ -17565,7 +17631,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -17601,8 +17667,6 @@
     - slot{"requested_slot": null}
     - slot{"card_status": 1}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -17648,6 +17712,7 @@
     - slot{"requested_slot": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ### Generated Story -7046167267704616701
 * General_Greetings
@@ -17710,7 +17775,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Secure_Info{"to_get": "passcode"}
     - action_get_secure_info
 * Banking_Get_Secure_Info{"to_get": "cvv"}
@@ -17730,7 +17795,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
 * Banking_Card_Number
@@ -17751,7 +17816,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Greetings
     - action_greeting
 * General_Ending
@@ -17843,8 +17908,6 @@
 * Banking_Report_Missing_Card
     - action_report_missing_card
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -17875,6 +17938,7 @@
     - slot{"requested_slot": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 1254480080240847755
 * Banking_Activate_Card
@@ -17900,8 +17964,6 @@
 * Banking_Get_Card_Request_Status
     - action_get_card_request_status
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -18003,7 +18065,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Secure_Info{"to_get": "passcode"}
     - action_get_secure_info
 * Banking_Get_Secure_Info{"to_get": "cvv"}
@@ -18099,7 +18161,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
 * Banking_Card_Number
@@ -18120,7 +18182,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Bot_Control_Standby
     - action_bot_control_standby
     - export
@@ -18151,31 +18213,31 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -18194,7 +18256,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Get_Account_Number
@@ -18222,25 +18284,25 @@
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111vv"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "dfjsdfjn1"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -18254,13 +18316,13 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "email id"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 3683642582845328862
 * General_Greetings
@@ -18392,13 +18454,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_get": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Status
     - action_get_card_status
 * Banking_Get_Acc_Status
@@ -18431,6 +18493,7 @@
     - action_bot_control_confirm_presence
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 8478800041111939432
 * General_Greetings
@@ -18474,7 +18537,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -18492,7 +18555,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Request_Status
     - action_get_card_request_status
 * Banking_Replace_Card
@@ -18622,19 +18685,19 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -18648,12 +18711,10 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -18827,9 +18888,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -7993483627788979689
 * General_Greetings
@@ -18908,6 +18970,8 @@
     - slot{"service_access": null}
 * General_Positive_Feedback
     - action_positive_feedback
+* Bot_Desc
+    - action_get_bot_desc
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Get_Card_Number{"to_change": "card number"}
@@ -19006,6 +19070,10 @@
     - action_greeting
 * General_Greetings
     - action_greeting
+* None
+    - action_fallback
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Fee_Inquiry
     - action_fee_inquiry
 * General_Human_or_Bot
@@ -19059,7 +19127,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
 * Banking_Fee_Inquiry
@@ -19101,9 +19169,10 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 1102760120366071080
 * General_Greetings
@@ -19126,10 +19195,16 @@
     - action_fallback
 * Banking_Password
     - action_fallback
+* None
+    - action_fallback
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Card_Number
     - action_fallback
 * Banking_Card_Number
     - action_fallback
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Activate_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -19187,7 +19262,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19205,7 +19280,7 @@
     - slot{"contact": "7046167267"}
     - slot{"contact": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password{"to_get": "password"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19215,7 +19290,7 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -19270,8 +19345,6 @@
 * Banking_Get_Username
     - action_get_username
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -19304,6 +19377,12 @@
     - action_human_or_bot
 * General_Negative_Feedback
     - action_negative_feedback
+* None
+    - action_fallback
+* Bot_Desc
+    - action_get_bot_desc
+* Banking_Find_Operator
+    - action_find_operator
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Get_Card_Number{"to_change": "card number"}
@@ -19315,7 +19394,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Get_Account_Number
@@ -19409,6 +19488,8 @@
     - action_get_card_number
 * Banking_Get_Address
     - action_get_address
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Replace_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -19443,6 +19524,10 @@
     - action_negative_feedback
 * General_Positive_Feedback
     - action_positive_feedback
+* None
+    - action_fallback
+* Banking_Find_Operator
+    - action_find_operator
 * General_Security_Assurance
     - action_security_assurance
 * Banking_Fee_Inquiry
@@ -19452,7 +19537,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19470,7 +19555,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode{"to_get": "passcode"}
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19488,7 +19573,7 @@
     - slot{"new_passcode": "683240"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Bot_Control_Standby
     - action_bot_control_standby
 * Bot_Control_Confirm_Presence
@@ -19513,6 +19598,7 @@
     - action_bot_control_confirm_presence
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -6382860652030768005
 * General_Greetings
@@ -19755,7 +19841,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19778,7 +19864,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Change_Address
@@ -19790,61 +19876,61 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "fdgw43"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "3453g44"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "454545"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "45454h"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "3423432"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111122"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -19863,25 +19949,25 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "email i d"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "card number"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19899,7 +19985,7 @@
     - slot{"username": "brij79"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19909,25 +19995,25 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -19941,7 +20027,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19959,7 +20045,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -19998,13 +20084,13 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - action_change_password
     - slot{"requested_slot": "new_password"}
 * Banking_Password
@@ -20013,7 +20099,7 @@
     - slot{"last_otp": null}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - export
 ## Generated Story 8350553459726303675
 * Banking_Get_Card_Details
@@ -20070,8 +20156,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -20135,9 +20219,9 @@
     - slot{"amount": null}
     - slot{"service_access": null}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -20168,6 +20252,10 @@
     - slot{"requested_slot": null}
 * Bot_Control_Change_Subject
     - action_bot_control_change_subject
+* Bot_Desc
+    - action_get_bot_desc
+* Banking_Find_Operator
+    - action_find_operator
 * Bot_Control_Standby
     - action_bot_control_standby
 * Bot_Control_Confirm_Presence
@@ -20240,6 +20328,8 @@
     - action_fallback
 * Banking_Card_Number
     - action_fallback
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Card_Number
     - action_fallback
 * Banking_Activate_Card
@@ -20314,6 +20404,8 @@
     - slot{"requested_slot": null}
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Replace_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -20334,6 +20426,8 @@
     - slot{"card_perm": null}
     - slot{"card_replace_with": null}
     - slot{"requested_slot": null}
+* None
+    - action_fallback
 * Banking_Replace_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -20454,7 +20548,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -20477,7 +20571,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Change_Address
@@ -20489,61 +20583,61 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "fdgw43"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "3453g44"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "454545"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "45454h"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "3423432"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111122"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -20562,25 +20656,25 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "email i d"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "card number"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -20598,7 +20692,7 @@
     - slot{"username": "brij79"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -20608,25 +20702,25 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -20640,7 +20734,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -20658,7 +20752,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -20697,13 +20791,13 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - action_change_password
     - slot{"requested_slot": "new_password"}
 * Banking_Password
@@ -20712,7 +20806,7 @@
     - slot{"last_otp": null}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -20753,8 +20847,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -20819,8 +20911,6 @@
     - slot{"service_access": null}
     - slot{"requested_slot": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -20853,6 +20943,10 @@
     - action_bot_control_change_subject
 * Bot_Control_Standby
     - action_bot_control_standby
+* Banking_Find_Operator
+    - action_find_operator
+* Banking_Get_Account_Details
+    - action_get_account_details
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * Bot_Control_Start_Over
@@ -20875,8 +20969,8 @@
     - action_get_card_status
 * Banking_Get_Card_Details
     - action_get_card_details
-* Banking_Get_Account_Details
-    - action_get_account_details
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Get_Account_Balance
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -20921,6 +21015,8 @@
     - action_fallback
 * Banking_Password
     - action_fallback
+* None
+    - action_fallback
 * Banking_Card_Number
     - action_fallback
 * Banking_Card_Number
@@ -21017,6 +21113,8 @@
     - slot{"card_perm": null}
     - slot{"card_replace_with": null}
     - slot{"requested_slot": null}
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Replace_Card
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -21099,6 +21197,8 @@
     - action_negative_feedback
 * Banking_Get_Card_Number{"to_change": "card number"}
     - action_get_card_number
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Get_Email
     - action_get_email
 * Banking_Get_Address
@@ -21127,7 +21227,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Account_Number
     - action_get_account_number
 * Banking_Get_Address
@@ -21137,13 +21237,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Username
     - action_get_username
 * Banking_Get_Acc_Status
@@ -21157,25 +21257,25 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -21189,7 +21289,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -21207,7 +21307,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -21217,13 +21317,13 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - action_change_password
     - slot{"requested_slot": "new_password"}
 * Banking_Password
@@ -21232,7 +21332,7 @@
     - slot{"last_otp": null}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -21267,8 +21367,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -21334,6 +21432,8 @@
     - slot{"requested_slot": null}
 * Bot_Control_Change_Subject
     - action_bot_control_change_subject
+* None
+    - action_fallback
 * Bot_Control_Standby
     - action_bot_control_standby
 * Bot_Control_Confirm_Presence
@@ -21380,6 +21480,7 @@
     - action_card_request
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -70461672677046122
 * General_Greetings
@@ -21423,13 +21524,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "cvv"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Bot_Control_Standby
     - action_bot_control_standby
 * Bot_Control_Confirm_Presence
@@ -21642,7 +21743,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * deny
     - utter_just_reply
 * Banking_Change_Username
@@ -21654,25 +21755,25 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -21686,7 +21787,9 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Change_Passcode
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -21704,7 +21807,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Password
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -21714,13 +21817,13 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - action_change_password
     - slot{"requested_slot": "new_password"}
 * Banking_Password
@@ -21729,7 +21832,7 @@
     - slot{"last_otp": null}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Contact
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -21761,6 +21864,8 @@
     - slot{"service_access": null}
 * Banking_Card_Number
     - action_fallback
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Card_Number
     - action_fallback
 * Bot_Control_Start_Over
@@ -21797,8 +21902,11 @@
     - action_human_or_bot
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* None
+    - action_fallback
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story 1506802402007008806
 * General_Greetings
@@ -21828,6 +21936,8 @@
     - slot{"service_access": null}
 * affirm
     - utter_just_reply
+* Banking_Find_Operator
+    - action_find_operator
 * Bot_Control_Start_Over
     - action_bot_control_start_over
     - reset_slots
@@ -21862,6 +21972,8 @@
     - action_get_card_status
 * General_Greetings
     - action_greeting
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Email
     - action_fallback
 * Bot_Control_Standby
@@ -21877,13 +21989,13 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - action_change_password
     - slot{"requested_slot": "new_password"}
 * Banking_Password
@@ -21892,7 +22004,7 @@
     - slot{"last_otp": null}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Cancel_Card
     - action_check_account_and_card
     - slot{"passcode": null}
@@ -21906,6 +22018,8 @@
     - action_fallback
 * Banking_Fee_Inquiry
     - action_fee_inquiry
+* None
+    - action_fallback
 * General_Human_or_Bot
     - action_human_or_bot
 * General_Security_Assurance
@@ -21963,7 +22077,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Change_Address
@@ -21999,22 +22113,11 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Username
     - action_get_username
 * Banking_Get_Contact
     - action_get_contact
-* Banking_View_Activity
-    - action_change_address
-    - slot{"address1": "line 3"}
-    - slot{"requested_slot": "address2"}
-* Banking_Password
-    - action_change_address
-    - slot{"address2": "line4"}
-    - slot{"address1": null}
-    - slot{"address2": null}
-    - slot{"requested_slot": null}
-    - slot{"service_access": 0}
 * Banking_Get_Account_Number
     - action_get_account_number
 * Banking_Change_Passcode
@@ -22026,18 +22129,15 @@
     - slot{"last_otp": null}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
-* Banking_Get_Secure_Info
-    - action_check_account_and_card
-    - slot{"passcode": null}
-    - slot{"card_perm": null}
-    - slot{"card_replace_with": null}
-    - slot{"requested_slot": null}
     - slot{"service_access": null}
+* Banking_Get_Secure_Info
+    - action_get_secure_info
 * Banking_Report_Missing_Card
     - action_report_missing_card
 * Banking_Get_Email
     - action_get_email
+* Bot_Desc
+    - action_get_bot_desc
 * Banking_Get_Address
     - action_get_address
 * Banking_Get_Account_Number
@@ -22054,11 +22154,11 @@
     - slot{"service_access": null}
 * Banking_Get_Email
     - action_get_email
+* None
+    - action_fallback
 * Banking_Get_Account_Number
     - action_get_account_number
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -22083,6 +22183,8 @@
     - action_positive_feedback
 * Banking_Get_Card_Number{"to_change": "card number"}
     - action_get_card_number
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Get_Address
     - action_get_address
 * Banking_Get_Account_Details
@@ -22111,6 +22213,7 @@
     - action_get_card_request_status
 * General_Ending
     - action_ending
+    - reset_slots
     - export
 ## Generated Story -70461672677046111
 * General_Greetings
@@ -22190,6 +22293,12 @@
     - action_get_secure_info
 * deny
     - utter_just_reply
+* Bot_Desc
+    - action_get_bot_desc
+* None
+    - action_fallback
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Get_Secure_Info{"to_get": "passcode"}
     - action_get_secure_info
 * Banking_Replace_Card
@@ -22271,7 +22380,7 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * General_Negative_Feedback
     - action_negative_feedback
 * Banking_Get_Card_Number{"to_change": "card number"}
@@ -22308,7 +22417,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Address
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -22331,7 +22440,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Change_Address
@@ -22343,61 +22452,61 @@
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "11111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "fdgw43"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "3453g44"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "454545"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "45454h"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "3423432"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111122"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -22416,7 +22525,7 @@
     - slot{"address1": null}
     - slot{"address2": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Address
     - action_get_address
 * Banking_Report_Missing_Card
@@ -22426,13 +22535,13 @@
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Credential_Info{"to_change": "card number"}
     - action_change_credential_info
     - slot{"passcode": null}
     - slot{"card_perm": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -22450,19 +22559,19 @@
     - slot{"username": "brij79"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "1111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "683249"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "111111"}
@@ -22476,7 +22585,7 @@
     - slot{"username": "brijeshlakkad22"}
     - slot{"username": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Change_Passcode
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -22494,7 +22603,7 @@
     - slot{"new_passcode": "683249"}
     - slot{"new_passcode": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Bot_Control_Change_Subject
     - action_bot_control_change_subject
 * Banking_Get_Account_Details
@@ -22508,13 +22617,13 @@
     - slot{"got_otp": "11111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Password
     - action_get_otp_permission
     - slot{"got_otp": "111111111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
     - action_change_password
     - slot{"requested_slot": "new_password"}
 * Banking_Password
@@ -22523,9 +22632,11 @@
     - slot{"last_otp": null}
     - slot{"got_otp": null}
     - slot{"requested_slot": null}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Request_Status
     - action_get_card_request_status
+* Banking_Find_Operator
+    - action_find_operator
 * Banking_Get_Account_Balance
     - action_check_account_and_card
     - slot{"service_access": 1}
@@ -22561,8 +22672,6 @@
     - slot{"requested_slot": null}
     - slot{"service_access": null}
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -22646,11 +22755,11 @@
     - slot{"service_access": null}
 * Bot_Control_Standby
     - action_bot_control_standby
+* Bot_Desc
+    - action_get_bot_desc
 * Bot_Control_Confirm_Presence
     - action_bot_control_confirm_presence
 * Banking_Transfer_Money
-    - action_check_account_and_card
-    - slot{"service_access": 1}
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * affirm
@@ -22697,6 +22806,8 @@
     - slot{"requested_slot": null}
 * Banking_Get_Card_Status
     - action_get_card_status
+* None
+    - action_fallback
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}
@@ -22706,15 +22817,1253 @@
     - slot{"got_otp": "1112121"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Card_Number
     - action_get_otp_permission
     - slot{"got_otp": "1111111"}
     - slot{"got_otp": null}
     - slot{"requested_slot": "got_otp"}
-    - slot{"service_access": 0}
+    - slot{"service_access": null}
 * Banking_Get_Card_Details
     - action_get_card_details
 * General_Ending
     - action_ending
+    - reset_slots
+    - export
+## Generated Story 8712361231855113040
+* General_Greetings
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Find_Operator
+    - action_find_operator
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "68324343"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "24234234"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* deny
+    - action_activate_card
+    - slot{"card_permission": false}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167267"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"where": "004234df"}
+    - slot{"requested_slot": "amount"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"amount": "34324"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_transfer_money
+    - slot{"got_otp": "2"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Bot_Desc
+    - action_get_bot_desc
+* General_Ending
+    - action_ending
+    - reset_slots
+    - export
+## Generated Story 6184861265553820904
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Bot_Desc
+    - action_get_bot_desc
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_View_Activity
+    - action_check_account_and_card
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"card_replace_with": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "2"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "254431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "254431"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad"}
+    - slot{"username": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "11"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* None
+    - action_fallback
+* Banking_Find_Operator
+    - action_find_operator
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "12"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_transfer_money
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "128830"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Account_Balance
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "68323223"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+    - slot{"service_access": null}
+* Banking_Passcode
+    - action_get_permission
+    - slot{"passcode": "34324234"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+    - slot{"service_access": null}
+* Banking_Password
+    - action_get_permission
+    - slot{"passcode": "1212121"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+    - slot{"service_access": null}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "342433"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+    - slot{"service_access": null}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "128830"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+    - slot{"service_access": null}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683240"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_get_account_balance
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* General_Ending
+    - action_ending
+    - reset_slots
+    - export
+## Generated Story -70461672677046122
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* affirm
+    - utter_just_reply
+* Banking_Report_Missing_Card
+    - action_report_missing_card
+* Banking_Get_Card_Number{"to_change": "card number"}
+    - action_get_card_number
+* Banking_Password
+    - action_fallback
+* Banking_Get_Username
+    - action_get_username
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "2"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Change_Password{"to_get": "password"}
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "344431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "344431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "344431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "344431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "344431"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_password
+    - slot{"requested_slot": "new_password"}
+* Banking_Password
+    - action_change_password
+    - slot{"new_password": "123456bb"}
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bb"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Get_Account_Balance
+    - action_check_account_and_card
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"card_replace_with": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Change_Contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167268"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167267"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"where": "004234df"}
+    - slot{"requested_slot": "amount"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"amount": "34324"}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_transfer_money
+    - slot{"got_otp": "2"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Account_Balance
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_get_account_balance
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Card_Request_Status
+    - action_get_card_request_status
+* Bot_Control_Change_Subject
+    - action_bot_control_change_subject
+* affirm
+    - utter_just_reply
+* General_Positive_Feedback
+    - action_positive_feedback
+* General_Negative_Feedback
+    - action_negative_feedback
+* Banking_Get_Secure_Info{"to_get": "password"}
+    - action_get_secure_info
+* General_Greetings
+    - action_greeting
+* Banking_Email
+    - action_fallback
+* Banking_Get_Secure_Info{"to_get": "passcode"}
+    - action_get_secure_info
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": "293872"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "254431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "254421"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "344431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "344431"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Banking_Get_Address
+    - action_change_address
+    - slot{"address1": "line 111"}
+    - slot{"requested_slot": "address2"}
+* General_Security_Assurance
+    - action_change_address
+    - slot{"address2": "line 333"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Card_Request
+    - action_card_request
+* Banking_Change_Contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "2"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Change_Credential_Info{"to_change": "card number"}
+    - action_change_credential_info
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Email
+    - action_get_email
+* deny
+    - utter_just_reply
+* Banking_Card_Number
+    - action_fallback
+* None
+    - action_fallback
+* Bot_Desc
+    - action_get_bot_desc
+* Banking_Card_Number
+    - action_fallback
+* Banking_Get_Address
+    - action_get_address
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_transfer_money
+    - slot{"got_otp": "111111"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brij79"}
+    - slot{"username": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* General_Human_or_Bot
+    - action_human_or_bot
+* Banking_Get_Card_Status
+    - action_get_card_status
+* Banking_View_Activity
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_view_activity
+    - slot{"requested_slot": "num_trans"}
+* Banking_Password
+    - action_view_activity
+    - slot{"num_trans": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Change_Passcode
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_passcode
+    - slot{"requested_slot": "new_passcode"}
+* Banking_Card_Number
+    - action_change_passcode
+    - slot{"new_passcode": "683249"}
+    - slot{"new_passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Find_Operator
+    - action_find_operator
+* Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Password
+    - action_card_replace
+    - slot{"card_replace_with": "31t237t12873"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"card_replace_with": null}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "5743344187443345"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"card_replace_with": null}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "5743344187443345"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"card_replace_with": null}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "5743344187443345"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"card_replace_with": null}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "5743344187443345"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* Banking_Get_Contact
+    - action_get_contact
+* Banking_Get_Account_Details
+    - action_get_account_details
+* Bot_Control_Start_Over
+    - action_bot_control_start_over
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Details
+    - action_get_card_details
+* General_Ending
+    - action_ending
+    - reset_slots
+## Generated Story -70461672677046123
+* General_Greetings
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "2"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Bot_Control_Standby
+    - action_bot_control_standby
+* Bot_Control_Confirm_Presence
+    - action_bot_control_confirm_presence
+* Banking_Get_Card_Details
+    - action_get_card_details
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* deny
+    - action_activate_card
+    - slot{"card_permission": false}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* affirm
+    - utter_just_reply
+* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* deny
+    - action_cancel_card
+    - slot{"card_permission": false}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* affirm
+    - utter_just_reply
+* None
+    - action_fallback
+* Bot_Desc
+    - action_get_bot_desc
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "8243641221541506"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* deny
+    - action_card_replace
+    - slot{"card_permission": false}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Account_Details
+    - action_get_account_details
+* General_Positive_Feedback
+    - action_positive_feedback
+* Banking_Find_Operator
+    - action_find_operator
+* Banking_Get_Account_Balance
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "68323223"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+    - slot{"service_access": null}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "128830"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+    - slot{"service_access": null}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683240"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_get_account_balance
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Card_Status
+    - action_get_card_status
+* General_Negative_Feedback
+    - action_negative_feedback
+* Bot_Control_Start_Over
+    - action_bot_control_start_over
+    - reset_slots
+    - utter_first_access
+    - action_get_access
+    - slot{"requested_slot": "email"}
+* Banking_Email
+    - action_get_access
+    - slot{"email": "brijeshlakkad22@gmail.com"}
+    - slot{"requested_slot": "password"}
+* Banking_Password
+    - action_get_access
+    - slot{"password": "123456bB"}
+    - slot{"access": 1}
+    - slot{"name": "Brijesh"}
+    - slot{"requested_slot": null}
+* Banking_Get_Card_Number{"to_change": "card number"}
+    - action_get_card_number
+* Banking_Change_Username
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "1"}
+    - slot{"last_otp": "254431"}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "254431"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_username
+    - slot{"requested_slot": "username"}
+* Banking_Password
+    - action_change_username
+    - slot{"username": "brijeshlakkad"}
+    - slot{"username": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Change_Password
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "2"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Email
+    - action_get_email
+* Bot_Control_Change_Subject
+    - action_bot_control_change_subject
+* Banking_Change_Contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_get_otp_permission
+    - slot{"got_otp": "2"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Address
+    - action_get_address
+* Banking_Transfer_Money
+    - action_ask_input_transfer_money
+    - slot{"requested_slot": "transfer_perm"}
+* affirm
+    - action_ask_input_transfer_money
+    - slot{"transfer_perm": true}
+    - slot{"requested_slot": "where"}
+* Banking_Card_Number
+    - action_ask_input_transfer_money
+    - slot{"where": "007046167268"}
+    - slot{"requested_slot": "amount"}
+* Banking_Password
+    - action_ask_input_transfer_money
+    - slot{"amount": "112"}
+    - slot{"service_access": 1}
+    - slot{"requested_slot": null}
+    - action_send_otp_for_transaction
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Password
+    - action_transfer_money
+    - slot{"got_otp": "2"}
+    - slot{"last_otp": null}
+    - slot{"got_otp": null}
+    - slot{"transfer_perm": null}
+    - slot{"where": null}
+    - slot{"amount": null}
+    - slot{"service_access": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Account_Balance
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_get_permission
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_get_permission
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_get_account_balance
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Activate_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_activate_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_activate_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_activate_card
+    - slot{"passcode": "683249"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Card_Request
+    - action_card_request
+* Banking_Get_Secure_Info{"to_get": "passcode"}
+    - action_get_secure_info
+* Banking_Replace_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_card_replace
+    - slot{"requested_slot": "card_replace_with"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"card_replace_with": "3667609902587292"}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683240"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "6832411"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Card_Number
+    - action_card_replace
+    - slot{"passcode": "683220"}
+    - slot{"requested_slot": "card_perm"}
+* affirm
+    - action_card_replace
+    - slot{"card_perm": true}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"card_replace_with": null}
+    - slot{"requested_slot": null}
+* Banking_Passcode
+    - action_card_replace
+    - slot{"passcode": "683249"}
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"card_replace_with": null}
+* deny
+    - utter_just_reply
+* Banking_Get_Card_Request_Status
+    - action_get_card_request_status
+* None
+    - action_fallback
+* General_Human_or_Bot
+    - action_human_or_bot
+* affirm
+    - utter_just_reply
+* General_Greetings
+    - action_greeting
+* Banking_Get_Account_Number
+    - action_get_account_number
+* Banking_View_Activity{"num_trans": "3"}
+    - slot{"num_trans": "3"}
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_view_activity
+    - slot{"num_trans": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Username
+    - action_get_username
+* Banking_Email
+    - action_fallback
+* Banking_View_Activity
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_view_activity
+    - slot{"requested_slot": "num_trans"}
+* Banking_Password
+    - action_view_activity
+    - slot{"num_trans": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Cancel_Card
+    - action_check_account_and_card
+    - slot{"service_access": 1}
+    - action_cancel_card
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"requested_slot": "card_permission"}
+* affirm
+    - action_cancel_card
+    - slot{"card_permission": true}
+    - slot{"passcode": null}
+    - slot{"requested_slot": "passcode"}
+* Banking_Passcode
+    - action_cancel_card
+    - slot{"passcode": "683249"}
+    - slot{"card_permission": null}
+    - slot{"passcode": null}
+    - slot{"requested_slot": null}
+* Banking_Get_Acc_Status
+    - action_get_acc_status
+* Banking_Password
+    - action_fallback
+* General_Security_Assurance
+    - action_security_assurance
+* Banking_Change_Address
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_address
+    - slot{"requested_slot": "address1"}
+* Bot_Control_Change_Subject
+    - action_change_address
+    - slot{"address1": "line 333"}
+    - slot{"requested_slot": "address2"}
+* Bot_Control_Change_Subject
+    - action_change_address
+    - slot{"address2": "line 444"}
+    - slot{"address1": null}
+    - slot{"address2": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Get_Contact
+    - action_get_contact
+* Banking_Card_Number
+    - action_fallback
+* Banking_Change_Credential_Info{"to_change": "cvv"}
+    - action_change_credential_info
+    - slot{"passcode": null}
+    - slot{"card_perm": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Change_Contact
+    - action_send_otp
+    - slot{"last_otp": 111111}
+    - slot{"requested_slot": "got_otp"}
+* Banking_Card_Number
+    - action_get_otp_permission
+    - slot{"got_otp": "111111"}
+    - slot{"got_otp": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": 1}
+    - action_change_contact
+    - slot{"requested_slot": "contact"}
+* Banking_Card_Number
+    - action_change_contact
+    - slot{"contact": "7046167268"}
+    - slot{"contact": null}
+    - slot{"requested_slot": null}
+    - slot{"service_access": null}
+* Banking_Report_Missing_Card
+    - action_report_missing_card
+* General_Human_or_Bot
+    - action_human_or_bot
+* deny
+    - utter_just_reply
+* Banking_Card_Number
+    - action_fallback
+* General_Security_Assurance
+    - action_security_assurance
+* General_Ending
+    - action_ending
+    - reset_slots
     - export

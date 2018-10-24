@@ -47,6 +47,8 @@ actions:
 - action_card_request
 - action_check_account_and_card
 - utter_just_reply
+- action_find_operator
+- action_get_bot_desc
 config:
   store_entities_as_slots: true
 entities:
@@ -64,6 +66,8 @@ entities:
 - help_asking_time
 - question_yes_no
 - num_trans
+- bank_name
+- ab
 intents:
 - Banking_Report_Missing_Card:
     use_entities: true
@@ -96,6 +100,8 @@ intents:
 - Banking_Get_Card_Number:
     use_entities: true
 - Banking_Replace_Card:
+    use_entities: true
+- Bot_Desc:
     use_entities: true
 - Banking_Email:
     use_entities: true
@@ -153,7 +159,12 @@ intents:
     use_entities: true
 - Banking_Change_Passcode:
     use_entities: true
+- Banking_Find_Operator:
+    use_entities: true
 slots:
+  ab:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   access:
     initial_value: null
     type: rasa_core.slots.CategoricalSlot
@@ -168,6 +179,9 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
   amount:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  bank_name:
     initial_value: null
     type: rasa_core.slots.TextSlot
   card_perm:
@@ -186,6 +200,9 @@ slots:
     - none
     - '0'
     - '1'
+  card_type:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   contact:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -250,18 +267,23 @@ templates:
   - text: Looks like you are logged in, Boss!
   - text: Go ahead, Ask me anything!
   utter_activated_card:
-  - text: You got it! Boss. Your {card_type} is activated.
-  - text: Okay! Boss. {card_type} is activated.
-  - text: Done! Your {card_type} is activated
+  - text: You got it! Boss. Your {card_type} is activated{using_what}.
+  - text: Okay! Boss. {card_type} is activated{using_what}.
+  - text: Done! Your {card_type} is activated{using_what}.
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
+  utter_ask_ab:
+  - text: Sir, Do you want to find bank or atm?
   utter_ask_address1:
   - text: 'Please tell me your new postal address line 1: '
   utter_ask_address2:
   - text: 'Please tell me your new postal address line 2: '
   utter_ask_amount:
   - text: 'Enter amount to transfer: '
+  utter_ask_bank_name:
+  - text: 'Please tell me bank name you want to find: '
+  - text: 'Please give me bank name you want to find: '
   utter_ask_card_perm:
   - text: Are you sure?
   - text: Enter 'Yes' if you want to continue
@@ -340,6 +362,9 @@ templates:
   utter_bot_control_start_over_reply:
   - text: Okay! {name}
   - text: Ok! As you want {name}.
+  utter_bot_desc:
+  - text: '{name} I am a chatbot build for act as a bank assistant to help customers
+      with their questions and i can done work in just a minute!'
   utter_card_request_reply:
   - text: '{name} i have reaised request for card application. You can check your
       card application status at Personal Setting Panel in your account or You can
@@ -352,9 +377,9 @@ templates:
       You can ask me or see for verification of your {ent} details on Personal Settings
       panel.'
   utter_deactivated_card:
-  - text: You got it! Boss. Your card is deactivated.
-  - text: Okay! Boss. Card is deactivated.
-  - text: Done! Your card is deactivated
+  - text: You got it! Boss. Your {card_type} is deactivated{using_what}.
+  - text: Okay! Boss. {card_type} is deactivated{using_what}.
+  - text: Done! Your {card_type} is deactivated{using_what}.
   utter_ending_reply:
   - text: Nice to help you! {name}
   - text: See yaaa {name} :)

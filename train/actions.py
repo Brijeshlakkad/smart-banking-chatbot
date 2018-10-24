@@ -241,10 +241,6 @@ class ActionAskInputTransferMoney(FormAction):
             return [ActionReverted(),AllSlotsReset()]
         name=tracker.get_slot("name")
         name=get_user_name(name)
-        service_access=tracker.get_slot("service_access")
-        if service_access!=1:
-            dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
         userid=get_personal_info(user,password,"cid")
         hasAcc=get_personal_info(user,password,"hasAcc")
         if hasAcc==-99:
@@ -260,7 +256,7 @@ class ActionAskInputTransferMoney(FormAction):
         if transfer_perm==None:
             return [SlotSet("transfer_perm",None),SlotSet("requested_slot","transfer_perm"),SlotSet("service_access",None)]
         if transfer_perm!=True:
-            return [SlotSet("transfer_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("transfer_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         userid=get_personal_info(user,password,"cid")
         from_acc_no=get_account_info(user,password,"acc_no")
         result_where=str(check_acc_num_exists(where,userid))
@@ -334,8 +330,7 @@ class ActionTransferMoney(FormAction):
         got_otp=int(got_otp)
         if got_otp==1:
             otp=send_otp_to_customer(user,password)
-            otp=111111
-            return [SlotSet("last_otp",otp),SlotSet("requested_slot","got_otp")]
+            return [SlotSet("last_otp",otp),SlotSet("got_otp",None),SlotSet("requested_slot","got_otp")]
         if got_otp==2:
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
         if last_otp!=got_otp:
@@ -364,8 +359,7 @@ class ActionSendOTPForTransaction(Action):
         service_access=tracker.get_slot("service_access")
         if service_access==None or service_access!=1:
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
-        #otp=send_otp_to_customer(user,password)
-        otp=111111
+        otp=send_otp_to_customer(user,password)
         dispatcher.utter_template("utter_ask_got_otp",tracker)
         return [SlotSet("last_otp",otp),SlotSet("requested_slot","got_otp")]
 class ActionViewActivity(FormAction):
@@ -460,7 +454,7 @@ class ActionChangeContact(FormAction):
         contact=tracker.get_slot("contact")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         result=change_customer_details("contact",contact,user)
         if result==-11:
             dispatcher.utter_message("This contact number is already registered with another account")
@@ -469,7 +463,7 @@ class ActionChangeContact(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("contact",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="contact")
-        return [SlotSet("contact",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        return [SlotSet("contact",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionChangePasscode(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -491,7 +485,7 @@ class ActionChangePasscode(FormAction):
         new_passcode=tracker.get_slot("new_passcode")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         passcode=str(passcode)
         if not re.match("[0-9]{6}",passcode):
             dispatcher.utter_message("Passcode should not contain character and it should be of 6 numbers.\nPlease enter valid Passcode:\n")
@@ -508,7 +502,7 @@ class ActionChangePasscode(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("new_passcode",None),SlotSet("passcode",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="passcode")
-        return [SlotSet("new_passcode",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        return [SlotSet("new_passcode",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionChangePassword(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -530,7 +524,7 @@ class ActionChangePassword(FormAction):
         new_password=tracker.get_slot("new_password")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         new_password=str(new_password)
         if not re.match("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})",new_password):
             dispatcher.utter_message("Password should contain at least one number and at least one character. It also have at least length of 6 characters.\n Please enter new password:")
@@ -561,21 +555,21 @@ class ActionGetOTPPermission(FormAction):
         last_otp=int(last_otp)
         if got_otp==None or last_otp==-99:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [ActionReverted(),SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         got_otp=str(got_otp)
         if not re.match("[0-9]+",got_otp):
             dispatcher.utter_message("OTP is not valid\nPlease enter valid OTP:\n")
-            return [SlotSet("got_otp",None),SlotSet("requested_slot","got_otp"),SlotSet("service_access",0)]
+            return [SlotSet("got_otp",None),SlotSet("requested_slot","got_otp"),SlotSet("service_access",None)]
         got_otp=int(got_otp)
         if got_otp==1:
             otp=send_otp_to_customer(user,password)
             return [SlotSet("last_otp",otp),SlotSet("requested_slot","got_otp")]
         if got_otp==2:
-            return [SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         if last_otp==got_otp:
             return [SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",1)]
         dispatcher.utter_message("OTP is not valid\nPlease enter valid OTP:\n")
-        return [SlotSet("got_otp",None),SlotSet("requested_slot","got_otp"),SlotSet("service_access",0)]
+        return [SlotSet("got_otp",None),SlotSet("requested_slot","got_otp"),SlotSet("service_access",None)]
 class ActionSendOTP(Action):
     def name(self):
         return 'action_send_otp'
@@ -585,8 +579,7 @@ class ActionSendOTP(Action):
         if user==None or password==None or access!=1:
             dispatcher.utter_message("Please log in our service, to use Jon service!")
             return [ActionReverted(),AllSlotsReset()]
-        #otp=send_otp_to_customer(user,password)
-        otp=111111
+        otp=send_otp_to_customer(user,password)
         dispatcher.utter_template("utter_ask_got_otp",tracker)
         return [SlotSet("last_otp",otp),SlotSet("requested_slot","got_otp")]
 class ActionChangeUsername(FormAction):
@@ -610,7 +603,7 @@ class ActionChangeUsername(FormAction):
         username=tracker.get_slot("username")
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         result=change_customer_details("username",username,user)
         if result==-11:
             dispatcher.utter_message("This contact number is already registered with another account")
@@ -619,7 +612,7 @@ class ActionChangeUsername(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("username",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="username")
-        return [SlotSet("username",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        return [SlotSet("username",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionChangeAddress(FormAction):
     RANDOMIZE = False
     @staticmethod
@@ -641,7 +634,7 @@ class ActionChangeAddress(FormAction):
         name=get_user_name(name)
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
-            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         address1=tracker.get_slot("address1")
         address2=tracker.get_slot("address2")
         address="%s, %s"%(address1,address2)
@@ -650,7 +643,7 @@ class ActionChangeAddress(FormAction):
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("address1",None),SlotSet("address2",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
         dispatcher.utter_template("utter_change_entity_reply",tracker,name=name,ent="postal address")
-        return [SlotSet("address1",None),SlotSet("address2",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        return [SlotSet("address1",None),SlotSet("address2",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionChangeCredentialInfo(Action):
     def name(self):
         return 'action_change_credential_info'
@@ -669,7 +662,7 @@ class ActionChangeCredentialInfo(Action):
             ent=entities[0]["value"]
         ent=get_pure_ent(ent)
         dispatcher.utter_template("utter_change_credential_info_reply",tracker,name=name,ent=ent)
-        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",0)]
+        return [SlotSet("passcode",None),SlotSet("card_perm",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
 class ActionCardRequest(Action):
     def name(self):
         return 'action_card_request'

@@ -25,7 +25,7 @@ def train_dialogue(domain_file="bank_domain.yml",model_path="models/dialogue/",t
     fallback = FallbackPolicy(fallback_action_name="action_fallback", core_threshold=0.2, nlu_threshold=0.2)
     agent = Agent(domain_file,policies=[MemoizationPolicy(max_history=15),KerasPolicy(),fallback])
     training_data = agent.load_data(training_data_file)
-    agent.train(training_data,batch_size=200,epochs=150,validation_split=0.2,max_training_samples=500)
+    agent.train(training_data,batch_size=200,epochs=150,validation_split=0.2)
     agent.persist(model_path)
     return agent
 
