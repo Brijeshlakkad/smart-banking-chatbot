@@ -717,8 +717,6 @@ def make_transaction(from_acc_no,to_acc_no,amount):
 	try:
 		cursor.execute(sql)
 		flag=transaction_happened(cursor,from_acc_no,to_acc_no,amount)
-		if flag==-22:
-			return "<span style='color:red;'>You have inefficient balance! :(</span>"
 		if flag!=11:
 			return flag
 		conn.commit()

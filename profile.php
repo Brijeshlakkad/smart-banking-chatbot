@@ -119,11 +119,11 @@ check_pages(); ?>
 </form>
 </div>
 <div class="col-lg-4">
-<h2 class="c_header">Jon Snow is here.</h2>
+<h2 class="c_header">Jon Snow is here!</h2>
 <div class="row" style="margin-top: 20px;">
   <div class="row" style="margin: 50px;">
     <img src="images/jon-snow.jpg" alt="JonSnow" class="customImg" style="width:200px"><br/>
-    Want Help?
+    <span style="font-size:20px;">Tell me if you need a bank assistance ;)</span>
   </div>
   <div class="fb-messengermessageus"
     messenger_app_id="182961315923841"
@@ -175,7 +175,7 @@ check_pages(); ?>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-        <div class="alert alert-danger">Please, try again after few minutes</div>
+        <div class="alert alert-danger">{{error_modal_val}}</div>
         </div>
       </div>
     </div>
@@ -275,15 +275,22 @@ myApp.controller("BrijController", function($scope,$http,$sce) {
 								}).then(function mySuccess(response) {
 									flag = response.data;
 									flag=flag.trim();
+                  if(flag==-22)
+                  {
+                    $scope.error_modal_val="You have inefficient balance";
+                    $("#error_modal").modal("show");
+                  }
 									if(flag.startsWith("11"))
 									{
 										$scope.success_modal_val=$sce.trustAsHtml(flag.substr(2));
 										$("#success_modal_scope").modal("show");
 									}
 									else {
+                      $scope.error_modal_val="Please, try again after few minutes";
 											$("#error_modal").modal("show");
 									}
 								}, function myError(response) {
+                  $scope.error_modal_val="Please, try again after few minutes";
 									$("#error_modal").modal("show");
 								});
 					};
