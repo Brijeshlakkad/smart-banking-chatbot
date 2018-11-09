@@ -3,7 +3,6 @@ import cgi, cgitb
 import sys
 import security
 import customer_details
-import customer_details
 import feedback_modules
 import jon_snow_brain
 print("Content-type:text/html;Content-type: image/jpeg\r\n\r\n")
