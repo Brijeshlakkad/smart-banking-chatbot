@@ -154,7 +154,7 @@ check_pages(); ?>
 				</tr>
 				<tr>
 					<td></td>
-					<td ng-if="num_cards==0"><button class="btn btn-primary" ng-click="request_services('card')">Request for card</button></td>
+					<td ng-if="num_cards==0"><small>{{notice_to_ask_jon}}</small><br/><button class="btn btn-primary" ng-click="request_services('card')">Request for card</button></td>
 					<td ng-if="show_card_details"><table class="myTable table-striped">
 					<tr><td>card number:</td><td>{{card_no}}</td></tr>
 					<tr><td>card type:</td><td>{{card_type}}</td></tr>
@@ -348,7 +348,7 @@ check_pages(); ?>
 <div class="modal fade" id="view_balance_modal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3>Enter passcode to see balance:</h3>
+        <div class="modal-header"><small>{{notice_to_ask_jon}}</small><br/><button type="button" class="close" data-dismiss="modal">&times;</button><h3>Enter passcode to see balance:</h3>
         </div>
         <div class="modal-body">
         <div class="row">
@@ -366,7 +366,7 @@ check_pages(); ?>
 <div class="modal fade" id="open_change_passcode_modal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3>Enter passcode to see balance:</h3>
+        <div class="modal-header"><small>{{notice_to_ask_jon}}</small><br/><button type="button" class="close" data-dismiss="modal">&times;</button><h3>Enter passcode to see balance:</h3>
         </div>
         <div class="modal-body">
         <div class="row">
@@ -389,6 +389,7 @@ check_pages(); ?>
 	var myApp = angular.module("myapp", []);
 
 	myApp.controller("BrijController", function($scope,$http) {
+		$scope.notice_to_ask_jon="You can always ask Jon Snow to do this work";
 		$scope.genderOptions = [
 				"Male","Female","Other"
 			];
