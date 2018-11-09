@@ -1,11 +1,11 @@
 <?php include("header.php"); ?>
 <link rel="stylesheet" href="css/footer.css">
 <div class="container-fluid blurclass"  style="padding:0px;height:700px;width:100%;">
-	
+
 </div>
 	<section class="showcase showcase--video landscape background--active" data-background-target="#f3f3f3" data-scroll-animation-offset="500">
     <div class="showcase__container">
-        
+
         <article class="showcase__article showcase__article--landscape showcase__right" data-scroll-animation-offset="100">
             <div class="showcase__media landscape shuffle shuffled">
                 <div class="showcase__overlay">
@@ -16,7 +16,7 @@
                             <ul class="showcase__tags">
                                             <li class="showcase__tag">Web App</li>
                                             <li class="showcase__tag">Experimental R&amp;D</li>
-                                    </ul>                     </div>     </div> </div>                 
+                                    </ul>                     </div>     </div> </div>
               <div class="showcase__video showcase__video--landscape">
             <div class="showcase__image-fallback" style="background-image: url('https://2017-media.weareenvoy.net/_470x470_crop_center_90/mobile-django.jpg');"></div>
             <video autoplay="" loop="" muted="">
@@ -32,7 +32,7 @@
 
 	</div>
         </article>
-    </div> 
+    </div>
     </section>
 <footer class="footer">
     <nav class="footer__nav shuffle shuffled">
@@ -68,7 +68,7 @@
                     <span class="footer__address-row">Birla Vishvakarma Mahavidyalaya Engineering College</span>
                     <span class="footer__address-row">Anand, Gujarat, India</span>
                 </a>
-    
+
                 <h4 class="footer__col-title footer__hide--small">New Business</h4>
                 <a href="mailto:tempacc2179@gmail.com" class="footer__link footer__hide--small">tempacc2179@gmail.com</a>
                 <a href="tel:7046167267" class="footer__link footer__hide--small">+91 7046 167 267</a>
@@ -95,8 +95,7 @@
         <section class="footer__col">
             <div class="footer__col-wrap">
                 <h4 class="footer__col-title">Legal</h4>
-                <a href="/terms" class="footer__link">Terms</a>
-                <a href="/privacy" class="footer__link">Privacy</a>
+                <a href="privacy_policy.php" class="footer__link">Privacy Policy</a>
             </div>
         </section>
 
