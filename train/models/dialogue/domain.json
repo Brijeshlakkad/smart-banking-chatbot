@@ -12,7 +12,6 @@
     "intent_Banking_Change_Username", 
     "intent_Banking_Email", 
     "intent_Banking_Fee_Inquiry", 
-    "intent_Banking_Find_Operator", 
     "intent_Banking_Get_Acc_Status", 
     "intent_Banking_Get_Account_Balance", 
     "intent_Banking_Get_Account_Details", 
@@ -147,7 +146,6 @@
     "prev_action_card_request", 
     "prev_action_check_account_and_card", 
     "prev_utter_just_reply", 
-    "prev_action_find_operator", 
     "prev_action_get_bot_desc"
   ]
 }

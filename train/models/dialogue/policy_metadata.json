@@ -211,6 +211,9 @@
     "action_get_card_number": {
       "slots": []
     }, 
+    "action_get_bot_desc": {
+      "slots": []
+    }, 
     "action_get_access": {
       "slots": [
         "name", 

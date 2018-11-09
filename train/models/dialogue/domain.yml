@@ -47,7 +47,6 @@ actions:
 - action_card_request
 - action_check_account_and_card
 - utter_just_reply
-- action_find_operator
 - action_get_bot_desc
 config:
   store_entities_as_slots: true
@@ -158,8 +157,6 @@ intents:
 - Bot_Control_Start_Over:
     use_entities: true
 - Banking_Change_Passcode:
-    use_entities: true
-- Banking_Find_Operator:
     use_entities: true
 slots:
   ab:
@@ -273,17 +270,12 @@ templates:
   utter_anything:
   - text: Okay! Boss
   - text: Okay :(
-  utter_ask_ab:
-  - text: Sir, Do you want to find bank or atm?
   utter_ask_address1:
   - text: 'Please tell me your new postal address line 1: '
   utter_ask_address2:
   - text: 'Please tell me your new postal address line 2: '
   utter_ask_amount:
   - text: 'Enter amount to transfer: '
-  utter_ask_bank_name:
-  - text: 'Please tell me bank name you want to find: '
-  - text: 'Please give me bank name you want to find: '
   utter_ask_card_perm:
   - text: Are you sure?
   - text: Enter 'Yes' if you want to continue
