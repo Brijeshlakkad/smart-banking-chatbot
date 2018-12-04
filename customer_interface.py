@@ -150,3 +150,9 @@ if form.getvalue("get_last_transaction") and form.getvalue("num_of_transactions"
 	flag_bit=customer_details.get_last_transaction(acc_no,num)
 	flag_bit=flag_bit.strip()
 	print("%s"%flag_bit)
+if form.getvalue('get_card_request_num'):
+	user = security.protect_data(form.getvalue("get_card_request_num"))
+	userid=customer_details.get_any_value(user,"cid")
+	accid=customer_details.get_account_details_by_id(userid,"acc_id")
+	flag_bit=customer_details.check_request_exist(accid)
+	print("%s"%flag_bit)

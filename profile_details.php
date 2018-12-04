@@ -154,7 +154,7 @@ check_pages(); ?>
 				</tr>
 				<tr>
 					<td></td>
-					<td ng-if="num_cards==0"><small>{{notice_to_ask_jon}}</small><br/><button class="btn btn-primary" ng-click="request_services('card')">Request for card</button></td>
+					<td ng-if="num_cards==0"><small>{{notice_to_ask_jon}}</small><br/><button ng-disabled="num_card_request!=0" class="btn btn-primary" ng-click="request_services('card')">Request for card</button></td>
 					<td ng-if="show_card_details"><table class="myTable table-striped">
 					<tr><td>card number:</td><td>{{card_no}}</td></tr>
 					<tr><td>card type:</td><td>{{card_type}}</td></tr>
@@ -777,6 +777,7 @@ check_pages(); ?>
 			else
 				$scope.perm_add="";
 		};
+		$scope.num_card_request=0;
 		$scope.check_part2 = function() {
 
 							var old_password=$scope.old_password;
@@ -838,7 +839,27 @@ check_pages(); ?>
 								$("#status_part2").empty();
 							});
                };
-
+							 $scope.get_card_request_status = function() {
+							           $http({
+							             method : "POST",
+							             url : "customer_interface.py",
+							             data : "get_card_request_num="+userid,
+							             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+							           }).then(function mySuccess(response) {
+							             var flag=response.data;
+							             if(flag==0)
+							               {
+							                 $scope.num_card_request=false;
+							               }
+							             else{
+							               $scope.num_card_request=true;
+							             }
+							           }, function myError(response) {
+							             $("#error_modal").modal("show");
+							             $("#status_part2").empty();
+							           });
+							            };
+													$scope.get_card_request_status();
 		$scope.got_permission=false;
 		$scope.wrong_passcode=false;
 		$scope.view_bal_permission=true;
