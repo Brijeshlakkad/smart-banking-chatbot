@@ -289,40 +289,6 @@ ALL:
     - action_ask_input_transfer_money
     - slot{"where": "007046167268"}
     - slot{"requested_slot": "amount"}
-* Banking_Card_Number
-    - action_ask_input_transfer_money
-    - slot{"amount": "683240"}
-    - slot{"amount": null}
-    - slot{"requested_slot": "amount"}
-* Banking_Password
-    - action_ask_input_transfer_money
-    - slot{"amount": "112"}
-    - slot{"service_access": 1}
-    - slot{"requested_slot": null}
-    - action_send_otp_for_transaction
-    - slot{"last_otp": 111111}
-    - slot{"requested_slot": "got_otp"}
-* Banking_Password
-    - action_transfer_money
-    - slot{"got_otp": "1"}
-    - slot{"last_otp": null}
-    - slot{"got_otp": null}
-    - slot{"transfer_perm": null}
-    - slot{"where": null}
-    - slot{"amount": null}
-    - slot{"service_access": null}
-    - slot{"requested_slot": null}
-* Banking_Transfer_Money
-    - action_ask_input_transfer_money
-    - slot{"requested_slot": "transfer_perm"}
-* affirm
-    - action_ask_input_transfer_money
-    - slot{"transfer_perm": true}
-    - slot{"requested_slot": "where"}
-* Banking_Card_Number
-    - action_ask_input_transfer_money
-    - slot{"where": "007046167268"}
-    - slot{"requested_slot": "amount"}
 * Banking_Password
     - action_ask_input_transfer_money
     - slot{"amount": "112"}
@@ -461,7 +427,7 @@ deny:
     - slot{"requested_slot": null}
 
 
-#* Banking_Transfer_Money
+* Banking_Transfer_Money
     - action_ask_input_transfer_money
     - slot{"requested_slot": "transfer_perm"}
 * deny
@@ -826,7 +792,6 @@ OTP with 1st option
     - slot{"service_access": null}
     - slot{"requested_slot": null}
 
-OTP with 1st option
 * Banking_Change_Username
     - action_send_otp
     - slot{"last_otp": 111111}

@@ -195,6 +195,9 @@
     "action_get_acc_status": {
       "slots": []
     }, 
+    "action_get_contact": {
+      "slots": []
+    }, 
     "action_get_account_balance": {
       "slots": [
         "service_access", 

@@ -79,7 +79,7 @@ def run_bank_bot_for_web():
 
 # run fb connector
 # $ python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/bank_nlu --port 5002 --credentials credentials.yml --endpoints endpoints.yml
-
+# $ python -m rasa_nlu.evaluate --data data/stories.json --config config.yml --mode crossvalidation
 if __name__ == '__main__':
     utils.configure_colored_logging(loglevel="INFO")
     parser = argparse.ArgumentParser(description='starts the bot')

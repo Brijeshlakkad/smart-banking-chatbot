@@ -313,6 +313,7 @@ class ActionTransferMoney(FormAction):
         result_transfer=str(make_transaction(from_acc_no,to_acc_no,amount))
         if result_transfer=="-22":
             dispatcher.utter_message("Transaction Failed! You have inefficient money.")
+            return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("transfer_perm",None),SlotSet("where",None),SlotSet("amount",None),SlotSet("service_access",None),SlotSet("requested_slot",None)]
         elif not result_transfer.startswith("11"):
             dispatcher.utter_message("Transaction Failed!")
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
@@ -460,8 +461,8 @@ class ActionChangePasscode(FormAction):
         if service_access!=1:
             dispatcher.utter_template("utter_error_caught_reply",tracker,name=name)
             return [SlotSet("last_otp",None),SlotSet("got_otp",None),SlotSet("requested_slot",None),SlotSet("service_access",None)]
-        passcode=str(passcode)
-        if not re.match("[0-9]{6}",passcode):
+        new_passcode=str(new_passcode)
+        if not re.match("[0-9]{6}",new_passcode):
             dispatcher.utter_message("Passcode should not contain character and it should be of 6 numbers.\nPlease enter valid Passcode:\n")
             return [SlotSet("passcode",None),SlotSet("requested_slot","passcode"),SlotSet("service_access",service_access)]
         hasAcc=get_personal_info(user,password,"hasAcc")
